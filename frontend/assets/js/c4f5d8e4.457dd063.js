@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkferrox_front_docs||=[]).push([[634],{192(r,o,t){t.r(o),t.d(o,{default:()=>c});t(6540);var s=t(612),n=t(6025),u=t(4848);function c(){return(0,u.jsx)(s.rd,{to:(0,n.Ay)("/docs/intro")})}}}]);
