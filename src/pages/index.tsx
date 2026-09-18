@@ -146,6 +146,26 @@ export default function Home(): JSX.Element {
           </div>
         </section>
 
+        <section className="margin-vert--xl">
+          <div className="text--center margin-bottom--lg">
+            <Heading as="h2">The History of Ferrox</Heading>
+          </div>
+          <div className="row row--align-center">
+            <div className="col col--8">
+              <p>
+                Ferrox was born out of a stark realization: the Rust ecosystem lacked a cohesive, enterprise-ready, server-side framework comparable to NestJS in Node.js, Spring Boot in Java, or Angular on the frontend.
+              </p>
+              <p>
+                While Rust offered blazing fast performance and memory safety, developers were forced to glue together dozens of disparate crates—from routers and validators to logging and telemetry—rebuilding fundamental architectures (like CQRS, sagas, and role-based guards) from scratch for every project. 
+              </p>
+              <p>
+                To bridge this gap, Ferrox was conceived as a <strong>Progressive Framework</strong>. It provides an opinionated, highly modular architecture built on top of industry-standard foundations like Tokio and Axum. 
+                Our mission is to bring unparalleled developer experience, rapid development velocity, and a zero-trust security model out-of-the-box, empowering teams to build robust microservices and monoliths with absolute confidence.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className={clsx('margin-vert--xl', styles.codeSection)}>
           <div className="row row--align-center">
             <div className="col col--6">
