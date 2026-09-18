@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/cqrs",
+  "title": "CQRS & Saga Process Managers",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/ferrox-node/docs/components/cqrs.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/cqrs",
+  "permalink": "/docs/ferrox-node/docs/components/cqrs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/cqrs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "cqrs",
+    "title": "CQRS & Saga Process Managers",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dual Engine Transports (Fastify & Express)",
+    "permalink": "/docs/ferrox-node/docs/components/transports"
+  },
+  "next": {
+    "title": "Data Grid Query Engine & Relational Transformers",
+    "permalink": "/docs/ferrox-node/docs/components/datagrid"
+  }
+}

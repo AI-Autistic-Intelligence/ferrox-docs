@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/auth",
+  "title": "Authentication (PASETO v4 & TOTP 2FA)",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/ferrox-node/docs/components/auth.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/auth",
+  "permalink": "/docs/ferrox-node/docs/components/auth",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/auth.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "auth",
+    "title": "Authentication (PASETO v4 & TOTP 2FA)",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart Guide & Service Bootstrap",
+    "permalink": "/docs/ferrox-node/docs/quickstart"
+  },
+  "next": {
+    "title": "Native DI Container & App Lifecycle",
+    "permalink": "/docs/ferrox-node/docs/components/core"
+  }
+}

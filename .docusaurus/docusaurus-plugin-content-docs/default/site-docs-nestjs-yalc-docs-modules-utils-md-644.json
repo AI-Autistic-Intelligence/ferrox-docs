@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/utils",
+  "title": "Core Utilities, Helpers & Object Manipulation",
+  "description": "The @nestjs-yalc/utils package is the core utility toolkit for the NestJS-Yalc ecosystem. It provides high-performance, type-safe utility functions for object manipulation, array operations, concurrent async processing, string transformations, class reflection helpers, and cryptographic hashing.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/utils.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/utils",
+  "permalink": "/docs/nestjs-yalc/docs/modules/utils",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/utils.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "id": "utils",
+    "title": "Core Utilities, Helpers & Object Manipulation",
+    "sidebar_position": 16
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Application Lifecycle, Bootstrap & Module Composition",
+    "permalink": "/docs/nestjs-yalc/docs/modules/app"
+  },
+  "next": {
+    "title": "Logger",
+    "permalink": "/docs/nestjs-yalc/modules/logger"
+  }
+}

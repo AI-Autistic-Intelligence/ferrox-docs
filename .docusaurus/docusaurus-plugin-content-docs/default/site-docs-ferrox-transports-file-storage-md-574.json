@@ -1,7 +1,7 @@
 {
   "id": "ferrox/transports/file-storage",
-  "title": "📁 File Upload & Storage Abstractions",
-  "description": "Handling user file uploads (profile avatars, document attachments, media assets) requires decoupled storage backends that can switch seamlessly between local filesystem storage in development and S3/MinIO cloud object storage in production.",
+  "title": "Cloud File Storage, S3 Streams & Presigned URLs",
+  "description": "The ferrox-storage crate provides cloud object storage abstractions for Rust applications. It supports zero-buffer multipart streaming uploads, presigned download/upload URL generation, path traversal sanitization, and multi-provider backends (AWS S3, Google Cloud Storage, Azure Blob Storage, and local disk).",
   "source": "@site/docs/ferrox/transports/file-storage.md",
   "sourceDirName": "ferrox/transports",
   "slug": "/ferrox/transports/file-storage",
@@ -11,17 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/transports/file-storage.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 5,
   "frontMatter": {
-    "sidebar_position": 4
+    "id": "file-storage",
+    "title": "Cloud File Storage, S3 Streams & Presigned URLs",
+    "sidebar_position": 5
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "📡 Server-Sent Events (SSE)",
+    "title": "Server-Sent Events (SSE), Event Streams & Real-Time Broadcasting",
     "permalink": "/docs/ferrox/transports/sse"
   },
   "next": {
-    "title": "📊 Enterprise DataGrid Query Translators",
+    "title": "Server-Side Data Grid Transport & SQL Query Building",
     "permalink": "/docs/ferrox/transports/datagrid"
   }
 }

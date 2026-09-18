@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/app",
+  "title": "Application Lifecycle, Bootstrap & Module Composition",
+  "description": "The @nestjs-yalc/app module provides a standardized, enterprise-ready application bootstrapping kernel for NestJS microservices and monolithic servers. It abstracts boilerplate startup routines—such as graceful shutdown signal handlers, unified configuration loading, global interceptors/filters registration, health-check lifecycle hooks, and multi-tenant context injection.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/app.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/app",
+  "permalink": "/docs/nestjs-yalc/docs/modules/app",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/app.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "id": "app",
+    "title": "Application Lifecycle, Bootstrap & Module Composition",
+    "sidebar_position": 15
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/jest",
+    "permalink": "/docs/nestjs-yalc/docs/modules/jest"
+  },
+  "next": {
+    "title": "Core Utilities, Helpers & Object Manipulation",
+    "permalink": "/docs/nestjs-yalc/docs/modules/utils"
+  }
+}

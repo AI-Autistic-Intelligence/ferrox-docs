@@ -1,7 +1,7 @@
 {
   "id": "ferrox-front/reactivity",
-  "title": "Reactivity & Signals API",
-  "description": "Signals represent the fundamental building block for state management in Ferrox Front.",
+  "title": "Fine-Grained Reactive Primitives (Signals, Memos & Effects)",
+  "description": "The ferrox-front-core reactivity engine provides fine-grained reactive state management in WebAssembly. Built on push-pull signal graphs, it exposes Signal, ReadSignal, WriteSignal, Memo, and Effect primitives without relying on Virtual DOM diffing.",
   "source": "@site/docs/ferrox-front/reactivity.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/reactivity",
@@ -11,19 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/reactivity.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 2,
   "frontMatter": {
     "id": "reactivity",
-    "title": "Reactivity & Signals API",
-    "sidebar_position": 4
+    "title": "Fine-Grained Reactive Primitives (Signals, Memos & Effects)",
+    "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Procedural RSX Macro (ferrox-front-macro)",
-    "permalink": "/docs/ferrox-front/macros"
+    "title": "Quickstart Guide",
+    "permalink": "/docs/ferrox-front/quickstart"
   },
   "next": {
-    "title": "Glassmorphism Design System (ferrox-front-ui)",
-    "permalink": "/docs/ferrox-front/ui-components"
+    "title": "Procedural Macros, Component Annotations & Code Generation",
+    "permalink": "/docs/ferrox-front/macros"
   }
 }

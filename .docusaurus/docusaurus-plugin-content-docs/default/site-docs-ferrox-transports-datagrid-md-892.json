@@ -1,7 +1,7 @@
 {
   "id": "ferrox/transports/datagrid",
-  "title": "📊 Enterprise DataGrid Query Translators",
-  "description": "Enterprise admin dashboards rely on rich frontend data grid libraries like AG Grid, MUI X DataGrid, and TanStack Table. These grids send complex URL query parameters containing filtering, multi-column sorting, page sizes, and search constraints.",
+  "title": "Server-Side Data Grid Transport & SQL Query Building",
+  "description": "The ferrox-datagrid crate provides server-side data grid handling for Rust web frameworks. It translates frontend data grid request models (AG-Grid, TanStack Table) into optimized SeaORM / SQL queries with dynamic sorting, filtering, and pagination limits.",
   "source": "@site/docs/ferrox/transports/datagrid.md",
   "sourceDirName": "ferrox/transports",
   "slug": "/ferrox/transports/datagrid",
@@ -11,17 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/transports/datagrid.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 6,
   "frontMatter": {
-    "sidebar_position": 5
+    "id": "datagrid",
+    "title": "Server-Side Data Grid Transport & SQL Query Building",
+    "sidebar_position": 6
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "📁 File Upload & Storage Abstractions",
+    "title": "Cloud File Storage, S3 Streams & Presigned URLs",
     "permalink": "/docs/ferrox/transports/file-storage"
   },
   "next": {
-    "title": "🚀 Part 1: Project Setup",
-    "permalink": "/docs/ferrox/tutorial/setup"
+    "title": "CRDT Real-Time State Sync Engine & WebSockets",
+    "permalink": "/docs/ferrox/transports/sync"
   }
 }

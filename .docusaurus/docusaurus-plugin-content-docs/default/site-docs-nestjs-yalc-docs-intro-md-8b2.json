@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/intro",
+  "title": "Introduction & Ecosystem Architecture",
+  "description": "Welcome to NestJS-YALC (Yet Another Layer of Convenience for NestJS), the enterprise-grade foundation framework for building scalable, high-performance microservices and monorepo applications in TypeScript and Node.js.",
+  "source": "@site/docs/nestjs-yalc/docs/intro.md",
+  "sourceDirName": "nestjs-yalc/docs",
+  "slug": "/nestjs-yalc/docs/intro",
+  "permalink": "/docs/nestjs-yalc/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction & Ecosystem Architecture",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Architecture",
+    "permalink": "/docs/nestjs-yalc/architecture"
+  },
+  "next": {
+    "title": "Quickstart & First Application Setup",
+    "permalink": "/docs/nestjs-yalc/docs/quickstart"
+  }
+}

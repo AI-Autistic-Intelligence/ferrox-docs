@@ -1,7 +1,7 @@
 {
   "id": "ferrox/integrations/mailer",
-  "title": "📧 Email Dispatching (Mailer)",
-  "description": "Sending transactional emails (password reset links, account verifications, invoice receipts) is a core requirement for web applications.",
+  "title": "Mailer Engine, HTML Email Templates & SMTP / SendGrid",
+  "description": "The mailer module provides transactional email dispatching, HTML/CSS template compilation (via Handlebars/Tera), inline attachment embedding, and integrations with SendGrid, AWS SES, Mailgun, and raw SMTP servers in Rust.",
   "source": "@site/docs/ferrox/integrations/mailer.md",
   "sourceDirName": "ferrox/integrations",
   "slug": "/ferrox/integrations/mailer",
@@ -13,6 +13,8 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
+    "id": "mailer",
+    "title": "Mailer Engine, HTML Email Templates & SMTP / SendGrid",
     "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
@@ -21,7 +23,7 @@
     "permalink": "/docs/ferrox/fundamentals/testing"
   },
   "next": {
-    "title": "💳 Payment Gateways (Stripe & Google Pay)",
+    "title": "Payment Gateway Integrations (Stripe, PayPal, Adyen) & Subscriptions",
     "permalink": "/docs/ferrox/integrations/payments"
   }
 }

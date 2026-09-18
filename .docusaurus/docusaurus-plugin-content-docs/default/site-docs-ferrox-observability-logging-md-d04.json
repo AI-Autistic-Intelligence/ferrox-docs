@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🌐 Internationalization (i18n)",
-    "permalink": "/docs/ferrox/integrations/i18n"
+    "title": "Full-Text Search, Vector Indexing & Meilisearch Adapters",
+    "permalink": "/docs/ferrox/integrations/search"
   },
   "next": {
     "title": "🩺 Kubernetes Health Probes (Liveness & Readiness)",

@@ -21,7 +21,7 @@
     "permalink": "/docs/ferrox/overview/first-steps"
   },
   "next": {
-    "title": "⚡ High-Throughput Benchmarks & Tuning",
+    "title": "Micro-Benchmarks, Criterion Suites & Comparative Metrics",
     "permalink": "/docs/ferrox/performance/benchmarks"
   }
 }

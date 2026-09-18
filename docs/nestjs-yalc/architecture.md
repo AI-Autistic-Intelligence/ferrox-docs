@@ -10,11 +10,11 @@ NestJS-YALC is structured as a modular monorepo, providing a bridge between raw 
 
 ## The Bridge Pattern
 
-At its core, NestJS-YALC acts as an adapter layer over `@node-yalc`. While `@node-yalc` provides pure TypeScript/Node.js classes and functions (like loggers, error types, and generic event emitters), `@nest-yalc-2` wraps these into NestJS paradigms:
+At its core, NestJS-YALC acts as an adapter layer over [`@node-yalc`](/docs/node-yalc/overview). While [`@node-yalc`](/docs/node-yalc/overview) provides pure TypeScript/Node.js classes and functions (like loggers, error types, and generic event emitters), `@nest-yalc-2` wraps these into NestJS paradigms:
 
 - **Providers (`@Injectable`)**: Core utilities are exposed as injectable services.
 - **Dynamic Modules**: Configurations are passed via `.forRoot()` or `.forRootAsync()` patterns.
-- **Interceptors & Filters**: Generic error types from `@node-yalc` are caught and mapped to proper HTTP/GraphQL responses via NestJS Exception Filters.
+- **Interceptors & Filters**: Generic error types from [`@node-yalc`](/docs/node-yalc/overview) are caught and mapped to proper HTTP/GraphQL responses via NestJS Exception Filters.
 
 ```mermaid
 flowchart TD

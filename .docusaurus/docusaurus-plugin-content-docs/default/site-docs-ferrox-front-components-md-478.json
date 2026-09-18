@@ -19,11 +19,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "SPA Routing & Micro-Frontends",
-    "permalink": "/docs/ferrox-front/routing"
+    "title": "Glassmorphism Design System (ferrox-front-ui)",
+    "permalink": "/docs/ferrox-front/ui-components"
   },
   "next": {
-    "title": "Zero-Trust Security & E2EE",
+    "title": "Zero-Trust Wasm Security, WebCrypto & XSS Sanitization",
     "permalink": "/docs/ferrox-front/security"
   }
 }

@@ -76,6 +76,101 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "ferrox-node/docs/components/auth",
+              "path": "/docs/ferrox-node/docs/components/auth",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/config",
+              "path": "/docs/ferrox-node/docs/components/config",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/core",
+              "path": "/docs/ferrox-node/docs/components/core",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/cqrs",
+              "path": "/docs/ferrox-node/docs/components/cqrs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/datagrid",
+              "path": "/docs/ferrox-node/docs/components/datagrid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/guards",
+              "path": "/docs/ferrox-node/docs/components/guards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/i18n",
+              "path": "/docs/ferrox-node/docs/components/i18n",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/interfaces",
+              "path": "/docs/ferrox-node/docs/components/interfaces",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/jobs",
+              "path": "/docs/ferrox-node/docs/components/jobs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/kernel",
+              "path": "/docs/ferrox-node/docs/components/kernel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/resilience",
+              "path": "/docs/ferrox-node/docs/components/resilience",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/routing",
+              "path": "/docs/ferrox-node/docs/components/routing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/security",
+              "path": "/docs/ferrox-node/docs/components/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/selftest",
+              "path": "/docs/ferrox-node/docs/components/selftest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/storage",
+              "path": "/docs/ferrox-node/docs/components/storage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/tracing",
+              "path": "/docs/ferrox-node/docs/components/tracing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/components/transports",
+              "path": "/docs/ferrox-node/docs/components/transports",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/intro",
+              "path": "/docs/ferrox-node/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-node/docs/quickstart",
+              "path": "/docs/ferrox-node/docs/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "ferrox-node/overview",
               "path": "/docs/ferrox-node/overview",
               "sidebar": "tutorialSidebar"
@@ -251,6 +346,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "ferrox/integrations/search",
+              "path": "/docs/ferrox/integrations/search",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "ferrox/integrations/webhooks",
               "path": "/docs/ferrox/integrations/webhooks",
               "sidebar": "tutorialSidebar"
@@ -371,6 +471,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "ferrox/transports/sync",
+              "path": "/docs/ferrox/transports/sync",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "ferrox/transports/transports-overview",
               "path": "/docs/ferrox/transports/transports-overview",
               "sidebar": "tutorialSidebar"
@@ -396,6 +501,101 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "nestjs-yalc/docs/intro",
+              "path": "/docs/nestjs-yalc/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/ag-grid",
+              "path": "/docs/nestjs-yalc/docs/modules/ag-grid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/api-strategy",
+              "path": "/docs/nestjs-yalc/docs/modules/api-strategy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/app",
+              "path": "/docs/nestjs-yalc/docs/modules/app",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/audit",
+              "path": "/docs/nestjs-yalc/docs/modules/audit",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/crud-gen",
+              "path": "/docs/nestjs-yalc/docs/modules/crud-gen",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/data-loader",
+              "path": "/docs/nestjs-yalc/docs/modules/data-loader",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/database",
+              "path": "/docs/nestjs-yalc/docs/modules/database",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/errors",
+              "path": "/docs/nestjs-yalc/docs/modules/errors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/event-manager",
+              "path": "/docs/nestjs-yalc/docs/modules/event-manager",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/field-middleware",
+              "path": "/docs/nestjs-yalc/docs/modules/field-middleware",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/graphql",
+              "path": "/docs/nestjs-yalc/docs/modules/graphql",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/jest",
+              "path": "/docs/nestjs-yalc/docs/modules/jest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/kafka",
+              "path": "/docs/nestjs-yalc/docs/modules/kafka",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/logger",
+              "path": "/docs/nestjs-yalc/docs/modules/logger",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/observability",
+              "path": "/docs/nestjs-yalc/docs/modules/observability",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/sentinel",
+              "path": "/docs/nestjs-yalc/docs/modules/sentinel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/modules/utils",
+              "path": "/docs/nestjs-yalc/docs/modules/utils",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nestjs-yalc/docs/quickstart",
+              "path": "/docs/nestjs-yalc/docs/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "nestjs-yalc/modules/crud-gen",
               "path": "/docs/nestjs-yalc/modules/crud-gen",
               "sidebar": "tutorialSidebar"
@@ -408,6 +608,61 @@
             {
               "id": "nestjs-yalc/overview",
               "path": "/docs/nestjs-yalc/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/intro",
+              "path": "/docs/node-yalc/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/aws-helpers",
+              "path": "/docs/node-yalc/docs/packages/aws-helpers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/common",
+              "path": "/docs/node-yalc/docs/packages/common",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/errors",
+              "path": "/docs/node-yalc/docs/packages/errors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/event-manager",
+              "path": "/docs/node-yalc/docs/packages/event-manager",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/interfaces",
+              "path": "/docs/node-yalc/docs/packages/interfaces",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/logger",
+              "path": "/docs/node-yalc/docs/packages/logger",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/types",
+              "path": "/docs/node-yalc/docs/packages/types",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/types-extends",
+              "path": "/docs/node-yalc/docs/packages/types-extends",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/packages/utils",
+              "path": "/docs/node-yalc/docs/packages/utils",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "node-yalc/docs/quickstart",
+              "path": "/docs/node-yalc/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {

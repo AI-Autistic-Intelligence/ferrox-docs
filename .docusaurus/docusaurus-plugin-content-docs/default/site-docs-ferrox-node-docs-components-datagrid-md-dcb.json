@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/datagrid",
+  "title": "Data Grid Query Engine & Relational Transformers",
+  "description": "The @ferrox/node datagrid module provides high-performance server-side data grid handling. It converts generic frontend grid request models (AG-Grid, TanStack Table, Material UI DataGrid) into optimized database execution plans with dynamic filtering, dynamic sorting, pagination offset limits, and JOIN condition resolution.",
+  "source": "@site/docs/ferrox-node/docs/components/datagrid.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/datagrid",
+  "permalink": "/docs/ferrox-node/docs/components/datagrid",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/datagrid.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "datagrid",
+    "title": "Data Grid Query Engine & Relational Transformers",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CQRS & Saga Process Managers",
+    "permalink": "/docs/ferrox-node/docs/components/cqrs"
+  },
+  "next": {
+    "title": "Security Guards, RBAC & Role Permission Engine",
+    "permalink": "/docs/ferrox-node/docs/components/guards"
+  }
+}

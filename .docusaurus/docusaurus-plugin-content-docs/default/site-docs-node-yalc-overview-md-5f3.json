@@ -21,5 +21,9 @@
   "previous": {
     "title": "CRUD Generator",
     "permalink": "/docs/nestjs-yalc/modules/crud-gen"
+  },
+  "next": {
+    "title": "Introduction & Node-Yalc Workspace Architecture",
+    "permalink": "/docs/node-yalc/docs/intro"
   }
 }

@@ -21,7 +21,7 @@
     "permalink": "/docs/ferrox/fundamentals/configuration"
   },
   "next": {
-    "title": "📧 Email Dispatching (Mailer)",
+    "title": "Mailer Engine, HTML Email Templates & SMTP / SendGrid",
     "permalink": "/docs/ferrox/integrations/mailer"
   }
 }

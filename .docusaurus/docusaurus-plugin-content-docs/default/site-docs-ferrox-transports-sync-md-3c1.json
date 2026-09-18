@@ -1,0 +1,29 @@
+{
+  "id": "ferrox/transports/sync",
+  "title": "CRDT Real-Time State Sync Engine & WebSockets",
+  "description": "The ferrox-sync crate delivers Conflict-Free Replicated Data Type (CRDT) real-time state synchronization over WebSockets for collaborative multi-user applications, live document editing, and distributed state replication in Rust.",
+  "source": "@site/docs/ferrox/transports/sync.md",
+  "sourceDirName": "ferrox/transports",
+  "slug": "/ferrox/transports/sync",
+  "permalink": "/docs/ferrox/transports/sync",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/transports/sync.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "sync",
+    "title": "CRDT Real-Time State Sync Engine & WebSockets",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Server-Side Data Grid Transport & SQL Query Building",
+    "permalink": "/docs/ferrox/transports/datagrid"
+  },
+  "next": {
+    "title": "🚀 Part 1: Project Setup",
+    "permalink": "/docs/ferrox/tutorial/setup"
+  }
+}

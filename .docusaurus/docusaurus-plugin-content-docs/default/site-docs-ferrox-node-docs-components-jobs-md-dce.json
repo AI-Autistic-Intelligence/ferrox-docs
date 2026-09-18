@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/jobs",
+  "title": "Jobs Scheduler & SSE Stream",
+  "description": "JobsSchedulerSse combines asynchronous background worker execution with Server-Sent Events (SSE) to stream job progress, real-time log outputs, and execution status updates directly to frontend web applications.",
+  "source": "@site/docs/ferrox-node/docs/components/jobs.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/jobs",
+  "permalink": "/docs/ferrox-node/docs/components/jobs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/jobs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "id": "jobs",
+    "title": "Jobs Scheduler & SSE Stream",
+    "sidebar_position": 13
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Multi-Protocol Routing Engine & Dynamic Controllers",
+    "permalink": "/docs/ferrox-node/docs/components/routing"
+  },
+  "next": {
+    "title": "Security Self-Test Auditor",
+    "permalink": "/docs/ferrox-node/docs/components/selftest"
+  }
+}

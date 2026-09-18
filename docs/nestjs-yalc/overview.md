@@ -17,7 +17,7 @@ The core tenets of NestJS-YALC are:
 1. **Modularity First**: Every feature is encapsulated in a dedicated NestJS Module. You only import what you need.
 2. **Enterprise Ready**: Built-in support for OpenTelemetry, Pino-based correlated logging, and Confluent Schema Registry.
 3. **Developer Productivity**: Drastically reduces boilerplate through automated TypeORM CRUD generation (`crud-gen`) and GraphQL DataLoader batching.
-4. **Git Submodule Core**: Leverages `@node-yalc` as a pure Git submodule for base core utilities, wrapping them into native NestJS `Injectable()` providers.
+4. **Git Submodule Core**: Leverages [`@node-yalc`](/docs/node-yalc/overview) as a pure Git submodule for base core utilities, wrapping them into native NestJS `Injectable()` providers.
 
 ## Key Features
 

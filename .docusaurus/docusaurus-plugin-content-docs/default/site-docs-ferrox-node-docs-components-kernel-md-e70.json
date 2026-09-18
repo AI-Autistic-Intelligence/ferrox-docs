@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/kernel",
+  "title": "Kernel Sandbox (Seccomp & Landlock)",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/ferrox-node/docs/components/kernel.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/kernel",
+  "permalink": "/docs/ferrox-node/docs/components/kernel",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/kernel.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "kernel",
+    "title": "Kernel Sandbox (Seccomp & Landlock)",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sentinel AI Security & Entropy Engine",
+    "permalink": "/docs/ferrox-node/docs/components/security"
+  },
+  "next": {
+    "title": "Dual Engine Transports (Fastify & Express)",
+    "permalink": "/docs/ferrox-node/docs/components/transports"
+  }
+}

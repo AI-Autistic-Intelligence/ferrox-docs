@@ -1,7 +1,7 @@
 {
   "id": "ferrox-front/templates",
-  "title": "SaaS Page Templates",
-  "description": "ferrox-front-templates provides pre-built SaaS layouts to accelerate enterprise frontend development.",
+  "title": "Virtual DOM Templates, JSX Engine & HTML Macros",
+  "description": "The ferrox-front-templates crate delivers zero-allocation HTML templating, WebAssembly compile-time JSX expansion, reactive DOM element patching, and SSR (Server-Side Rendering) string interpolation for Rust web applications.",
   "source": "@site/docs/ferrox-front/templates.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/templates",
@@ -11,19 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/templates.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 9,
+  "sidebarPosition": 4,
   "frontMatter": {
     "id": "templates",
-    "title": "SaaS Page Templates",
-    "sidebar_position": 9
+    "title": "Virtual DOM Templates, JSX Engine & HTML Macros",
+    "sidebar_position": 4
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Zero-Trust Security & E2EE",
-    "permalink": "/docs/ferrox-front/security"
+    "title": "Client-Side Router, Route Guards & Lazy Loading",
+    "permalink": "/docs/ferrox-front/routing"
   },
   "next": {
-    "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
-    "permalink": "/docs/ferrox-front/ws"
+    "title": "Glassmorphism Design System (ferrox-front-ui)",
+    "permalink": "/docs/ferrox-front/ui-components"
   }
 }

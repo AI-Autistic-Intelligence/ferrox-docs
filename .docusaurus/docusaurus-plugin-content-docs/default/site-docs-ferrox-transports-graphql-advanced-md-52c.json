@@ -21,7 +21,7 @@
     "permalink": "/docs/ferrox/transports/graphql"
   },
   "next": {
-    "title": "📡 Server-Sent Events (SSE)",
+    "title": "Server-Sent Events (SSE), Event Streams & Real-Time Broadcasting",
     "permalink": "/docs/ferrox/transports/sse"
   }
 }

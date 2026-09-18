@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/crud-gen",
+  "title": "@nest-yalc-2/crud-gen",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/nestjs-yalc/docs/modules/crud-gen.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/crud-gen",
+  "permalink": "/docs/nestjs-yalc/docs/modules/crud-gen",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/crud-gen.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "crud-gen",
+    "title": "@nest-yalc-2/crud-gen",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AG-Grid Server-Side Integration & Query Transformers",
+    "permalink": "/docs/nestjs-yalc/docs/modules/ag-grid"
+  },
+  "next": {
+    "title": "@nest-yalc-2/data-loader",
+    "permalink": "/docs/nestjs-yalc/docs/modules/data-loader"
+  }
+}

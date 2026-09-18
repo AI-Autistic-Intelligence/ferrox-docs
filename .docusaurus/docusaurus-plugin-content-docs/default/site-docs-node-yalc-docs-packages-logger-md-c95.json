@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/logger",
+  "title": "@node-yalc/logger",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/node-yalc/docs/packages/logger.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/logger",
+  "permalink": "/docs/node-yalc/docs/packages/logger",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/logger.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "logger",
+    "title": "@node-yalc/logger",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Core Interfaces, Generic DTO Contracts & Envelopes",
+    "permalink": "/docs/node-yalc/docs/packages/interfaces"
+  },
+  "next": {
+    "title": "Extended Type Definitions, Mixins & Meta-Type Extensions",
+    "permalink": "/docs/node-yalc/docs/packages/types-extends"
+  }
+}

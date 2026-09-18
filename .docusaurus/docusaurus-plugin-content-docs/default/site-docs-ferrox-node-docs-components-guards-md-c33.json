@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/guards",
+  "title": "Security Guards, RBAC & Role Permission Engine",
+  "description": "The @ferrox/node guards module provides role-based access control (RBAC), attribute-based access control (ABAC), tenant isolation enforcement, and permission verification middleware for Node.js microservices.",
+  "source": "@site/docs/ferrox-node/docs/components/guards.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/guards",
+  "permalink": "/docs/ferrox-node/docs/components/guards",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/guards.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "guards",
+    "title": "Security Guards, RBAC & Role Permission Engine",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Data Grid Query Engine & Relational Transformers",
+    "permalink": "/docs/ferrox-node/docs/components/datagrid"
+  },
+  "next": {
+    "title": "Core Framework Interfaces & DTO Signatures",
+    "permalink": "/docs/ferrox-node/docs/components/interfaces"
+  }
+}

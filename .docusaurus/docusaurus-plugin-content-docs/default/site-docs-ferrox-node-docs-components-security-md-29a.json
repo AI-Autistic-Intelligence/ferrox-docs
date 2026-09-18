@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/security",
+  "title": "Sentinel AI Security & Entropy Engine",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/ferrox-node/docs/components/security.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/security",
+  "permalink": "/docs/ferrox-node/docs/components/security",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/security.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "security",
+    "title": "Sentinel AI Security & Entropy Engine",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dynamic Configuration Engine & Validation Schemas",
+    "permalink": "/docs/ferrox-node/docs/components/config"
+  },
+  "next": {
+    "title": "Kernel Sandbox (Seccomp & Landlock)",
+    "permalink": "/docs/ferrox-node/docs/components/kernel"
+  }
+}

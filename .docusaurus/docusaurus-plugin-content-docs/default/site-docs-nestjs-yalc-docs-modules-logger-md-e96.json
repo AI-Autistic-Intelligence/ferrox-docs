@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/logger",
+  "title": "@nest-yalc-2/logger",
+  "description": "@nest-yalc-2/logger provides a high-performance, structured Pino logging integration for NestJS 11+. It automatically correlates HTTP request IDs (X-Request-Id) across asynchronous execution contexts using Node.js AsyncLocalStorage, redacting sensitive payload data for GDPR and PCI-DSS compliance.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/logger.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/logger",
+  "permalink": "/docs/nestjs-yalc/docs/modules/logger",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/logger.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "logger",
+    "title": "@nest-yalc-2/logger",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/database",
+    "permalink": "/docs/nestjs-yalc/docs/modules/database"
+  },
+  "next": {
+    "title": "@nest-yalc-2/observability",
+    "permalink": "/docs/nestjs-yalc/docs/modules/observability"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/quickstart",
+  "title": "Quickstart Guide & Workspace Integration",
+  "description": "This quickstart guide demonstrates how to install and integrate Node-YALC packages into any Node.js application, serverless function, or backend service.",
+  "source": "@site/docs/node-yalc/docs/quickstart.md",
+  "sourceDirName": "node-yalc/docs",
+  "slug": "/node-yalc/docs/quickstart",
+  "permalink": "/docs/node-yalc/docs/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "quickstart",
+    "title": "Quickstart Guide & Workspace Integration",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction & Node-Yalc Workspace Architecture",
+    "permalink": "/docs/node-yalc/docs/intro"
+  },
+  "next": {
+    "title": "Type Primitives, Utility Types & Type Guards",
+    "permalink": "/docs/node-yalc/docs/packages/types"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/interfaces",
+  "title": "Core Framework Interfaces & DTO Signatures",
+  "description": "The @ferrox/node interfaces module exports all standard contract definitions, request lifecycle envelopes, authorization contexts, DTO validation signatures, and resilience options used throughout the Ferrox Node.js microservice architecture.",
+  "source": "@site/docs/ferrox-node/docs/components/interfaces.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/interfaces",
+  "permalink": "/docs/ferrox-node/docs/components/interfaces",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/interfaces.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "interfaces",
+    "title": "Core Framework Interfaces & DTO Signatures",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security Guards, RBAC & Role Permission Engine",
+    "permalink": "/docs/ferrox-node/docs/components/guards"
+  },
+  "next": {
+    "title": "Circuit Breaker, Singleflight & Resilience Patterns",
+    "permalink": "/docs/ferrox-node/docs/components/resilience"
+  }
+}

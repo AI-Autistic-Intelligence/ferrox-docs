@@ -1,89 +1,121 @@
 ---
-sidebar_position: 7
-title: "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)"
+id: ferrox-sentinel
+title: Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer
+sidebar_position: 1
 ---
 
-# 🤖 Ferrox Sentinel: AI/ML Security Engine, 37 SOTA Innovations & Kernel Hardening
+# Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer
 
-**Ferrox Sentinel** (`ferrox-sentinel` v0.6.0) is an enterprise-grade AI/ML security analytics, threat detection, and kernel defense mesh built directly into the Ferrox framework.
-
-Designed for high-throughput zero-trust architectures, game servers, cloud microservices, and AI/LLM backends, Sentinel synthesizes **37 State-of-the-Art (SOTA) security innovations** and deep **Linux Kernel Hardening** (Seccomp BPF, Landlock LSM, sysctl profiles, eBPF/XDP) extracted from **11 authoritative technical security and AI publications**.
+The `ferrox-sentinel` crate is the edge security bouncer for the Ferrox framework. It delivers automated HTTP security headers (Helmet CSP, HSTS, X-Frame-Options), CORS origin regex validation, payload size bouncers, and malicious request parameter sanitization.
 
 ---
 
-## 🏛️ 7-Tier Synergistic Security Mesh Architecture
+## 1. What It Is & Architectural Purpose
 
-Ferrox Sentinel structures its security innovations into a 7-tier operational pyramid anchored directly into the host OS kernel:
+Web applications are exposed to edge security threats: Cross-Site Scripting (XSS), Clickjacking, Cross-Site Request Forgery (CSRF), MIME-sniffing exploits, and payload inflation DoS attacks. Leaving security header configuration to manual web server rules creates vulnerabilities across environments.
+
+`ferrox-sentinel` acts as an automated security shield. Intercepting requests at the outer layer of the transport router, it validates CORS origins, sanitizes headers, enforces strict Content Security Policy (CSP) directives, and bounces oversized payloads before they reach business logic.
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        ferrox-sentinel Edge Shield                     │
+├──────────────────────────────────┬─────────────────────────────────────┤
+│  Strict Security Headers         │  CORS & Payload Bouncer             │
+│  • CSP (Content-Security-Policy) │  • Dynamic Regex Origin Matcher     │
+│  • HSTS, X-Frame-Options, XSS    │  • Max Payload Size Enforcement     │
+└────────────────┬─────────────────┴──────────────────┬──────────────────┘
+                 │ Clean, Hardened Transport Context
+                 ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                        Ferrox Application Router                       │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 2. What It Does & Key Capabilities
+
+- **Helmet Security Headers**: Automatically injects `Content-Security-Policy`, `Strict-Transport-Security`, `X-Content-Type-Options: nosniff`, and `X-Frame-Options: DENY`.
+- **Dynamic CORS Origin Matcher**: Evaluates incoming `Origin` headers against dynamic regex patterns and multi-domain wildcard rules.
+- **Payload Size Bouncer**: Intercepts HTTP request streams and rejects payloads exceeding configured size thresholds (e.g., max 2MB) before buffering into memory.
+- **Path & Parameter Sanitizer**: Strips null-byte injections, directory traversal attempts, and malformed URI encodings.
+
+---
+
+## 3. How It Works Under the Hood
+
+### Sentinel Edge Interception Sequence
 
 ```mermaid
-graph TD
-    L7["Tier 7: Autonomous Kali Red-Team Self-Attack Suite (Nmap, SQLmap, Commix, Hydra)"]
-    L6["Tier 6: AI & Multi-Agent Cognitive Security (Guardrails, RAG Groundedness, Multimodal)"]
-    L5["Tier 5: SOAR Auto-Remediation & VPS Gateway (eBPF XDP, MTD, Kernel Sysctl)"]
-    L4["Tier 4: Host Memory, EDR Anti-Evasion & LSASS Dumping Guard (ETW-TI, ObRegisterCallbacks)"]
-    L3["Tier 3: Static Binary Heuristics & PE Disassembly (Shannon Entropy, IAT Graph)"]
-    L2["Tier 2: Deep Packet Inspection & Multi-Protocol Network Mesh (DPI Magic-Bytes, NetFlow)"]
-    L1["Tier 1: Core Cryptographic & Zero-Trust Foundation (Double Ratchet, PQ Kyber, ZK-SNARK)"]
+sequenceDiagram
+    autonumber
+    participant Client as Web Client Browser
+    participant Sentinel as ferrox-sentinel Interceptor
+    participant App as Ferrox Application Handler
 
-    L7 --> L6
-    L6 --> L5
-    L5 --> L4
-    L4 --> L3
-    L3 --> L2
-    L2 --> L1
+    Client->>Sentinel: HTTP POST /api/v1/data (Header Origin: "https://example.com")
+    Sentinel->>Sentinel: Verify Origin against CORS Regex Whitelist
+    Sentinel->>Sentinel: Inspect Content-Length (Payload < Max Limit?)
+    alt Origin Valid & Payload Size OK
+        Sentinel->>App: Forward Request to Application Handler
+        App-->>Sentinel: Return HTTP Response Data
+        Sentinel->>Sentinel: Inject Helmet Security Headers (CSP, HSTS)
+        Sentinel-->>Client: Deliver Hardened Response Payload
+    else Origin Invalid or Payload Exceeds Max Limit
+        Sentinel-->>Client: 403 Forbidden / 413 Payload Too Large
+    end
 ```
 
 ---
 
-## 📖 Key Additions in v0.6.0: Kernel-Rooted VPS Protection & Kali Red-Team
+## 4. Why It Was Designed This Way
 
-| Module | Literature Source | Technical Description |
-|---|---|---|
-| `seccomp_landlock_sandbox.rs` | *Linux Kernel LSM & BPF Docs* | **Seccomp BPF & Landlock LSM Sandbox**: Restricts syscall execution space (blocking `execve`, `ptrace`, `kexec_load`) and isolates process filesystem boundaries against 0-day RCE exploits. |
-| `kernel_sysctl_hardener.rs` | *Linux OS Hardening Standards* | **Linux Kernel Sysctl Hardening**: Generates `/etc/sysctl.d/99-ferrox-kernel-hardening.conf` enforcing `tcp_syncookies`, `kptr_restrict = 2`, `yama.ptrace_scope = 3`, and `rp_filter = 1` against local privilege escalation and spoofing. |
-| `kali_audit_runner.rs` | *OWASP WSTG & Kali Offensive Suite* | **Containerized Kali Red-Team Runner**: Orchestrates automated penetration tests (Nmap, Gobuster, SQLmap, Commix, Hydra) directly against Ferrox instances. |
+| Feature | Manual Server Header Config | ferrox-sentinel Edge Shield |
+| :--- | :--- | :--- |
+| **Consistency** | Web headers omitted when running apps in local Docker pods. | Framework-level guarantee. Headers injected in all environments. |
+| **DoS Protection** | Large 100MB payload buffered in RAM before throwing error. | Sentinel bounces oversized streams at the transport socket level. |
+| **CORS Security** | Wildcard `Access-Control-Allow-Origin: *` with credentials bug. | Strict origin regex validation supporting credentialed CORS. |
 
 ---
 
-## ⚡ Quick Start & Usage
+## 5. Practical Usage Guide & Extended Code Examples
 
-Add `ferrox-sentinel` to your `Cargo.toml`:
-
-```toml
-[dependencies]
-ferrox-sentinel = "0.6.0"
-```
-
-### Generating Linux Kernel Hardening Sysctl Profile
+### 5.1 Configuring Sentinel Middleware in Rust
 
 ```rust
-use ferrox_sentinel::algorithms::kernel_sysctl_hardener::KernelSysctlHardenerEngine;
+use ferrox_sentinel::{SentinelEngine, SentinelOptions, CspDirective};
 
-fn main() {
-    let profile = KernelSysctlHardenerEngine::generate_sysctl_profile();
-    println!("Generated /etc/sysctl.d/99-ferrox-kernel-hardening.conf:\n");
-    println!("{}", profile.generated_sysctl_conf);
-}
-```
-
-### Generating Seccomp BPF Syscall Filter
-
-```rust
-use ferrox_sentinel::algorithms::seccomp_landlock_sandbox::SeccompLandlockSandboxEngine;
-
-fn main() {
-    let seccomp_profile = SeccompLandlockSandboxEngine::generate_seccomp_profile();
-    println!("Default Action: {}", seccomp_profile.default_action);
-    println!("Blocked Syscalls: {:?}", seccomp_profile.blocked_syscalls);
+pub fn configure_security_shield() -> SentinelEngine {
+    SentinelEngine::new(SentinelOptions {
+        enable_hsts: true,
+        hsts_max_age_seconds: 31536000, // 1 Year
+        frame_options: "DENY".to_string(),
+        max_body_bytes: 2 * 1024 * 1024, // 2MB Max Payload
+        cors_allowed_origins: vec![
+            r"^https://.*\.mycompany\.com$".to_string(),
+            r"^https://mycompany\.com$".to_string(),
+        ],
+        csp_directives: vec![
+            CspDirective::default_src(vec!["'self'"]),
+            CspDirective::script_src(vec!["'self'", "'wasm-unsafe-eval'"]),
+            CspDirective::style_src(vec!["'self'", "'unsafe-inline'"]),
+        ],
+    })
 }
 ```
 
 ---
 
-## 🛠️ Benchmark & Red-Team Verification
+## 6. Anti-Patterns: How NOT to Use It
 
-All innovations and kernel hardening policies are continuously tested and validated using `ferrox-selftest`:
+> [!CAUTION]
+> **Anti-Pattern 1: Permissive Content Security Policy**
+> Avoid setting `script-src: '*'` or `default-src: '*'` in production CSP rules. Permissive CSP directives defeat XSS protection shields.
 
-```bash
-cargo test -p ferrox-sentinel -p ferrox-selftest
-```
+---
+
+## 7. Pro-Tips & Best Practices
+
+> [!TIP]
+> **Pro-Tip 1: CSP Report-Only Mode**
+> Use `csp_report_only: true` during initial production deployments to collect CSP violation reports without blocking legitimate web application assets.

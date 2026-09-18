@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/errors",
+  "title": "@node-yalc/errors",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/node-yalc/docs/packages/errors.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/errors",
+  "permalink": "/docs/node-yalc/docs/packages/errors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/errors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "errors",
+    "title": "@node-yalc/errors",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Extended Type Definitions, Mixins & Meta-Type Extensions",
+    "permalink": "/docs/node-yalc/docs/packages/types-extends"
+  },
+  "next": {
+    "title": "@node-yalc/utils",
+    "permalink": "/docs/node-yalc/docs/packages/utils"
+  }
+}

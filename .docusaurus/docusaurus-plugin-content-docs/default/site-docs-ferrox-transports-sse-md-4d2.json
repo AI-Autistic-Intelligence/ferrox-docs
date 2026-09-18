@@ -1,7 +1,7 @@
 {
   "id": "ferrox/transports/sse",
-  "title": "📡 Server-Sent Events (SSE)",
-  "description": "For real-time, unidirectional server-to-client data streaming (such as live stock price ticks, progress bars, or AI text streaming responses like ChatGPT), Server-Sent Events (SSE) provide a lightweight HTTP-native protocol.",
+  "title": "Server-Sent Events (SSE), Event Streams & Real-Time Broadcasting",
+  "description": "The ferrox-sse crate provides real-time Server-Sent Events (SSE) streaming for Rust web applications. It features Tokio broadcast channels, client connection heartbeats, event ID reconnect resumes, and low-latency HTTP/2 event streaming.",
   "source": "@site/docs/ferrox/transports/sse.md",
   "sourceDirName": "ferrox/transports",
   "slug": "/ferrox/transports/sse",
@@ -11,9 +11,11 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/transports/sse.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 4,
   "frontMatter": {
-    "sidebar_position": 3
+    "id": "sse",
+    "title": "Server-Sent Events (SSE), Event Streams & Real-Time Broadcasting",
+    "sidebar_position": 4
   },
   "sidebar": "tutorialSidebar",
   "previous": {
@@ -21,7 +23,7 @@
     "permalink": "/docs/ferrox/transports/graphql-advanced"
   },
   "next": {
-    "title": "📁 File Upload & Storage Abstractions",
+    "title": "Cloud File Storage, S3 Streams & Presigned URLs",
     "permalink": "/docs/ferrox/transports/file-storage"
   }
 }

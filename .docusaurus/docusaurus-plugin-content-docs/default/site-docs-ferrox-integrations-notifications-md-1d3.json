@@ -1,7 +1,7 @@
 {
   "id": "ferrox/integrations/notifications",
-  "title": "🔔 Notifications & Slack Integration",
-  "description": "Real-time developer notifications and DevOps alert dispatching (for server outages, critical errors, or high-value purchase events) require webhook integration with team chat tools.",
+  "title": "Multi-Channel Notifications (Push, SMS, Slack, WebSockets)",
+  "description": "The notifications module delivers multi-channel notification dispatching across APNs (Apple Push Notification service), FCM (Firebase Cloud Messaging), Twilio SMS, Slack Webhooks, Discord Webhooks, and WebSockets in Rust microservices.",
   "source": "@site/docs/ferrox/integrations/notifications.md",
   "sourceDirName": "ferrox/integrations",
   "slug": "/ferrox/integrations/notifications",
@@ -13,15 +13,17 @@
   "version": "current",
   "sidebarPosition": 3,
   "frontMatter": {
+    "id": "notifications",
+    "title": "Multi-Channel Notifications (Push, SMS, Slack, WebSockets)",
     "sidebar_position": 3
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "💳 Payment Gateways (Stripe & Google Pay)",
+    "title": "Payment Gateway Integrations (Stripe, PayPal, Adyen) & Subscriptions",
     "permalink": "/docs/ferrox/integrations/payments"
   },
   "next": {
-    "title": "🚩 Feature Flags & Toggles",
+    "title": "Feature Flags, Dynamic Toggles & Unleash / LaunchDarkly",
     "permalink": "/docs/ferrox/integrations/feature-flags"
   }
 }

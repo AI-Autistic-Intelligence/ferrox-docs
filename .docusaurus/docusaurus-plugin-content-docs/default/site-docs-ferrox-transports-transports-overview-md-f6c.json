@@ -1,7 +1,7 @@
 {
   "id": "ferrox/transports/transports-overview",
-  "title": "🌐 Multi-Transport Application System",
-  "description": "Most traditional web frameworks only support HTTP REST servers out of the box. Enterprise backend applications, however, often need to run multiple server protocols simultaneously—for example, an HTTP REST API server on port 3000, a gRPC microservice server on port 50051, and an FTP or WebSocket file server.",
+  "title": "Multi-Protocol Transports Architecture Overview",
+  "description": "The ferrox-transports crate delivers a multi-protocol transport engine for Rust applications. It abstracts HTTP/1.1, HTTP/2, WebSockets, gRPC (tonic), Server-Sent Events (SSE), and Apache Kafka messaging into a single transport-agnostic pipeline.",
   "source": "@site/docs/ferrox/transports/transports-overview.md",
   "sourceDirName": "ferrox/transports",
   "slug": "/ferrox/transports/transports-overview",
@@ -13,12 +13,14 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
+    "id": "transports-overview",
+    "title": "Multi-Protocol Transports Architecture Overview",
     "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
-    "permalink": "/docs/ferrox/security/ferrox-selftest"
+    "title": "Distributed Locks, Redlock Algorithm & Synchronization",
+    "permalink": "/docs/ferrox/security/distributed-locks"
   },
   "next": {
     "title": "🕸️ GraphQL API Integration",

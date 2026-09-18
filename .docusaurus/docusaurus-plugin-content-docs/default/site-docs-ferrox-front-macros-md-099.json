@@ -1,7 +1,7 @@
 {
   "id": "ferrox-front/macros",
-  "title": "Procedural RSX Macro (ferrox-front-macro)",
-  "description": "ferrox-front-macro provides the rsx! procedural macro, enabling JSX/HTML-like component syntax directly inside Rust code.",
+  "title": "Procedural Macros, Component Annotations & Code Generation",
+  "description": "The ferrox-front-macro crate provides Rust procedural macros (#[component], view!, derive(Store)) that transform declarative UI components and reactive state structs into optimized WebAssembly execution code.",
   "source": "@site/docs/ferrox-front/macros.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/macros",
@@ -14,16 +14,16 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "id": "macros",
-    "title": "Procedural RSX Macro (ferrox-front-macro)",
+    "title": "Procedural Macros, Component Annotations & Code Generation",
     "sidebar_position": 3
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Architecture Deep Dive",
-    "permalink": "/docs/ferrox-front/architecture"
+    "title": "Fine-Grained Reactive Primitives (Signals, Memos & Effects)",
+    "permalink": "/docs/ferrox-front/reactivity"
   },
   "next": {
-    "title": "Reactivity & Signals API",
-    "permalink": "/docs/ferrox-front/reactivity"
+    "title": "Client-Side Router, Route Guards & Lazy Loading",
+    "permalink": "/docs/ferrox-front/routing"
   }
 }

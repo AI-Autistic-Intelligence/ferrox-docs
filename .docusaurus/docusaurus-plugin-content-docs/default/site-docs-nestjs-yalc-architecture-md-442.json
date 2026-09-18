@@ -23,7 +23,7 @@
     "permalink": "/docs/nestjs-yalc/overview"
   },
   "next": {
-    "title": "Logger",
-    "permalink": "/docs/nestjs-yalc/modules/logger"
+    "title": "Introduction & Ecosystem Architecture",
+    "permalink": "/docs/nestjs-yalc/docs/intro"
   }
 }

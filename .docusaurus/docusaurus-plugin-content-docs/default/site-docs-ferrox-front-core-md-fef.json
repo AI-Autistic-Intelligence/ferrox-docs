@@ -1,7 +1,7 @@
 {
   "id": "ferrox-front/core",
-  "title": "Ferrox Front Core Engine (ferrox-front-core)",
-  "description": "ferrox-front-core is the foundational engine of Ferrox Front. It houses the fine-grained Signals Reactivity Graph, the zero-copy Wasm DOM Builder, and the Glassmorphism Theme System.",
+  "title": "Core Kernel, Context Providers & Resource Managers",
+  "description": "The ferrox-front-core crate is the foundation kernel of the Ferrox WebAssembly frontend framework. It manages component context providers (providecontext, usecontext), async resource loaders (create_resource), effect batch schedulers, and browser lifecycle event hooks.",
   "source": "@site/docs/ferrox-front/core.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/core",
@@ -14,7 +14,7 @@
   "sidebarPosition": 2,
   "frontMatter": {
     "id": "core",
-    "title": "Ferrox Front Core Engine (ferrox-front-core)",
+    "title": "Core Kernel, Context Providers & Resource Managers",
     "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",

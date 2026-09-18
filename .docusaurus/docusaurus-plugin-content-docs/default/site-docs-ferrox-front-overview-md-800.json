@@ -19,11 +19,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Introduction to Ferrox Front",
+    "title": "Introduction & Ferrox-Front Architecture",
     "permalink": "/docs/ferrox-front/intro"
   },
   "next": {
-    "title": "Ferrox Front Core Engine (ferrox-front-core)",
+    "title": "Core Kernel, Context Providers & Resource Managers",
     "permalink": "/docs/ferrox-front/core"
   }
 }

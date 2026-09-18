@@ -19,11 +19,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Reactivity & Signals API",
-    "permalink": "/docs/ferrox-front/reactivity"
+    "title": "Virtual DOM Templates, JSX Engine & HTML Macros",
+    "permalink": "/docs/ferrox-front/templates"
   },
   "next": {
-    "title": "SPA Routing & Micro-Frontends",
-    "permalink": "/docs/ferrox-front/routing"
+    "title": "Component Library & Interactive Playground",
+    "permalink": "/docs/ferrox-front/components"
   }
 }

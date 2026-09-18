@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/resilience",
+  "title": "Circuit Breaker, Singleflight & Resilience Patterns",
+  "description": "The @ferrox/node resilience component delivers fault-tolerance mechanisms for Node.js microservices: Circuit Breakers (Closed, Open, HalfOpen), Singleflight Request Deduplication, Exponential Backoff Retries, and Rate-Limiting Bouncers.",
+  "source": "@site/docs/ferrox-node/docs/components/resilience.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/resilience",
+  "permalink": "/docs/ferrox-node/docs/components/resilience",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/resilience.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "id": "resilience",
+    "title": "Circuit Breaker, Singleflight & Resilience Patterns",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Core Framework Interfaces & DTO Signatures",
+    "permalink": "/docs/ferrox-node/docs/components/interfaces"
+  },
+  "next": {
+    "title": "Internationalization (I18n)",
+    "permalink": "/docs/ferrox-node/docs/components/i18n"
+  }
+}

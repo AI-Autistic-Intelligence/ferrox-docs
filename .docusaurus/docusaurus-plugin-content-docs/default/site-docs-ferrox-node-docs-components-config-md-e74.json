@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/config",
+  "title": "Dynamic Configuration Engine & Validation Schemas",
+  "description": "The @ferrox/node config module provides environment variable parsing, YAML / JSON configuration file loading, runtime schema validation (via Zod / Joi), secrets manager integration (AWS Secrets Manager / Vault), and hot-reloading settings managers.",
+  "source": "@site/docs/ferrox-node/docs/components/config.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/config",
+  "permalink": "/docs/ferrox-node/docs/components/config",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/config.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "config",
+    "title": "Dynamic Configuration Engine & Validation Schemas",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Native DI Container & App Lifecycle",
+    "permalink": "/docs/ferrox-node/docs/components/core"
+  },
+  "next": {
+    "title": "Sentinel AI Security & Entropy Engine",
+    "permalink": "/docs/ferrox-node/docs/components/security"
+  }
+}

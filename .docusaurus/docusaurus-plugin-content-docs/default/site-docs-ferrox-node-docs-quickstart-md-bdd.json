@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/quickstart",
+  "title": "Quickstart Guide & Service Bootstrap",
+  "description": "This step-by-step guide demonstrates how to install @ferrox/node and bootstrap a resilient microservice with authentication guards, dynamic configuration validation, singleflight request deduplication, and OpenTelemetry tracing.",
+  "source": "@site/docs/ferrox-node/docs/quickstart.md",
+  "sourceDirName": "ferrox-node/docs",
+  "slug": "/ferrox-node/docs/quickstart",
+  "permalink": "/docs/ferrox-node/docs/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "quickstart",
+    "title": "Quickstart Guide & Service Bootstrap",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction & Ferrox-Node Framework Architecture",
+    "permalink": "/docs/ferrox-node/docs/intro"
+  },
+  "next": {
+    "title": "Authentication (PASETO v4 & TOTP 2FA)",
+    "permalink": "/docs/ferrox-node/docs/components/auth"
+  }
+}

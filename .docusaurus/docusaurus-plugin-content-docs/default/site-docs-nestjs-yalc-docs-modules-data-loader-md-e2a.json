@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/data-loader",
+  "title": "@nest-yalc-2/data-loader",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/nestjs-yalc/docs/modules/data-loader.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/data-loader",
+  "permalink": "/docs/nestjs-yalc/docs/modules/data-loader",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/data-loader.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "data-loader",
+    "title": "@nest-yalc-2/data-loader",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/crud-gen",
+    "permalink": "/docs/nestjs-yalc/docs/modules/crud-gen"
+  },
+  "next": {
+    "title": "@nest-yalc-2/database",
+    "permalink": "/docs/nestjs-yalc/docs/modules/database"
+  }
+}

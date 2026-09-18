@@ -1,7 +1,7 @@
 {
   "id": "ferrox/performance/benchmarks",
-  "title": "⚡ High-Throughput Benchmarks & Tuning",
-  "description": "Ferrox is designed to process 100,000+ HTTP requests per second per node with sub-millisecond latencies.",
+  "title": "Micro-Benchmarks, Criterion Suites & Comparative Metrics",
+  "description": "The benchmarks performance module provides automated micro-benchmarking suites (via Criterion.rs), latency comparison metrics against standard Rust and Node.js frameworks, and throughput regression testing tools.",
   "source": "@site/docs/ferrox/performance/benchmarks.md",
   "sourceDirName": "ferrox/performance",
   "slug": "/ferrox/performance/benchmarks",
@@ -13,6 +13,8 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
+    "id": "benchmarks",
+    "title": "Micro-Benchmarks, Criterion Suites & Comparative Metrics",
     "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
@@ -21,7 +23,7 @@
     "permalink": "/docs/ferrox/overview/lifecycle"
   },
   "next": {
-    "title": "🔬 CPU & Memory Profiling (Flamegraphs)",
+    "title": "CPU Profiling, Memory Leak Detection & Flamegraphs",
     "permalink": "/docs/ferrox/performance/profiling"
   }
 }

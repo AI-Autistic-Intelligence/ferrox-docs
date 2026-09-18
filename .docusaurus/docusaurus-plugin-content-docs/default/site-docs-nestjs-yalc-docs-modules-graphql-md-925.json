@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/graphql",
+  "title": "@nest-yalc-2/graphql",
+  "description": "@nest-yalc-2/graphql provides dynamic GraphQL server configuration for NestJS 11+, supporting both Apollo Server and Fastify Mercurius, Apollo Federation v2 schema stitching, custom scalar registration, and field-level execution guardrails.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/graphql.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/graphql",
+  "permalink": "/docs/nestjs-yalc/docs/modules/graphql",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/graphql.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "id": "graphql",
+    "title": "@nest-yalc-2/graphql",
+    "sidebar_position": 13
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "GraphQL Field Middleware & Dynamic Property Transformers",
+    "permalink": "/docs/nestjs-yalc/docs/modules/field-middleware"
+  },
+  "next": {
+    "title": "@nest-yalc-2/jest",
+    "permalink": "/docs/nestjs-yalc/docs/modules/jest"
+  }
+}

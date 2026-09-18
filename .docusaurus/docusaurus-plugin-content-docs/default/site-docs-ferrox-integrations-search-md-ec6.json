@@ -1,0 +1,29 @@
+{
+  "id": "ferrox/integrations/search",
+  "title": "Full-Text Search, Vector Indexing & Meilisearch Adapters",
+  "description": "The ferrox-search crate delivers high-performance full-text search indexing, vector embedding search integration (OpenAI / Qdrant), and asynchronous index synchronization over Meilisearch and Elasticsearch clusters for Rust microservices.",
+  "source": "@site/docs/ferrox/integrations/search.md",
+  "sourceDirName": "ferrox/integrations",
+  "slug": "/ferrox/integrations/search",
+  "permalink": "/docs/ferrox/integrations/search",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/integrations/search.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "search",
+    "title": "Full-Text Search, Vector Indexing & Meilisearch Adapters",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Internationalization (i18n), Localized Formatting & Translation Catalogs",
+    "permalink": "/docs/ferrox/integrations/i18n"
+  },
+  "next": {
+    "title": "📊 Structured Logging & Sentry Integration",
+    "permalink": "/docs/ferrox/observability/logging"
+  }
+}

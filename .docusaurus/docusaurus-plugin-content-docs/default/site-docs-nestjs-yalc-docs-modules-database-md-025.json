@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/database",
+  "title": "@nest-yalc-2/database",
+  "description": "@nest-yalc-2/database is the enterprise persistence infrastructure module for NestJS 11+. It provides dynamic multi-database connection management, transactional repository runners, automated database migrations, and entity seeding helpers powered by TypeORM and @node-yalc.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/database.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/database",
+  "permalink": "/docs/nestjs-yalc/docs/modules/database",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/database.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "database",
+    "title": "@nest-yalc-2/database",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/data-loader",
+    "permalink": "/docs/nestjs-yalc/docs/modules/data-loader"
+  },
+  "next": {
+    "title": "@nest-yalc-2/logger",
+    "permalink": "/docs/nestjs-yalc/docs/modules/logger"
+  }
+}

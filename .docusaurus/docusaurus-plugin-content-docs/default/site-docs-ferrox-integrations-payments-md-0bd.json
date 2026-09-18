@@ -1,7 +1,7 @@
 {
   "id": "ferrox/integrations/payments",
-  "title": "💳 Payment Gateways (Stripe & Google Pay)",
-  "description": "Integrating e-commerce payments requires secure checkout session handling and cryptographic signature verification of incoming payment webhooks.",
+  "title": "Payment Gateway Integrations (Stripe, PayPal, Adyen) & Subscriptions",
+  "description": "The payments module provides unified payment processing, recurring subscription billing lifecycle management, webhook signature verification, and multi-provider adapters for Stripe, PayPal, and Adyen in Rust microservices.",
   "source": "@site/docs/ferrox/integrations/payments.md",
   "sourceDirName": "ferrox/integrations",
   "slug": "/ferrox/integrations/payments",
@@ -13,15 +13,17 @@
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
+    "id": "payments",
+    "title": "Payment Gateway Integrations (Stripe, PayPal, Adyen) & Subscriptions",
     "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "📧 Email Dispatching (Mailer)",
+    "title": "Mailer Engine, HTML Email Templates & SMTP / SendGrid",
     "permalink": "/docs/ferrox/integrations/mailer"
   },
   "next": {
-    "title": "🔔 Notifications & Slack Integration",
+    "title": "Multi-Channel Notifications (Push, SMS, Slack, WebSockets)",
     "permalink": "/docs/ferrox/integrations/notifications"
   }
 }

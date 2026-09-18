@@ -1,7 +1,7 @@
 {
   "id": "ferrox-front/security",
-  "title": "Zero-Trust Security & E2EE",
-  "description": "In Ferrox Front, security is enforced directly inside WebAssembly bytecode, isolating application memory from browser-based script attacks. The ferrox-front-security crate provides a complete suite of Zero-Trust mechanisms: from memory anti-tampering to biometric passkeys.",
+  "title": "Zero-Trust Wasm Security, WebCrypto & XSS Sanitization",
+  "description": "The ferrox-front-security crate delivers zero-trust security for Rust WebAssembly applications. It features browser WebCrypto API bindings (AES-256-GCM, RSA-OAEP, ECDSA), zero-copy linear memory wiping (Zeroize), secure storage adapters, and HTML XSS sanitizers.",
   "source": "@site/docs/ferrox-front/security.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/security",
@@ -11,11 +11,11 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/security.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 8,
+  "sidebarPosition": 6,
   "frontMatter": {
     "id": "security",
-    "title": "Zero-Trust Security & E2EE",
-    "sidebar_position": 8
+    "title": "Zero-Trust Wasm Security, WebCrypto & XSS Sanitization",
+    "sidebar_position": 6
   },
   "sidebar": "tutorialSidebar",
   "previous": {
@@ -23,7 +23,7 @@
     "permalink": "/docs/ferrox-front/components"
   },
   "next": {
-    "title": "SaaS Page Templates",
-    "permalink": "/docs/ferrox-front/templates"
+    "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
+    "permalink": "/docs/ferrox-front/ws"
   }
 }

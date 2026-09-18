@@ -1,7 +1,7 @@
 {
   "id": "ferrox/overview/introduction",
-  "title": "🚀 Introduction",
-  "description": "Welcome to Ferrox (v0.5.0), a progressive Rust framework for building efficient, reliable, enterprise-grade server-side applications.",
+  "title": "Introduction & Ferrox Crate Architecture",
+  "description": "Welcome to Ferrox, the enterprise-grade Rust web framework designed for building ultra-resilient microservices, multi-protocol API gateways, high-frequency real-time applications, and WebAssembly frontend clients.",
   "source": "@site/docs/ferrox/overview/introduction.md",
   "sourceDirName": "ferrox/overview",
   "slug": "/ferrox/overview/introduction",
@@ -13,6 +13,8 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
+    "id": "introduction",
+    "title": "Introduction & Ferrox Crate Architecture",
     "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",

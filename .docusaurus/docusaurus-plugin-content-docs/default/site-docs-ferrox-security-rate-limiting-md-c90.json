@@ -1,7 +1,7 @@
 {
   "id": "ferrox/security/rate-limiting",
-  "title": "🛡️ Rate Limiting & Throttling",
-  "description": "To protect APIs from abuse, credential stuffing attacks, and Denial of Service (DoS), Ferrox provides ferrox-rate-limiter—a Redis-backed rate limiting engine implementing atomic fixed-window and token-bucket algorithms.",
+  "title": "Rate Limiting Engine, Leaky Bucket & Sliding Window Log",
+  "description": "The rate-limiting security module delivers distributed rate-limiting and traffic shaping for Rust web applications (ferrox-rate-limiter). It features Sliding Window Log, Token Bucket, and Leaky Bucket algorithms backed by atomic Redis operations.",
   "source": "@site/docs/ferrox/security/rate-limiting.md",
   "sourceDirName": "ferrox/security",
   "slug": "/ferrox/security/rate-limiting",
@@ -11,17 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/rate-limiting.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
+  "sidebarPosition": 5,
   "frontMatter": {
-    "sidebar_position": 2
+    "id": "rate-limiting",
+    "title": "Rate Limiting Engine, Leaky Bucket & Sliding Window Log",
+    "sidebar_position": 5
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🔑 Advanced Security: Dual Tokens & PublicId Obfuscation",
-    "permalink": "/docs/ferrox/security/advanced-auth"
+    "title": "JWT Authentication Engine, RSA/Ed25519 Signing & Revocation",
+    "permalink": "/docs/ferrox/security/jwt"
   },
   "next": {
-    "title": "⚡ Circuit Breakers & Fault Tolerance",
+    "title": "Circuit Breaker State Machine & Microservice Resilience",
     "permalink": "/docs/ferrox/security/circuit-breaker"
   }
 }

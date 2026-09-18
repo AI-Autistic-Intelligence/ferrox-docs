@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/kafka",
+  "title": "@nest-yalc-2/kafka",
+  "description": "@nest-yalc-2/kafka provides production-grade event streaming for NestJS 11+. It wraps KafkaJS and @kafkajs/confluent-schema-registry, enabling strongly-typed, schema-validated message producing and consuming across distributed microservices.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/kafka.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/kafka",
+  "permalink": "/docs/nestjs-yalc/docs/modules/kafka",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/kafka.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "kafka",
+    "title": "@nest-yalc-2/kafka",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/sentinel",
+    "permalink": "/docs/nestjs-yalc/docs/modules/sentinel"
+  },
+  "next": {
+    "title": "@nest-yalc-2/audit",
+    "permalink": "/docs/nestjs-yalc/docs/modules/audit"
+  }
+}

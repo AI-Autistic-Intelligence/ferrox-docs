@@ -1,7 +1,7 @@
 {
   "id": "ferrox/security/singleflight",
-  "title": "🚀 Singleflight: Cache Stampede Protection",
-  "description": "When a high-traffic cache key expires (e.g. homepage top products or hot news stories), hundreds or thousands of concurrent incoming HTTP requests simultaneously miss the cache and hit the primary database.",
+  "title": "Singleflight Request Deduplication & Cache Stampede Shield",
+  "description": "The singleflight security module delivers lock-free, concurrent request deduplication for Rust microservices (ferrox-singleflight). It prevents thundering herd cache stampedes by executing concurrent duplicate work items exactly once.",
   "source": "@site/docs/ferrox/security/singleflight.md",
   "sourceDirName": "ferrox/security",
   "slug": "/ferrox/security/singleflight",
@@ -11,17 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/singleflight.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 7,
   "frontMatter": {
-    "sidebar_position": 4
+    "id": "singleflight",
+    "title": "Singleflight Request Deduplication & Cache Stampede Shield",
+    "sidebar_position": 7
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "⚡ Circuit Breakers & Fault Tolerance",
+    "title": "Circuit Breaker State Machine & Microservice Resilience",
     "permalink": "/docs/ferrox/security/circuit-breaker"
   },
   "next": {
-    "title": "🔒 Distributed Synchronization & Locks",
+    "title": "Distributed Locks, Redlock Algorithm & Synchronization",
     "permalink": "/docs/ferrox/security/distributed-locks"
   }
 }

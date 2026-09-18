@@ -1,7 +1,7 @@
 {
   "id": "ferrox/security/circuit-breaker",
-  "title": "⚡ Circuit Breakers & Fault Tolerance",
-  "description": "In distributed microservices, downstream database outages or third-party API latency spikes can exhaust server connection threads, causing cascading failures across your entire infrastructure.",
+  "title": "Circuit Breaker State Machine & Microservice Resilience",
+  "description": "The circuit-breaker security module implements fault tolerance for Rust microservices (ferrox-circuit-breaker). It features a finite state machine (Closed, Open, HalfOpen), failure threshold monitoring, automatic recovery probing, and fallback execution pipelines.",
   "source": "@site/docs/ferrox/security/circuit-breaker.md",
   "sourceDirName": "ferrox/security",
   "slug": "/ferrox/security/circuit-breaker",
@@ -11,17 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/circuit-breaker.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 6,
   "frontMatter": {
-    "sidebar_position": 3
+    "id": "circuit-breaker",
+    "title": "Circuit Breaker State Machine & Microservice Resilience",
+    "sidebar_position": 6
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🛡️ Rate Limiting & Throttling",
+    "title": "Rate Limiting Engine, Leaky Bucket & Sliding Window Log",
     "permalink": "/docs/ferrox/security/rate-limiting"
   },
   "next": {
-    "title": "🚀 Singleflight: Cache Stampede Protection",
+    "title": "Singleflight Request Deduplication & Cache Stampede Shield",
     "permalink": "/docs/ferrox/security/singleflight"
   }
 }

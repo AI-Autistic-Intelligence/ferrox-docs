@@ -21,7 +21,7 @@
     "permalink": "/docs/ferrox/tutorial/building-the-core"
   },
   "next": {
-    "title": "Introduction to Ferrox Front",
-    "permalink": "/docs/ferrox-front/intro"
+    "title": "Core WebAssembly System Architecture",
+    "permalink": "/docs/ferrox-front/architecture"
   }
 }

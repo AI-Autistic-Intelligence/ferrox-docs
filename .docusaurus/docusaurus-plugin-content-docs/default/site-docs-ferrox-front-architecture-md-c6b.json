@@ -1,7 +1,7 @@
 {
   "id": "ferrox-front/architecture",
-  "title": "Architecture Deep Dive",
-  "description": "Ferrox Front is engineered using system design principles and zero-cost abstractions to guarantee peak execution performance inside WebAssembly.",
+  "title": "Core WebAssembly System Architecture",
+  "description": "The ferrox-front architecture is designed around zero-cost abstractions, fine-grained reactive dependency graphs, single-threaded browser thread execution, WebAssembly linear memory layout, and WebGL rendering acceleration.",
   "source": "@site/docs/ferrox-front/architecture.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/architecture",
@@ -11,19 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/architecture.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 1,
   "frontMatter": {
     "id": "architecture",
-    "title": "Architecture Deep Dive",
-    "sidebar_position": 3
+    "title": "Core WebAssembly System Architecture",
+    "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Quickstart Guide",
-    "permalink": "/docs/ferrox-front/quickstart"
+    "title": "🤖 Part 3: The Code Factory",
+    "permalink": "/docs/ferrox/tutorial/code-factory"
   },
   "next": {
-    "title": "Procedural RSX Macro (ferrox-front-macro)",
-    "permalink": "/docs/ferrox-front/macros"
+    "title": "Introduction & Ferrox-Front Architecture",
+    "permalink": "/docs/ferrox-front/intro"
   }
 }

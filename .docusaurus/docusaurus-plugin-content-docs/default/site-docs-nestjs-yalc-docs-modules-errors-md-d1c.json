@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/errors",
+  "title": "@nest-yalc-2/errors",
+  "description": "@nest-yalc-2/errors provides standardized NestJS 11+ Exception Filters mapping @node-yalc/errors to RFC 7807 Problem Details HTTP and GraphQL error responses.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/errors.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/errors",
+  "permalink": "/docs/nestjs-yalc/docs/modules/errors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/errors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "id": "errors",
+    "title": "@nest-yalc-2/errors",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "API Strategy, Multi-Protocol Adapters & Contract Versioning",
+    "permalink": "/docs/nestjs-yalc/docs/modules/api-strategy"
+  },
+  "next": {
+    "title": "In-Memory & Distributed Event Manager",
+    "permalink": "/docs/nestjs-yalc/docs/modules/event-manager"
+  }
+}

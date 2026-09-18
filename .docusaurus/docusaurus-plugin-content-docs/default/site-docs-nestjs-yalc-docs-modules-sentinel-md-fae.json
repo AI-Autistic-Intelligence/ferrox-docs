@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/sentinel",
+  "title": "@nest-yalc-2/sentinel",
+  "description": "@nest-yalc-2/sentinel is the security middleware and policy enforcement module for NestJS 11+. It enforces OWASP recommended HTTP security headers, CORS origin policies, request payload size bounds, and input sanitization across all REST and GraphQL endpoints.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/sentinel.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/sentinel",
+  "permalink": "/docs/nestjs-yalc/docs/modules/sentinel",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/sentinel.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "sentinel",
+    "title": "@nest-yalc-2/sentinel",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/observability",
+    "permalink": "/docs/nestjs-yalc/docs/modules/observability"
+  },
+  "next": {
+    "title": "@nest-yalc-2/kafka",
+    "permalink": "/docs/nestjs-yalc/docs/modules/kafka"
+  }
+}

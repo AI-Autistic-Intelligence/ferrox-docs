@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/quickstart",
+  "title": "Quickstart & First Application Setup",
+  "description": "This step-by-step guide walks you through setting up a complete enterprise NestJS microservice from scratch using the NestJS-YALC monorepo toolkit.",
+  "source": "@site/docs/nestjs-yalc/docs/quickstart.md",
+  "sourceDirName": "nestjs-yalc/docs",
+  "slug": "/nestjs-yalc/docs/quickstart",
+  "permalink": "/docs/nestjs-yalc/docs/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "quickstart",
+    "title": "Quickstart & First Application Setup",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction & Ecosystem Architecture",
+    "permalink": "/docs/nestjs-yalc/docs/intro"
+  },
+  "next": {
+    "title": "AG-Grid Server-Side Integration & Query Transformers",
+    "permalink": "/docs/nestjs-yalc/docs/modules/ag-grid"
+  }
+}

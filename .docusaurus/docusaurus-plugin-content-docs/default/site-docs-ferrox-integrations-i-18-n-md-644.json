@@ -1,7 +1,7 @@
 {
   "id": "ferrox/integrations/i18n",
-  "title": "🌐 Internationalization (i18n)",
-  "description": "Global enterprise applications require serving localized user interface strings and translated error messages based on the client's Accept-Language HTTP header.",
+  "title": "Internationalization (i18n), Localized Formatting & Translation Catalogs",
+  "description": "The ferrox-i18n crate delivers multi-language translation, fallback catalog resolution, pluralization rules, dynamic parameter interpolation, and currency/date formatting for Rust backend APIs and WebAssembly frontend applications.",
   "source": "@site/docs/ferrox/integrations/i18n.md",
   "sourceDirName": "ferrox/integrations",
   "slug": "/ferrox/integrations/i18n",
@@ -13,15 +13,17 @@
   "version": "current",
   "sidebarPosition": 7,
   "frontMatter": {
+    "id": "i18n",
+    "title": "Internationalization (i18n), Localized Formatting & Translation Catalogs",
     "sidebar_position": 7
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "📄 Reports & Cloud Helper Utilities",
+    "title": "PDF Report Generation, Excel Export & Cloud Providers",
     "permalink": "/docs/ferrox/integrations/reports-and-cloud"
   },
   "next": {
-    "title": "📊 Structured Logging & Sentry Integration",
-    "permalink": "/docs/ferrox/observability/logging"
+    "title": "Full-Text Search, Vector Indexing & Meilisearch Adapters",
+    "permalink": "/docs/ferrox/integrations/search"
   }
 }

@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Overview",
-    "permalink": "/docs/ferrox-node/overview"
+    "title": "OpenTelemetry Distributed Tracing & Correlation Identifiers",
+    "permalink": "/docs/ferrox-node/docs/components/tracing"
   },
   "next": {
     "title": "Architecture",

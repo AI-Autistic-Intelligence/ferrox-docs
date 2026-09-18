@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/intro",
+  "title": "Introduction & Ferrox-Node Framework Architecture",
+  "description": "Welcome to Ferrox-Node (@ferrox/node), the high-performance enterprise Node.js framework designed for building ultra-resilient, event-driven microservices, multi-protocol API gateways, and distributed cloud applications.",
+  "source": "@site/docs/ferrox-node/docs/intro.md",
+  "sourceDirName": "ferrox-node/docs",
+  "slug": "/ferrox-node/docs/intro",
+  "permalink": "/docs/ferrox-node/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction & Ferrox-Node Framework Architecture",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/ferrox-node/overview"
+  },
+  "next": {
+    "title": "Quickstart Guide & Service Bootstrap",
+    "permalink": "/docs/ferrox-node/docs/quickstart"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/types",
+  "title": "Type Primitives, Utility Types & Type Guards",
+  "description": "The @node-yalc/types package provides core TypeScript primitive types, advanced conditional utility types (DeepPartial, Nullable, KeysMatching), type guards, and compile-time type validation primitives.",
+  "source": "@site/docs/node-yalc/docs/packages/types.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/types",
+  "permalink": "/docs/node-yalc/docs/packages/types",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/types.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "types",
+    "title": "Type Primitives, Utility Types & Type Guards",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart Guide & Workspace Integration",
+    "permalink": "/docs/node-yalc/docs/quickstart"
+  },
+  "next": {
+    "title": "Core Interfaces, Generic DTO Contracts & Envelopes",
+    "permalink": "/docs/node-yalc/docs/packages/interfaces"
+  }
+}

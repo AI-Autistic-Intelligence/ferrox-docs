@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/storage",
+  "title": "Cloud Storage, S3 Streams & Presigned URLs",
+  "description": "The @ferrox/node storage module provides an abstraction layer over cloud object storage providers (Amazon S3, Google Cloud Storage, Azure Blob Storage, and local filesystem). It supports chunked multipart streaming uploads, presigned URL generation, path traversal sanitization, and automated MIME-type validation.",
+  "source": "@site/docs/ferrox-node/docs/components/storage.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/storage",
+  "permalink": "/docs/ferrox-node/docs/components/storage",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/storage.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "id": "storage",
+    "title": "Cloud Storage, S3 Streams & Presigned URLs",
+    "sidebar_position": 15
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security Self-Test Auditor",
+    "permalink": "/docs/ferrox-node/docs/components/selftest"
+  },
+  "next": {
+    "title": "OpenTelemetry Distributed Tracing & Correlation Identifiers",
+    "permalink": "/docs/ferrox-node/docs/components/tracing"
+  }
+}

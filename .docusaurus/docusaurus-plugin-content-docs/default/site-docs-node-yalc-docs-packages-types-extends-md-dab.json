@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/types-extends",
+  "title": "Extended Type Definitions, Mixins & Meta-Type Extensions",
+  "description": "The @node-yalc/types-extends package provides module augmentation, third-party global type extensions (for Express Request, Fastify FastifyRequest, TypeORM SelectQueryBuilder, and Pino Logger), and class mixin helpers for TypeScript applications.",
+  "source": "@site/docs/node-yalc/docs/packages/types-extends.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/types-extends",
+  "permalink": "/docs/node-yalc/docs/packages/types-extends",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/types-extends.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "types-extends",
+    "title": "Extended Type Definitions, Mixins & Meta-Type Extensions",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@node-yalc/logger",
+    "permalink": "/docs/node-yalc/docs/packages/logger"
+  },
+  "next": {
+    "title": "@node-yalc/errors",
+    "permalink": "/docs/node-yalc/docs/packages/errors"
+  }
+}

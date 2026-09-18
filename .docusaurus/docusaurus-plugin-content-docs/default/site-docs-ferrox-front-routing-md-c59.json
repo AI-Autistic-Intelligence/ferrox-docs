@@ -1,7 +1,7 @@
 {
   "id": "ferrox-front/routing",
-  "title": "SPA Routing & Micro-Frontends",
-  "description": "ferrox-front-router provides client-side SPA routing backed by the browser History API without page reloads.",
+  "title": "Client-Side Router, Route Guards & Lazy Loading",
+  "description": "The ferrox-front-router crate delivers client-side SPA navigation for WebAssembly apps. It features HTML5 History API integration, route path parameter matching, nested layout outlets, route protection guards, and code-split WebAssembly module lazy loading.",
   "source": "@site/docs/ferrox-front/routing.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/routing",
@@ -11,19 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/routing.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 4,
   "frontMatter": {
     "id": "routing",
-    "title": "SPA Routing & Micro-Frontends",
-    "sidebar_position": 5
+    "title": "Client-Side Router, Route Guards & Lazy Loading",
+    "sidebar_position": 4
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Glassmorphism Design System (ferrox-front-ui)",
-    "permalink": "/docs/ferrox-front/ui-components"
+    "title": "Procedural Macros, Component Annotations & Code Generation",
+    "permalink": "/docs/ferrox-front/macros"
   },
   "next": {
-    "title": "Component Library & Interactive Playground",
-    "permalink": "/docs/ferrox-front/components"
+    "title": "Virtual DOM Templates, JSX Engine & HTML Macros",
+    "permalink": "/docs/ferrox-front/templates"
   }
 }

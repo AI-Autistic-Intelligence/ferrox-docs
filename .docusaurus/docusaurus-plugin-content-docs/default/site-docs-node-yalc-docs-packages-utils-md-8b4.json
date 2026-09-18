@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/utils",
+  "title": "@node-yalc/utils",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/node-yalc/docs/packages/utils.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/utils",
+  "permalink": "/docs/node-yalc/docs/packages/utils",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/utils.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "utils",
+    "title": "@node-yalc/utils",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@node-yalc/errors",
+    "permalink": "/docs/node-yalc/docs/packages/errors"
+  },
+  "next": {
+    "title": "@node-yalc/event-manager",
+    "permalink": "/docs/node-yalc/docs/packages/event-manager"
+  }
+}

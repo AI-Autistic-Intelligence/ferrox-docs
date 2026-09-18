@@ -1,7 +1,7 @@
 {
   "id": "ferrox/security/jwt",
-  "title": "🔒 Zero-Trust & Dual JWT",
-  "description": "Ferrox adopts a Zero-Trust security posture by default. This means that every single HTTP request, even internal ones coming from other microservices, is treated as hostile until proven valid.",
+  "title": "JWT Authentication Engine, RSA/Ed25519 Signing & Revocation",
+  "description": "The jwt security module provides JSON Web Token (JWT) issuing, RSA-256 / Ed25519 cryptographic verification, automated key rotation, refresh token rotation with reuse detection, and distributed token blacklisting in Rust.",
   "source": "@site/docs/ferrox/security/jwt.md",
   "sourceDirName": "ferrox/security",
   "slug": "/ferrox/security/jwt",
@@ -11,17 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/jwt.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 1,
+  "sidebarPosition": 3,
   "frontMatter": {
-    "sidebar_position": 1
+    "id": "jwt",
+    "title": "JWT Authentication Engine, RSA/Ed25519 Signing & Revocation",
+    "sidebar_position": 3
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🔬 CPU & Memory Profiling (Flamegraphs)",
-    "permalink": "/docs/ferrox/performance/profiling"
+    "title": "Self-Test Security Suite, OWASP Scans & Latency Runner",
+    "permalink": "/docs/ferrox/security/ferrox-selftest"
   },
   "next": {
-    "title": "🔑 Advanced Security: Dual Tokens & PublicId Obfuscation",
-    "permalink": "/docs/ferrox/security/advanced-auth"
+    "title": "Rate Limiting Engine, Leaky Bucket & Sliding Window Log",
+    "permalink": "/docs/ferrox/security/rate-limiting"
   }
 }

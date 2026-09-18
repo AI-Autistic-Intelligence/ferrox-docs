@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/event-manager",
+  "title": "@node-yalc/event-manager",
+  "description": "@node-yalc/event-manager provides a strongly-typed in-memory and distributed event bus for TypeScript applications. It allows domain components to publish and subscribe to domain events without direct coupling.",
+  "source": "@site/docs/node-yalc/docs/packages/event-manager.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/event-manager",
+  "permalink": "/docs/node-yalc/docs/packages/event-manager",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/event-manager.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "event-manager",
+    "title": "@node-yalc/event-manager",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@node-yalc/utils",
+    "permalink": "/docs/node-yalc/docs/packages/utils"
+  },
+  "next": {
+    "title": "@node-yalc/aws-helpers",
+    "permalink": "/docs/node-yalc/docs/packages/aws-helpers"
+  }
+}

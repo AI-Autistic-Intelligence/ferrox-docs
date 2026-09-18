@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Architecture",
-    "permalink": "/docs/nestjs-yalc/architecture"
+    "title": "Core Utilities, Helpers & Object Manipulation",
+    "permalink": "/docs/nestjs-yalc/docs/modules/utils"
   },
   "next": {
     "title": "CRUD Generator",

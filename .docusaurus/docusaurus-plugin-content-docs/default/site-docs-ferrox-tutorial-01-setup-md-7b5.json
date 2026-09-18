@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "📊 Enterprise DataGrid Query Translators",
-    "permalink": "/docs/ferrox/transports/datagrid"
+    "title": "CRDT Real-Time State Sync Engine & WebSockets",
+    "permalink": "/docs/ferrox/transports/sync"
   },
   "next": {
     "title": "🏗️ Part 2: Building the Core",

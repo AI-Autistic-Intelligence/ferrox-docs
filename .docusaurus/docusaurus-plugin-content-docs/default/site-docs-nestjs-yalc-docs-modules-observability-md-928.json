@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/observability",
+  "title": "@nest-yalc-2/observability",
+  "description": "@nest-yalc-2/observability provides enterprise distributed tracing, metrics collection, and exception tracking for NestJS 11+. It integrates OpenTelemetry OTLP exporters, Prometheus metric collectors, and Sentry error reporting into a unified NestJS module.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/observability.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/observability",
+  "permalink": "/docs/nestjs-yalc/docs/modules/observability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/observability.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "observability",
+    "title": "@nest-yalc-2/observability",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/logger",
+    "permalink": "/docs/nestjs-yalc/docs/modules/logger"
+  },
+  "next": {
+    "title": "@nest-yalc-2/sentinel",
+    "permalink": "/docs/nestjs-yalc/docs/modules/sentinel"
+  }
+}

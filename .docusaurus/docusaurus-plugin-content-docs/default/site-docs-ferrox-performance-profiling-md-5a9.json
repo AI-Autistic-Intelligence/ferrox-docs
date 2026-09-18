@@ -1,7 +1,7 @@
 {
   "id": "ferrox/performance/profiling",
-  "title": "🔬 CPU & Memory Profiling (Flamegraphs)",
-  "description": "Identifying performance bottlenecks, CPU hot paths, and unexpected heap memory allocations in production systems requires low-overhead profiling tools.",
+  "title": "CPU Profiling, Memory Leak Detection & Flamegraphs",
+  "description": "The profiling performance module delivers CPU profiling, memory allocation tracking (jemalloc), flamegraph generation, and memory leak diagnostics for Rust microservices.",
   "source": "@site/docs/ferrox/performance/profiling.md",
   "sourceDirName": "ferrox/performance",
   "slug": "/ferrox/performance/profiling",
@@ -13,15 +13,17 @@
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
+    "id": "profiling",
+    "title": "CPU Profiling, Memory Leak Detection & Flamegraphs",
     "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "⚡ High-Throughput Benchmarks & Tuning",
+    "title": "Micro-Benchmarks, Criterion Suites & Comparative Metrics",
     "permalink": "/docs/ferrox/performance/benchmarks"
   },
   "next": {
-    "title": "🔒 Zero-Trust & Dual JWT",
-    "permalink": "/docs/ferrox/security/jwt"
+    "title": "Advanced Authentication, OAuth2, OpenID Connect & WebAuthn / Passkeys",
+    "permalink": "/docs/ferrox/security/advanced-auth"
   }
 }

@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "SaaS Page Templates",
-    "permalink": "/docs/ferrox-front/templates"
+    "title": "Zero-Trust Wasm Security, WebCrypto & XSS Sanitization",
+    "permalink": "/docs/ferrox-front/security"
   },
   "next": {
     "title": "Overview",

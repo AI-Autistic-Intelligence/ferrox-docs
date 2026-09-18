@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/tracing",
+  "title": "OpenTelemetry Distributed Tracing & Correlation Identifiers",
+  "description": "The @ferrox/node tracing component delivers zero-overhead distributed tracing, OpenTelemetry (OTel) instrumentation, correlation ID propagation across HTTP/gRPC/Kafka boundaries, and Node.js AsyncLocalStorage context retention.",
+  "source": "@site/docs/ferrox-node/docs/components/tracing.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/tracing",
+  "permalink": "/docs/ferrox-node/docs/components/tracing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/tracing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "id": "tracing",
+    "title": "OpenTelemetry Distributed Tracing & Correlation Identifiers",
+    "sidebar_position": 16
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cloud Storage, S3 Streams & Presigned URLs",
+    "permalink": "/docs/ferrox-node/docs/components/storage"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/nestjs-yalc/overview"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/intro",
+  "title": "Introduction & Node-Yalc Workspace Architecture",
+  "description": "Welcome to Node-YALC (Node.js Yet Another Layer of Convenience), the foundational low-level package workspace providing non-framework-specific primitives, AWS serverless helpers, high-performance Pino loggers, standardized exception taxonomies, event buses, and utility routines for modern Node.js and TypeScript ecosystems.",
+  "source": "@site/docs/node-yalc/docs/intro.md",
+  "sourceDirName": "node-yalc/docs",
+  "slug": "/node-yalc/docs/intro",
+  "permalink": "/docs/node-yalc/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction & Node-Yalc Workspace Architecture",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/node-yalc/overview"
+  },
+  "next": {
+    "title": "Quickstart Guide & Workspace Integration",
+    "permalink": "/docs/node-yalc/docs/quickstart"
+  }
+}

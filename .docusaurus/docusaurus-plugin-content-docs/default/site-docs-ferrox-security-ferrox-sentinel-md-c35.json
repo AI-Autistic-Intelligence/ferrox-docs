@@ -1,7 +1,7 @@
 {
   "id": "ferrox/security/ferrox-sentinel",
-  "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)",
-  "description": "Ferrox Sentinel (ferrox-sentinel v0.6.0) is an enterprise-grade AI/ML security analytics, threat detection, and kernel defense mesh built directly into the Ferrox framework.",
+  "title": "Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer",
+  "description": "The ferrox-sentinel crate is the edge security bouncer for the Ferrox framework. It delivers automated HTTP security headers (Helmet CSP, HSTS, X-Frame-Options), CORS origin regex validation, payload size bouncers, and malicious request parameter sanitization.",
   "source": "@site/docs/ferrox/security/ferrox-sentinel.md",
   "sourceDirName": "ferrox/security",
   "slug": "/ferrox/security/ferrox-sentinel",
@@ -11,18 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/ferrox-sentinel.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 7,
+  "sidebarPosition": 1,
   "frontMatter": {
-    "sidebar_position": 7,
-    "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)"
+    "id": "ferrox-sentinel",
+    "title": "Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer",
+    "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🔒 Distributed Synchronization & Locks",
-    "permalink": "/docs/ferrox/security/distributed-locks"
+    "title": "Advanced Authentication, OAuth2, OpenID Connect & WebAuthn / Passkeys",
+    "permalink": "/docs/ferrox/security/advanced-auth"
   },
   "next": {
-    "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
+    "title": "Self-Test Security Suite, OWASP Scans & Latency Runner",
     "permalink": "/docs/ferrox/security/ferrox-selftest"
   }
 }

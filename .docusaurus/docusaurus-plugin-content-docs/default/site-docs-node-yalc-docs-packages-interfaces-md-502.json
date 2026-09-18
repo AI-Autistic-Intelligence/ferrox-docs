@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/interfaces",
+  "title": "Core Interfaces, Generic DTO Contracts & Envelopes",
+  "description": "The @node-yalc/interfaces package defines the contract interfaces, generic pagination containers, event envelope structures, logger definitions, and API transport schemas shared across all Node.js and TypeScript services.",
+  "source": "@site/docs/node-yalc/docs/packages/interfaces.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/interfaces",
+  "permalink": "/docs/node-yalc/docs/packages/interfaces",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/interfaces.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "interfaces",
+    "title": "Core Interfaces, Generic DTO Contracts & Envelopes",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Type Primitives, Utility Types & Type Guards",
+    "permalink": "/docs/node-yalc/docs/packages/types"
+  },
+  "next": {
+    "title": "@node-yalc/logger",
+    "permalink": "/docs/node-yalc/docs/packages/logger"
+  }
+}

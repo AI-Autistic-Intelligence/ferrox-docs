@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/event-manager",
+  "title": "In-Memory & Distributed Event Manager",
+  "description": "The @nestjs-yalc/event-manager package provides a unified event bus for NestJS microservices. It bridges local, process-level event emitters (built on Node.js EventEmitter2) with external distributed messaging brokers (such as Apache Kafka and RabbitMQ), providing transactional event delivery, wildcard topic subscriptions, and type-safe payload dispatches.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/event-manager.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/event-manager",
+  "permalink": "/docs/nestjs-yalc/docs/modules/event-manager",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/event-manager.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "id": "event-manager",
+    "title": "In-Memory & Distributed Event Manager",
+    "sidebar_position": 11
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/errors",
+    "permalink": "/docs/nestjs-yalc/docs/modules/errors"
+  },
+  "next": {
+    "title": "GraphQL Field Middleware & Dynamic Property Transformers",
+    "permalink": "/docs/nestjs-yalc/docs/modules/field-middleware"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "ferrox/integrations/feature-flags",
-  "title": "🚩 Feature Flags & Toggles",
-  "description": "Feature flags allow developers to safely roll out new features to a subset of users, perform A/B testing, or instantaneously disable failing endpoints without redeploying code.",
+  "title": "Feature Flags, Dynamic Toggles & Unleash / LaunchDarkly",
+  "description": "The ferrox-integrations feature flag engine provides dynamic feature evaluation, percentage-based canary rollouts, user segment targeting, and seamless integrations with Unleash, LaunchDarkly, and Redis configuration providers in Rust.",
   "source": "@site/docs/ferrox/integrations/feature-flags.md",
   "sourceDirName": "ferrox/integrations",
   "slug": "/ferrox/integrations/feature-flags",
@@ -13,15 +13,17 @@
   "version": "current",
   "sidebarPosition": 4,
   "frontMatter": {
+    "id": "feature-flags",
+    "title": "Feature Flags, Dynamic Toggles & Unleash / LaunchDarkly",
     "sidebar_position": 4
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🔔 Notifications & Slack Integration",
+    "title": "Multi-Channel Notifications (Push, SMS, Slack, WebSockets)",
     "permalink": "/docs/ferrox/integrations/notifications"
   },
   "next": {
-    "title": "🔗 Outgoing Webhook Dispatcher",
+    "title": "Webhook Delivery Engine, HMAC Signatures & Exponential Retries",
     "permalink": "/docs/ferrox/integrations/webhooks"
   }
 }

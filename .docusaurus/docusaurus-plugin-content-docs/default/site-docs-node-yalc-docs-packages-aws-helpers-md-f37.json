@@ -1,0 +1,29 @@
+{
+  "id": "node-yalc/docs/packages/aws-helpers",
+  "title": "@node-yalc/aws-helpers",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/node-yalc/docs/packages/aws-helpers.md",
+  "sourceDirName": "node-yalc/docs/packages",
+  "slug": "/node-yalc/docs/packages/aws-helpers",
+  "permalink": "/docs/node-yalc/docs/packages/aws-helpers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/node-yalc/docs/packages/aws-helpers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "aws-helpers",
+    "title": "@node-yalc/aws-helpers",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@node-yalc/event-manager",
+    "permalink": "/docs/node-yalc/docs/packages/event-manager"
+  },
+  "next": {
+    "title": "Common Core Constants, Enumerations & Value Objects",
+    "permalink": "/docs/node-yalc/docs/packages/common"
+  }
+}

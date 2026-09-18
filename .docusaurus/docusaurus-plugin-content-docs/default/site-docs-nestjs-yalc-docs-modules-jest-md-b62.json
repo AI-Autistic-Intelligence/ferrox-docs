@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/jest",
+  "title": "@nest-yalc-2/jest",
+  "description": "@nest-yalc-2/jest provides a multi-project test runner, custom matchers, SWC compiler integration, and HTML coverage report servers for NestJS monorepos.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/jest.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/jest",
+  "permalink": "/docs/nestjs-yalc/docs/modules/jest",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/jest.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "id": "jest",
+    "title": "@nest-yalc-2/jest",
+    "sidebar_position": 14
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/graphql",
+    "permalink": "/docs/nestjs-yalc/docs/modules/graphql"
+  },
+  "next": {
+    "title": "Application Lifecycle, Bootstrap & Module Composition",
+    "permalink": "/docs/nestjs-yalc/docs/modules/app"
+  }
+}

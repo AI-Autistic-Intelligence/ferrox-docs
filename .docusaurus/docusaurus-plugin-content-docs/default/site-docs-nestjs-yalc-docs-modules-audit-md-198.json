@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/audit",
+  "title": "@nest-yalc-2/audit",
+  "description": "@nest-yalc-2/audit provides enterprise compliance entity auditing and revision tracking for NestJS 11+. It automatically intercepts TypeORM entity mutation operations (INSERT, UPDATE, DELETE), capturing before/after field diffs and correlating mutations with the active authenticated user ID.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/audit.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/audit",
+  "permalink": "/docs/nestjs-yalc/docs/modules/audit",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/audit.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "audit",
+    "title": "@nest-yalc-2/audit",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/kafka",
+    "permalink": "/docs/nestjs-yalc/docs/modules/kafka"
+  },
+  "next": {
+    "title": "API Strategy, Multi-Protocol Adapters & Contract Versioning",
+    "permalink": "/docs/nestjs-yalc/docs/modules/api-strategy"
+  }
+}

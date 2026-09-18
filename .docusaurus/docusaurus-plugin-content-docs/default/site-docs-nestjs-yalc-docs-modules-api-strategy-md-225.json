@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/api-strategy",
+  "title": "API Strategy, Multi-Protocol Adapters & Contract Versioning",
+  "description": "The @nestjs-yalc/api-strategy package enforces standardized API design paradigms across REST, GraphQL, and Messaging protocols. It provides multi-protocol controller abstractions, automated URI versioning strategies, uniform response payload wrapping, and content-negotiation adapters.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/api-strategy.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/api-strategy",
+  "permalink": "/docs/nestjs-yalc/docs/modules/api-strategy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/api-strategy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "api-strategy",
+    "title": "API Strategy, Multi-Protocol Adapters & Contract Versioning",
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@nest-yalc-2/audit",
+    "permalink": "/docs/nestjs-yalc/docs/modules/audit"
+  },
+  "next": {
+    "title": "@nest-yalc-2/errors",
+    "permalink": "/docs/nestjs-yalc/docs/modules/errors"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/routing",
+  "title": "Multi-Protocol Routing Engine & Dynamic Controllers",
+  "description": "The @ferrox/node routing component provides an abstraction layer for defining REST endpoints, WebSockets channels, and RPC message handlers. It features automatic route registration, schema validation pipeline injection, rate-limiting parameter binding, and OpenAPI / Swagger spec generation.",
+  "source": "@site/docs/ferrox-node/docs/components/routing.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/routing",
+  "permalink": "/docs/ferrox-node/docs/components/routing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/routing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "id": "routing",
+    "title": "Multi-Protocol Routing Engine & Dynamic Controllers",
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Internationalization (I18n)",
+    "permalink": "/docs/ferrox-node/docs/components/i18n"
+  },
+  "next": {
+    "title": "Jobs Scheduler & SSE Stream",
+    "permalink": "/docs/ferrox-node/docs/components/jobs"
+  }
+}

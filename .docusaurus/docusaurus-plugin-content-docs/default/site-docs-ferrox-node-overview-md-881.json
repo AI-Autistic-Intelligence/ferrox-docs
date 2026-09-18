@@ -23,7 +23,7 @@
     "permalink": "/docs/ferrox-front/ws"
   },
   "next": {
-    "title": "Overview",
-    "permalink": "/docs/nestjs-yalc/overview"
+    "title": "Introduction & Ferrox-Node Framework Architecture",
+    "permalink": "/docs/ferrox-node/docs/intro"
   }
 }

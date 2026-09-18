@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/docs/modules/ag-grid",
+  "title": "AG-Grid Server-Side Integration & Query Transformers",
+  "description": "The @nestjs-yalc/ag-grid package provides enterprise-grade, server-side data grid processing for NestJS applications. It automatically translates frontend AG-Grid request payloads (containing complex filtering rules, multi-column sorting, pagination limits, and grouping expressions) into optimized TypeORM SelectQueryBuilder execution plans with parameterized SQL generation.",
+  "source": "@site/docs/nestjs-yalc/docs/modules/ag-grid.md",
+  "sourceDirName": "nestjs-yalc/docs/modules",
+  "slug": "/nestjs-yalc/docs/modules/ag-grid",
+  "permalink": "/docs/nestjs-yalc/docs/modules/ag-grid",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/docs/modules/ag-grid.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "ag-grid",
+    "title": "AG-Grid Server-Side Integration & Query Transformers",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart & First Application Setup",
+    "permalink": "/docs/nestjs-yalc/docs/quickstart"
+  },
+  "next": {
+    "title": "@nest-yalc-2/crud-gen",
+    "permalink": "/docs/nestjs-yalc/docs/modules/crud-gen"
+  }
+}

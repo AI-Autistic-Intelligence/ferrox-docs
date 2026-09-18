@@ -1,7 +1,7 @@
 {
   "id": "ferrox/integrations/webhooks",
-  "title": "🔗 Outgoing Webhook Dispatcher",
-  "description": "When your platform allows external developers to subscribe to API events (e.g. order.created, invoice.paid), sending reliable outgoing webhooks requires cryptographic signing (HMAC-SHA256) and automated retry logic with exponential backoff.",
+  "title": "Webhook Delivery Engine, HMAC Signatures & Exponential Retries",
+  "description": "The webhooks module delivers outbound webhook notification pipelines. It features HMAC-SHA256 signature verification headers, exponential backoff retries, dead-letter queue (DLQ) routing, and payload delivery logging for Rust microservices.",
   "source": "@site/docs/ferrox/integrations/webhooks.md",
   "sourceDirName": "ferrox/integrations",
   "slug": "/ferrox/integrations/webhooks",
@@ -13,15 +13,17 @@
   "version": "current",
   "sidebarPosition": 5,
   "frontMatter": {
+    "id": "webhooks",
+    "title": "Webhook Delivery Engine, HMAC Signatures & Exponential Retries",
     "sidebar_position": 5
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🚩 Feature Flags & Toggles",
+    "title": "Feature Flags, Dynamic Toggles & Unleash / LaunchDarkly",
     "permalink": "/docs/ferrox/integrations/feature-flags"
   },
   "next": {
-    "title": "📄 Reports & Cloud Helper Utilities",
+    "title": "PDF Report Generation, Excel Export & Cloud Providers",
     "permalink": "/docs/ferrox/integrations/reports-and-cloud"
   }
 }

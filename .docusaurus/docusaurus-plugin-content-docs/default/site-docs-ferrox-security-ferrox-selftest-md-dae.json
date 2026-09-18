@@ -1,7 +1,7 @@
 {
   "id": "ferrox/security/ferrox-selftest",
-  "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
-  "description": "ferrox-selftest is the autonomous verification, continuous integration security benchmark runner, and OWASP Web Security Testing Guide (WSTG) self-attack auditor for the Ferrox ecosystem.",
+  "title": "Self-Test Security Suite, OWASP Scans & Latency Runner",
+  "description": "The ferrox-selftest crate delivers self-diagnostic security compliance checks, OWASP WSTG compliance verification, p50/p95/p99 latency benchmark execution, and automated deployment readiness audits for Rust microservices.",
   "source": "@site/docs/ferrox/security/ferrox-selftest.md",
   "sourceDirName": "ferrox/security",
   "slug": "/ferrox/security/ferrox-selftest",
@@ -11,18 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/ferrox-selftest.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 8,
+  "sidebarPosition": 2,
   "frontMatter": {
-    "sidebar_position": 8,
-    "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)"
+    "id": "ferrox-selftest",
+    "title": "Self-Test Security Suite, OWASP Scans & Latency Runner",
+    "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)",
+    "title": "Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer",
     "permalink": "/docs/ferrox/security/ferrox-sentinel"
   },
   "next": {
-    "title": "🌐 Multi-Transport Application System",
-    "permalink": "/docs/ferrox/transports/transports-overview"
+    "title": "JWT Authentication Engine, RSA/Ed25519 Signing & Revocation",
+    "permalink": "/docs/ferrox/security/jwt"
   }
 }

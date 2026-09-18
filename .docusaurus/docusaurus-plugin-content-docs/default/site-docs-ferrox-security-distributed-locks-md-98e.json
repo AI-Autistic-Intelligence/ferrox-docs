@@ -1,7 +1,7 @@
 {
   "id": "ferrox/security/distributed-locks",
-  "title": "🔒 Distributed Synchronization & Locks",
-  "description": "In multi-instance microservice deployments, running background processes or mutating shared resources (e.g., inventory deduction or batch invoice generation) requires cross-process synchronization to prevent race conditions.",
+  "title": "Distributed Locks, Redlock Algorithm & Synchronization",
+  "description": "The distributed-locks module provides distributed mutual exclusion lock mechanisms (ferrox-sync / Redis Redlock algorithm). It ensures that across a cluster of microservice instances, only one worker thread executes a critical section at any given millisecond.",
   "source": "@site/docs/ferrox/security/distributed-locks.md",
   "sourceDirName": "ferrox/security",
   "slug": "/ferrox/security/distributed-locks",
@@ -11,17 +11,19 @@
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/distributed-locks.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 8,
   "frontMatter": {
-    "sidebar_position": 5
+    "id": "distributed-locks",
+    "title": "Distributed Locks, Redlock Algorithm & Synchronization",
+    "sidebar_position": 8
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🚀 Singleflight: Cache Stampede Protection",
+    "title": "Singleflight Request Deduplication & Cache Stampede Shield",
     "permalink": "/docs/ferrox/security/singleflight"
   },
   "next": {
-    "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)",
-    "permalink": "/docs/ferrox/security/ferrox-sentinel"
+    "title": "Multi-Protocol Transports Architecture Overview",
+    "permalink": "/docs/ferrox/transports/transports-overview"
   }
 }

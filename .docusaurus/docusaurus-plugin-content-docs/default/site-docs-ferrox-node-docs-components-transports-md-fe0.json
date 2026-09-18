@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/transports",
+  "title": "Dual Engine Transports (Fastify & Express)",
+  "description": "💡 1. What It Is & Architectural Purpose",
+  "source": "@site/docs/ferrox-node/docs/components/transports.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/transports",
+  "permalink": "/docs/ferrox-node/docs/components/transports",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/transports.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "transports",
+    "title": "Dual Engine Transports (Fastify & Express)",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Kernel Sandbox (Seccomp & Landlock)",
+    "permalink": "/docs/ferrox-node/docs/components/kernel"
+  },
+  "next": {
+    "title": "CQRS & Saga Process Managers",
+    "permalink": "/docs/ferrox-node/docs/components/cqrs"
+  }
+}

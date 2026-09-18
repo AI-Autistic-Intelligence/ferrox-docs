@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/docs/components/i18n",
+  "title": "Internationalization (I18n)",
+  "description": "I18nEngine is the native multi-language translation and localization component of @ferrox-node/core. It parses inbound HTTP Accept-Language headers, resolves localized translation dictionaries, and performs dynamic variable interpolation for global microservices.",
+  "source": "@site/docs/ferrox-node/docs/components/i18n.md",
+  "sourceDirName": "ferrox-node/docs/components",
+  "slug": "/ferrox-node/docs/components/i18n",
+  "permalink": "/docs/ferrox-node/docs/components/i18n",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/docs/components/i18n.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "id": "i18n",
+    "title": "Internationalization (I18n)",
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Circuit Breaker, Singleflight & Resilience Patterns",
+    "permalink": "/docs/ferrox-node/docs/components/resilience"
+  },
+  "next": {
+    "title": "Multi-Protocol Routing Engine & Dynamic Controllers",
+    "permalink": "/docs/ferrox-node/docs/components/routing"
+  }
+}
