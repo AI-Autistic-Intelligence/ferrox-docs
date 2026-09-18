@@ -6,326 +6,322 @@
     },
     "content": "4c678320"
   },
-  "/docs-73b": {
+  "/docs-4bb": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-f3a": {
+  "/docs-981": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-322": {
+  "/docs-c61": {
     "__comp": "a94703ab"
   },
-  "/docs/ferrox-9e2": {
+  "/docs/ferrox-front/architecture-085": {
     "__comp": "17896441",
-    "content": "749a2cad"
+    "content": "c6b109ba"
   },
-  "/docs/ferrox-front/docs/architecture-4fd": {
+  "/docs/ferrox-front/components-889": {
     "__comp": "17896441",
-    "content": "44a14f5f"
+    "content": "478b870c"
   },
-  "/docs/ferrox-front/docs/components-de4": {
+  "/docs/ferrox-front/core-7ac": {
     "__comp": "17896441",
-    "content": "3afae594"
+    "content": "fef90efa"
   },
-  "/docs/ferrox-front/docs/core-b5e": {
+  "/docs/ferrox-front/intro-681": {
     "__comp": "17896441",
-    "content": "67bf3af3"
+    "content": "0d09fcd8"
   },
-  "/docs/ferrox-front/docs/intro-429": {
+  "/docs/ferrox-front/macros-778": {
     "__comp": "17896441",
-    "content": "3d227b4e"
-  },
-  "/docs/ferrox-front/docs/macros-d25": {
-    "__comp": "17896441",
-    "content": "dd300b0d"
-  },
-  "/docs/ferrox-front/docs/quickstart-d8d": {
-    "__comp": "17896441",
-    "content": "ccc8b85c"
-  },
-  "/docs/ferrox-front/docs/reactivity-7db": {
-    "__comp": "17896441",
-    "content": "c007ff53"
-  },
-  "/docs/ferrox-front/docs/routing-12a": {
-    "__comp": "17896441",
-    "content": "4aacf88a"
-  },
-  "/docs/ferrox-front/docs/security-875": {
-    "__comp": "17896441",
-    "content": "071f8db6"
-  },
-  "/docs/ferrox-front/docs/templates-138": {
-    "__comp": "17896441",
-    "content": "8c4cce81"
-  },
-  "/docs/ferrox-front/docs/ui-components-f8f": {
-    "__comp": "17896441",
-    "content": "f2eb727b"
-  },
-  "/docs/ferrox-front/docs/ws-096": {
-    "__comp": "17896441",
-    "content": "57f17b83"
+    "content": "09950861"
   },
   "/docs/ferrox-front/overview-8a2": {
     "__comp": "17896441",
     "content": "8003b396"
   },
+  "/docs/ferrox-front/quickstart-279": {
+    "__comp": "17896441",
+    "content": "72737d00"
+  },
+  "/docs/ferrox-front/reactivity-7dd": {
+    "__comp": "17896441",
+    "content": "9a498169"
+  },
+  "/docs/ferrox-front/routing-6ca": {
+    "__comp": "17896441",
+    "content": "c59f0185"
+  },
+  "/docs/ferrox-front/security-2a7": {
+    "__comp": "17896441",
+    "content": "07927352"
+  },
+  "/docs/ferrox-front/templates-7b9": {
+    "__comp": "17896441",
+    "content": "24decb7e"
+  },
+  "/docs/ferrox-front/ui-components-e95": {
+    "__comp": "17896441",
+    "content": "339a6d74"
+  },
+  "/docs/ferrox-front/ws-ff8": {
+    "__comp": "17896441",
+    "content": "0170d36f"
+  },
   "/docs/ferrox-node/overview-300": {
     "__comp": "17896441",
     "content": "881a25f7"
   },
-  "/docs/ferrox/docs/abstractions/crud-generator-e22": {
+  "/docs/ferrox/abstractions/crud-generator-ca2": {
     "__comp": "17896441",
-    "content": "026e64d3"
+    "content": "63662578"
   },
-  "/docs/ferrox/docs/abstractions/guards-88d": {
+  "/docs/ferrox/abstractions/guards-640": {
     "__comp": "17896441",
-    "content": "27455250"
+    "content": "7af5efca"
   },
-  "/docs/ferrox/docs/abstractions/pipes-482": {
+  "/docs/ferrox/abstractions/pipes-02c": {
     "__comp": "17896441",
-    "content": "cd94f24a"
+    "content": "3ca09fdc"
   },
-  "/docs/ferrox/docs/abstractions/validation-969": {
+  "/docs/ferrox/abstractions/validation-018": {
     "__comp": "17896441",
-    "content": "7f1fd945"
+    "content": "06cb0528"
   },
-  "/docs/ferrox/docs/architectures/api-gateway-f16": {
+  "/docs/ferrox/architectures/api-gateway-aa2": {
     "__comp": "17896441",
-    "content": "2cabb34f"
+    "content": "efbeebab"
   },
-  "/docs/ferrox/docs/architectures/caching-0d4": {
+  "/docs/ferrox/architectures/caching-77c": {
     "__comp": "17896441",
-    "content": "47cddde3"
+    "content": "e7ee41a7"
   },
-  "/docs/ferrox/docs/architectures/cqrs-387": {
+  "/docs/ferrox/architectures/cqrs-bce": {
     "__comp": "17896441",
-    "content": "f419d9ac"
+    "content": "048ffcc4"
   },
-  "/docs/ferrox/docs/architectures/events-9a7": {
+  "/docs/ferrox/architectures/events-f11": {
     "__comp": "17896441",
-    "content": "09e406dd"
+    "content": "99d0eeaa"
   },
-  "/docs/ferrox/docs/architectures/queues-jobs-141": {
+  "/docs/ferrox/architectures/queues-jobs-da6": {
     "__comp": "17896441",
-    "content": "c4b12d4c"
+    "content": "09eed891"
   },
-  "/docs/ferrox/docs/architectures/sagas-b96": {
+  "/docs/ferrox/architectures/sagas-a1f": {
     "__comp": "17896441",
-    "content": "917dda99"
+    "content": "87e0bdb2"
   },
-  "/docs/ferrox/docs/architectures/task-scheduling-56d": {
+  "/docs/ferrox/architectures/task-scheduling-e88": {
     "__comp": "17896441",
-    "content": "06d44025"
+    "content": "617e25ff"
   },
-  "/docs/ferrox/docs/cli/code-factory-906": {
+  "/docs/ferrox/cli/code-factory-a8d": {
     "__comp": "17896441",
-    "content": "85bc54e9"
+    "content": "e82daad4"
   },
-  "/docs/ferrox/docs/cli/commands-reference-b9b": {
+  "/docs/ferrox/cli/commands-reference-31e": {
     "__comp": "17896441",
-    "content": "1336a859"
+    "content": "d5f2379d"
   },
-  "/docs/ferrox/docs/community/donations-7a0": {
+  "/docs/ferrox/community/donations-94c": {
     "__comp": "17896441",
-    "content": "3ca19f2f"
+    "content": "8ab78c93"
   },
-  "/docs/ferrox/docs/databases/migrations-201": {
+  "/docs/ferrox/databases/migrations-ed7": {
     "__comp": "17896441",
-    "content": "f6283e25"
+    "content": "fdadb552"
   },
-  "/docs/ferrox/docs/databases/mongodb-e92": {
+  "/docs/ferrox/databases/mongodb-829": {
     "__comp": "17896441",
-    "content": "387fe2b7"
+    "content": "8fae4002"
   },
-  "/docs/ferrox/docs/databases/overview-72d": {
+  "/docs/ferrox/databases/overview-4d1": {
     "__comp": "17896441",
-    "content": "a0cb7bba"
+    "content": "4afe040a"
   },
-  "/docs/ferrox/docs/databases/redis-228": {
+  "/docs/ferrox/databases/redis-3eb": {
     "__comp": "17896441",
-    "content": "925aca22"
+    "content": "0292b8de"
   },
-  "/docs/ferrox/docs/databases/seaorm-356": {
+  "/docs/ferrox/databases/seaorm-061": {
     "__comp": "17896441",
-    "content": "dc292c54"
+    "content": "a09a6dc3"
   },
-  "/docs/ferrox/docs/deployment/ci-cd-70f": {
+  "/docs/ferrox/deployment/ci-cd-0a8": {
     "__comp": "17896441",
-    "content": "5af72df2"
+    "content": "fa2fc790"
   },
-  "/docs/ferrox/docs/deployment/docker-kubernetes-4e8": {
+  "/docs/ferrox/deployment/docker-kubernetes-026": {
     "__comp": "17896441",
-    "content": "361d4794"
+    "content": "94d98f14"
   },
-  "/docs/ferrox/docs/fundamentals/configuration-e21": {
+  "/docs/ferrox/fundamentals/configuration-ecf": {
     "__comp": "17896441",
-    "content": "efc6f015"
+    "content": "d08eb387"
   },
-  "/docs/ferrox/docs/fundamentals/controllers-61f": {
+  "/docs/ferrox/fundamentals/controllers-e60": {
     "__comp": "17896441",
-    "content": "a506c85d"
+    "content": "3fc239de"
   },
-  "/docs/ferrox/docs/fundamentals/errors-4f2": {
+  "/docs/ferrox/fundamentals/errors-ce0": {
     "__comp": "17896441",
-    "content": "de62b3da"
+    "content": "fadf056b"
   },
-  "/docs/ferrox/docs/fundamentals/interceptors-795": {
+  "/docs/ferrox/fundamentals/interceptors-26d": {
     "__comp": "17896441",
-    "content": "b7f451aa"
+    "content": "525a52dd"
   },
-  "/docs/ferrox/docs/fundamentals/middlewares-71f": {
+  "/docs/ferrox/fundamentals/middlewares-6c3": {
     "__comp": "17896441",
-    "content": "7d859aba"
+    "content": "0b65ffce"
   },
-  "/docs/ferrox/docs/fundamentals/providers-9f5": {
+  "/docs/ferrox/fundamentals/providers-9a3": {
     "__comp": "17896441",
-    "content": "743ad3a8"
+    "content": "16bc51c8"
   },
-  "/docs/ferrox/docs/fundamentals/testing-737": {
+  "/docs/ferrox/fundamentals/testing-b31": {
     "__comp": "17896441",
-    "content": "0dbbb59e"
+    "content": "ec2b0ed5"
   },
-  "/docs/ferrox/docs/integrations/feature-flags-33b": {
+  "/docs/ferrox/integrations/feature-flags-391": {
     "__comp": "17896441",
-    "content": "884aa61b"
+    "content": "03930fd7"
   },
-  "/docs/ferrox/docs/integrations/i18n-d59": {
+  "/docs/ferrox/integrations/i18n-14e": {
     "__comp": "17896441",
-    "content": "5698e307"
+    "content": "6443d71c"
   },
-  "/docs/ferrox/docs/integrations/mailer-63c": {
+  "/docs/ferrox/integrations/mailer-762": {
     "__comp": "17896441",
-    "content": "64afc768"
+    "content": "b03dd1af"
   },
-  "/docs/ferrox/docs/integrations/notifications-767": {
+  "/docs/ferrox/integrations/notifications-218": {
     "__comp": "17896441",
-    "content": "4f3522d6"
+    "content": "1d3965e5"
   },
-  "/docs/ferrox/docs/integrations/payments-b37": {
+  "/docs/ferrox/integrations/payments-af7": {
     "__comp": "17896441",
-    "content": "cab5572c"
+    "content": "0bd50f41"
   },
-  "/docs/ferrox/docs/integrations/reports-and-cloud-6af": {
+  "/docs/ferrox/integrations/reports-and-cloud-a5a": {
     "__comp": "17896441",
-    "content": "0adef61e"
+    "content": "b434d598"
   },
-  "/docs/ferrox/docs/integrations/webhooks-277": {
+  "/docs/ferrox/integrations/webhooks-1e5": {
     "__comp": "17896441",
-    "content": "942a6458"
+    "content": "10f4df55"
   },
-  "/docs/ferrox/docs/observability/health-checks-e67": {
+  "/docs/ferrox/observability/health-checks-02f": {
     "__comp": "17896441",
-    "content": "9c1ed019"
+    "content": "f416dc7a"
   },
-  "/docs/ferrox/docs/observability/logging-718": {
+  "/docs/ferrox/observability/logging-8a0": {
     "__comp": "17896441",
-    "content": "ba8cd507"
+    "content": "d04d48a3"
   },
-  "/docs/ferrox/docs/observability/metrics-938": {
+  "/docs/ferrox/observability/metrics-572": {
     "__comp": "17896441",
-    "content": "31f48e05"
+    "content": "a18fcfcb"
   },
-  "/docs/ferrox/docs/observability/tracing-b5f": {
+  "/docs/ferrox/observability/tracing-679": {
     "__comp": "17896441",
-    "content": "7818693e"
-  },
-  "/docs/ferrox/docs/overview/first-steps-3df": {
-    "__comp": "17896441",
-    "content": "2529633f"
-  },
-  "/docs/ferrox/docs/overview/introduction-138": {
-    "__comp": "17896441",
-    "content": "889f0739"
-  },
-  "/docs/ferrox/docs/overview/lifecycle-99e": {
-    "__comp": "17896441",
-    "content": "eae033f7"
-  },
-  "/docs/ferrox/docs/performance/benchmarks-6fb": {
-    "__comp": "17896441",
-    "content": "faf30586"
-  },
-  "/docs/ferrox/docs/performance/profiling-717": {
-    "__comp": "17896441",
-    "content": "9d6049fb"
-  },
-  "/docs/ferrox/docs/security/advanced-auth-183": {
-    "__comp": "17896441",
-    "content": "1c34a190"
-  },
-  "/docs/ferrox/docs/security/circuit-breaker-e89": {
-    "__comp": "17896441",
-    "content": "5719c3b4"
-  },
-  "/docs/ferrox/docs/security/distributed-locks-c05": {
-    "__comp": "17896441",
-    "content": "fd3d4d1b"
-  },
-  "/docs/ferrox/docs/security/ferrox-selftest-03d": {
-    "__comp": "17896441",
-    "content": "b905ec57"
-  },
-  "/docs/ferrox/docs/security/ferrox-sentinel-3e4": {
-    "__comp": "17896441",
-    "content": "852e2826"
-  },
-  "/docs/ferrox/docs/security/jwt-a5c": {
-    "__comp": "17896441",
-    "content": "6197136c"
-  },
-  "/docs/ferrox/docs/security/rate-limiting-21d": {
-    "__comp": "17896441",
-    "content": "50ccdd7d"
-  },
-  "/docs/ferrox/docs/security/singleflight-ddb": {
-    "__comp": "17896441",
-    "content": "7aa60cc0"
-  },
-  "/docs/ferrox/docs/transports/datagrid-c49": {
-    "__comp": "17896441",
-    "content": "49be78e1"
-  },
-  "/docs/ferrox/docs/transports/file-storage-b3c": {
-    "__comp": "17896441",
-    "content": "07525b7f"
-  },
-  "/docs/ferrox/docs/transports/graphql-8a6": {
-    "__comp": "17896441",
-    "content": "c67ff0a5"
-  },
-  "/docs/ferrox/docs/transports/graphql-advanced-1b2": {
-    "__comp": "17896441",
-    "content": "9284fb66"
-  },
-  "/docs/ferrox/docs/transports/sse-da4": {
-    "__comp": "17896441",
-    "content": "6b368640"
-  },
-  "/docs/ferrox/docs/transports/transports-overview-8d1": {
-    "__comp": "17896441",
-    "content": "289b795f"
-  },
-  "/docs/ferrox/docs/tutorial/building-the-core-f6d": {
-    "__comp": "17896441",
-    "content": "d2623bcb"
-  },
-  "/docs/ferrox/docs/tutorial/code-factory-1ac": {
-    "__comp": "17896441",
-    "content": "4e75957e"
-  },
-  "/docs/ferrox/docs/tutorial/setup-8c3": {
-    "__comp": "17896441",
-    "content": "ad963a65"
+    "content": "9bcd00d4"
   },
   "/docs/ferrox/overview-04f": {
     "__comp": "17896441",
     "content": "3f3dab2a"
+  },
+  "/docs/ferrox/overview/first-steps-abe": {
+    "__comp": "17896441",
+    "content": "ac843f0f"
+  },
+  "/docs/ferrox/overview/introduction-e96": {
+    "__comp": "17896441",
+    "content": "41d147dd"
+  },
+  "/docs/ferrox/overview/lifecycle-71b": {
+    "__comp": "17896441",
+    "content": "c0429f01"
+  },
+  "/docs/ferrox/performance/benchmarks-708": {
+    "__comp": "17896441",
+    "content": "e7b6add1"
+  },
+  "/docs/ferrox/performance/profiling-c56": {
+    "__comp": "17896441",
+    "content": "5a919c7b"
+  },
+  "/docs/ferrox/security/advanced-auth-b0c": {
+    "__comp": "17896441",
+    "content": "3a9ae46d"
+  },
+  "/docs/ferrox/security/circuit-breaker-909": {
+    "__comp": "17896441",
+    "content": "3bb2fb42"
+  },
+  "/docs/ferrox/security/distributed-locks-924": {
+    "__comp": "17896441",
+    "content": "98e4c181"
+  },
+  "/docs/ferrox/security/ferrox-selftest-249": {
+    "__comp": "17896441",
+    "content": "dae1831b"
+  },
+  "/docs/ferrox/security/ferrox-sentinel-a4c": {
+    "__comp": "17896441",
+    "content": "c35d7a10"
+  },
+  "/docs/ferrox/security/jwt-1b1": {
+    "__comp": "17896441",
+    "content": "06902545"
+  },
+  "/docs/ferrox/security/rate-limiting-0ab": {
+    "__comp": "17896441",
+    "content": "c90827f7"
+  },
+  "/docs/ferrox/security/singleflight-355": {
+    "__comp": "17896441",
+    "content": "b5037e8d"
+  },
+  "/docs/ferrox/transports/datagrid-4be": {
+    "__comp": "17896441",
+    "content": "89241679"
+  },
+  "/docs/ferrox/transports/file-storage-4d5": {
+    "__comp": "17896441",
+    "content": "57491d0d"
+  },
+  "/docs/ferrox/transports/graphql-f52": {
+    "__comp": "17896441",
+    "content": "351aef93"
+  },
+  "/docs/ferrox/transports/graphql-advanced-456": {
+    "__comp": "17896441",
+    "content": "52c7b969"
+  },
+  "/docs/ferrox/transports/sse-f7c": {
+    "__comp": "17896441",
+    "content": "4d2d54d5"
+  },
+  "/docs/ferrox/transports/transports-overview-227": {
+    "__comp": "17896441",
+    "content": "f6c36416"
+  },
+  "/docs/ferrox/tutorial/building-the-core-6e6": {
+    "__comp": "17896441",
+    "content": "23a08b6d"
+  },
+  "/docs/ferrox/tutorial/code-factory-fa8": {
+    "__comp": "17896441",
+    "content": "77001773"
+  },
+  "/docs/ferrox/tutorial/setup-e01": {
+    "__comp": "17896441",
+    "content": "7b5b5a5d"
   },
   "/docs/nestjs-yalc/architecture-49a": {
     "__comp": "17896441",

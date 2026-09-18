@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/fundamentals/controllers",
+  "title": "🕹️ Controllers: The Masterpiece Guide",
+  "description": "In a Ferrox application, a Controller is the ultimate boundary between the unpredictable outside world (HTTP TCP streams) and the strict, type-safe inner world of your business logic.",
+  "source": "@site/docs/ferrox/fundamentals/controllers.md",
+  "sourceDirName": "ferrox/fundamentals",
+  "slug": "/ferrox/fundamentals/controllers",
+  "permalink": "/docs/ferrox/fundamentals/controllers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/fundamentals/controllers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🤖 CI/CD Automation & GitHub Actions",
+    "permalink": "/docs/ferrox/deployment/ci-cd"
+  },
+  "next": {
+    "title": "💉 Providers & Dependency Injection",
+    "permalink": "/docs/ferrox/fundamentals/providers"
+  }
+}

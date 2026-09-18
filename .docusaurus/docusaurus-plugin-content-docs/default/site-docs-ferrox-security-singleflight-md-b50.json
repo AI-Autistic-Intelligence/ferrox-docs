@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/security/singleflight",
+  "title": "🚀 Singleflight: Cache Stampede Protection",
+  "description": "When a high-traffic cache key expires (e.g. homepage top products or hot news stories), hundreds or thousands of concurrent incoming HTTP requests simultaneously miss the cache and hit the primary database.",
+  "source": "@site/docs/ferrox/security/singleflight.md",
+  "sourceDirName": "ferrox/security",
+  "slug": "/ferrox/security/singleflight",
+  "permalink": "/docs/ferrox/security/singleflight",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/singleflight.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "⚡ Circuit Breakers & Fault Tolerance",
+    "permalink": "/docs/ferrox/security/circuit-breaker"
+  },
+  "next": {
+    "title": "🔒 Distributed Synchronization & Locks",
+    "permalink": "/docs/ferrox/security/distributed-locks"
+  }
+}

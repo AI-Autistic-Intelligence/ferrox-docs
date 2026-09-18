@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/security/advanced-auth",
+  "title": "🔑 Advanced Security: Dual Tokens & PublicId Obfuscation",
+  "description": "Basic JWT authentication often suffers from two enterprise security vulnerabilities:",
+  "source": "@site/docs/ferrox/security/advanced-auth.md",
+  "sourceDirName": "ferrox/security",
+  "slug": "/ferrox/security/advanced-auth",
+  "permalink": "/docs/ferrox/security/advanced-auth",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/advanced-auth.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔒 Zero-Trust & Dual JWT",
+    "permalink": "/docs/ferrox/security/jwt"
+  },
+  "next": {
+    "title": "🛡️ Rate Limiting & Throttling",
+    "permalink": "/docs/ferrox/security/rate-limiting"
+  }
+}

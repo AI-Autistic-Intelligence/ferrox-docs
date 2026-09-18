@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/abstractions/guards",
+  "title": "🛡️ Guards (Authorization)",
+  "description": "Guards have a single responsibility: they determine whether a given request will be handled by the route handler or not, depending on certain conditions (like permissions, roles, ACLs, etc.) present at run-time.",
+  "source": "@site/docs/ferrox/abstractions/guards.md",
+  "sourceDirName": "ferrox/abstractions",
+  "slug": "/ferrox/abstractions/guards",
+  "permalink": "/docs/ferrox/abstractions/guards",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/abstractions/guards.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛑 Pipes (Validation)",
+    "permalink": "/docs/ferrox/abstractions/pipes"
+  },
+  "next": {
+    "title": "🎯 DTO Validation & AutoZod Extractor",
+    "permalink": "/docs/ferrox/abstractions/validation"
+  }
+}

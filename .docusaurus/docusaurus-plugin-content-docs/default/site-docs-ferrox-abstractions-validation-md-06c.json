@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/abstractions/validation",
+  "title": "🎯 DTO Validation & AutoZod Extractor",
+  "description": "In NestJS, developer productivity relies heavily on class-validator and ValidationPipe. In Rust, ferrox-validation provides the ValidatedJson extractor—a mechanism that behaves like Zod's .parse().",
+  "source": "@site/docs/ferrox/abstractions/validation.md",
+  "sourceDirName": "ferrox/abstractions",
+  "slug": "/ferrox/abstractions/validation",
+  "permalink": "/docs/ferrox/abstractions/validation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/abstractions/validation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛡️ Guards (Authorization)",
+    "permalink": "/docs/ferrox/abstractions/guards"
+  },
+  "next": {
+    "title": "🛠️ Code Factory & Generic CRUD Generator",
+    "permalink": "/docs/ferrox/abstractions/crud-generator"
+  }
+}

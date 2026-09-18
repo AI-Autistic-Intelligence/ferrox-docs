@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/integrations/webhooks",
+  "title": "🔗 Outgoing Webhook Dispatcher",
+  "description": "When your platform allows external developers to subscribe to API events (e.g. order.created, invoice.paid), sending reliable outgoing webhooks requires cryptographic signing (HMAC-SHA256) and automated retry logic with exponential backoff.",
+  "source": "@site/docs/ferrox/integrations/webhooks.md",
+  "sourceDirName": "ferrox/integrations",
+  "slug": "/ferrox/integrations/webhooks",
+  "permalink": "/docs/ferrox/integrations/webhooks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/integrations/webhooks.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🚩 Feature Flags & Toggles",
+    "permalink": "/docs/ferrox/integrations/feature-flags"
+  },
+  "next": {
+    "title": "📄 Reports & Cloud Helper Utilities",
+    "permalink": "/docs/ferrox/integrations/reports-and-cloud"
+  }
+}

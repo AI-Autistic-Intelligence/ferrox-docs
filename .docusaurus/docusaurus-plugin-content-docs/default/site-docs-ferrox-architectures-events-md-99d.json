@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/architectures/events",
+  "title": "📡 Event-Driven Architecture & Event Bus",
+  "description": "Event-driven architecture decouples producers of business events from subscribers that react to them (e.g. sending welcome emails when a UserCreatedEvent fires, updating analytics counters, or invalidating caches).",
+  "source": "@site/docs/ferrox/architectures/events.md",
+  "sourceDirName": "ferrox/architectures",
+  "slug": "/ferrox/architectures/events",
+  "permalink": "/docs/ferrox/architectures/events",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/architectures/events.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔄 The Saga Pattern (Distributed Transactions)",
+    "permalink": "/docs/ferrox/architectures/sagas"
+  },
+  "next": {
+    "title": "📬 Background Jobs & Worker Queues",
+    "permalink": "/docs/ferrox/architectures/queues-jobs"
+  }
+}

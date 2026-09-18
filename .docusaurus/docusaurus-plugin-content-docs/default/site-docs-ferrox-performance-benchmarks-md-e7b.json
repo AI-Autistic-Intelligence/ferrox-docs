@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/performance/benchmarks",
+  "title": "⚡ High-Throughput Benchmarks & Tuning",
+  "description": "Ferrox is designed to process 100,000+ HTTP requests per second per node with sub-millisecond latencies.",
+  "source": "@site/docs/ferrox/performance/benchmarks.md",
+  "sourceDirName": "ferrox/performance",
+  "slug": "/ferrox/performance/benchmarks",
+  "permalink": "/docs/ferrox/performance/benchmarks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/performance/benchmarks.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔄 Request Lifecycle & Architecture",
+    "permalink": "/docs/ferrox/overview/lifecycle"
+  },
+  "next": {
+    "title": "🔬 CPU & Memory Profiling (Flamegraphs)",
+    "permalink": "/docs/ferrox/performance/profiling"
+  }
+}

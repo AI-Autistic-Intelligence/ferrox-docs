@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/tutorial/code-factory",
+  "title": "🤖 Part 3: The Code Factory",
+  "description": "Our Backend is solid, but writing the exact same interfaces and API calls manually in TypeScript for the Frontend is an anti-pattern that leads to massive synchronization bugs.",
+  "source": "@site/docs/ferrox/tutorial/03-code-factory.md",
+  "sourceDirName": "ferrox/tutorial",
+  "slug": "/ferrox/tutorial/code-factory",
+  "permalink": "/docs/ferrox/tutorial/code-factory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/tutorial/03-code-factory.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🏗️ Part 2: Building the Core",
+    "permalink": "/docs/ferrox/tutorial/building-the-core"
+  },
+  "next": {
+    "title": "Introduction to Ferrox Front",
+    "permalink": "/docs/ferrox-front/intro"
+  }
+}

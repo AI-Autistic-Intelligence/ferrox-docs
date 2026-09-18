@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/abstractions/pipes",
+  "title": "🛑 Pipes (Validation)",
+  "description": "In NestJS, a Pipe is a class annotated with @Injectable() that implements the PipeTransform interface, typically used to validate or transform input data before it reaches the Controller.",
+  "source": "@site/docs/ferrox/abstractions/pipes.md",
+  "sourceDirName": "ferrox/abstractions",
+  "slug": "/ferrox/abstractions/pipes",
+  "permalink": "/docs/ferrox/abstractions/pipes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/abstractions/pipes.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/ferrox/overview"
+  },
+  "next": {
+    "title": "🛡️ Guards (Authorization)",
+    "permalink": "/docs/ferrox/abstractions/guards"
+  }
+}

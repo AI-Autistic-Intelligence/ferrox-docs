@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/performance/profiling",
+  "title": "🔬 CPU & Memory Profiling (Flamegraphs)",
+  "description": "Identifying performance bottlenecks, CPU hot paths, and unexpected heap memory allocations in production systems requires low-overhead profiling tools.",
+  "source": "@site/docs/ferrox/performance/profiling.md",
+  "sourceDirName": "ferrox/performance",
+  "slug": "/ferrox/performance/profiling",
+  "permalink": "/docs/ferrox/performance/profiling",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/performance/profiling.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "⚡ High-Throughput Benchmarks & Tuning",
+    "permalink": "/docs/ferrox/performance/benchmarks"
+  },
+  "next": {
+    "title": "🔒 Zero-Trust & Dual JWT",
+    "permalink": "/docs/ferrox/security/jwt"
+  }
+}

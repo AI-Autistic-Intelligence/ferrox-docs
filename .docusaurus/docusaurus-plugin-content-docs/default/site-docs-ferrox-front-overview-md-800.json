@@ -19,11 +19,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "🤖 Part 3: The Code Factory",
-    "permalink": "/docs/ferrox/docs/tutorial/code-factory"
+    "title": "Introduction to Ferrox Front",
+    "permalink": "/docs/ferrox-front/intro"
   },
   "next": {
-    "title": "Introduction to Ferrox Front",
-    "permalink": "/docs/ferrox-front/docs/intro"
+    "title": "Ferrox Front Core Engine (ferrox-front-core)",
+    "permalink": "/docs/ferrox-front/core"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/intro",
+  "title": "Introduction to Ferrox Front",
+  "description": "Ferrox Front is a native Rust UI framework compiled to WebAssembly (Wasm), designed for building Enterprise SaaS applications, high-performance real-time dashboards, and Zero-Trust micro-frontend architectures.",
+  "source": "@site/docs/ferrox-front/intro.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/intro",
+  "permalink": "/docs/ferrox-front/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction to Ferrox Front",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🤖 Part 3: The Code Factory",
+    "permalink": "/docs/ferrox/tutorial/code-factory"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/ferrox-front/overview"
+  }
+}

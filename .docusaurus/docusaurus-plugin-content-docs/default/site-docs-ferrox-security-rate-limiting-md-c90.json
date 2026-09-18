@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/security/rate-limiting",
+  "title": "🛡️ Rate Limiting & Throttling",
+  "description": "To protect APIs from abuse, credential stuffing attacks, and Denial of Service (DoS), Ferrox provides ferrox-rate-limiter—a Redis-backed rate limiting engine implementing atomic fixed-window and token-bucket algorithms.",
+  "source": "@site/docs/ferrox/security/rate-limiting.md",
+  "sourceDirName": "ferrox/security",
+  "slug": "/ferrox/security/rate-limiting",
+  "permalink": "/docs/ferrox/security/rate-limiting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/rate-limiting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔑 Advanced Security: Dual Tokens & PublicId Obfuscation",
+    "permalink": "/docs/ferrox/security/advanced-auth"
+  },
+  "next": {
+    "title": "⚡ Circuit Breakers & Fault Tolerance",
+    "permalink": "/docs/ferrox/security/circuit-breaker"
+  }
+}

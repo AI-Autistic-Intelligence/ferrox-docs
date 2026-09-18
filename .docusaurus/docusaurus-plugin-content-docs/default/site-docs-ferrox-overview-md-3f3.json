@@ -18,12 +18,8 @@
     "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Website",
-    "permalink": "/docs/ferrox/"
-  },
   "next": {
     "title": "🛑 Pipes (Validation)",
-    "permalink": "/docs/ferrox/docs/abstractions/pipes"
+    "permalink": "/docs/ferrox/abstractions/pipes"
   }
 }

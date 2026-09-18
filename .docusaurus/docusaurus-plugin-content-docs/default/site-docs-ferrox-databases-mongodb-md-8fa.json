@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/databases/mongodb",
+  "title": "🍃 Document Databases (MongoDB)",
+  "description": "For document-oriented storage, Ferrox provides ferrox-database-mongo, wrapping the official mongodb driver for Rust.",
+  "source": "@site/docs/ferrox/databases/mongodb.md",
+  "sourceDirName": "ferrox/databases",
+  "slug": "/ferrox/databases/mongodb",
+  "permalink": "/docs/ferrox/databases/mongodb",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/databases/mongodb.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🐘 Relational Databases (SeaORM)",
+    "permalink": "/docs/ferrox/databases/seaorm"
+  },
+  "next": {
+    "title": "🔴 In-Memory Caching & Redis",
+    "permalink": "/docs/ferrox/databases/redis"
+  }
+}

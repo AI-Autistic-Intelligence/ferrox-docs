@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/integrations/payments",
+  "title": "💳 Payment Gateways (Stripe & Google Pay)",
+  "description": "Integrating e-commerce payments requires secure checkout session handling and cryptographic signature verification of incoming payment webhooks.",
+  "source": "@site/docs/ferrox/integrations/payments.md",
+  "sourceDirName": "ferrox/integrations",
+  "slug": "/ferrox/integrations/payments",
+  "permalink": "/docs/ferrox/integrations/payments",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/integrations/payments.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📧 Email Dispatching (Mailer)",
+    "permalink": "/docs/ferrox/integrations/mailer"
+  },
+  "next": {
+    "title": "🔔 Notifications & Slack Integration",
+    "permalink": "/docs/ferrox/integrations/notifications"
+  }
+}

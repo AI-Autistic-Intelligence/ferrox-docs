@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/quickstart",
+  "title": "Quickstart Guide",
+  "description": "This guide demonstrates how to install prerequisites, build your first WebAssembly application in Rust using Ferrox Front, and run it in the browser.",
+  "source": "@site/docs/ferrox-front/quickstart.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/quickstart",
+  "permalink": "/docs/ferrox-front/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "quickstart",
+    "title": "Quickstart Guide",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ferrox Front Core Engine (ferrox-front-core)",
+    "permalink": "/docs/ferrox-front/core"
+  },
+  "next": {
+    "title": "Architecture Deep Dive",
+    "permalink": "/docs/ferrox-front/architecture"
+  }
+}

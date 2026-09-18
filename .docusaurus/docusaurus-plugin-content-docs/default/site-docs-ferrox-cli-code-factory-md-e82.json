@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/cli/code-factory",
+  "title": "🛠️ The Code Factory",
+  "description": "The defining feature of Ferrox is its ability to break the boundary between Backend and Frontend.",
+  "source": "@site/docs/ferrox/cli/code-factory.md",
+  "sourceDirName": "ferrox/cli",
+  "slug": "/ferrox/cli/code-factory",
+  "permalink": "/docs/ferrox/cli/code-factory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/cli/code-factory.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "⏰ Cron Task Scheduling",
+    "permalink": "/docs/ferrox/architectures/task-scheduling"
+  },
+  "next": {
+    "title": "🛠️ CLI Commands Reference",
+    "permalink": "/docs/ferrox/cli/commands-reference"
+  }
+}

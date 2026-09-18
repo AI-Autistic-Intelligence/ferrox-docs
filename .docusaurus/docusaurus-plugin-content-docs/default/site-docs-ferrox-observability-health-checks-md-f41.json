@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/observability/health-checks",
+  "title": "🩺 Kubernetes Health Probes (Liveness & Readiness)",
+  "description": "Container orchestrators like Kubernetes require standardized HTTP endpoints to monitor application health and manage pod lifecycles:",
+  "source": "@site/docs/ferrox/observability/health-checks.md",
+  "sourceDirName": "ferrox/observability",
+  "slug": "/ferrox/observability/health-checks",
+  "permalink": "/docs/ferrox/observability/health-checks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/observability/health-checks.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📊 Structured Logging & Sentry Integration",
+    "permalink": "/docs/ferrox/observability/logging"
+  },
+  "next": {
+    "title": "📈 Prometheus Metrics Export",
+    "permalink": "/docs/ferrox/observability/metrics"
+  }
+}

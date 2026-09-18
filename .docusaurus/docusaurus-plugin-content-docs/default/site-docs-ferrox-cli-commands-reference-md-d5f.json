@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/cli/commands-reference",
+  "title": "🛠️ CLI Commands Reference",
+  "description": "cargo-ferrox provides an interactive command-line interface for scaffolding new projects and generating strongly typed TypeScript API clients for frontend applications.",
+  "source": "@site/docs/ferrox/cli/commands-reference.md",
+  "sourceDirName": "ferrox/cli",
+  "slug": "/ferrox/cli/commands-reference",
+  "permalink": "/docs/ferrox/cli/commands-reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/cli/commands-reference.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛠️ The Code Factory",
+    "permalink": "/docs/ferrox/cli/code-factory"
+  },
+  "next": {
+    "title": "💖 Support & Donations",
+    "permalink": "/docs/ferrox/community/donations"
+  }
+}

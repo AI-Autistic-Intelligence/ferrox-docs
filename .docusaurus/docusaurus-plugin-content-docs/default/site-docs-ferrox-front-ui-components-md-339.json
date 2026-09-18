@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/ui-components",
+  "title": "Glassmorphism Design System (ferrox-front-ui)",
+  "description": "ferrox-front-ui provides a complete, enterprise-grade Glassmorphism Design System for WebAssembly applications. It includes Design Tokens, a 12-column responsive layout grid, a Virtualized DataGrid (1,000,000+ rows), and a comprehensive library of pre-styled UI components.",
+  "source": "@site/docs/ferrox-front/ui-components.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/ui-components",
+  "permalink": "/docs/ferrox-front/ui-components",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/ui-components.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "ui-components",
+    "title": "Glassmorphism Design System (ferrox-front-ui)",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Reactivity & Signals API",
+    "permalink": "/docs/ferrox-front/reactivity"
+  },
+  "next": {
+    "title": "SPA Routing & Micro-Frontends",
+    "permalink": "/docs/ferrox-front/routing"
+  }
+}

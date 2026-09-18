@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/deployment/ci-cd",
+  "title": "🤖 CI/CD Automation & GitHub Actions",
+  "description": "Automating testing, code quality linting, security vulnerability auditing, and documentation deployment ensures continuous delivery without regressions.",
+  "source": "@site/docs/ferrox/deployment/ci-cd.md",
+  "sourceDirName": "ferrox/deployment",
+  "slug": "/ferrox/deployment/ci-cd",
+  "permalink": "/docs/ferrox/deployment/ci-cd",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/deployment/ci-cd.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🏭 Production Deployment: Docker & Kubernetes",
+    "permalink": "/docs/ferrox/deployment/docker-kubernetes"
+  },
+  "next": {
+    "title": "🕹️ Controllers: The Masterpiece Guide",
+    "permalink": "/docs/ferrox/fundamentals/controllers"
+  }
+}

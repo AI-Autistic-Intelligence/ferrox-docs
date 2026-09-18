@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/core",
+  "title": "Ferrox Front Core Engine (ferrox-front-core)",
+  "description": "ferrox-front-core is the foundational engine of Ferrox Front. It houses the fine-grained Signals Reactivity Graph, the zero-copy Wasm DOM Builder, and the Glassmorphism Theme System.",
+  "source": "@site/docs/ferrox-front/core.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/core",
+  "permalink": "/docs/ferrox-front/core",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/core.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "core",
+    "title": "Ferrox Front Core Engine (ferrox-front-core)",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/ferrox-front/overview"
+  },
+  "next": {
+    "title": "Quickstart Guide",
+    "permalink": "/docs/ferrox-front/quickstart"
+  }
+}

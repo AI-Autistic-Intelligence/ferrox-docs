@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/fundamentals/providers",
+  "title": "💉 Providers & Dependency Injection",
+  "description": "Providers are a fundamental concept in Ferrox. Many of the basic Ferrox classes may be treated as a provider – services, repositories, factories, helpers, and so on.",
+  "source": "@site/docs/ferrox/fundamentals/providers.md",
+  "sourceDirName": "ferrox/fundamentals",
+  "slug": "/ferrox/fundamentals/providers",
+  "permalink": "/docs/ferrox/fundamentals/providers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/fundamentals/providers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🕹️ Controllers: The Masterpiece Guide",
+    "permalink": "/docs/ferrox/fundamentals/controllers"
+  },
+  "next": {
+    "title": "🔗 Middlewares",
+    "permalink": "/docs/ferrox/fundamentals/middlewares"
+  }
+}

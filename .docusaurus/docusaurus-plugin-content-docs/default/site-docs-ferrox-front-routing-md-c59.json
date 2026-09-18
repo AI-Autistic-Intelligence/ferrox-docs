@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/routing",
+  "title": "SPA Routing & Micro-Frontends",
+  "description": "ferrox-front-router provides client-side SPA routing backed by the browser History API without page reloads.",
+  "source": "@site/docs/ferrox-front/routing.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/routing",
+  "permalink": "/docs/ferrox-front/routing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/routing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "routing",
+    "title": "SPA Routing & Micro-Frontends",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Glassmorphism Design System (ferrox-front-ui)",
+    "permalink": "/docs/ferrox-front/ui-components"
+  },
+  "next": {
+    "title": "Component Library & Interactive Playground",
+    "permalink": "/docs/ferrox-front/components"
+  }
+}

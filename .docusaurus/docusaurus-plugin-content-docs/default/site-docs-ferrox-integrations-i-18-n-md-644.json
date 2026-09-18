@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/integrations/i18n",
+  "title": "🌐 Internationalization (i18n)",
+  "description": "Global enterprise applications require serving localized user interface strings and translated error messages based on the client's Accept-Language HTTP header.",
+  "source": "@site/docs/ferrox/integrations/i18n.md",
+  "sourceDirName": "ferrox/integrations",
+  "slug": "/ferrox/integrations/i18n",
+  "permalink": "/docs/ferrox/integrations/i18n",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/integrations/i18n.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📄 Reports & Cloud Helper Utilities",
+    "permalink": "/docs/ferrox/integrations/reports-and-cloud"
+  },
+  "next": {
+    "title": "📊 Structured Logging & Sentry Integration",
+    "permalink": "/docs/ferrox/observability/logging"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/transports/graphql-advanced",
+  "title": "🚀 Advanced GraphQL: DataLoader & Subscriptions",
+  "description": "Standard GraphQL query resolvers suffer from the infamous N+1 Query Problem. If a client fetches a list of 100 posts along with their authors, a naive resolver fires 1 initial query for posts plus 100 individual database queries for each author (101 total DB roundtrips!).",
+  "source": "@site/docs/ferrox/transports/graphql-advanced.md",
+  "sourceDirName": "ferrox/transports",
+  "slug": "/ferrox/transports/graphql-advanced",
+  "permalink": "/docs/ferrox/transports/graphql-advanced",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/transports/graphql-advanced.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🕸️ GraphQL API Integration",
+    "permalink": "/docs/ferrox/transports/graphql"
+  },
+  "next": {
+    "title": "📡 Server-Sent Events (SSE)",
+    "permalink": "/docs/ferrox/transports/sse"
+  }
+}

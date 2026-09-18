@@ -20,7 +20,7 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
-    "permalink": "/docs/ferrox-front/docs/ws"
+    "permalink": "/docs/ferrox-front/ws"
   },
   "next": {
     "title": "Overview",

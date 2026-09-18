@@ -1,0 +1,24 @@
+{
+  "id": "ferrox/community/donations",
+  "title": "💖 Support & Donations",
+  "description": "First of all, thank you for using and considering supporting Ferrox Framework! 🚀",
+  "source": "@site/docs/ferrox/community/donations.md",
+  "sourceDirName": "ferrox/community",
+  "slug": "/ferrox/community/donations",
+  "permalink": "/docs/ferrox/community/donations",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/community/donations.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛠️ CLI Commands Reference",
+    "permalink": "/docs/ferrox/cli/commands-reference"
+  },
+  "next": {
+    "title": "💾 Persistence Architecture & Repository Pattern",
+    "permalink": "/docs/ferrox/databases/overview"
+  }
+}

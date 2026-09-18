@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/fundamentals/interceptors",
+  "title": "🔄 Interceptors: Request Execution Pipeline",
+  "description": "An Interceptor in Ferrox is a middle layer that wraps handler execution, inspired by NestJS Interceptors and Aspect-Oriented Programming (AOP). Interceptors allow you to inspect, transform, or log incoming HTTP requests and outgoing HTTP responses.",
+  "source": "@site/docs/ferrox/fundamentals/interceptors.md",
+  "sourceDirName": "ferrox/fundamentals",
+  "slug": "/ferrox/fundamentals/interceptors",
+  "permalink": "/docs/ferrox/fundamentals/interceptors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/fundamentals/interceptors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔗 Middlewares",
+    "permalink": "/docs/ferrox/fundamentals/middlewares"
+  },
+  "next": {
+    "title": "🚨 Centralized Error Handling & Exception Filters",
+    "permalink": "/docs/ferrox/fundamentals/errors"
+  }
+}

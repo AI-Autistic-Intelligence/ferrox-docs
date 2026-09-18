@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/overview/first-steps",
+  "title": "🚀 First Steps: Getting Started",
+  "description": "This guide walks you through building your very first Ferrox application from scratch. We will cover environment preparation, application bootstrapping, router setup, and starting the HTTP transport server.",
+  "source": "@site/docs/ferrox/overview/first-steps.md",
+  "sourceDirName": "ferrox/overview",
+  "slug": "/ferrox/overview/first-steps",
+  "permalink": "/docs/ferrox/overview/first-steps",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/overview/first-steps.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🚀 Introduction",
+    "permalink": "/docs/ferrox/overview/introduction"
+  },
+  "next": {
+    "title": "🔄 Request Lifecycle & Architecture",
+    "permalink": "/docs/ferrox/overview/lifecycle"
+  }
+}

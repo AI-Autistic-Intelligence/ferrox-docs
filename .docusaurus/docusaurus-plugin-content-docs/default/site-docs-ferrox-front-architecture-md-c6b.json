@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/architecture",
+  "title": "Architecture Deep Dive",
+  "description": "Ferrox Front is engineered using system design principles and zero-cost abstractions to guarantee peak execution performance inside WebAssembly.",
+  "source": "@site/docs/ferrox-front/architecture.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/architecture",
+  "permalink": "/docs/ferrox-front/architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "architecture",
+    "title": "Architecture Deep Dive",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart Guide",
+    "permalink": "/docs/ferrox-front/quickstart"
+  },
+  "next": {
+    "title": "Procedural RSX Macro (ferrox-front-macro)",
+    "permalink": "/docs/ferrox-front/macros"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/tutorial/setup",
+  "title": "🚀 Part 1: Project Setup",
+  "description": "Welcome to the Ferrox Zero-to-Hero Tutorial.",
+  "source": "@site/docs/ferrox/tutorial/01-setup.md",
+  "sourceDirName": "ferrox/tutorial",
+  "slug": "/ferrox/tutorial/setup",
+  "permalink": "/docs/ferrox/tutorial/setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/tutorial/01-setup.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📊 Enterprise DataGrid Query Translators",
+    "permalink": "/docs/ferrox/transports/datagrid"
+  },
+  "next": {
+    "title": "🏗️ Part 2: Building the Core",
+    "permalink": "/docs/ferrox/tutorial/building-the-core"
+  }
+}

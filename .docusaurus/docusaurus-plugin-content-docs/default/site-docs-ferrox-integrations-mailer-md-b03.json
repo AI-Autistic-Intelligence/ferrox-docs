@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/integrations/mailer",
+  "title": "📧 Email Dispatching (Mailer)",
+  "description": "Sending transactional emails (password reset links, account verifications, invoice receipts) is a core requirement for web applications.",
+  "source": "@site/docs/ferrox/integrations/mailer.md",
+  "sourceDirName": "ferrox/integrations",
+  "slug": "/ferrox/integrations/mailer",
+  "permalink": "/docs/ferrox/integrations/mailer",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/integrations/mailer.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🧪 Testing & Quality Assurance Strategy",
+    "permalink": "/docs/ferrox/fundamentals/testing"
+  },
+  "next": {
+    "title": "💳 Payment Gateways (Stripe & Google Pay)",
+    "permalink": "/docs/ferrox/integrations/payments"
+  }
+}

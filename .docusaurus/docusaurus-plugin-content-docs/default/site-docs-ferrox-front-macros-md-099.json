@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/macros",
+  "title": "Procedural RSX Macro (ferrox-front-macro)",
+  "description": "ferrox-front-macro provides the rsx! procedural macro, enabling JSX/HTML-like component syntax directly inside Rust code.",
+  "source": "@site/docs/ferrox-front/macros.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/macros",
+  "permalink": "/docs/ferrox-front/macros",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/macros.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "macros",
+    "title": "Procedural RSX Macro (ferrox-front-macro)",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Architecture Deep Dive",
+    "permalink": "/docs/ferrox-front/architecture"
+  },
+  "next": {
+    "title": "Reactivity & Signals API",
+    "permalink": "/docs/ferrox-front/reactivity"
+  }
+}

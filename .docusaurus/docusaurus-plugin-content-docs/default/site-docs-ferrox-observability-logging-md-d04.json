@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/observability/logging",
+  "title": "📊 Structured Logging & Sentry Integration",
+  "description": "Production observability begins with structured logging. Plain text println! statements are difficult to search in log aggregators like Datadog, Grafana Loki, or AWS CloudWatch.",
+  "source": "@site/docs/ferrox/observability/logging.md",
+  "sourceDirName": "ferrox/observability",
+  "slug": "/ferrox/observability/logging",
+  "permalink": "/docs/ferrox/observability/logging",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/observability/logging.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🌐 Internationalization (i18n)",
+    "permalink": "/docs/ferrox/integrations/i18n"
+  },
+  "next": {
+    "title": "🩺 Kubernetes Health Probes (Liveness & Readiness)",
+    "permalink": "/docs/ferrox/observability/health-checks"
+  }
+}

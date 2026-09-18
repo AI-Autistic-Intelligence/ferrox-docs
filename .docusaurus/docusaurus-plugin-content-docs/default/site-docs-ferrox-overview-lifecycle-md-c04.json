@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/overview/lifecycle",
+  "title": "🔄 Request Lifecycle & Architecture",
+  "description": "To truly understand how Ferrox achieves massive scale and uncompromising security, we must zoom out and look at the \"Big Picture\".",
+  "source": "@site/docs/ferrox/overview/lifecycle.md",
+  "sourceDirName": "ferrox/overview",
+  "slug": "/ferrox/overview/lifecycle",
+  "permalink": "/docs/ferrox/overview/lifecycle",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/overview/lifecycle.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🚀 First Steps: Getting Started",
+    "permalink": "/docs/ferrox/overview/first-steps"
+  },
+  "next": {
+    "title": "⚡ High-Throughput Benchmarks & Tuning",
+    "permalink": "/docs/ferrox/performance/benchmarks"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/security",
+  "title": "Zero-Trust Security & E2EE",
+  "description": "In Ferrox Front, security is enforced directly inside WebAssembly bytecode, isolating application memory from browser-based script attacks. The ferrox-front-security crate provides a complete suite of Zero-Trust mechanisms: from memory anti-tampering to biometric passkeys.",
+  "source": "@site/docs/ferrox-front/security.md",
+  "sourceDirName": "ferrox-front",
+  "slug": "/ferrox-front/security",
+  "permalink": "/docs/ferrox-front/security",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/security.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "security",
+    "title": "Zero-Trust Security & E2EE",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Component Library & Interactive Playground",
+    "permalink": "/docs/ferrox-front/components"
+  },
+  "next": {
+    "title": "SaaS Page Templates",
+    "permalink": "/docs/ferrox-front/templates"
+  }
+}

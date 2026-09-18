@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/observability/tracing",
+  "title": "🕵️ OpenTelemetry & Distributed Tracing",
+  "description": "In a distributed microservice network, a single user HTTP request might pass through an API Gateway, an Authentication service, an Inventory service, and a Payments database.",
+  "source": "@site/docs/ferrox/observability/tracing.md",
+  "sourceDirName": "ferrox/observability",
+  "slug": "/ferrox/observability/tracing",
+  "permalink": "/docs/ferrox/observability/tracing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/observability/tracing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📈 Prometheus Metrics Export",
+    "permalink": "/docs/ferrox/observability/metrics"
+  },
+  "next": {
+    "title": "🚀 Introduction",
+    "permalink": "/docs/ferrox/overview/introduction"
+  }
+}

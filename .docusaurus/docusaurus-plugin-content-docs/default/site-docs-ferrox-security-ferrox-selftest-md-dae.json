@@ -1,0 +1,28 @@
+{
+  "id": "ferrox/security/ferrox-selftest",
+  "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
+  "description": "ferrox-selftest is the autonomous verification, continuous integration security benchmark runner, and OWASP Web Security Testing Guide (WSTG) self-attack auditor for the Ferrox ecosystem.",
+  "source": "@site/docs/ferrox/security/ferrox-selftest.md",
+  "sourceDirName": "ferrox/security",
+  "slug": "/ferrox/security/ferrox-selftest",
+  "permalink": "/docs/ferrox/security/ferrox-selftest",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/security/ferrox-selftest.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)",
+    "permalink": "/docs/ferrox/security/ferrox-sentinel"
+  },
+  "next": {
+    "title": "🌐 Multi-Transport Application System",
+    "permalink": "/docs/ferrox/transports/transports-overview"
+  }
+}

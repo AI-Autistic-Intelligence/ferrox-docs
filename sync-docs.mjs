@@ -2,11 +2,11 @@ import fs from 'fs/promises';
 import path from 'path';
 
 const REPOS = {
-  'nestjs-yalc': '../nestjs-yalc/docs',
-  'node-yalc': '../node-yalc/docs',
-  'ferrox-node': '../ferrox-node/docs',
-  'ferrox': '../ferrox/docs',
-  'ferrox-front': '../ferrox-front/docs',
+  'nestjs-yalc': { src: '../nestjs-yalc/docs', isDocusaurus: false },
+  'node-yalc': { src: '../node-yalc/docs', isDocusaurus: false },
+  'ferrox-node': { src: '../ferrox-node/docs', isDocusaurus: false },
+  'ferrox': { src: '../ferrox/docs', isDocusaurus: true },
+  'ferrox-front': { src: '../ferrox-front/docs', isDocusaurus: true },
 };
 
 const DOCS_DIR = './docs';
@@ -45,14 +45,25 @@ async function main() {
   await fs.mkdir(DOCS_DIR, { recursive: true });
 
   // For each repo, create a folder inside docs and copy the markdown files
-  for (const [repoName, srcPath] of Object.entries(REPOS)) {
+  for (const [repoName, repoInfo] of Object.entries(REPOS)) {
     const destPath = path.join(DOCS_DIR, repoName);
     console.log(`Syncing ${repoName}...`);
     
     // Clean old docs for this repo
     await fs.rm(destPath, { recursive: true, force: true });
     
-    await copyDir(srcPath, destPath);
+    if (repoInfo.isDocusaurus) {
+      await fs.mkdir(destPath, { recursive: true });
+      try {
+        await fs.copyFile(path.join(repoInfo.src, 'overview.md'), path.join(destPath, 'overview.md'));
+        console.log(`Copied ${repoInfo.src}/overview.md to ${destPath}/overview.md`);
+      } catch (e) {
+        // ignore
+      }
+      await copyDir(path.join(repoInfo.src, 'docs'), destPath);
+    } else {
+      await copyDir(repoInfo.src, destPath);
+    }
   }
 
   console.log('Documentation synchronization complete.');

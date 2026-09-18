@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/architectures/caching",
+  "title": "⚡ Caching & Stampede Protection",
+  "description": "In high-traffic Enterprise applications, Caching is mandatory. However, caching introduces a catastrophic vulnerability known as a Cache Stampede (or Dog-Piling).",
+  "source": "@site/docs/ferrox/architectures/caching.md",
+  "sourceDirName": "ferrox/architectures",
+  "slug": "/ferrox/architectures/caching",
+  "permalink": "/docs/ferrox/architectures/caching",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/architectures/caching.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🗃️ CQRS (Command Query Responsibility Segregation)",
+    "permalink": "/docs/ferrox/architectures/cqrs"
+  },
+  "next": {
+    "title": "🔄 The Saga Pattern (Distributed Transactions)",
+    "permalink": "/docs/ferrox/architectures/sagas"
+  }
+}

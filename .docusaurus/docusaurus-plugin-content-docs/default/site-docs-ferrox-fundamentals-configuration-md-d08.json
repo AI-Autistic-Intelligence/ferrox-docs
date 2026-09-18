@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/fundamentals/configuration",
+  "title": "⚙️ Typed Configuration Management",
+  "description": "Applications need environment-specific configurations (port numbers, database URLs, JWT secret keys, log levels) that change between Development, Staging, and Production environments.",
+  "source": "@site/docs/ferrox/fundamentals/configuration.md",
+  "sourceDirName": "ferrox/fundamentals",
+  "slug": "/ferrox/fundamentals/configuration",
+  "permalink": "/docs/ferrox/fundamentals/configuration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/fundamentals/configuration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🚨 Centralized Error Handling & Exception Filters",
+    "permalink": "/docs/ferrox/fundamentals/errors"
+  },
+  "next": {
+    "title": "🧪 Testing & Quality Assurance Strategy",
+    "permalink": "/docs/ferrox/fundamentals/testing"
+  }
+}

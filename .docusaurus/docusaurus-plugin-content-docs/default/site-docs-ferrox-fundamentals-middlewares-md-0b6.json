@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/fundamentals/middlewares",
+  "title": "🔗 Middlewares",
+  "description": "Middleware is a function which is called before the route handler. Middleware functions have access to the request and response objects, and the next() middleware function in the application’s request-response cycle.",
+  "source": "@site/docs/ferrox/fundamentals/middlewares.md",
+  "sourceDirName": "ferrox/fundamentals",
+  "slug": "/ferrox/fundamentals/middlewares",
+  "permalink": "/docs/ferrox/fundamentals/middlewares",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/fundamentals/middlewares.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💉 Providers & Dependency Injection",
+    "permalink": "/docs/ferrox/fundamentals/providers"
+  },
+  "next": {
+    "title": "🔄 Interceptors: Request Execution Pipeline",
+    "permalink": "/docs/ferrox/fundamentals/interceptors"
+  }
+}
