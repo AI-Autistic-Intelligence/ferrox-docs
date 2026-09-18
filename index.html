@@ -100,6 +100,50 @@
             margin-top: 2rem;
         }
 
+        .story-section {
+            background: rgba(22, 27, 34, 0.4);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: left;
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .story-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #58a6ff, #e83b46);
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+        }
+
+        .story-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .story-text {
+            color: #8b949e;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .story-text:last-child {
+            margin-bottom: 0;
+        }
+        
+        .story-text strong {
+            color: #c9d1d9;
+        }
+
         .card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
@@ -194,7 +238,20 @@
     
     <div class="container">
         <h1>Ferrox Ecosystem</h1>
-        <p class="subtitle">The Ultimate Rust Arsenal. Select the documentation you wish to consult.</p>
+        <p class="subtitle">The Ultimate Rust & Node Arsenal. Select the documentation you wish to consult.</p>
+
+        <div class="story-section">
+            <h2 class="story-title">Our Journey: From NestJS to Rust and Back</h2>
+            <p class="story-text">
+                It all began at Bitvavo, where the foundation was laid by exporting <strong>nest-yalc</strong>—a robust collection of utilities that we painstakingly shaped into a cohesive framework. But as our ambitions grew, so did our desire for uncompromising performance. This led to a bold decision: a complete rewrite from scratch in <strong>Rust</strong>, a language that inspired the birth of the original <strong>Ferrox</strong>.
+            </p>
+            <p class="story-text">
+                What started as an experimental port slowly matured into a powerful backend framework. Soon after, the need for a repeatable, blazing-fast architecture for frontends sparked the creation of the full Rust Ferrox ecosystem. As the ecosystem evolved, we integrated hardcore security principles—Sentinel AI, LSM guardrails, and PASETO. Suddenly, the "Ferrox" name exploded. It was no longer just synonymous with Rust; it became the ultimate standard for <strong>Security</strong>.
+            </p>
+            <p class="story-text">
+                Realizing that these elite security and architectural concepts shouldn't be confined to a single language, we came full circle. We extracted <strong>node-yalc</strong> from our original nest-yalc codebase to serve as the pure, framework-agnostic core for our newest creation: <strong>Ferrox-Node</strong>. It is the true transpilation of Ferrox's battle-tested concepts and security models, brought back to the Node.js and TypeScript world.
+            </p>
+        </div>
         
         <div class="cards">
             <a href="/backend/" class="card">
@@ -207,6 +264,24 @@
                 <div class="card-icon">⚡</div>
                 <h2>Ferrox Front</h2>
                 <p>The Bootstrap Killer in pure Rust WebAssembly. Discover ultra-fast and modern UI components.</p>
+            </a>
+
+            <a href="https://github.com/AI-Autistic-Intelligence/ferrox-node" target="_blank" class="card">
+                <div class="card-icon">🛡️</div>
+                <h2>Ferrox Node</h2>
+                <p>The ultimate Node.js Security Framework. Dual engines (Fastify/Express), PASETO, and Sentinel AI Guardrails.</p>
+            </a>
+
+            <a href="https://github.com/AI-Autistic-Intelligence/node-yalc" target="_blank" class="card">
+                <div class="card-icon">🧩</div>
+                <h2>Node-Yalc</h2>
+                <p>The framework-agnostic pure TS logic core. Config, Loggers, and Events for any Node environment.</p>
+            </a>
+
+            <a href="https://github.com/AI-Autistic-Intelligence/nestjs-yalc" target="_blank" class="card">
+                <div class="card-icon">🐈</div>
+                <h2>NestJS-Yalc</h2>
+                <p>The enterprise-grade wrapper integrating Node-Yalc's pure logic seamlessly into the NestJS ecosystem.</p>
             </a>
         </div>
     </div>
