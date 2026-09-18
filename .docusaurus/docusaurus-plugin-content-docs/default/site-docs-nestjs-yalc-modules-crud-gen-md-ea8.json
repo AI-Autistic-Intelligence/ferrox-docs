@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/modules/crud-gen",
+  "title": "CRUD Generator",
+  "description": "The @nest-yalc-2/crud-gen module is a powerful code generator that automates the creation of REST controllers and GraphQL resolvers based directly on your TypeORM entities.",
+  "source": "@site/docs/nestjs-yalc/modules/crud-gen.md",
+  "sourceDirName": "nestjs-yalc/modules",
+  "slug": "/nestjs-yalc/modules/crud-gen",
+  "permalink": "/ferrox-docs/docs/nestjs-yalc/modules/crud-gen",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/nestjs-yalc/modules/crud-gen.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "crud-gen",
+    "title": "CRUD Generator",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Logger",
+    "permalink": "/ferrox-docs/docs/nestjs-yalc/modules/logger"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/ferrox-docs/docs/node-yalc/overview"
+  }
+}

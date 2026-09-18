@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/databases/migrations",
+  "title": "🔄 Schema Migrations Management",
+  "description": "As production systems evolve, database schemas require incremental versioning without downtime. ferrox-migrations provides automated schema migrations runner for relational and document databases.",
+  "source": "@site/docs/ferrox/docs/databases/migrations.md",
+  "sourceDirName": "ferrox/docs/databases",
+  "slug": "/ferrox/docs/databases/migrations",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/databases/migrations",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/databases/migrations.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔴 In-Memory Caching & Redis",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/redis"
+  },
+  "next": {
+    "title": "🏭 Production Deployment: Docker & Kubernetes",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/deployment/docker-kubernetes"
+  }
+}

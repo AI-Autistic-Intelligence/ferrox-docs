@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/docs/components",
+  "title": "Component Library & Interactive Playground",
+  "description": "Explore and interact with the Ferrox Front component library live in your browser using our Nivo-Style Interactive Playground.",
+  "source": "@site/docs/ferrox-front/docs/components.md",
+  "sourceDirName": "ferrox-front/docs",
+  "slug": "/ferrox-front/docs/components",
+  "permalink": "/ferrox-docs/docs/ferrox-front/docs/components",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox-front/docs/components.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "components",
+    "title": "Component Library & Interactive Playground",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SPA Routing & Micro-Frontends",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/routing"
+  },
+  "next": {
+    "title": "Zero-Trust Security & E2EE",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/security"
+  }
+}

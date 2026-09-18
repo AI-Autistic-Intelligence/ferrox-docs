@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/architectures/queues-jobs",
+  "title": "📬 Background Jobs & Worker Queues",
+  "description": "Long-running operations (PDF report compilation, video transcoding, external API syncs, batch emails) must never run inside HTTP request handlers.",
+  "source": "@site/docs/ferrox/docs/architectures/queues-jobs.md",
+  "sourceDirName": "ferrox/docs/architectures",
+  "slug": "/ferrox/docs/architectures/queues-jobs",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/queues-jobs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/architectures/queues-jobs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📡 Event-Driven Architecture & Event Bus",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/events"
+  },
+  "next": {
+    "title": "⏰ Cron Task Scheduling",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/task-scheduling"
+  }
+}

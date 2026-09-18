@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/fundamentals/errors",
+  "title": "🚨 Centralized Error Handling & Exception Filters",
+  "description": "Robust applications require predictable, strongly typed error handling. In Ferrox, ferrox-errors provides a centralized AppError enum that implements Axum's IntoResponse trait.",
+  "source": "@site/docs/ferrox/docs/fundamentals/errors.md",
+  "sourceDirName": "ferrox/docs/fundamentals",
+  "slug": "/ferrox/docs/fundamentals/errors",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/errors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/fundamentals/errors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔄 Interceptors: Request Execution Pipeline",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/interceptors"
+  },
+  "next": {
+    "title": "⚙️ Typed Configuration Management",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/configuration"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/transports/file-storage",
+  "title": "📁 File Upload & Storage Abstractions",
+  "description": "Handling user file uploads (profile avatars, document attachments, media assets) requires decoupled storage backends that can switch seamlessly between local filesystem storage in development and S3/MinIO cloud object storage in production.",
+  "source": "@site/docs/ferrox/docs/transports/file-storage.md",
+  "sourceDirName": "ferrox/docs/transports",
+  "slug": "/ferrox/docs/transports/file-storage",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/file-storage",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/transports/file-storage.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📡 Server-Sent Events (SSE)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/sse"
+  },
+  "next": {
+    "title": "📊 Enterprise DataGrid Query Translators",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/datagrid"
+  }
+}

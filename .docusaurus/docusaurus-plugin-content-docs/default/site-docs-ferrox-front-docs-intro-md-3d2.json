@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/docs/intro",
+  "title": "Introduction to Ferrox Front",
+  "description": "Ferrox Front is a native Rust UI framework compiled to WebAssembly (Wasm), designed for building Enterprise SaaS applications, high-performance real-time dashboards, and Zero-Trust micro-frontend architectures.",
+  "source": "@site/docs/ferrox-front/docs/intro.md",
+  "sourceDirName": "ferrox-front/docs",
+  "slug": "/ferrox-front/docs/intro",
+  "permalink": "/ferrox-docs/docs/ferrox-front/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox-front/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction to Ferrox Front",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/ferrox-docs/docs/ferrox-front/overview"
+  },
+  "next": {
+    "title": "Ferrox Front Core Engine (ferrox-front-core)",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/core"
+  }
+}

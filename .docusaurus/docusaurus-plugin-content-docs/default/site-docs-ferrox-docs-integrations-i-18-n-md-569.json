@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/integrations/i18n",
+  "title": "🌐 Internationalization (i18n)",
+  "description": "Global enterprise applications require serving localized user interface strings and translated error messages based on the client's Accept-Language HTTP header.",
+  "source": "@site/docs/ferrox/docs/integrations/i18n.md",
+  "sourceDirName": "ferrox/docs/integrations",
+  "slug": "/ferrox/docs/integrations/i18n",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/i18n",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/integrations/i18n.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📄 Reports & Cloud Helper Utilities",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/reports-and-cloud"
+  },
+  "next": {
+    "title": "📊 Structured Logging & Sentry Integration",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/observability/logging"
+  }
+}

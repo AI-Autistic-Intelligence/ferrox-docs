@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/docs/ws",
+  "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
+  "description": "ferrox-front-ws provides an asynchronous WebAssembly WebSocket client engine built natively for Rust frontends. It bridges browser WebSocket APIs (web_sys::WebSocket) with Ferrox Front's reactive Signals graph (Signal), enabling low-latency, real-time bi-directional streaming for dashboards, chat applications, financial tickers, and live notification systems.",
+  "source": "@site/docs/ferrox-front/docs/ws.md",
+  "sourceDirName": "ferrox-front/docs",
+  "slug": "/ferrox-front/docs/ws",
+  "permalink": "/ferrox-docs/docs/ferrox-front/docs/ws",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox-front/docs/ws.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "id": "ws",
+    "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SaaS Page Templates",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/templates"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/ferrox-docs/docs/ferrox-node/overview"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ferrox/docs/security/ferrox-sentinel",
+  "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)",
+  "description": "Ferrox Sentinel (ferrox-sentinel v0.6.0) is an enterprise-grade AI/ML security analytics, threat detection, and kernel defense mesh built directly into the Ferrox framework.",
+  "source": "@site/docs/ferrox/docs/security/ferrox-sentinel.md",
+  "sourceDirName": "ferrox/docs/security",
+  "slug": "/ferrox/docs/security/ferrox-sentinel",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-sentinel",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/security/ferrox-sentinel.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔒 Distributed Synchronization & Locks",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/security/distributed-locks"
+  },
+  "next": {
+    "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-selftest"
+  }
+}

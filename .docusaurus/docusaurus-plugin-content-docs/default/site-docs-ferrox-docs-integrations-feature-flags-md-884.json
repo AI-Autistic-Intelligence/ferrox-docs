@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/integrations/feature-flags",
+  "title": "🚩 Feature Flags & Toggles",
+  "description": "Feature flags allow developers to safely roll out new features to a subset of users, perform A/B testing, or instantaneously disable failing endpoints without redeploying code.",
+  "source": "@site/docs/ferrox/docs/integrations/feature-flags.md",
+  "sourceDirName": "ferrox/docs/integrations",
+  "slug": "/ferrox/docs/integrations/feature-flags",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/feature-flags",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/integrations/feature-flags.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔔 Notifications & Slack Integration",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/notifications"
+  },
+  "next": {
+    "title": "🔗 Outgoing Webhook Dispatcher",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/webhooks"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/docs/templates",
+  "title": "SaaS Page Templates",
+  "description": "ferrox-front-templates provides pre-built SaaS layouts to accelerate enterprise frontend development.",
+  "source": "@site/docs/ferrox-front/docs/templates.md",
+  "sourceDirName": "ferrox-front/docs",
+  "slug": "/ferrox-front/docs/templates",
+  "permalink": "/ferrox-docs/docs/ferrox-front/docs/templates",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox-front/docs/templates.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "templates",
+    "title": "SaaS Page Templates",
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Zero-Trust Security & E2EE",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/security"
+  },
+  "next": {
+    "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/ws"
+  }
+}

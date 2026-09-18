@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/integrations/reports-and-cloud",
+  "title": "📄 Reports & Cloud Helper Utilities",
+  "description": "Enterprise business applications often require generating PDF invoices, CSV data exports, and interacting with Cloud SDKs (AWS S3/DynamoDB, GCP Cloud Storage, Azure Blob Storage).",
+  "source": "@site/docs/ferrox/docs/integrations/reports-and-cloud.md",
+  "sourceDirName": "ferrox/docs/integrations",
+  "slug": "/ferrox/docs/integrations/reports-and-cloud",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/reports-and-cloud",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/integrations/reports-and-cloud.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔗 Outgoing Webhook Dispatcher",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/webhooks"
+  },
+  "next": {
+    "title": "🌐 Internationalization (i18n)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/i18n"
+  }
+}

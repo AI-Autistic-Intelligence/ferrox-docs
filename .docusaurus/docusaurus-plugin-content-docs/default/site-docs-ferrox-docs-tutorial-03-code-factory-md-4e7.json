@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/tutorial/code-factory",
+  "title": "🤖 Part 3: The Code Factory",
+  "description": "Our Backend is solid, but writing the exact same interfaces and API calls manually in TypeScript for the Frontend is an anti-pattern that leads to massive synchronization bugs.",
+  "source": "@site/docs/ferrox/docs/tutorial/03-code-factory.md",
+  "sourceDirName": "ferrox/docs/tutorial",
+  "slug": "/ferrox/docs/tutorial/code-factory",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/code-factory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/tutorial/03-code-factory.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🏗️ Part 2: Building the Core",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/building-the-core"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/ferrox-docs/docs/ferrox-front/overview"
+  }
+}

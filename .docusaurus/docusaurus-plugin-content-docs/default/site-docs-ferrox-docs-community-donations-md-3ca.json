@@ -1,0 +1,24 @@
+{
+  "id": "ferrox/docs/community/donations",
+  "title": "💖 Support & Donations",
+  "description": "First of all, thank you for using and considering supporting Ferrox Framework! 🚀",
+  "source": "@site/docs/ferrox/docs/community/donations.md",
+  "sourceDirName": "ferrox/docs/community",
+  "slug": "/ferrox/docs/community/donations",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/community/donations",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/community/donations.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛠️ CLI Commands Reference",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/cli/commands-reference"
+  },
+  "next": {
+    "title": "💾 Persistence Architecture & Repository Pattern",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/overview"
+  }
+}

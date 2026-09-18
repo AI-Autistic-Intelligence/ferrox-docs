@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/architectures/api-gateway",
+  "title": "🛡️ Zero-Trust API Gateway Pattern",
+  "description": "In enterprise microservice architectures, authenticating requests against a database across 50 separate microservices creates massive database connection bottlenecks and security perimeters.",
+  "source": "@site/docs/ferrox/docs/architectures/api-gateway.md",
+  "sourceDirName": "ferrox/docs/architectures",
+  "slug": "/ferrox/docs/architectures/api-gateway",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/api-gateway",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/architectures/api-gateway.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛠️ Code Factory & Generic CRUD Generator",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/crud-generator"
+  },
+  "next": {
+    "title": "🗃️ CQRS (Command Query Responsibility Segregation)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/cqrs"
+  }
+}

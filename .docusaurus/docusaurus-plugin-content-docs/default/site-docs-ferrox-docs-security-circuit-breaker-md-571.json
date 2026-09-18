@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/security/circuit-breaker",
+  "title": "⚡ Circuit Breakers & Fault Tolerance",
+  "description": "In distributed microservices, downstream database outages or third-party API latency spikes can exhaust server connection threads, causing cascading failures across your entire infrastructure.",
+  "source": "@site/docs/ferrox/docs/security/circuit-breaker.md",
+  "sourceDirName": "ferrox/docs/security",
+  "slug": "/ferrox/docs/security/circuit-breaker",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/security/circuit-breaker",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/security/circuit-breaker.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛡️ Rate Limiting & Throttling",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/security/rate-limiting"
+  },
+  "next": {
+    "title": "🚀 Singleflight: Cache Stampede Protection",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/security/singleflight"
+  }
+}

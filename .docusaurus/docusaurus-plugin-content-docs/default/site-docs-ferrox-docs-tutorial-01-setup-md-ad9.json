@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/tutorial/setup",
+  "title": "🚀 Part 1: Project Setup",
+  "description": "Welcome to the Ferrox Zero-to-Hero Tutorial.",
+  "source": "@site/docs/ferrox/docs/tutorial/01-setup.md",
+  "sourceDirName": "ferrox/docs/tutorial",
+  "slug": "/ferrox/docs/tutorial/setup",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/tutorial/01-setup.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📊 Enterprise DataGrid Query Translators",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/datagrid"
+  },
+  "next": {
+    "title": "🏗️ Part 2: Building the Core",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/building-the-core"
+  }
+}

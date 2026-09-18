@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/transports/graphql",
+  "title": "🕸️ GraphQL API Integration",
+  "description": "GraphQL allows frontend clients to request precisely the data fields they need, reducing over-fetching and network payload sizes.",
+  "source": "@site/docs/ferrox/docs/transports/graphql.md",
+  "sourceDirName": "ferrox/docs/transports",
+  "slug": "/ferrox/docs/transports/graphql",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/transports/graphql.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🌐 Multi-Transport Application System",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/transports-overview"
+  },
+  "next": {
+    "title": "🚀 Advanced GraphQL: DataLoader & Subscriptions",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql-advanced"
+  }
+}

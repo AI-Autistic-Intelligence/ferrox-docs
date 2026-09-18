@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/databases/seaorm",
+  "title": "🐘 Relational Databases (SeaORM)",
+  "description": "For relational databases (PostgreSQL, MySQL, SQLite), Ferrox integrates with SeaORM via ferrox-database-seaorm.",
+  "source": "@site/docs/ferrox/docs/databases/seaorm.md",
+  "sourceDirName": "ferrox/docs/databases",
+  "slug": "/ferrox/docs/databases/seaorm",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/databases/seaorm",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/databases/seaorm.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💾 Persistence Architecture & Repository Pattern",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/overview"
+  },
+  "next": {
+    "title": "🍃 Document Databases (MongoDB)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/mongodb"
+  }
+}

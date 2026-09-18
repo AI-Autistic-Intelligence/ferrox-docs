@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/deployment/docker-kubernetes",
+  "title": "🏭 Production Deployment: Docker & Kubernetes",
+  "description": "Deploying Rust microservices to production environments requires minimal container sizes, high security isolation (non-root runtimes), fast CI build caching, and Kubernetes deployment manifests.",
+  "source": "@site/docs/ferrox/docs/deployment/docker-kubernetes.md",
+  "sourceDirName": "ferrox/docs/deployment",
+  "slug": "/ferrox/docs/deployment/docker-kubernetes",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/deployment/docker-kubernetes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/deployment/docker-kubernetes.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔄 Schema Migrations Management",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/migrations"
+  },
+  "next": {
+    "title": "🤖 CI/CD Automation & GitHub Actions",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/deployment/ci-cd"
+  }
+}

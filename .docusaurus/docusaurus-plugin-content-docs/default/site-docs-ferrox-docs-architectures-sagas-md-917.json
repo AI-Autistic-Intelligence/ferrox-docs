@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/architectures/sagas",
+  "title": "🔄 The Saga Pattern (Distributed Transactions)",
+  "description": "In a monolithic architecture, you can wrap multiple database operations in a single SQL Transaction (BEGIN; ... COMMIT;). If any operation fails, you simply issue a ROLLBACK.",
+  "source": "@site/docs/ferrox/docs/architectures/sagas.md",
+  "sourceDirName": "ferrox/docs/architectures",
+  "slug": "/ferrox/docs/architectures/sagas",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/sagas",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/architectures/sagas.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "⚡ Caching & Stampede Protection",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/caching"
+  },
+  "next": {
+    "title": "📡 Event-Driven Architecture & Event Bus",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/events"
+  }
+}

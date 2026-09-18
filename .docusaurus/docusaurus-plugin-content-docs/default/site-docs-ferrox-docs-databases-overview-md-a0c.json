@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/databases/overview",
+  "title": "💾 Persistence Architecture & Repository Pattern",
+  "description": "In enterprise software development, coupling controllers or business logic directly to raw database queries creates brittle, untestable code.",
+  "source": "@site/docs/ferrox/docs/databases/overview.md",
+  "sourceDirName": "ferrox/docs/databases",
+  "slug": "/ferrox/docs/databases/overview",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/databases/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/databases/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💖 Support & Donations",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/community/donations"
+  },
+  "next": {
+    "title": "🐘 Relational Databases (SeaORM)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/seaorm"
+  }
+}

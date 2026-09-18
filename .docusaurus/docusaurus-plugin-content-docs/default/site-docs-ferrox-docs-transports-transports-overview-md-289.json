@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/transports/transports-overview",
+  "title": "🌐 Multi-Transport Application System",
+  "description": "Most traditional web frameworks only support HTTP REST servers out of the box. Enterprise backend applications, however, often need to run multiple server protocols simultaneously—for example, an HTTP REST API server on port 3000, a gRPC microservice server on port 50051, and an FTP or WebSocket file server.",
+  "source": "@site/docs/ferrox/docs/transports/transports-overview.md",
+  "sourceDirName": "ferrox/docs/transports",
+  "slug": "/ferrox/docs/transports/transports-overview",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/transports-overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/transports/transports-overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-selftest"
+  },
+  "next": {
+    "title": "🕸️ GraphQL API Integration",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql"
+  }
+}

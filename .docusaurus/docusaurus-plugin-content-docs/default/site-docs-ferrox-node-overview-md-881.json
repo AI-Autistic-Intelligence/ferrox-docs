@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-node/overview",
+  "title": "Overview",
+  "description": "Ferrox Node is the crucial bridge that connects the high-performance Rust core (ferrox) with the Node.js ecosystem (nestjs-yalc and node-yalc).",
+  "source": "@site/docs/ferrox-node/overview.md",
+  "sourceDirName": "ferrox-node",
+  "slug": "/ferrox-node/overview",
+  "permalink": "/ferrox-docs/docs/ferrox-node/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox-node/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "overview",
+    "title": "Overview",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/ws"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/ferrox-docs/docs/nestjs-yalc/overview"
+  }
+}

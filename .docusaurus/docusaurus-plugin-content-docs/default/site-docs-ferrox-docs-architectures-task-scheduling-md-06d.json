@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/architectures/task-scheduling",
+  "title": "⏰ Cron Task Scheduling",
+  "description": "Many applications require periodic background tasks—such as clearing expired sessions every night at midnight, recalculating analytics hourly, or polling external feeds every 5 minutes.",
+  "source": "@site/docs/ferrox/docs/architectures/task-scheduling.md",
+  "sourceDirName": "ferrox/docs/architectures",
+  "slug": "/ferrox/docs/architectures/task-scheduling",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/task-scheduling",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/architectures/task-scheduling.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📬 Background Jobs & Worker Queues",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/queues-jobs"
+  },
+  "next": {
+    "title": "🛠️ The Code Factory",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/cli/code-factory"
+  }
+}

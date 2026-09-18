@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/abstractions/crud-generator",
+  "title": "🛠️ Code Factory & Generic CRUD Generator",
+  "description": "Building standard CRUD (Create, Read, Update, Delete) endpoints for dozens of entities generates massive amounts of repetitive boilerplate.",
+  "source": "@site/docs/ferrox/docs/abstractions/crud-generator.md",
+  "sourceDirName": "ferrox/docs/abstractions",
+  "slug": "/ferrox/docs/abstractions/crud-generator",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/crud-generator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/abstractions/crud-generator.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🎯 DTO Validation & AutoZod Extractor",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/validation"
+  },
+  "next": {
+    "title": "🛡️ Zero-Trust API Gateway Pattern",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/api-gateway"
+  }
+}

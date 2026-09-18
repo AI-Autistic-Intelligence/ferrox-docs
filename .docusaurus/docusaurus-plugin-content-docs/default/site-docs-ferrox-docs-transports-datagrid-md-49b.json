@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/transports/datagrid",
+  "title": "📊 Enterprise DataGrid Query Translators",
+  "description": "Enterprise admin dashboards rely on rich frontend data grid libraries like AG Grid, MUI X DataGrid, and TanStack Table. These grids send complex URL query parameters containing filtering, multi-column sorting, page sizes, and search constraints.",
+  "source": "@site/docs/ferrox/docs/transports/datagrid.md",
+  "sourceDirName": "ferrox/docs/transports",
+  "slug": "/ferrox/docs/transports/datagrid",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/datagrid",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/transports/datagrid.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📁 File Upload & Storage Abstractions",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/file-storage"
+  },
+  "next": {
+    "title": "🚀 Part 1: Project Setup",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/setup"
+  }
+}

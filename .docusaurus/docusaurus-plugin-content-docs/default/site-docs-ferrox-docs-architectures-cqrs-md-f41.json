@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/architectures/cqrs",
+  "title": "🗃️ CQRS (Command Query Responsibility Segregation)",
+  "description": "CQRS is an architectural pattern that separates reading data (Queries) from writing data (Commands).",
+  "source": "@site/docs/ferrox/docs/architectures/cqrs.md",
+  "sourceDirName": "ferrox/docs/architectures",
+  "slug": "/ferrox/docs/architectures/cqrs",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/cqrs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/architectures/cqrs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛡️ Zero-Trust API Gateway Pattern",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/api-gateway"
+  },
+  "next": {
+    "title": "⚡ Caching & Stampede Protection",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/caching"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ferrox/README",
+  "title": "Website",
+  "description": "This website is built using Docusaurus, a modern static website generator.",
+  "source": "@site/docs/ferrox/README.md",
+  "sourceDirName": "ferrox",
+  "slug": "/ferrox/",
+  "permalink": "/ferrox-docs/docs/ferrox/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Overview",
+    "permalink": "/ferrox-docs/docs/ferrox/overview"
+  }
+}

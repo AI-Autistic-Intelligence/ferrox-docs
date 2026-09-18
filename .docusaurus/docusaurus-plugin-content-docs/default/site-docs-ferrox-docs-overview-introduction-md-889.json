@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/overview/introduction",
+  "title": "🚀 Introduction",
+  "description": "Welcome to Ferrox (v0.5.0), a progressive Rust framework for building efficient, reliable, enterprise-grade server-side applications.",
+  "source": "@site/docs/ferrox/docs/overview/introduction.md",
+  "sourceDirName": "ferrox/docs/overview",
+  "slug": "/ferrox/docs/overview/introduction",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/overview/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/overview/introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🕵️ OpenTelemetry & Distributed Tracing",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/observability/tracing"
+  },
+  "next": {
+    "title": "🚀 First Steps: Getting Started",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/overview/first-steps"
+  }
+}

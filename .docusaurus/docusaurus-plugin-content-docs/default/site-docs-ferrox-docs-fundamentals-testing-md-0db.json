@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/fundamentals/testing",
+  "title": "🧪 Testing & Quality Assurance Strategy",
+  "description": "Testing in enterprise Rust applications must cover multiple levels of isolation: fast unit tests for business logic, in-memory route tests for controllers without binding to network sockets, and ephemeral containerized integration tests for database operations.",
+  "source": "@site/docs/ferrox/docs/fundamentals/testing.md",
+  "sourceDirName": "ferrox/docs/fundamentals",
+  "slug": "/ferrox/docs/fundamentals/testing",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/testing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/fundamentals/testing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "⚙️ Typed Configuration Management",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/configuration"
+  },
+  "next": {
+    "title": "📧 Email Dispatching (Mailer)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/mailer"
+  }
+}

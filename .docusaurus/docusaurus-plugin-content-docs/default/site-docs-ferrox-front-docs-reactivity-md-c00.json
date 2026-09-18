@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-front/docs/reactivity",
+  "title": "Reactivity & Signals API",
+  "description": "Signals represent the fundamental building block for state management in Ferrox Front.",
+  "source": "@site/docs/ferrox-front/docs/reactivity.md",
+  "sourceDirName": "ferrox-front/docs",
+  "slug": "/ferrox-front/docs/reactivity",
+  "permalink": "/ferrox-docs/docs/ferrox-front/docs/reactivity",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox-front/docs/reactivity.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "reactivity",
+    "title": "Reactivity & Signals API",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Procedural RSX Macro (ferrox-front-macro)",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/macros"
+  },
+  "next": {
+    "title": "Glassmorphism Design System (ferrox-front-ui)",
+    "permalink": "/ferrox-docs/docs/ferrox-front/docs/ui-components"
+  }
+}

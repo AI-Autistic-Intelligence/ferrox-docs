@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/cli/commands-reference",
+  "title": "🛠️ CLI Commands Reference",
+  "description": "cargo-ferrox provides an interactive command-line interface for scaffolding new projects and generating strongly typed TypeScript API clients for frontend applications.",
+  "source": "@site/docs/ferrox/docs/cli/commands-reference.md",
+  "sourceDirName": "ferrox/docs/cli",
+  "slug": "/ferrox/docs/cli/commands-reference",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/cli/commands-reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/cli/commands-reference.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛠️ The Code Factory",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/cli/code-factory"
+  },
+  "next": {
+    "title": "💖 Support & Donations",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/community/donations"
+  }
+}

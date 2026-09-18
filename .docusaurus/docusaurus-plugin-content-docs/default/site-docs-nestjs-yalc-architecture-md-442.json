@@ -1,0 +1,29 @@
+{
+  "id": "nestjs-yalc/architecture",
+  "title": "Architecture",
+  "description": "NestJS-YALC is structured as a modular monorepo, providing a bridge between raw Node.js utilities and the NestJS dependency injection system.",
+  "source": "@site/docs/nestjs-yalc/architecture.md",
+  "sourceDirName": "nestjs-yalc",
+  "slug": "/nestjs-yalc/architecture",
+  "permalink": "/ferrox-docs/docs/nestjs-yalc/architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/nestjs-yalc/architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "architecture",
+    "title": "Architecture",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/ferrox-docs/docs/nestjs-yalc/overview"
+  },
+  "next": {
+    "title": "Logger",
+    "permalink": "/ferrox-docs/docs/nestjs-yalc/modules/logger"
+  }
+}

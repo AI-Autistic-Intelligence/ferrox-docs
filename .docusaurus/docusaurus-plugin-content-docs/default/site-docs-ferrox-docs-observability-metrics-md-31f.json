@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/observability/metrics",
+  "title": "📈 Prometheus Metrics Export",
+  "description": "Monitoring real-time application throughput, request latencies, and error rates requires exporting metrics to monitoring platforms like Prometheus and Grafana.",
+  "source": "@site/docs/ferrox/docs/observability/metrics.md",
+  "sourceDirName": "ferrox/docs/observability",
+  "slug": "/ferrox/docs/observability/metrics",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/observability/metrics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/observability/metrics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🩺 Kubernetes Health Probes (Liveness & Readiness)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/observability/health-checks"
+  },
+  "next": {
+    "title": "🕵️ OpenTelemetry & Distributed Tracing",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/observability/tracing"
+  }
+}

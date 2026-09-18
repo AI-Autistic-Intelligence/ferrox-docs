@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/security/jwt",
+  "title": "🔒 Zero-Trust & Dual JWT",
+  "description": "Ferrox adopts a Zero-Trust security posture by default. This means that every single HTTP request, even internal ones coming from other microservices, is treated as hostile until proven valid.",
+  "source": "@site/docs/ferrox/docs/security/jwt.md",
+  "sourceDirName": "ferrox/docs/security",
+  "slug": "/ferrox/docs/security/jwt",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/security/jwt",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/security/jwt.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔬 CPU & Memory Profiling (Flamegraphs)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/performance/profiling"
+  },
+  "next": {
+    "title": "🔑 Advanced Security: Dual Tokens & PublicId Obfuscation",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/security/advanced-auth"
+  }
+}

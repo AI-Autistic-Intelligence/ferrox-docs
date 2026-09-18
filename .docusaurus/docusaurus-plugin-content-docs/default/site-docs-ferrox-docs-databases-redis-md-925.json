@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/databases/redis",
+  "title": "🔴 In-Memory Caching & Redis",
+  "description": "Redis is the standard in-memory storage engine for high-speed session management, caching, distributed locks, rate limiting, and real-time pub/sub.",
+  "source": "@site/docs/ferrox/docs/databases/redis.md",
+  "sourceDirName": "ferrox/docs/databases",
+  "slug": "/ferrox/docs/databases/redis",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/databases/redis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/databases/redis.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🍃 Document Databases (MongoDB)",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/mongodb"
+  },
+  "next": {
+    "title": "🔄 Schema Migrations Management",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/migrations"
+  }
+}

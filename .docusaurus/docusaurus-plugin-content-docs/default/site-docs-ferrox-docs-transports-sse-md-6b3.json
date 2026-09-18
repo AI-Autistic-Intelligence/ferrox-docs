@@ -1,0 +1,27 @@
+{
+  "id": "ferrox/docs/transports/sse",
+  "title": "📡 Server-Sent Events (SSE)",
+  "description": "For real-time, unidirectional server-to-client data streaming (such as live stock price ticks, progress bars, or AI text streaming responses like ChatGPT), Server-Sent Events (SSE) provide a lightweight HTTP-native protocol.",
+  "source": "@site/docs/ferrox/docs/transports/sse.md",
+  "sourceDirName": "ferrox/docs/transports",
+  "slug": "/ferrox/docs/transports/sse",
+  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/sse",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/docs/ferrox/docs/transports/sse.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🚀 Advanced GraphQL: DataLoader & Subscriptions",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql-advanced"
+  },
+  "next": {
+    "title": "📁 File Upload & Storage Abstractions",
+    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/file-storage"
+  }
+}
