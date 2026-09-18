@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/deployment/docker-kubernetes.md",
   "sourceDirName": "ferrox/docs/deployment",
   "slug": "/ferrox/docs/deployment/docker-kubernetes",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/deployment/docker-kubernetes",
+  "permalink": "/docs/ferrox/docs/deployment/docker-kubernetes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/deployment/docker-kubernetes.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🔄 Schema Migrations Management",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/migrations"
+    "permalink": "/docs/ferrox/docs/databases/migrations"
   },
   "next": {
     "title": "🤖 CI/CD Automation & GitHub Actions",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/deployment/ci-cd"
+    "permalink": "/docs/ferrox/docs/deployment/ci-cd"
   }
 }

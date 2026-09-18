@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/integrations/feature-flags.md",
   "sourceDirName": "ferrox/docs/integrations",
   "slug": "/ferrox/docs/integrations/feature-flags",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/feature-flags",
+  "permalink": "/docs/ferrox/docs/integrations/feature-flags",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/integrations/feature-flags.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🔔 Notifications & Slack Integration",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/notifications"
+    "permalink": "/docs/ferrox/docs/integrations/notifications"
   },
   "next": {
     "title": "🔗 Outgoing Webhook Dispatcher",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/webhooks"
+    "permalink": "/docs/ferrox/docs/integrations/webhooks"
   }
 }

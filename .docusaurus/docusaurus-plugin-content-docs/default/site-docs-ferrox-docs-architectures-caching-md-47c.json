@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/architectures/caching.md",
   "sourceDirName": "ferrox/docs/architectures",
   "slug": "/ferrox/docs/architectures/caching",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/caching",
+  "permalink": "/docs/ferrox/docs/architectures/caching",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/architectures/caching.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🗃️ CQRS (Command Query Responsibility Segregation)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/cqrs"
+    "permalink": "/docs/ferrox/docs/architectures/cqrs"
   },
   "next": {
     "title": "🔄 The Saga Pattern (Distributed Transactions)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/sagas"
+    "permalink": "/docs/ferrox/docs/architectures/sagas"
   }
 }

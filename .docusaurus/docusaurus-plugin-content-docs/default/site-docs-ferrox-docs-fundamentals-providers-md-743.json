@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/fundamentals/providers.md",
   "sourceDirName": "ferrox/docs/fundamentals",
   "slug": "/ferrox/docs/fundamentals/providers",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/providers",
+  "permalink": "/docs/ferrox/docs/fundamentals/providers",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/fundamentals/providers.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🕹️ Controllers: The Masterpiece Guide",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/controllers"
+    "permalink": "/docs/ferrox/docs/fundamentals/controllers"
   },
   "next": {
     "title": "🔗 Middlewares",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/middlewares"
+    "permalink": "/docs/ferrox/docs/fundamentals/middlewares"
   }
 }

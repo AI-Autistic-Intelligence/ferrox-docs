@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/transports/transports-overview.md",
   "sourceDirName": "ferrox/docs/transports",
   "slug": "/ferrox/docs/transports/transports-overview",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/transports-overview",
+  "permalink": "/docs/ferrox/docs/transports/transports-overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/transports/transports-overview.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-selftest"
+    "permalink": "/docs/ferrox/docs/security/ferrox-selftest"
   },
   "next": {
     "title": "🕸️ GraphQL API Integration",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql"
+    "permalink": "/docs/ferrox/docs/transports/graphql"
   }
 }

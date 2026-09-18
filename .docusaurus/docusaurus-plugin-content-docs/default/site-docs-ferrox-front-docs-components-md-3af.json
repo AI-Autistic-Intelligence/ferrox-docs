@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox-front/docs/components.md",
   "sourceDirName": "ferrox-front/docs",
   "slug": "/ferrox-front/docs/components",
-  "permalink": "/ferrox-docs/docs/ferrox-front/docs/components",
+  "permalink": "/docs/ferrox-front/docs/components",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/docs/components.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "SPA Routing & Micro-Frontends",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/routing"
+    "permalink": "/docs/ferrox-front/docs/routing"
   },
   "next": {
     "title": "Zero-Trust Security & E2EE",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/security"
+    "permalink": "/docs/ferrox-front/docs/security"
   }
 }

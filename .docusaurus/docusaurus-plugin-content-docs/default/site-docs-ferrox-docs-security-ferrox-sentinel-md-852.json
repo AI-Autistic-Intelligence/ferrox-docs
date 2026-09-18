@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/security/ferrox-sentinel.md",
   "sourceDirName": "ferrox/docs/security",
   "slug": "/ferrox/docs/security/ferrox-sentinel",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-sentinel",
+  "permalink": "/docs/ferrox/docs/security/ferrox-sentinel",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/security/ferrox-sentinel.md",
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🔒 Distributed Synchronization & Locks",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/distributed-locks"
+    "permalink": "/docs/ferrox/docs/security/distributed-locks"
   },
   "next": {
     "title": "🧪 Ferrox Selftest (Automated Audit & Benchmarks)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-selftest"
+    "permalink": "/docs/ferrox/docs/security/ferrox-selftest"
   }
 }

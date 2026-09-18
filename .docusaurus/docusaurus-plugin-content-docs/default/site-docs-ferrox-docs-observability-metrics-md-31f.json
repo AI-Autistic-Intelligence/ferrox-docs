@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/observability/metrics.md",
   "sourceDirName": "ferrox/docs/observability",
   "slug": "/ferrox/docs/observability/metrics",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/observability/metrics",
+  "permalink": "/docs/ferrox/docs/observability/metrics",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/observability/metrics.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🩺 Kubernetes Health Probes (Liveness & Readiness)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/observability/health-checks"
+    "permalink": "/docs/ferrox/docs/observability/health-checks"
   },
   "next": {
     "title": "🕵️ OpenTelemetry & Distributed Tracing",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/observability/tracing"
+    "permalink": "/docs/ferrox/docs/observability/tracing"
   }
 }

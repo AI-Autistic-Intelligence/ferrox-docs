@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/databases/overview.md",
   "sourceDirName": "ferrox/docs/databases",
   "slug": "/ferrox/docs/databases/overview",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/databases/overview",
+  "permalink": "/docs/ferrox/docs/databases/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/databases/overview.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "💖 Support & Donations",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/community/donations"
+    "permalink": "/docs/ferrox/docs/community/donations"
   },
   "next": {
     "title": "🐘 Relational Databases (SeaORM)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/seaorm"
+    "permalink": "/docs/ferrox/docs/databases/seaorm"
   }
 }

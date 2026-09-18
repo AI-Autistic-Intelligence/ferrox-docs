@@ -30,7 +30,7 @@ export default {
     }
   },
   "url": "https://AI-Autistic-Intelligence.github.io",
-  "baseUrl": "/ferrox-docs/",
+  "baseUrl": "/",
   "organizationName": "AI-Autistic-Intelligence",
   "projectName": "ferrox-docs",
   "deploymentBranch": "gh-pages",

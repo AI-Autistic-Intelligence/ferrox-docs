@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/fundamentals/middlewares.md",
   "sourceDirName": "ferrox/docs/fundamentals",
   "slug": "/ferrox/docs/fundamentals/middlewares",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/middlewares",
+  "permalink": "/docs/ferrox/docs/fundamentals/middlewares",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/fundamentals/middlewares.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "💉 Providers & Dependency Injection",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/providers"
+    "permalink": "/docs/ferrox/docs/fundamentals/providers"
   },
   "next": {
     "title": "🔄 Interceptors: Request Execution Pipeline",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/interceptors"
+    "permalink": "/docs/ferrox/docs/fundamentals/interceptors"
   }
 }

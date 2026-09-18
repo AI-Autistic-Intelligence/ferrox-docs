@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox-front/docs/reactivity.md",
   "sourceDirName": "ferrox-front/docs",
   "slug": "/ferrox-front/docs/reactivity",
-  "permalink": "/ferrox-docs/docs/ferrox-front/docs/reactivity",
+  "permalink": "/docs/ferrox-front/docs/reactivity",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/docs/reactivity.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Procedural RSX Macro (ferrox-front-macro)",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/macros"
+    "permalink": "/docs/ferrox-front/docs/macros"
   },
   "next": {
     "title": "Glassmorphism Design System (ferrox-front-ui)",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/ui-components"
+    "permalink": "/docs/ferrox-front/docs/ui-components"
   }
 }

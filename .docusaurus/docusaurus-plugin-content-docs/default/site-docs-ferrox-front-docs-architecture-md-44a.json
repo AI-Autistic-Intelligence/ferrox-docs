@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox-front/docs/architecture.md",
   "sourceDirName": "ferrox-front/docs",
   "slug": "/ferrox-front/docs/architecture",
-  "permalink": "/ferrox-docs/docs/ferrox-front/docs/architecture",
+  "permalink": "/docs/ferrox-front/docs/architecture",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/docs/architecture.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Quickstart Guide",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/quickstart"
+    "permalink": "/docs/ferrox-front/docs/quickstart"
   },
   "next": {
     "title": "Procedural RSX Macro (ferrox-front-macro)",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/macros"
+    "permalink": "/docs/ferrox-front/docs/macros"
   }
 }

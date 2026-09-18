@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/overview.md",
   "sourceDirName": "ferrox",
   "slug": "/ferrox/overview",
-  "permalink": "/ferrox-docs/docs/ferrox/overview",
+  "permalink": "/docs/ferrox/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/overview.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Website",
-    "permalink": "/ferrox-docs/docs/ferrox/"
+    "permalink": "/docs/ferrox/"
   },
   "next": {
     "title": "🛑 Pipes (Validation)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/pipes"
+    "permalink": "/docs/ferrox/docs/abstractions/pipes"
   }
 }

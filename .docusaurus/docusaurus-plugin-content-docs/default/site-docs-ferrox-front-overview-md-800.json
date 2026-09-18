@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox-front/overview.md",
   "sourceDirName": "ferrox-front",
   "slug": "/ferrox-front/overview",
-  "permalink": "/ferrox-docs/docs/ferrox-front/overview",
+  "permalink": "/docs/ferrox-front/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/overview.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🤖 Part 3: The Code Factory",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/code-factory"
+    "permalink": "/docs/ferrox/docs/tutorial/code-factory"
   },
   "next": {
     "title": "Introduction to Ferrox Front",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/intro"
+    "permalink": "/docs/ferrox-front/docs/intro"
   }
 }

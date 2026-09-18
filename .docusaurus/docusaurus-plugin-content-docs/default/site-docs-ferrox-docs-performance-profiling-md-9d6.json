@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/performance/profiling.md",
   "sourceDirName": "ferrox/docs/performance",
   "slug": "/ferrox/docs/performance/profiling",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/performance/profiling",
+  "permalink": "/docs/ferrox/docs/performance/profiling",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/performance/profiling.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "⚡ High-Throughput Benchmarks & Tuning",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/performance/benchmarks"
+    "permalink": "/docs/ferrox/docs/performance/benchmarks"
   },
   "next": {
     "title": "🔒 Zero-Trust & Dual JWT",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/jwt"
+    "permalink": "/docs/ferrox/docs/security/jwt"
   }
 }

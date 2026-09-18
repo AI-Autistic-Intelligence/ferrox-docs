@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/security/distributed-locks.md",
   "sourceDirName": "ferrox/docs/security",
   "slug": "/ferrox/docs/security/distributed-locks",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/security/distributed-locks",
+  "permalink": "/docs/ferrox/docs/security/distributed-locks",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/security/distributed-locks.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🚀 Singleflight: Cache Stampede Protection",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/singleflight"
+    "permalink": "/docs/ferrox/docs/security/singleflight"
   },
   "next": {
     "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-sentinel"
+    "permalink": "/docs/ferrox/docs/security/ferrox-sentinel"
   }
 }

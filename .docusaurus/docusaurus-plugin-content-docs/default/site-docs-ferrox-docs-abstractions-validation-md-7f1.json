@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/abstractions/validation.md",
   "sourceDirName": "ferrox/docs/abstractions",
   "slug": "/ferrox/docs/abstractions/validation",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/validation",
+  "permalink": "/docs/ferrox/docs/abstractions/validation",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/abstractions/validation.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🛡️ Guards (Authorization)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/guards"
+    "permalink": "/docs/ferrox/docs/abstractions/guards"
   },
   "next": {
     "title": "🛠️ Code Factory & Generic CRUD Generator",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/crud-generator"
+    "permalink": "/docs/ferrox/docs/abstractions/crud-generator"
   }
 }

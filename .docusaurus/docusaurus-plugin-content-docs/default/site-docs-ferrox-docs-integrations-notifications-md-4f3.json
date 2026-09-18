@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/integrations/notifications.md",
   "sourceDirName": "ferrox/docs/integrations",
   "slug": "/ferrox/docs/integrations/notifications",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/notifications",
+  "permalink": "/docs/ferrox/docs/integrations/notifications",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/integrations/notifications.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "💳 Payment Gateways (Stripe & Google Pay)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/payments"
+    "permalink": "/docs/ferrox/docs/integrations/payments"
   },
   "next": {
     "title": "🚩 Feature Flags & Toggles",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/feature-flags"
+    "permalink": "/docs/ferrox/docs/integrations/feature-flags"
   }
 }

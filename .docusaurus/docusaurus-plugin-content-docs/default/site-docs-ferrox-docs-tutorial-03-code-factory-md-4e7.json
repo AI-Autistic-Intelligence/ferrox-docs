@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/tutorial/03-code-factory.md",
   "sourceDirName": "ferrox/docs/tutorial",
   "slug": "/ferrox/docs/tutorial/code-factory",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/code-factory",
+  "permalink": "/docs/ferrox/docs/tutorial/code-factory",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/tutorial/03-code-factory.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🏗️ Part 2: Building the Core",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/tutorial/building-the-core"
+    "permalink": "/docs/ferrox/docs/tutorial/building-the-core"
   },
   "next": {
     "title": "Overview",
-    "permalink": "/ferrox-docs/docs/ferrox-front/overview"
+    "permalink": "/docs/ferrox-front/overview"
   }
 }

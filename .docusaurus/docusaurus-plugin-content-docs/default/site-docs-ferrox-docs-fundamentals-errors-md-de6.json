@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/fundamentals/errors.md",
   "sourceDirName": "ferrox/docs/fundamentals",
   "slug": "/ferrox/docs/fundamentals/errors",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/errors",
+  "permalink": "/docs/ferrox/docs/fundamentals/errors",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/fundamentals/errors.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🔄 Interceptors: Request Execution Pipeline",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/interceptors"
+    "permalink": "/docs/ferrox/docs/fundamentals/interceptors"
   },
   "next": {
     "title": "⚙️ Typed Configuration Management",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/configuration"
+    "permalink": "/docs/ferrox/docs/fundamentals/configuration"
   }
 }

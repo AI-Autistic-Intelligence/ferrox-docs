@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/databases/seaorm.md",
   "sourceDirName": "ferrox/docs/databases",
   "slug": "/ferrox/docs/databases/seaorm",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/databases/seaorm",
+  "permalink": "/docs/ferrox/docs/databases/seaorm",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/databases/seaorm.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "💾 Persistence Architecture & Repository Pattern",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/overview"
+    "permalink": "/docs/ferrox/docs/databases/overview"
   },
   "next": {
     "title": "🍃 Document Databases (MongoDB)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/mongodb"
+    "permalink": "/docs/ferrox/docs/databases/mongodb"
   }
 }

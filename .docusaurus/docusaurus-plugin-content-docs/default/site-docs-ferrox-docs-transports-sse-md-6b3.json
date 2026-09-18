@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/transports/sse.md",
   "sourceDirName": "ferrox/docs/transports",
   "slug": "/ferrox/docs/transports/sse",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/sse",
+  "permalink": "/docs/ferrox/docs/transports/sse",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/transports/sse.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🚀 Advanced GraphQL: DataLoader & Subscriptions",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql-advanced"
+    "permalink": "/docs/ferrox/docs/transports/graphql-advanced"
   },
   "next": {
     "title": "📁 File Upload & Storage Abstractions",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/file-storage"
+    "permalink": "/docs/ferrox/docs/transports/file-storage"
   }
 }

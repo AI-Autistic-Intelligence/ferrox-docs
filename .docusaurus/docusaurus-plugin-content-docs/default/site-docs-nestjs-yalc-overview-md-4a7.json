@@ -5,7 +5,7 @@
   "source": "@site/docs/nestjs-yalc/overview.md",
   "sourceDirName": "nestjs-yalc",
   "slug": "/nestjs-yalc/overview",
-  "permalink": "/ferrox-docs/docs/nestjs-yalc/overview",
+  "permalink": "/docs/nestjs-yalc/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/overview.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Overview",
-    "permalink": "/ferrox-docs/docs/ferrox-node/overview"
+    "permalink": "/docs/ferrox-node/overview"
   },
   "next": {
     "title": "Architecture",
-    "permalink": "/ferrox-docs/docs/nestjs-yalc/architecture"
+    "permalink": "/docs/nestjs-yalc/architecture"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/abstractions/pipes.md",
   "sourceDirName": "ferrox/docs/abstractions",
   "slug": "/ferrox/docs/abstractions/pipes",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/pipes",
+  "permalink": "/docs/ferrox/docs/abstractions/pipes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/abstractions/pipes.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Overview",
-    "permalink": "/ferrox-docs/docs/ferrox/overview"
+    "permalink": "/docs/ferrox/overview"
   },
   "next": {
     "title": "🛡️ Guards (Authorization)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/guards"
+    "permalink": "/docs/ferrox/docs/abstractions/guards"
   }
 }

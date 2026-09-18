@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/architectures/cqrs.md",
   "sourceDirName": "ferrox/docs/architectures",
   "slug": "/ferrox/docs/architectures/cqrs",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/cqrs",
+  "permalink": "/docs/ferrox/docs/architectures/cqrs",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/architectures/cqrs.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🛡️ Zero-Trust API Gateway Pattern",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/api-gateway"
+    "permalink": "/docs/ferrox/docs/architectures/api-gateway"
   },
   "next": {
     "title": "⚡ Caching & Stampede Protection",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/caching"
+    "permalink": "/docs/ferrox/docs/architectures/caching"
   }
 }

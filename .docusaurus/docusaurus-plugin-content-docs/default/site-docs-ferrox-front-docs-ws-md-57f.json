@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox-front/docs/ws.md",
   "sourceDirName": "ferrox-front/docs",
   "slug": "/ferrox-front/docs/ws",
-  "permalink": "/ferrox-docs/docs/ferrox-front/docs/ws",
+  "permalink": "/docs/ferrox-front/docs/ws",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/docs/ws.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "SaaS Page Templates",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/templates"
+    "permalink": "/docs/ferrox-front/docs/templates"
   },
   "next": {
     "title": "Overview",
-    "permalink": "/ferrox-docs/docs/ferrox-node/overview"
+    "permalink": "/docs/ferrox-node/overview"
   }
 }

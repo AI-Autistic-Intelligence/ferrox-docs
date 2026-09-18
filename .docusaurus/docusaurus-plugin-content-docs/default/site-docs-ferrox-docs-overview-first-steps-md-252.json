@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/overview/first-steps.md",
   "sourceDirName": "ferrox/docs/overview",
   "slug": "/ferrox/docs/overview/first-steps",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/overview/first-steps",
+  "permalink": "/docs/ferrox/docs/overview/first-steps",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/overview/first-steps.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🚀 Introduction",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/overview/introduction"
+    "permalink": "/docs/ferrox/docs/overview/introduction"
   },
   "next": {
     "title": "🔄 Request Lifecycle & Architecture",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/overview/lifecycle"
+    "permalink": "/docs/ferrox/docs/overview/lifecycle"
   }
 }

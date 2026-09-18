@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/security/singleflight.md",
   "sourceDirName": "ferrox/docs/security",
   "slug": "/ferrox/docs/security/singleflight",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/security/singleflight",
+  "permalink": "/docs/ferrox/docs/security/singleflight",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/security/singleflight.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "⚡ Circuit Breakers & Fault Tolerance",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/circuit-breaker"
+    "permalink": "/docs/ferrox/docs/security/circuit-breaker"
   },
   "next": {
     "title": "🔒 Distributed Synchronization & Locks",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/distributed-locks"
+    "permalink": "/docs/ferrox/docs/security/distributed-locks"
   }
 }

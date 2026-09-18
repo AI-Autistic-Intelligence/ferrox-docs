@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/abstractions/crud-generator.md",
   "sourceDirName": "ferrox/docs/abstractions",
   "slug": "/ferrox/docs/abstractions/crud-generator",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/crud-generator",
+  "permalink": "/docs/ferrox/docs/abstractions/crud-generator",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/abstractions/crud-generator.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🎯 DTO Validation & AutoZod Extractor",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/abstractions/validation"
+    "permalink": "/docs/ferrox/docs/abstractions/validation"
   },
   "next": {
     "title": "🛡️ Zero-Trust API Gateway Pattern",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/api-gateway"
+    "permalink": "/docs/ferrox/docs/architectures/api-gateway"
   }
 }

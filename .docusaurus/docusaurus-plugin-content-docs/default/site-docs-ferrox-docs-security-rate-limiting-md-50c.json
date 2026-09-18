@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/security/rate-limiting.md",
   "sourceDirName": "ferrox/docs/security",
   "slug": "/ferrox/docs/security/rate-limiting",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/security/rate-limiting",
+  "permalink": "/docs/ferrox/docs/security/rate-limiting",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/security/rate-limiting.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🔑 Advanced Security: Dual Tokens & PublicId Obfuscation",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/advanced-auth"
+    "permalink": "/docs/ferrox/docs/security/advanced-auth"
   },
   "next": {
     "title": "⚡ Circuit Breakers & Fault Tolerance",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/circuit-breaker"
+    "permalink": "/docs/ferrox/docs/security/circuit-breaker"
   }
 }

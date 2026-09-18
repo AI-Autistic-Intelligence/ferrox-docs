@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/overview/lifecycle.md",
   "sourceDirName": "ferrox/docs/overview",
   "slug": "/ferrox/docs/overview/lifecycle",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/overview/lifecycle",
+  "permalink": "/docs/ferrox/docs/overview/lifecycle",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/overview/lifecycle.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🚀 First Steps: Getting Started",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/overview/first-steps"
+    "permalink": "/docs/ferrox/docs/overview/first-steps"
   },
   "next": {
     "title": "⚡ High-Throughput Benchmarks & Tuning",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/performance/benchmarks"
+    "permalink": "/docs/ferrox/docs/performance/benchmarks"
   }
 }

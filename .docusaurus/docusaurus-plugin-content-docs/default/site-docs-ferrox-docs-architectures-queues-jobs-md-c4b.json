@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/architectures/queues-jobs.md",
   "sourceDirName": "ferrox/docs/architectures",
   "slug": "/ferrox/docs/architectures/queues-jobs",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/queues-jobs",
+  "permalink": "/docs/ferrox/docs/architectures/queues-jobs",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/architectures/queues-jobs.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "📡 Event-Driven Architecture & Event Bus",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/events"
+    "permalink": "/docs/ferrox/docs/architectures/events"
   },
   "next": {
     "title": "⏰ Cron Task Scheduling",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/architectures/task-scheduling"
+    "permalink": "/docs/ferrox/docs/architectures/task-scheduling"
   }
 }

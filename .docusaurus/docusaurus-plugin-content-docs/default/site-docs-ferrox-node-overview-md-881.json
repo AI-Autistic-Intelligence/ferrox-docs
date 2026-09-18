@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox-node/overview.md",
   "sourceDirName": "ferrox-node",
   "slug": "/ferrox-node/overview",
-  "permalink": "/ferrox-docs/docs/ferrox-node/overview",
+  "permalink": "/docs/ferrox-node/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-node/overview.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/ws"
+    "permalink": "/docs/ferrox-front/docs/ws"
   },
   "next": {
     "title": "Overview",
-    "permalink": "/ferrox-docs/docs/nestjs-yalc/overview"
+    "permalink": "/docs/nestjs-yalc/overview"
   }
 }

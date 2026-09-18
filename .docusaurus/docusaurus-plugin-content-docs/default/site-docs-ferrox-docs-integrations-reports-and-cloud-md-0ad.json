@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/integrations/reports-and-cloud.md",
   "sourceDirName": "ferrox/docs/integrations",
   "slug": "/ferrox/docs/integrations/reports-and-cloud",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/reports-and-cloud",
+  "permalink": "/docs/ferrox/docs/integrations/reports-and-cloud",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/integrations/reports-and-cloud.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🔗 Outgoing Webhook Dispatcher",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/webhooks"
+    "permalink": "/docs/ferrox/docs/integrations/webhooks"
   },
   "next": {
     "title": "🌐 Internationalization (i18n)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/i18n"
+    "permalink": "/docs/ferrox/docs/integrations/i18n"
   }
 }

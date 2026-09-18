@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/fundamentals/interceptors.md",
   "sourceDirName": "ferrox/docs/fundamentals",
   "slug": "/ferrox/docs/fundamentals/interceptors",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/interceptors",
+  "permalink": "/docs/ferrox/docs/fundamentals/interceptors",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/fundamentals/interceptors.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🔗 Middlewares",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/middlewares"
+    "permalink": "/docs/ferrox/docs/fundamentals/middlewares"
   },
   "next": {
     "title": "🚨 Centralized Error Handling & Exception Filters",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/errors"
+    "permalink": "/docs/ferrox/docs/fundamentals/errors"
   }
 }

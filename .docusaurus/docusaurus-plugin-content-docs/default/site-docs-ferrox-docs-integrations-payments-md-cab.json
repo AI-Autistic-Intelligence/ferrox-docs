@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/integrations/payments.md",
   "sourceDirName": "ferrox/docs/integrations",
   "slug": "/ferrox/docs/integrations/payments",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/payments",
+  "permalink": "/docs/ferrox/docs/integrations/payments",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/integrations/payments.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "📧 Email Dispatching (Mailer)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/mailer"
+    "permalink": "/docs/ferrox/docs/integrations/mailer"
   },
   "next": {
     "title": "🔔 Notifications & Slack Integration",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/notifications"
+    "permalink": "/docs/ferrox/docs/integrations/notifications"
   }
 }

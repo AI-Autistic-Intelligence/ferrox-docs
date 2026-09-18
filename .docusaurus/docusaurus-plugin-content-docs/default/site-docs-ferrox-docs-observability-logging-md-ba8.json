@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/observability/logging.md",
   "sourceDirName": "ferrox/docs/observability",
   "slug": "/ferrox/docs/observability/logging",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/observability/logging",
+  "permalink": "/docs/ferrox/docs/observability/logging",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/observability/logging.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🌐 Internationalization (i18n)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/i18n"
+    "permalink": "/docs/ferrox/docs/integrations/i18n"
   },
   "next": {
     "title": "🩺 Kubernetes Health Probes (Liveness & Readiness)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/observability/health-checks"
+    "permalink": "/docs/ferrox/docs/observability/health-checks"
   }
 }

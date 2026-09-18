@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/transports/graphql.md",
   "sourceDirName": "ferrox/docs/transports",
   "slug": "/ferrox/docs/transports/graphql",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql",
+  "permalink": "/docs/ferrox/docs/transports/graphql",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/transports/graphql.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🌐 Multi-Transport Application System",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/transports-overview"
+    "permalink": "/docs/ferrox/docs/transports/transports-overview"
   },
   "next": {
     "title": "🚀 Advanced GraphQL: DataLoader & Subscriptions",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/graphql-advanced"
+    "permalink": "/docs/ferrox/docs/transports/graphql-advanced"
   }
 }

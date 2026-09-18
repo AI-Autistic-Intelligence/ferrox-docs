@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/integrations/mailer.md",
   "sourceDirName": "ferrox/docs/integrations",
   "slug": "/ferrox/docs/integrations/mailer",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/mailer",
+  "permalink": "/docs/ferrox/docs/integrations/mailer",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/integrations/mailer.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🧪 Testing & Quality Assurance Strategy",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/testing"
+    "permalink": "/docs/ferrox/docs/fundamentals/testing"
   },
   "next": {
     "title": "💳 Payment Gateways (Stripe & Google Pay)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/integrations/payments"
+    "permalink": "/docs/ferrox/docs/integrations/payments"
   }
 }

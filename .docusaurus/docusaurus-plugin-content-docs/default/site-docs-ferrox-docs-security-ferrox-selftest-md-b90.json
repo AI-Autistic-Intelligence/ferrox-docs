@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/security/ferrox-selftest.md",
   "sourceDirName": "ferrox/docs/security",
   "slug": "/ferrox/docs/security/ferrox-selftest",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-selftest",
+  "permalink": "/docs/ferrox/docs/security/ferrox-selftest",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/security/ferrox-selftest.md",
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🤖 Ferrox Sentinel (37 SOTA Innovations & Kernel Hardening)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/security/ferrox-sentinel"
+    "permalink": "/docs/ferrox/docs/security/ferrox-sentinel"
   },
   "next": {
     "title": "🌐 Multi-Transport Application System",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/transports/transports-overview"
+    "permalink": "/docs/ferrox/docs/transports/transports-overview"
   }
 }

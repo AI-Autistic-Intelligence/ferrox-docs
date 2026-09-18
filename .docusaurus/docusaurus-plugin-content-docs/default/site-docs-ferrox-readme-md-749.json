@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/README.md",
   "sourceDirName": "ferrox",
   "slug": "/ferrox/",
-  "permalink": "/ferrox-docs/docs/ferrox/",
+  "permalink": "/docs/ferrox/",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/README.md",
@@ -15,6 +15,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Overview",
-    "permalink": "/ferrox-docs/docs/ferrox/overview"
+    "permalink": "/docs/ferrox/overview"
   }
 }

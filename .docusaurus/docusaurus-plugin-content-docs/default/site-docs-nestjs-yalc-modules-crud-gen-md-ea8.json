@@ -5,7 +5,7 @@
   "source": "@site/docs/nestjs-yalc/modules/crud-gen.md",
   "sourceDirName": "nestjs-yalc/modules",
   "slug": "/nestjs-yalc/modules/crud-gen",
-  "permalink": "/ferrox-docs/docs/nestjs-yalc/modules/crud-gen",
+  "permalink": "/docs/nestjs-yalc/modules/crud-gen",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/nestjs-yalc/modules/crud-gen.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Logger",
-    "permalink": "/ferrox-docs/docs/nestjs-yalc/modules/logger"
+    "permalink": "/docs/nestjs-yalc/modules/logger"
   },
   "next": {
     "title": "Overview",
-    "permalink": "/ferrox-docs/docs/node-yalc/overview"
+    "permalink": "/docs/node-yalc/overview"
   }
 }

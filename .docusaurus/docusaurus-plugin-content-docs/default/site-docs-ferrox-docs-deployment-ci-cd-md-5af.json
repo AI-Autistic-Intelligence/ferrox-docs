@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/deployment/ci-cd.md",
   "sourceDirName": "ferrox/docs/deployment",
   "slug": "/ferrox/docs/deployment/ci-cd",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/deployment/ci-cd",
+  "permalink": "/docs/ferrox/docs/deployment/ci-cd",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/deployment/ci-cd.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🏭 Production Deployment: Docker & Kubernetes",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/deployment/docker-kubernetes"
+    "permalink": "/docs/ferrox/docs/deployment/docker-kubernetes"
   },
   "next": {
     "title": "🕹️ Controllers: The Masterpiece Guide",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/fundamentals/controllers"
+    "permalink": "/docs/ferrox/docs/fundamentals/controllers"
   }
 }

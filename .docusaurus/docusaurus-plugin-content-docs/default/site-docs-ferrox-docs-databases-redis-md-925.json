@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox/docs/databases/redis.md",
   "sourceDirName": "ferrox/docs/databases",
   "slug": "/ferrox/docs/databases/redis",
-  "permalink": "/ferrox-docs/docs/ferrox/docs/databases/redis",
+  "permalink": "/docs/ferrox/docs/databases/redis",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox/docs/databases/redis.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "🍃 Document Databases (MongoDB)",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/mongodb"
+    "permalink": "/docs/ferrox/docs/databases/mongodb"
   },
   "next": {
     "title": "🔄 Schema Migrations Management",
-    "permalink": "/ferrox-docs/docs/ferrox/docs/databases/migrations"
+    "permalink": "/docs/ferrox/docs/databases/migrations"
   }
 }

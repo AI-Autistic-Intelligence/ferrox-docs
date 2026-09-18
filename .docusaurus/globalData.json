@@ -1,423 +1,423 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/ferrox-docs/docs",
+      "path": "/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/ferrox-docs/docs",
+          "path": "/docs",
           "mainDocId": "ferrox/README",
           "docs": [
             {
               "id": "ferrox-front/docs/architecture",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/architecture",
+              "path": "/docs/ferrox-front/docs/architecture",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/components",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/components",
+              "path": "/docs/ferrox-front/docs/components",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/core",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/core",
+              "path": "/docs/ferrox-front/docs/core",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/intro",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/intro",
+              "path": "/docs/ferrox-front/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/macros",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/macros",
+              "path": "/docs/ferrox-front/docs/macros",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/quickstart",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/quickstart",
+              "path": "/docs/ferrox-front/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/reactivity",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/reactivity",
+              "path": "/docs/ferrox-front/docs/reactivity",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/routing",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/routing",
+              "path": "/docs/ferrox-front/docs/routing",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/security",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/security",
+              "path": "/docs/ferrox-front/docs/security",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/templates",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/templates",
+              "path": "/docs/ferrox-front/docs/templates",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/ui-components",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/ui-components",
+              "path": "/docs/ferrox-front/docs/ui-components",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/docs/ws",
-              "path": "/ferrox-docs/docs/ferrox-front/docs/ws",
+              "path": "/docs/ferrox-front/docs/ws",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-front/overview",
-              "path": "/ferrox-docs/docs/ferrox-front/overview",
+              "path": "/docs/ferrox-front/overview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox-node/overview",
-              "path": "/ferrox-docs/docs/ferrox-node/overview",
+              "path": "/docs/ferrox-node/overview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/abstractions/crud-generator",
-              "path": "/ferrox-docs/docs/ferrox/docs/abstractions/crud-generator",
+              "path": "/docs/ferrox/docs/abstractions/crud-generator",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/abstractions/guards",
-              "path": "/ferrox-docs/docs/ferrox/docs/abstractions/guards",
+              "path": "/docs/ferrox/docs/abstractions/guards",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/abstractions/pipes",
-              "path": "/ferrox-docs/docs/ferrox/docs/abstractions/pipes",
+              "path": "/docs/ferrox/docs/abstractions/pipes",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/abstractions/validation",
-              "path": "/ferrox-docs/docs/ferrox/docs/abstractions/validation",
+              "path": "/docs/ferrox/docs/abstractions/validation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/architectures/api-gateway",
-              "path": "/ferrox-docs/docs/ferrox/docs/architectures/api-gateway",
+              "path": "/docs/ferrox/docs/architectures/api-gateway",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/architectures/caching",
-              "path": "/ferrox-docs/docs/ferrox/docs/architectures/caching",
+              "path": "/docs/ferrox/docs/architectures/caching",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/architectures/cqrs",
-              "path": "/ferrox-docs/docs/ferrox/docs/architectures/cqrs",
+              "path": "/docs/ferrox/docs/architectures/cqrs",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/architectures/events",
-              "path": "/ferrox-docs/docs/ferrox/docs/architectures/events",
+              "path": "/docs/ferrox/docs/architectures/events",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/architectures/queues-jobs",
-              "path": "/ferrox-docs/docs/ferrox/docs/architectures/queues-jobs",
+              "path": "/docs/ferrox/docs/architectures/queues-jobs",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/architectures/sagas",
-              "path": "/ferrox-docs/docs/ferrox/docs/architectures/sagas",
+              "path": "/docs/ferrox/docs/architectures/sagas",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/architectures/task-scheduling",
-              "path": "/ferrox-docs/docs/ferrox/docs/architectures/task-scheduling",
+              "path": "/docs/ferrox/docs/architectures/task-scheduling",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/cli/code-factory",
-              "path": "/ferrox-docs/docs/ferrox/docs/cli/code-factory",
+              "path": "/docs/ferrox/docs/cli/code-factory",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/cli/commands-reference",
-              "path": "/ferrox-docs/docs/ferrox/docs/cli/commands-reference",
+              "path": "/docs/ferrox/docs/cli/commands-reference",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/community/donations",
-              "path": "/ferrox-docs/docs/ferrox/docs/community/donations",
+              "path": "/docs/ferrox/docs/community/donations",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/databases/migrations",
-              "path": "/ferrox-docs/docs/ferrox/docs/databases/migrations",
+              "path": "/docs/ferrox/docs/databases/migrations",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/databases/mongodb",
-              "path": "/ferrox-docs/docs/ferrox/docs/databases/mongodb",
+              "path": "/docs/ferrox/docs/databases/mongodb",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/databases/overview",
-              "path": "/ferrox-docs/docs/ferrox/docs/databases/overview",
+              "path": "/docs/ferrox/docs/databases/overview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/databases/redis",
-              "path": "/ferrox-docs/docs/ferrox/docs/databases/redis",
+              "path": "/docs/ferrox/docs/databases/redis",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/databases/seaorm",
-              "path": "/ferrox-docs/docs/ferrox/docs/databases/seaorm",
+              "path": "/docs/ferrox/docs/databases/seaorm",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/deployment/ci-cd",
-              "path": "/ferrox-docs/docs/ferrox/docs/deployment/ci-cd",
+              "path": "/docs/ferrox/docs/deployment/ci-cd",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/deployment/docker-kubernetes",
-              "path": "/ferrox-docs/docs/ferrox/docs/deployment/docker-kubernetes",
+              "path": "/docs/ferrox/docs/deployment/docker-kubernetes",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/fundamentals/configuration",
-              "path": "/ferrox-docs/docs/ferrox/docs/fundamentals/configuration",
+              "path": "/docs/ferrox/docs/fundamentals/configuration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/fundamentals/controllers",
-              "path": "/ferrox-docs/docs/ferrox/docs/fundamentals/controllers",
+              "path": "/docs/ferrox/docs/fundamentals/controllers",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/fundamentals/errors",
-              "path": "/ferrox-docs/docs/ferrox/docs/fundamentals/errors",
+              "path": "/docs/ferrox/docs/fundamentals/errors",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/fundamentals/interceptors",
-              "path": "/ferrox-docs/docs/ferrox/docs/fundamentals/interceptors",
+              "path": "/docs/ferrox/docs/fundamentals/interceptors",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/fundamentals/middlewares",
-              "path": "/ferrox-docs/docs/ferrox/docs/fundamentals/middlewares",
+              "path": "/docs/ferrox/docs/fundamentals/middlewares",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/fundamentals/providers",
-              "path": "/ferrox-docs/docs/ferrox/docs/fundamentals/providers",
+              "path": "/docs/ferrox/docs/fundamentals/providers",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/fundamentals/testing",
-              "path": "/ferrox-docs/docs/ferrox/docs/fundamentals/testing",
+              "path": "/docs/ferrox/docs/fundamentals/testing",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/integrations/feature-flags",
-              "path": "/ferrox-docs/docs/ferrox/docs/integrations/feature-flags",
+              "path": "/docs/ferrox/docs/integrations/feature-flags",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/integrations/i18n",
-              "path": "/ferrox-docs/docs/ferrox/docs/integrations/i18n",
+              "path": "/docs/ferrox/docs/integrations/i18n",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/integrations/mailer",
-              "path": "/ferrox-docs/docs/ferrox/docs/integrations/mailer",
+              "path": "/docs/ferrox/docs/integrations/mailer",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/integrations/notifications",
-              "path": "/ferrox-docs/docs/ferrox/docs/integrations/notifications",
+              "path": "/docs/ferrox/docs/integrations/notifications",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/integrations/payments",
-              "path": "/ferrox-docs/docs/ferrox/docs/integrations/payments",
+              "path": "/docs/ferrox/docs/integrations/payments",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/integrations/reports-and-cloud",
-              "path": "/ferrox-docs/docs/ferrox/docs/integrations/reports-and-cloud",
+              "path": "/docs/ferrox/docs/integrations/reports-and-cloud",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/integrations/webhooks",
-              "path": "/ferrox-docs/docs/ferrox/docs/integrations/webhooks",
+              "path": "/docs/ferrox/docs/integrations/webhooks",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/observability/health-checks",
-              "path": "/ferrox-docs/docs/ferrox/docs/observability/health-checks",
+              "path": "/docs/ferrox/docs/observability/health-checks",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/observability/logging",
-              "path": "/ferrox-docs/docs/ferrox/docs/observability/logging",
+              "path": "/docs/ferrox/docs/observability/logging",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/observability/metrics",
-              "path": "/ferrox-docs/docs/ferrox/docs/observability/metrics",
+              "path": "/docs/ferrox/docs/observability/metrics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/observability/tracing",
-              "path": "/ferrox-docs/docs/ferrox/docs/observability/tracing",
+              "path": "/docs/ferrox/docs/observability/tracing",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/overview/first-steps",
-              "path": "/ferrox-docs/docs/ferrox/docs/overview/first-steps",
+              "path": "/docs/ferrox/docs/overview/first-steps",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/overview/introduction",
-              "path": "/ferrox-docs/docs/ferrox/docs/overview/introduction",
+              "path": "/docs/ferrox/docs/overview/introduction",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/overview/lifecycle",
-              "path": "/ferrox-docs/docs/ferrox/docs/overview/lifecycle",
+              "path": "/docs/ferrox/docs/overview/lifecycle",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/performance/benchmarks",
-              "path": "/ferrox-docs/docs/ferrox/docs/performance/benchmarks",
+              "path": "/docs/ferrox/docs/performance/benchmarks",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/performance/profiling",
-              "path": "/ferrox-docs/docs/ferrox/docs/performance/profiling",
+              "path": "/docs/ferrox/docs/performance/profiling",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/advanced-auth",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/advanced-auth",
+              "path": "/docs/ferrox/docs/security/advanced-auth",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/circuit-breaker",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/circuit-breaker",
+              "path": "/docs/ferrox/docs/security/circuit-breaker",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/distributed-locks",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/distributed-locks",
+              "path": "/docs/ferrox/docs/security/distributed-locks",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/ferrox-selftest",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/ferrox-selftest",
+              "path": "/docs/ferrox/docs/security/ferrox-selftest",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/ferrox-sentinel",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/ferrox-sentinel",
+              "path": "/docs/ferrox/docs/security/ferrox-sentinel",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/jwt",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/jwt",
+              "path": "/docs/ferrox/docs/security/jwt",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/rate-limiting",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/rate-limiting",
+              "path": "/docs/ferrox/docs/security/rate-limiting",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/security/singleflight",
-              "path": "/ferrox-docs/docs/ferrox/docs/security/singleflight",
+              "path": "/docs/ferrox/docs/security/singleflight",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/transports/datagrid",
-              "path": "/ferrox-docs/docs/ferrox/docs/transports/datagrid",
+              "path": "/docs/ferrox/docs/transports/datagrid",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/transports/file-storage",
-              "path": "/ferrox-docs/docs/ferrox/docs/transports/file-storage",
+              "path": "/docs/ferrox/docs/transports/file-storage",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/transports/graphql",
-              "path": "/ferrox-docs/docs/ferrox/docs/transports/graphql",
+              "path": "/docs/ferrox/docs/transports/graphql",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/transports/graphql-advanced",
-              "path": "/ferrox-docs/docs/ferrox/docs/transports/graphql-advanced",
+              "path": "/docs/ferrox/docs/transports/graphql-advanced",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/transports/sse",
-              "path": "/ferrox-docs/docs/ferrox/docs/transports/sse",
+              "path": "/docs/ferrox/docs/transports/sse",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/transports/transports-overview",
-              "path": "/ferrox-docs/docs/ferrox/docs/transports/transports-overview",
+              "path": "/docs/ferrox/docs/transports/transports-overview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/tutorial/building-the-core",
-              "path": "/ferrox-docs/docs/ferrox/docs/tutorial/building-the-core",
+              "path": "/docs/ferrox/docs/tutorial/building-the-core",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/tutorial/code-factory",
-              "path": "/ferrox-docs/docs/ferrox/docs/tutorial/code-factory",
+              "path": "/docs/ferrox/docs/tutorial/code-factory",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/docs/tutorial/setup",
-              "path": "/ferrox-docs/docs/ferrox/docs/tutorial/setup",
+              "path": "/docs/ferrox/docs/tutorial/setup",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/overview",
-              "path": "/ferrox-docs/docs/ferrox/overview",
+              "path": "/docs/ferrox/overview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ferrox/README",
-              "path": "/ferrox-docs/docs/ferrox/",
+              "path": "/docs/ferrox/",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "nestjs-yalc/architecture",
-              "path": "/ferrox-docs/docs/nestjs-yalc/architecture",
+              "path": "/docs/nestjs-yalc/architecture",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "nestjs-yalc/modules/crud-gen",
-              "path": "/ferrox-docs/docs/nestjs-yalc/modules/crud-gen",
+              "path": "/docs/nestjs-yalc/modules/crud-gen",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "nestjs-yalc/modules/logger",
-              "path": "/ferrox-docs/docs/nestjs-yalc/modules/logger",
+              "path": "/docs/nestjs-yalc/modules/logger",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "nestjs-yalc/overview",
-              "path": "/ferrox-docs/docs/nestjs-yalc/overview",
+              "path": "/docs/nestjs-yalc/overview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "node-yalc/overview",
-              "path": "/ferrox-docs/docs/node-yalc/overview",
+              "path": "/docs/node-yalc/overview",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -425,7 +425,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/ferrox-docs/docs/ferrox/",
+                "path": "/docs/ferrox/",
                 "label": "Website"
               }
             }

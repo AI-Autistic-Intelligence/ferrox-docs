@@ -5,7 +5,7 @@
   "source": "@site/docs/ferrox-front/docs/macros.md",
   "sourceDirName": "ferrox-front/docs",
   "slug": "/ferrox-front/docs/macros",
-  "permalink": "/ferrox-docs/docs/ferrox-front/docs/macros",
+  "permalink": "/docs/ferrox-front/docs/macros",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-front/docs/macros.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Architecture Deep Dive",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/architecture"
+    "permalink": "/docs/ferrox-front/docs/architecture"
   },
   "next": {
     "title": "Reactivity & Signals API",
-    "permalink": "/ferrox-docs/docs/ferrox-front/docs/reactivity"
+    "permalink": "/docs/ferrox-front/docs/reactivity"
   }
 }
