@@ -513,7 +513,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '2e1'),
+    component: ComponentCreator('/', 'e5f'),
     exact: true
   },
   {
