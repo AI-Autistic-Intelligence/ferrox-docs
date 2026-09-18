@@ -50,7 +50,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/ferrox/ferrox-docs/tree/main/"
+          "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/"
         },
         "blog": false,
         "theme": {
