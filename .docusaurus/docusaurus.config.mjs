@@ -84,13 +84,32 @@ export default {
       },
       "items": [
         {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
-          "position": "left",
-          "label": "Documentation"
+          "to": "/docs/ferrox/overview",
+          "label": "Ferrox",
+          "position": "left"
         },
         {
-          "href": "https://github.com/AI-Autistic-Intelligence/ferrox",
+          "to": "/docs/ferrox-node/overview",
+          "label": "Ferrox Node",
+          "position": "left"
+        },
+        {
+          "to": "/docs/ferrox-front/overview",
+          "label": "Ferrox Front",
+          "position": "left"
+        },
+        {
+          "to": "/docs/nestjs-yalc/overview",
+          "label": "NestJS YALC",
+          "position": "left"
+        },
+        {
+          "to": "/docs/node-yalc/overview",
+          "label": "Node YALC",
+          "position": "left"
+        },
+        {
+          "href": "https://github.com/AI-Autistic-Intelligence",
           "label": "GitHub",
           "position": "right"
         }
