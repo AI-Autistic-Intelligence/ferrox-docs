@@ -143,4 +143,4 @@ export class UserManagementService {
 
 > [!TIP]
 > **Connection Pool Sizing**: Configure database connection pool sizes based on your container concurrency limits:
-> $$\text{Pool Size} = (\text{CPU Cores} \times 2) + \text{Effective Spindle Count}$$
+> `Pool Size = (CPU Cores x 2) + Effective Spindle Count`

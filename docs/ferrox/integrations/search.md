@@ -67,7 +67,7 @@ sequenceDiagram
 
 | Feature | Direct SQL Searching | ferrox-search Engine |
 | :--- | :--- | :--- |
-| **Performance** | Table scan locks DB CPU on 1M+ rows (`LIKE '%term%'`). | Instant <10ms inverted index search queries. |
+| **Performance** | Table scan locks DB CPU on 1M+ rows (`LIKE '%term%'`). | Instant &lt;10ms inverted index search queries. |
 | **Typo Tolerance** | Zero typo tolerance. Fails on minor misspellings. | Built-in Levenshtein distance typo tolerance. |
 | **Semantic Search** | Requires manual vector DB integration. | Hybrid keyword + vector embedding search in a single trait. |
 
