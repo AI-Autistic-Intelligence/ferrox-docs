@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/offheap",
+  "title": "Off-Heap Native Memory (Zero-GC)",
+  "description": "The ferrox-java-offheap module demonstrates absolute mastery over the JVM by bypassing the Garbage Collector entirely. Using Java 21's Foreign Function & Memory API (Project Panama), it allocates memory directly in the OS RAM.",
+  "source": "@site/docs/ferrox-java/docs/components/offheap.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/offheap",
+  "permalink": "/docs/ferrox-java/docs/components/offheap",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/offheap.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "offheap",
+    "title": "Off-Heap Native Memory (Zero-GC)",
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Circuit Breaker & Resilience",
+    "permalink": "/docs/ferrox-java/docs/components/resilience"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/ferrox-node/overview"
+  }
+}

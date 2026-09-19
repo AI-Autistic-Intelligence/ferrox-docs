@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/quickstart",
+  "title": "Quickstart Guide",
+  "description": "This guide will help you scaffold your first high-performance, Virtual Thread-native API using the ferrox-java ecosystem.",
+  "source": "@site/docs/ferrox-java/docs/quickstart.md",
+  "sourceDirName": "ferrox-java/docs",
+  "slug": "/ferrox-java/docs/quickstart",
+  "permalink": "/docs/ferrox-java/docs/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "quickstart",
+    "title": "Quickstart Guide",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction & Architecture",
+    "permalink": "/docs/ferrox-java/intro"
+  },
+  "next": {
+    "title": "Sentinel Threat Engine & Zero-Trust Auth",
+    "permalink": "/docs/ferrox-java/docs/components/security"
+  }
+}

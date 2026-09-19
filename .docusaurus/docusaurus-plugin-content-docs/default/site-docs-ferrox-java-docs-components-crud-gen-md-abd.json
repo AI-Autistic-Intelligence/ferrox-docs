@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/crud-gen",
+  "title": "Compile-Time Metaprogramming (APT)",
+  "description": "The ferrox-java-crud-gen module brings advanced metaprogramming to the JVM ecosystem. It replaces slow runtime reflection with Java Annotation Processors (APT) to generate code at compile time, achieving exact feature parity with Rust's procedural macros (e.g., #[derive(FerroxEntity)]).",
+  "source": "@site/docs/ferrox-java/docs/components/crud-gen.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/crud-gen",
+  "permalink": "/docs/ferrox-java/docs/components/crud-gen",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/crud-gen.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "crud-gen",
+    "title": "Compile-Time Metaprogramming (APT)",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Command & Query Bus Segregation",
+    "permalink": "/docs/ferrox-java/docs/components/cqrs"
+  },
+  "next": {
+    "title": "Event Manager & Pub/Sub",
+    "permalink": "/docs/ferrox-java/docs/components/event-manager"
+  }
+}

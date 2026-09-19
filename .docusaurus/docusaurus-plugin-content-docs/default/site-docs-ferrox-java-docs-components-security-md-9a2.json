@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/security",
+  "title": "Sentinel Threat Engine & Zero-Trust Auth",
+  "description": "The ferrox-java-security module delivers military-grade zero-trust authentication and state-of-the-art (SOTA) threat detection directly into the Spring Boot pipeline, achieving 1:1 cryptographic parity with ferrox (Rust).",
+  "source": "@site/docs/ferrox-java/docs/components/security.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/security",
+  "permalink": "/docs/ferrox-java/docs/components/security",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/security.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "security",
+    "title": "Sentinel Threat Engine & Zero-Trust Auth",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart Guide",
+    "permalink": "/docs/ferrox-java/docs/quickstart"
+  },
+  "next": {
+    "title": "Singleflight Cache Stampede Prevention",
+    "permalink": "/docs/ferrox-java/docs/components/singleflight"
+  }
+}

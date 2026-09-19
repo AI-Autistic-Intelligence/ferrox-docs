@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/observability",
+  "title": "Observability, JSON Logging & MDC",
+  "description": "The ferrox-java-observability module standardizes distributed tracing and high-performance structured logging, inspired by Node.js pino.",
+  "source": "@site/docs/ferrox-java/docs/components/observability.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/observability",
+  "permalink": "/docs/ferrox-java/docs/components/observability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/observability.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "observability",
+    "title": "Observability, JSON Logging & MDC",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Event Manager & Pub/Sub",
+    "permalink": "/docs/ferrox-java/docs/components/event-manager"
+  },
+  "next": {
+    "title": "Circuit Breaker & Resilience",
+    "permalink": "/docs/ferrox-java/docs/components/resilience"
+  }
+}

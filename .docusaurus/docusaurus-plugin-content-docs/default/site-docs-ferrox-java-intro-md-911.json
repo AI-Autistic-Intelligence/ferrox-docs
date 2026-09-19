@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/intro",
+  "title": "Introduction & Architecture",
+  "description": "Welcome to Ferrox-Java, the enterprise-grade Java 21 adaptation of the Rust ferrox ecosystem. It leverages Spring Boot and Project Loom (Virtual Threads) to deliver extreme concurrency, zero-trust security, and metaprogramming paradigms traditionally reserved for low-level systems.",
+  "source": "@site/docs/ferrox-java/intro.md",
+  "sourceDirName": "ferrox-java",
+  "slug": "/ferrox-java/intro",
+  "permalink": "/docs/ferrox-java/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction & Architecture",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
+    "permalink": "/docs/ferrox-front/ws"
+  },
+  "next": {
+    "title": "Quickstart Guide",
+    "permalink": "/docs/ferrox-java/docs/quickstart"
+  }
+}

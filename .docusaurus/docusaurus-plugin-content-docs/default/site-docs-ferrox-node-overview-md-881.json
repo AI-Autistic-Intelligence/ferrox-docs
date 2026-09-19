@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Real-Time WebSockets Engine (ferrox-front-ws)",
-    "permalink": "/docs/ferrox-front/ws"
+    "title": "Off-Heap Native Memory (Zero-GC)",
+    "permalink": "/docs/ferrox-java/docs/components/offheap"
   },
   "next": {
     "title": "Introduction & Ferrox-Node Framework Architecture",

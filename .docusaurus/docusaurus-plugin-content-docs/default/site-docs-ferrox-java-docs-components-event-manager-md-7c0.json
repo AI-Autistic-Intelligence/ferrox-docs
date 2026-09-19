@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/event-manager",
+  "title": "Event Manager & Pub/Sub",
+  "description": "The ferrox-java-event-manager module brings highly scalable Event-Driven Architecture (EDA) into the JVM, utilizing Project Loom (Virtual Threads) to decouple bounded contexts.",
+  "source": "@site/docs/ferrox-java/docs/components/event-manager.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/event-manager",
+  "permalink": "/docs/ferrox-java/docs/components/event-manager",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/event-manager.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "event-manager",
+    "title": "Event Manager & Pub/Sub",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Compile-Time Metaprogramming (APT)",
+    "permalink": "/docs/ferrox-java/docs/components/crud-gen"
+  },
+  "next": {
+    "title": "Observability, JSON Logging & MDC",
+    "permalink": "/docs/ferrox-java/docs/components/observability"
+  }
+}

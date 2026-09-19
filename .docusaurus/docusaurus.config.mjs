@@ -29,7 +29,7 @@ export default {
       "gitEagerVcs": true
     }
   },
-  "url": "https://AI-Autistic-Intelligence.github.io",
+  "url": "https://ferrox-rust.dev",
   "baseUrl": "/",
   "organizationName": "AI-Autistic-Intelligence",
   "projectName": "ferrox-docs",
@@ -96,6 +96,11 @@ export default {
         {
           "to": "/docs/ferrox-front/overview",
           "label": "Ferrox Front",
+          "position": "left"
+        },
+        {
+          "to": "/docs/ferrox-java/intro",
+          "label": "Ferrox Java",
           "position": "left"
         },
         {

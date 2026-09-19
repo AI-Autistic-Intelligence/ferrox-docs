@@ -76,6 +76,61 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "ferrox-java/docs/components/cqrs",
+              "path": "/docs/ferrox-java/docs/components/cqrs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/crud-gen",
+              "path": "/docs/ferrox-java/docs/components/crud-gen",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/errors",
+              "path": "/docs/ferrox-java/docs/components/errors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/event-manager",
+              "path": "/docs/ferrox-java/docs/components/event-manager",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/observability",
+              "path": "/docs/ferrox-java/docs/components/observability",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/offheap",
+              "path": "/docs/ferrox-java/docs/components/offheap",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/resilience",
+              "path": "/docs/ferrox-java/docs/components/resilience",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/security",
+              "path": "/docs/ferrox-java/docs/components/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/components/singleflight",
+              "path": "/docs/ferrox-java/docs/components/singleflight",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/docs/quickstart",
+              "path": "/docs/ferrox-java/docs/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ferrox-java/intro",
+              "path": "/docs/ferrox-java/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "ferrox-node/docs/components/auth",
               "path": "/docs/ferrox-node/docs/components/auth",
               "sidebar": "tutorialSidebar"

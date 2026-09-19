@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'd44'),
+    component: ComponentCreator('/docs', '1b2'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'c7a'),
+        component: ComponentCreator('/docs', 'c16'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '152'),
+            component: ComponentCreator('/docs', 'a67'),
             routes: [
               {
                 path: '/docs/ferrox-front/architecture',
@@ -94,6 +94,72 @@ export default [
               {
                 path: '/docs/ferrox-front/ws',
                 component: ComponentCreator('/docs/ferrox-front/ws', 'ff8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/cqrs',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/cqrs', '532'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/crud-gen',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/crud-gen', 'cc3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/errors',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/errors', '9ac'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/event-manager',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/event-manager', 'df2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/observability',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/observability', 'b86'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/offheap',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/offheap', 'e38'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/resilience',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/resilience', '1c4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/security',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/security', '716'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/components/singleflight',
+                component: ComponentCreator('/docs/ferrox-java/docs/components/singleflight', 'da9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/docs/quickstart',
+                component: ComponentCreator('/docs/ferrox-java/docs/quickstart', 'e94'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-java/intro',
+                component: ComponentCreator('/docs/ferrox-java/intro', 'a20'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

@@ -6,17 +6,17 @@
     },
     "content": "4c678320"
   },
-  "/docs-d44": {
+  "/docs-1b2": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-c7a": {
+  "/docs-c16": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-152": {
+  "/docs-a67": {
     "__comp": "a94703ab"
   },
   "/docs/ferrox-front/architecture-085": {
@@ -70,6 +70,50 @@
   "/docs/ferrox-front/ws-ff8": {
     "__comp": "17896441",
     "content": "0170d36f"
+  },
+  "/docs/ferrox-java/docs/components/cqrs-532": {
+    "__comp": "17896441",
+    "content": "c12dec6a"
+  },
+  "/docs/ferrox-java/docs/components/crud-gen-cc3": {
+    "__comp": "17896441",
+    "content": "abd249f7"
+  },
+  "/docs/ferrox-java/docs/components/errors-9ac": {
+    "__comp": "17896441",
+    "content": "223b2b50"
+  },
+  "/docs/ferrox-java/docs/components/event-manager-df2": {
+    "__comp": "17896441",
+    "content": "7c05838c"
+  },
+  "/docs/ferrox-java/docs/components/observability-b86": {
+    "__comp": "17896441",
+    "content": "a1b7e4f6"
+  },
+  "/docs/ferrox-java/docs/components/offheap-e38": {
+    "__comp": "17896441",
+    "content": "9befe09a"
+  },
+  "/docs/ferrox-java/docs/components/resilience-1c4": {
+    "__comp": "17896441",
+    "content": "4aeb7ee1"
+  },
+  "/docs/ferrox-java/docs/components/security-716": {
+    "__comp": "17896441",
+    "content": "9a27be83"
+  },
+  "/docs/ferrox-java/docs/components/singleflight-da9": {
+    "__comp": "17896441",
+    "content": "71464516"
+  },
+  "/docs/ferrox-java/docs/quickstart-e94": {
+    "__comp": "17896441",
+    "content": "929d69cf"
+  },
+  "/docs/ferrox-java/intro-a20": {
+    "__comp": "17896441",
+    "content": "91126811"
   },
   "/docs/ferrox-node/docs/components/auth-151": {
     "__comp": "17896441",

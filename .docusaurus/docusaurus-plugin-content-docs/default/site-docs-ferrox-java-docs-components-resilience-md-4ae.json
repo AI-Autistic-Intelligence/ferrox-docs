@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/resilience",
+  "title": "Circuit Breaker & Resilience",
+  "description": "The ferrox-java-resilience module provides robust fail-fast state machines to prevent cascading network failures across your microservices.",
+  "source": "@site/docs/ferrox-java/docs/components/resilience.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/resilience",
+  "permalink": "/docs/ferrox-java/docs/components/resilience",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/resilience.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "resilience",
+    "title": "Circuit Breaker & Resilience",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Observability, JSON Logging & MDC",
+    "permalink": "/docs/ferrox-java/docs/components/observability"
+  },
+  "next": {
+    "title": "Off-Heap Native Memory (Zero-GC)",
+    "permalink": "/docs/ferrox-java/docs/components/offheap"
+  }
+}

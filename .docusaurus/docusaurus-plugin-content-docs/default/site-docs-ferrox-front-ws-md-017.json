@@ -23,7 +23,7 @@
     "permalink": "/docs/ferrox-front/security"
   },
   "next": {
-    "title": "Overview",
-    "permalink": "/docs/ferrox-node/overview"
+    "title": "Introduction & Architecture",
+    "permalink": "/docs/ferrox-java/intro"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/errors",
+  "title": "Standardized Error Taxonomy",
+  "description": "The ferrox-java-core and ferrox-java-web modules collaborate to provide a unified Error Taxonomy. This mirrors the behavior of @node-yalc/errors, ensuring that frontend clients receive exactly the same JSON error structures regardless of whether the backend is Node.js, Rust, or Java.",
+  "source": "@site/docs/ferrox-java/docs/components/errors.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/errors",
+  "permalink": "/docs/ferrox-java/docs/components/errors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/errors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "errors",
+    "title": "Standardized Error Taxonomy",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Singleflight Cache Stampede Prevention",
+    "permalink": "/docs/ferrox-java/docs/components/singleflight"
+  },
+  "next": {
+    "title": "Command & Query Bus Segregation",
+    "permalink": "/docs/ferrox-java/docs/components/cqrs"
+  }
+}

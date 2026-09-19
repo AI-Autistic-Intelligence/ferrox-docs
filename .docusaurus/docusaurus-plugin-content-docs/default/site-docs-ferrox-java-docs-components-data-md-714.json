@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/singleflight",
+  "title": "Singleflight Cache Stampede Prevention",
+  "description": "The ferrox-java-data module implements the Singleflight pattern natively in Java. It completely eliminates Cache Stampede (Dogpiling) by collapsing thousands of concurrent duplicate operations into a single execution.",
+  "source": "@site/docs/ferrox-java/docs/components/data.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/singleflight",
+  "permalink": "/docs/ferrox-java/docs/components/singleflight",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/data.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "singleflight",
+    "title": "Singleflight Cache Stampede Prevention",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sentinel Threat Engine & Zero-Trust Auth",
+    "permalink": "/docs/ferrox-java/docs/components/security"
+  },
+  "next": {
+    "title": "Standardized Error Taxonomy",
+    "permalink": "/docs/ferrox-java/docs/components/errors"
+  }
+}

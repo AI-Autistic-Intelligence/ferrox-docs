@@ -1,0 +1,29 @@
+{
+  "id": "ferrox-java/docs/components/cqrs",
+  "title": "Command & Query Bus Segregation",
+  "description": "The ferrox-java-cqrs module enforcing strict Command Query Responsibility Segregation (CQRS) across the entire JVM ecosystem.",
+  "source": "@site/docs/ferrox-java/docs/components/cqrs.md",
+  "sourceDirName": "ferrox-java/docs/components",
+  "slug": "/ferrox-java/docs/components/cqrs",
+  "permalink": "/docs/ferrox-java/docs/components/cqrs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/docs/ferrox-java/docs/components/cqrs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "cqrs",
+    "title": "Command & Query Bus Segregation",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Standardized Error Taxonomy",
+    "permalink": "/docs/ferrox-java/docs/components/errors"
+  },
+  "next": {
+    "title": "Compile-Time Metaprogramming (APT)",
+    "permalink": "/docs/ferrox-java/docs/components/crud-gen"
+  }
+}
