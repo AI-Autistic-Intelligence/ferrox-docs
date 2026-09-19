@@ -23,7 +23,7 @@ const config = {
   url: 'https://AI-Autistic-Intelligence.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/ferrox-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -84,6 +84,7 @@ const config = {
           { to: '/docs/ferrox/overview', label: 'Ferrox', position: 'left' },
           { to: '/docs/ferrox-node/overview', label: 'Ferrox Node', position: 'left' },
           { to: '/docs/ferrox-front/overview', label: 'Ferrox Front', position: 'left' },
+          { to: '/docs/ferrox-java/intro', label: 'Ferrox Java', position: 'left' },
           { to: '/docs/nestjs-yalc/overview', label: 'NestJS YALC', position: 'left' },
           { to: '/docs/node-yalc/overview', label: 'Node YALC', position: 'left' },
           {
