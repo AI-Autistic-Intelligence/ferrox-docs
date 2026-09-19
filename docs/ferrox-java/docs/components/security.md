@@ -33,8 +33,8 @@ Standard API gateways rely on naive rate-limiters (IP frequency) and JWTs (JSON 
 
 ### The Sentinel Entropy Calculation
 
-The `SentinelThreatEngine` calculates the Shannon Entropy ($H$) of a string using the formula:
-$$ H = - \sum_{i} p_i \log_2(p_i) $$
+The `SentinelThreatEngine` calculates the Shannon Entropy (`H`) of a string using the formula:
+`H = - SUM(p_i * log2(p_i))`
 
 ```mermaid
 sequenceDiagram
