@@ -1,4 +1,26 @@
+# Node & Docusaurus artifacts
 node_modules/
-dist/
-.env
 build/
+dist/
+.docusaurus/
+.cache-loader/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
