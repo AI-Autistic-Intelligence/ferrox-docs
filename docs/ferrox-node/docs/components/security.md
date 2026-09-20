@@ -23,16 +23,14 @@ sidebar_position: 2
 
 ### Shannon Entropy Calculation
 
-Shannon entropy calculates the amount of information uncertainty or randomness in a string or buffer:
-
-H(X) = - Σ ( P(x_i) * log2( P(x_i) ) )
+Shannon entropy calculates the amount of information uncertainty or randomness in a string or buffer.
 
 Where P(x_i) is the relative frequency of byte x_i in the payload.
-- **Plain Text (JSON, HTML)**: H(X) ≈ 3.5 - 4.8
-- **Encrypted Shellcode / AES Buffers**: H(X) ≈ 7.8 - 8.0
+- **Plain Text (JSON, HTML)**: H(X) \approx 3.5 - 4.8
+- **Base64 Payload / Obfuscated SQLi**: H(X) \approx 5.2 - 6.5
 - **Binary Shellcode / Encrypted Buffers**: H(X) > 7.2
 
-If H(X) exceeds the security threshold (>= 7.2), Sentinel immediately isolates the request, terminating the HTTP lifecycle with an HTTP `403 Forbidden` status.
+If H(X) exceeds the security threshold (\ge 7.2), Sentinel immediately isolates the request, terminating the HTTP lifecycle with an HTTP `403 Forbidden` status.
 
 ---
 
