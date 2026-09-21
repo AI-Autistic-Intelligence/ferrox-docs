@@ -234,6 +234,39 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             </div>
           </div>
         </section>
+
+        <section className="margin-vert--xl">
+          <div className="text--center margin-bottom--lg">
+            <Heading as="h2">The Ferrox Ecosystem</Heading>
+            <p>Explore the other powerful libraries and frameworks in our ecosystem.</p>
+          </div>
+          <div className="row">
+            <div className="col col--4 margin-bottom--lg">
+              <div className="card padding--lg text--center" style={{ height: '100%' }}>
+                <Heading as="h3">NestJS YALC</Heading>
+                <p>Enterprise-grade library suite designed specifically for NestJS 11+.</p>
+                <Link className="button button--primary" to="/docs/nestjs-yalc/overview">View Docs</Link>
+              </div>
+            </div>
+            <div className="col col--4 margin-bottom--lg">
+              <div className="card padding--lg text--center" style={{ height: '100%' }}>
+                <Heading as="h3">Node YALC</Heading>
+                <p>Advanced utility collection and boilerplate for Node.js projects.</p>
+                <Link className="button button--primary" to="/docs/node-yalc/overview">View Docs</Link>
+              </div>
+            </div>
+            <div className="col col--4 margin-bottom--lg">
+              <div className="card padding--lg text--center" style={{ height: '100%' }}>
+                <Heading as="h3">Ferrox Node & Front</Heading>
+                <p>Frontend and Node.js counterparts to the Ferrox framework ecosystem.</p>
+                <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+                  <Link className="button button--outline button--primary" to="/docs/ferrox-node/overview">Node</Link>
+                  <Link className="button button--outline button--primary" to="/docs/ferrox-front/overview">Front</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

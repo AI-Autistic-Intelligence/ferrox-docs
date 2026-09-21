@@ -49,6 +49,9 @@ export default {
       "classic",
       {
         "docs": {
+          "id": "ferrox",
+          "path": "docs/ferrox",
+          "routeBasePath": "docs/ferrox",
           "sidebarPath": "./sidebars.js",
           "editUrl": "https://github.com/AI-Autistic-Intelligence/ferrox-docs/tree/main/"
         },
@@ -56,6 +59,53 @@ export default {
         "theme": {
           "customCss": "./src/css/custom.css"
         }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        "id": "ferrox-node",
+        "path": "docs/ferrox-node",
+        "routeBasePath": "docs/ferrox-node",
+        "sidebarPath": "./sidebars.js"
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        "id": "ferrox-front",
+        "path": "docs/ferrox-front",
+        "routeBasePath": "docs/ferrox-front",
+        "sidebarPath": "./sidebars.js"
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        "id": "ferrox-java",
+        "path": "docs/ferrox-java",
+        "routeBasePath": "docs/ferrox-java",
+        "sidebarPath": "./sidebars.js"
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        "id": "nestjs-yalc",
+        "path": "docs/nestjs-yalc",
+        "routeBasePath": "docs/nestjs-yalc",
+        "sidebarPath": "./sidebars.js"
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        "id": "node-yalc",
+        "path": "docs/node-yalc",
+        "routeBasePath": "docs/node-yalc",
+        "sidebarPath": "./sidebars.js"
       }
     ]
   ],
@@ -394,7 +444,6 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],

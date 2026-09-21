@@ -8,16 +8,16 @@ export default [
     exact: true
   },
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', '1b2'),
+    path: '/docs/ferrox-front',
+    component: ComponentCreator('/docs/ferrox-front', '2a0'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', 'c16'),
+        path: '/docs/ferrox-front',
+        component: ComponentCreator('/docs/ferrox-front', '80f'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', 'a67'),
+            path: '/docs/ferrox-front',
+            component: ComponentCreator('/docs/ferrox-front', '58d'),
             routes: [
               {
                 path: '/docs/ferrox-front/architecture',
@@ -96,7 +96,25 @@ export default [
                 component: ComponentCreator('/docs/ferrox-front/ws', 'ff8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
-              },
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    path: '/docs/ferrox-java',
+    component: ComponentCreator('/docs/ferrox-java', 'c90'),
+    routes: [
+      {
+        path: '/docs/ferrox-java',
+        component: ComponentCreator('/docs/ferrox-java', 'e30'),
+        routes: [
+          {
+            path: '/docs/ferrox-java',
+            component: ComponentCreator('/docs/ferrox-java', '2e0'),
+            routes: [
               {
                 path: '/docs/ferrox-java/docs/components/cqrs',
                 component: ComponentCreator('/docs/ferrox-java/docs/components/cqrs', '532'),
@@ -162,7 +180,25 @@ export default [
                 component: ComponentCreator('/docs/ferrox-java/intro', 'a20'),
                 exact: true,
                 sidebar: "tutorialSidebar"
-              },
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    path: '/docs/ferrox-node',
+    component: ComponentCreator('/docs/ferrox-node', 'f69'),
+    routes: [
+      {
+        path: '/docs/ferrox-node',
+        component: ComponentCreator('/docs/ferrox-node', '35a'),
+        routes: [
+          {
+            path: '/docs/ferrox-node',
+            component: ComponentCreator('/docs/ferrox-node', 'e59'),
+            routes: [
               {
                 path: '/docs/ferrox-node/docs/components/auth',
                 component: ComponentCreator('/docs/ferrox-node/docs/components/auth', '151'),
@@ -282,7 +318,25 @@ export default [
                 component: ComponentCreator('/docs/ferrox-node/overview', '300'),
                 exact: true,
                 sidebar: "tutorialSidebar"
-              },
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    path: '/docs/ferrox',
+    component: ComponentCreator('/docs/ferrox', 'bc7'),
+    routes: [
+      {
+        path: '/docs/ferrox',
+        component: ComponentCreator('/docs/ferrox', 'f9b'),
+        routes: [
+          {
+            path: '/docs/ferrox',
+            component: ComponentCreator('/docs/ferrox', '8c5'),
+            routes: [
               {
                 path: '/docs/ferrox/abstractions/crud-generator',
                 component: ComponentCreator('/docs/ferrox/abstractions/crud-generator', 'ca2'),
@@ -666,7 +720,25 @@ export default [
                 component: ComponentCreator('/docs/ferrox/tutorial/setup', 'e01'),
                 exact: true,
                 sidebar: "tutorialSidebar"
-              },
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    path: '/docs/nestjs-yalc',
+    component: ComponentCreator('/docs/nestjs-yalc', '233'),
+    routes: [
+      {
+        path: '/docs/nestjs-yalc',
+        component: ComponentCreator('/docs/nestjs-yalc', 'b03'),
+        routes: [
+          {
+            path: '/docs/nestjs-yalc',
+            component: ComponentCreator('/docs/nestjs-yalc', 'a95'),
+            routes: [
               {
                 path: '/docs/nestjs-yalc/architecture',
                 component: ComponentCreator('/docs/nestjs-yalc/architecture', '49a'),
@@ -804,7 +876,25 @@ export default [
                 component: ComponentCreator('/docs/nestjs-yalc/overview', '3b7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
-              },
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    path: '/docs/node-yalc',
+    component: ComponentCreator('/docs/node-yalc', '04f'),
+    routes: [
+      {
+        path: '/docs/node-yalc',
+        component: ComponentCreator('/docs/node-yalc', 'c5c'),
+        routes: [
+          {
+            path: '/docs/node-yalc',
+            component: ComponentCreator('/docs/node-yalc', '131'),
+            routes: [
               {
                 path: '/docs/node-yalc/docs/intro',
                 component: ComponentCreator('/docs/node-yalc/docs/intro', 'b05'),

@@ -5,8 +5,8 @@ const REPOS = {
   'nestjs-yalc': { src: '../nestjs-yalc/docs', isDocusaurus: false },
   'node-yalc': { src: '../node-yalc/docs', isDocusaurus: false },
   'ferrox-node': { src: '../ferrox-node/docs', isDocusaurus: false },
-  'ferrox': { src: '../ferrox/docs', isDocusaurus: true },
   'ferrox-front': { src: '../ferrox-front/docs', isDocusaurus: true },
+  'ferrox': { src: '../ferrox/docs', isDocusaurus: true },
 };
 
 const DOCS_DIR = './docs';
