@@ -5,6 +5,10 @@ const REPOS = {
   'nestjs-yalc': { src: '../nestjs-yalc/docs', isDocusaurus: false },
   'node-yalc': { src: '../node-yalc/docs', isDocusaurus: false },
   'ferrox-node': { src: '../ferrox-node/docs', isDocusaurus: false },
+  'ferrox-py': { src: '../ferrox-py/docs', isDocusaurus: false },
+  'ferrox-py/auth': { src: '../ferrox-py-auth/docs', isDocusaurus: false },
+  'ferrox-py/commerce': { src: '../ferrox-py-commerce/docs', isDocusaurus: false },
+  'ferrox-py/utils': { src: '../ferrox-py-utils/docs', isDocusaurus: false },
   'ferrox-front': { src: '../ferrox-front/docs', isDocusaurus: true },
   'ferrox': { src: '../ferrox/docs', isDocusaurus: true },
 };

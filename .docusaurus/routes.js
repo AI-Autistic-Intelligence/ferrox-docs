@@ -326,6 +326,186 @@ export default [
     ]
   },
   {
+    path: '/docs/ferrox-py',
+    component: ComponentCreator('/docs/ferrox-py', '44e'),
+    routes: [
+      {
+        path: '/docs/ferrox-py',
+        component: ComponentCreator('/docs/ferrox-py', '66e'),
+        routes: [
+          {
+            path: '/docs/ferrox-py',
+            component: ComponentCreator('/docs/ferrox-py', '679'),
+            routes: [
+              {
+                path: '/docs/ferrox-py/abstractions/pipes-interceptors',
+                component: ComponentCreator('/docs/ferrox-py/abstractions/pipes-interceptors', '46b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/architectures/task-scheduling',
+                component: ComponentCreator('/docs/ferrox-py/architectures/task-scheduling', 'd00'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/auth/auth_service',
+                component: ComponentCreator('/docs/ferrox-py/auth/auth_service', 'bbf'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/auth/gdpr_service',
+                component: ComponentCreator('/docs/ferrox-py/auth/gdpr_service', 'a55'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/auth/models',
+                component: ComponentCreator('/docs/ferrox-py/auth/models', '2c9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/auth/overview',
+                component: ComponentCreator('/docs/ferrox-py/auth/overview', '587'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/auth/rbac',
+                component: ComponentCreator('/docs/ferrox-py/auth/rbac', '6c4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/controllers',
+                component: ComponentCreator('/docs/ferrox-py/commerce/controllers', '20a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/gateways',
+                component: ComponentCreator('/docs/ferrox-py/commerce/gateways', 'dc9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/overview',
+                component: ComponentCreator('/docs/ferrox-py/commerce/overview', '04c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/transaction_state',
+                component: ComponentCreator('/docs/ferrox-py/commerce/transaction_state', '9b6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/webhooks',
+                component: ComponentCreator('/docs/ferrox-py/commerce/webhooks', '9c8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/components/core',
+                component: ComponentCreator('/docs/ferrox-py/components/core', 'b74'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/components/cqrs',
+                component: ComponentCreator('/docs/ferrox-py/components/cqrs', 'f0a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/components/data',
+                component: ComponentCreator('/docs/ferrox-py/components/data', '690'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/components/observability',
+                component: ComponentCreator('/docs/ferrox-py/components/observability', '37e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/components/security',
+                component: ComponentCreator('/docs/ferrox-py/components/security', '84e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/components/web',
+                component: ComponentCreator('/docs/ferrox-py/components/web', '275'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/databases/sqlalchemy',
+                component: ComponentCreator('/docs/ferrox-py/databases/sqlalchemy', '624'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/fundamentals/modules',
+                component: ComponentCreator('/docs/ferrox-py/fundamentals/modules', '22d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/fundamentals/providers',
+                component: ComponentCreator('/docs/ferrox-py/fundamentals/providers', '211'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/overview',
+                component: ComponentCreator('/docs/ferrox-py/overview', '546'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/quickstart',
+                component: ComponentCreator('/docs/ferrox-py/quickstart', '440'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/utils/connectors',
+                component: ComponentCreator('/docs/ferrox-py/utils/connectors', 'b8f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/utils/overview',
+                component: ComponentCreator('/docs/ferrox-py/utils/overview', 'fb8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/utils/pipelines',
+                component: ComponentCreator('/docs/ferrox-py/utils/pipelines', 'cfa'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/utils/schemas',
+                component: ComponentCreator('/docs/ferrox-py/utils/schemas', '3e2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     path: '/docs/ferrox',
     component: ComponentCreator('/docs/ferrox', 'bc7'),
     routes: [

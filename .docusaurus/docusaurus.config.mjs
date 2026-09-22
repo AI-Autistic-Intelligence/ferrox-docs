@@ -66,6 +66,15 @@ export default {
     [
       "@docusaurus/plugin-content-docs",
       {
+        "id": "ferrox-py",
+        "path": "docs/ferrox-py",
+        "routeBasePath": "docs/ferrox-py",
+        "sidebarPath": "./sidebars.js"
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         "id": "ferrox-node",
         "path": "docs/ferrox-node",
         "routeBasePath": "docs/ferrox-node",
@@ -141,6 +150,11 @@ export default {
         {
           "to": "/docs/ferrox-node/overview",
           "label": "Ferrox Node",
+          "position": "left"
+        },
+        {
+          "to": "/docs/ferrox-py/overview",
+          "label": "Ferrox Py",
           "position": "left"
         },
         {

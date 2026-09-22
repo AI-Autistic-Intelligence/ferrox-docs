@@ -344,6 +344,165 @@
       ],
       "breadcrumbs": true
     },
+    "ferrox-py": {
+      "path": "/docs/ferrox-py",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs/ferrox-py",
+          "mainDocId": "abstractions/pipes-interceptors",
+          "docs": [
+            {
+              "id": "abstractions/pipes-interceptors",
+              "path": "/docs/ferrox-py/abstractions/pipes-interceptors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architectures/task-scheduling",
+              "path": "/docs/ferrox-py/architectures/task-scheduling",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "auth/auth_service",
+              "path": "/docs/ferrox-py/auth/auth_service",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "auth/gdpr_service",
+              "path": "/docs/ferrox-py/auth/gdpr_service",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "auth/models",
+              "path": "/docs/ferrox-py/auth/models",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "auth/overview",
+              "path": "/docs/ferrox-py/auth/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "auth/rbac",
+              "path": "/docs/ferrox-py/auth/rbac",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/controllers",
+              "path": "/docs/ferrox-py/commerce/controllers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/gateways",
+              "path": "/docs/ferrox-py/commerce/gateways",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/overview",
+              "path": "/docs/ferrox-py/commerce/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/transaction_state",
+              "path": "/docs/ferrox-py/commerce/transaction_state",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/webhooks",
+              "path": "/docs/ferrox-py/commerce/webhooks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "components/core",
+              "path": "/docs/ferrox-py/components/core",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "components/cqrs",
+              "path": "/docs/ferrox-py/components/cqrs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "components/data",
+              "path": "/docs/ferrox-py/components/data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "components/observability",
+              "path": "/docs/ferrox-py/components/observability",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "components/security",
+              "path": "/docs/ferrox-py/components/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "components/web",
+              "path": "/docs/ferrox-py/components/web",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "databases/sqlalchemy",
+              "path": "/docs/ferrox-py/databases/sqlalchemy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/modules",
+              "path": "/docs/ferrox-py/fundamentals/modules",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/providers",
+              "path": "/docs/ferrox-py/fundamentals/providers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview",
+              "path": "/docs/ferrox-py/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "quickstart",
+              "path": "/docs/ferrox-py/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "utils/connectors",
+              "path": "/docs/ferrox-py/utils/connectors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "utils/overview",
+              "path": "/docs/ferrox-py/utils/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "utils/pipelines",
+              "path": "/docs/ferrox-py/utils/pipelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "utils/schemas",
+              "path": "/docs/ferrox-py/utils/schemas",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/ferrox-py/abstractions/pipes-interceptors",
+                "label": "abstractions/pipes-interceptors"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    },
     "ferrox-node": {
       "path": "/docs/ferrox-node",
       "versions": [
