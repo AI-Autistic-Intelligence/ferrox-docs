@@ -93,12 +93,13 @@ const config = {
         sidebarPath: './sidebars.js',
       },
     ],
+
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'ferrox-java',
-        path: 'docs/ferrox-java',
-        routeBasePath: 'docs/ferrox-java',
+        id: 'ferrox-php',
+        path: 'docs/ferrox-php',
+        routeBasePath: 'docs/ferrox-php',
         sidebarPath: './sidebars.js',
       },
     ],
@@ -145,7 +146,8 @@ const config = {
           { to: '/docs/ferrox-node/overview', label: 'Ferrox Node', position: 'left' },
           { to: '/docs/ferrox-py/overview', label: 'Ferrox Py', position: 'left' },
           { to: '/docs/ferrox-front/overview', label: 'Ferrox Front', position: 'left' },
-          { to: '/docs/ferrox-java/intro', label: 'Ferrox Java', position: 'left' },
+
+          { to: '/docs/ferrox-php/overview', label: 'Ferrox PHP', position: 'left' },
           { to: '/docs/nestjs-yalc/overview', label: 'NestJS YALC', position: 'left' },
           { to: '/docs/node-yalc/overview', label: 'Node YALC', position: 'left' },
           {

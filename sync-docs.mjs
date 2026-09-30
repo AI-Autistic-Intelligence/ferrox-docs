@@ -9,6 +9,8 @@ const REPOS = {
   'ferrox-py/auth': { src: '../ferrox-py-auth/docs', isDocusaurus: false },
   'ferrox-py/commerce': { src: '../ferrox-py-commerce/docs', isDocusaurus: false },
   'ferrox-py/utils': { src: '../ferrox-py-utils/docs', isDocusaurus: false },
+  'ferrox-java': { src: '../ferrox-java/docs', isDocusaurus: false },
+  'ferrox-php': { src: '../ferrox-php/docs', isDocusaurus: false },
   'ferrox-front': { src: '../ferrox-front/docs', isDocusaurus: true },
   'ferrox': { src: '../ferrox/docs', isDocusaurus: true },
 };

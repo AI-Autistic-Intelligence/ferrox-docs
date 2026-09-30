@@ -716,69 +716,44 @@
       ],
       "breadcrumbs": true
     },
-    "ferrox-java": {
-      "path": "/docs/ferrox-java",
+    "ferrox-php": {
+      "path": "/docs/ferrox-php",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs/ferrox-java",
-          "mainDocId": "intro",
+          "path": "/docs/ferrox-php",
+          "mainDocId": "overview",
           "docs": [
             {
-              "id": "docs/components/cqrs",
-              "path": "/docs/ferrox-java/docs/components/cqrs",
+              "id": "api-reference",
+              "path": "/docs/ferrox-php/api-reference",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/components/crud-gen",
-              "path": "/docs/ferrox-java/docs/components/crud-gen",
+              "id": "ferrox-php-core",
+              "path": "/docs/ferrox-php/ferrox-php-core",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/components/errors",
-              "path": "/docs/ferrox-java/docs/components/errors",
+              "id": "ferrox-php-cqrs",
+              "path": "/docs/ferrox-php/ferrox-php-cqrs",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/components/event-manager",
-              "path": "/docs/ferrox-java/docs/components/event-manager",
+              "id": "ferrox-php-security",
+              "path": "/docs/ferrox-php/ferrox-php-security",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/components/observability",
-              "path": "/docs/ferrox-java/docs/components/observability",
+              "id": "ferrox-php-utils",
+              "path": "/docs/ferrox-php/ferrox-php-utils",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/components/offheap",
-              "path": "/docs/ferrox-java/docs/components/offheap",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/components/resilience",
-              "path": "/docs/ferrox-java/docs/components/resilience",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/components/security",
-              "path": "/docs/ferrox-java/docs/components/security",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/components/singleflight",
-              "path": "/docs/ferrox-java/docs/components/singleflight",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/quickstart",
-              "path": "/docs/ferrox-java/docs/quickstart",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "intro",
-              "path": "/docs/ferrox-java/intro",
+              "id": "overview",
+              "path": "/docs/ferrox-php/overview",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -786,8 +761,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/ferrox-java/intro",
-                "label": "intro"
+                "path": "/docs/ferrox-php/overview",
+                "label": "overview"
               }
             }
           }

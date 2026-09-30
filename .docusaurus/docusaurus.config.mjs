@@ -93,9 +93,9 @@ export default {
     [
       "@docusaurus/plugin-content-docs",
       {
-        "id": "ferrox-java",
-        "path": "docs/ferrox-java",
-        "routeBasePath": "docs/ferrox-java",
+        "id": "ferrox-php",
+        "path": "docs/ferrox-php",
+        "routeBasePath": "docs/ferrox-php",
         "sidebarPath": "./sidebars.js"
       }
     ],
@@ -163,8 +163,8 @@ export default {
           "position": "left"
         },
         {
-          "to": "/docs/ferrox-java/intro",
-          "label": "Ferrox Java",
+          "to": "/docs/ferrox-php/overview",
+          "label": "Ferrox PHP",
           "position": "left"
         },
         {
