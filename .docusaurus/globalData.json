@@ -1005,66 +1005,6 @@
               "id": "security/sentinel-engine",
               "path": "/docs/ferrox-php/security/sentinel-engine",
               "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/config-package",
-              "path": "/docs/ferrox-php/category/config-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/core-package",
-              "path": "/docs/ferrox-php/category/core-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/cqrs-package",
-              "path": "/docs/ferrox-php/category/cqrs-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/crud-gen-package",
-              "path": "/docs/ferrox-php/category/crud-gen-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/data-package",
-              "path": "/docs/ferrox-php/category/data-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/database-core-package",
-              "path": "/docs/ferrox-php/category/database-core-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/events-package",
-              "path": "/docs/ferrox-php/category/events-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/front-package",
-              "path": "/docs/ferrox-php/category/front-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/rate-limiter-package",
-              "path": "/docs/ferrox-php/category/rate-limiter-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/security-package",
-              "path": "/docs/ferrox-php/category/security-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/utils-package",
-              "path": "/docs/ferrox-php/category/utils-package",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/validation-package",
-              "path": "/docs/ferrox-php/category/validation-package",
-              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],

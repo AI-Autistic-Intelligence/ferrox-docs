@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '53a'),
     exact: true
@@ -278,15 +243,15 @@ export default [
   },
   {
     path: '/docs/ferrox-php',
-    component: ComponentCreator('/docs/ferrox-php', '43b'),
+    component: ComponentCreator('/docs/ferrox-php', 'e24'),
     routes: [
       {
         path: '/docs/ferrox-php',
-        component: ComponentCreator('/docs/ferrox-php', 'd7c'),
+        component: ComponentCreator('/docs/ferrox-php', '5ef'),
         routes: [
           {
             path: '/docs/ferrox-php',
-            component: ComponentCreator('/docs/ferrox-php', '40f'),
+            component: ComponentCreator('/docs/ferrox-php', '4dd'),
             routes: [
               {
                 path: '/docs/ferrox-php/abstractions/crud-generator',
@@ -327,78 +292,6 @@ export default [
               {
                 path: '/docs/ferrox-php/architectures/outbox-pattern',
                 component: ComponentCreator('/docs/ferrox-php/architectures/outbox-pattern', '355'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/config-package',
-                component: ComponentCreator('/docs/ferrox-php/category/config-package', '612'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/core-package',
-                component: ComponentCreator('/docs/ferrox-php/category/core-package', '1f3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/cqrs-package',
-                component: ComponentCreator('/docs/ferrox-php/category/cqrs-package', '330'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/crud-gen-package',
-                component: ComponentCreator('/docs/ferrox-php/category/crud-gen-package', '826'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/data-package',
-                component: ComponentCreator('/docs/ferrox-php/category/data-package', 'd5c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/database-core-package',
-                component: ComponentCreator('/docs/ferrox-php/category/database-core-package', '135'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/events-package',
-                component: ComponentCreator('/docs/ferrox-php/category/events-package', 'fff'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/front-package',
-                component: ComponentCreator('/docs/ferrox-php/category/front-package', '5ad'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/rate-limiter-package',
-                component: ComponentCreator('/docs/ferrox-php/category/rate-limiter-package', 'ea7'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/security-package',
-                component: ComponentCreator('/docs/ferrox-php/category/security-package', 'da3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/utils-package',
-                component: ComponentCreator('/docs/ferrox-php/category/utils-package', 'fee'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-php/category/validation-package',
-                component: ComponentCreator('/docs/ferrox-php/category/validation-package', '3aa'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
