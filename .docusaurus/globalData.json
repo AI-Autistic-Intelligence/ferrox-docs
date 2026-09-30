@@ -727,33 +727,33 @@
           "mainDocId": "overview",
           "docs": [
             {
+              "id": "abstractions/result-monad",
+              "path": "/docs/ferrox-php/abstractions/result-monad",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "api-reference",
               "path": "/docs/ferrox-php/api-reference",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "ferrox-php-core",
-              "path": "/docs/ferrox-php/ferrox-php-core",
+              "id": "architectures/cqrs",
+              "path": "/docs/ferrox-php/architectures/cqrs",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "ferrox-php-cqrs",
-              "path": "/docs/ferrox-php/ferrox-php-cqrs",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "ferrox-php-security",
-              "path": "/docs/ferrox-php/ferrox-php-security",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "ferrox-php-utils",
-              "path": "/docs/ferrox-php/ferrox-php-utils",
+              "id": "fundamentals/pipeline",
+              "path": "/docs/ferrox-php/fundamentals/pipeline",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "overview",
               "path": "/docs/ferrox-php/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel",
+              "path": "/docs/ferrox-php/security/sentinel",
               "sidebar": "tutorialSidebar"
             }
           ],

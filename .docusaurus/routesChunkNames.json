@@ -164,42 +164,42 @@
     "__comp": "17896441",
     "content": "881a25f7"
   },
-  "/docs/ferrox-php-271": {
+  "/docs/ferrox-php-cc9": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "bbc575e1"
     }
   },
-  "/docs/ferrox-php-b21": {
+  "/docs/ferrox-php-c4c": {
     "__comp": "a7bd4aaa",
     "__props": "ff81fbf4"
   },
-  "/docs/ferrox-php-ee1": {
+  "/docs/ferrox-php-b15": {
     "__comp": "a94703ab"
+  },
+  "/docs/ferrox-php/abstractions/result-monad-450": {
+    "__comp": "17896441",
+    "content": "5fb24f44"
   },
   "/docs/ferrox-php/api-reference-60e": {
     "__comp": "17896441",
     "content": "4f5510e4"
   },
-  "/docs/ferrox-php/ferrox-php-core-bf5": {
+  "/docs/ferrox-php/architectures/cqrs-0aa": {
     "__comp": "17896441",
-    "content": "0975b2d0"
+    "content": "a33b85f9"
   },
-  "/docs/ferrox-php/ferrox-php-cqrs-a1a": {
+  "/docs/ferrox-php/fundamentals/pipeline-b9c": {
     "__comp": "17896441",
-    "content": "300971fb"
-  },
-  "/docs/ferrox-php/ferrox-php-security-a19": {
-    "__comp": "17896441",
-    "content": "ec3c6808"
-  },
-  "/docs/ferrox-php/ferrox-php-utils-bee": {
-    "__comp": "17896441",
-    "content": "ac9e7cab"
+    "content": "43cc4f1b"
   },
   "/docs/ferrox-php/overview-1fb": {
     "__comp": "17896441",
     "content": "ca737ef0"
+  },
+  "/docs/ferrox-php/security/sentinel-c3d": {
+    "__comp": "17896441",
+    "content": "b8b5634c"
   },
   "/docs/ferrox-py-44e": {
     "__comp": "5e95c892",
