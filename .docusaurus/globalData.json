@@ -727,8 +727,18 @@
           "mainDocId": "overview",
           "docs": [
             {
+              "id": "abstractions/crud-generator",
+              "path": "/docs/ferrox-php/abstractions/crud-generator",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "abstractions/result-monad",
               "path": "/docs/ferrox-php/abstractions/result-monad",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "abstractions/validation-pipes",
+              "path": "/docs/ferrox-php/abstractions/validation-pipes",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -737,13 +747,63 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "architectures/cqrs",
-              "path": "/docs/ferrox-php/architectures/cqrs",
+              "id": "architectures/cqrs-sagas",
+              "path": "/docs/ferrox-php/architectures/cqrs-sagas",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "fundamentals/pipeline",
-              "path": "/docs/ferrox-php/fundamentals/pipeline",
+              "id": "architectures/event-driven",
+              "path": "/docs/ferrox-php/architectures/event-driven",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architectures/outbox-pattern",
+              "path": "/docs/ferrox-php/architectures/outbox-pattern",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "databases/repository-pattern",
+              "path": "/docs/ferrox-php/databases/repository-pattern",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "databases/unit-of-work",
+              "path": "/docs/ferrox-php/databases/unit-of-work",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/configuration",
+              "path": "/docs/ferrox-php/fundamentals/configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/dependency-injection",
+              "path": "/docs/ferrox-php/fundamentals/dependency-injection",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/error-handling",
+              "path": "/docs/ferrox-php/fundamentals/error-handling",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/pipeline-middlewares",
+              "path": "/docs/ferrox-php/fundamentals/pipeline-middlewares",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "observability/logging",
+              "path": "/docs/ferrox-php/observability/logging",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "observability/metrics",
+              "path": "/docs/ferrox-php/observability/metrics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "observability/tracing",
+              "path": "/docs/ferrox-php/observability/tracing",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -752,8 +812,258 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "security/sentinel",
-              "path": "/docs/ferrox-php/security/sentinel",
+              "id": "overview/introduction",
+              "path": "/docs/ferrox-php/overview/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/lifecycle",
+              "path": "/docs/ferrox-php/overview/lifecycle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/config/overview",
+              "path": "/docs/ferrox-php/packages/config/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/core/app",
+              "path": "/docs/ferrox-php/packages/core/app",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/core/container",
+              "path": "/docs/ferrox-php/packages/core/container",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/core/decorators",
+              "path": "/docs/ferrox-php/packages/core/decorators",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/core/errors",
+              "path": "/docs/ferrox-php/packages/core/errors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/core/http",
+              "path": "/docs/ferrox-php/packages/core/http",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/core/overview",
+              "path": "/docs/ferrox-php/packages/core/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/core/security",
+              "path": "/docs/ferrox-php/packages/core/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/cqrs/core",
+              "path": "/docs/ferrox-php/packages/cqrs/core",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/cqrs/overview",
+              "path": "/docs/ferrox-php/packages/cqrs/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/crud-gen/attributes",
+              "path": "/docs/ferrox-php/packages/crud-gen/attributes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/crud-gen/overview",
+              "path": "/docs/ferrox-php/packages/crud-gen/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/data/concurrency",
+              "path": "/docs/ferrox-php/packages/data/concurrency",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/data/overview",
+              "path": "/docs/ferrox-php/packages/data/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/database-core/core",
+              "path": "/docs/ferrox-php/packages/database-core/core",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/database-core/overview",
+              "path": "/docs/ferrox-php/packages/database-core/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/events/outbox",
+              "path": "/docs/ferrox-php/packages/events/outbox",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/events/overview",
+              "path": "/docs/ferrox-php/packages/events/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/front/overview",
+              "path": "/docs/ferrox-php/packages/front/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/rate-limiter/overview",
+              "path": "/docs/ferrox-php/packages/rate-limiter/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/security/auth",
+              "path": "/docs/ferrox-php/packages/security/auth",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/security/overview",
+              "path": "/docs/ferrox-php/packages/security/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/security/sentinel",
+              "path": "/docs/ferrox-php/packages/security/sentinel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/utils/dates",
+              "path": "/docs/ferrox-php/packages/utils/dates",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/utils/env",
+              "path": "/docs/ferrox-php/packages/utils/env",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/utils/overview",
+              "path": "/docs/ferrox-php/packages/utils/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/utils/pagination",
+              "path": "/docs/ferrox-php/packages/utils/pagination",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/utils/strings",
+              "path": "/docs/ferrox-php/packages/utils/strings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/utils/types",
+              "path": "/docs/ferrox-php/packages/utils/types",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/validation/attributes",
+              "path": "/docs/ferrox-php/packages/validation/attributes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "packages/validation/overview",
+              "path": "/docs/ferrox-php/packages/validation/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/memory-management",
+              "path": "/docs/ferrox-php/performance/memory-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/singleflight",
+              "path": "/docs/ferrox-php/performance/singleflight",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/paseto-auth",
+              "path": "/docs/ferrox-php/security/paseto-auth",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/rate-limiting",
+              "path": "/docs/ferrox-php/security/rate-limiting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/rbac-guards",
+              "path": "/docs/ferrox-php/security/rbac-guards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel-engine",
+              "path": "/docs/ferrox-php/security/sentinel-engine",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/config-package",
+              "path": "/docs/ferrox-php/category/config-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/core-package",
+              "path": "/docs/ferrox-php/category/core-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/cqrs-package",
+              "path": "/docs/ferrox-php/category/cqrs-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/crud-gen-package",
+              "path": "/docs/ferrox-php/category/crud-gen-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/data-package",
+              "path": "/docs/ferrox-php/category/data-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/database-core-package",
+              "path": "/docs/ferrox-php/category/database-core-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/events-package",
+              "path": "/docs/ferrox-php/category/events-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/front-package",
+              "path": "/docs/ferrox-php/category/front-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/rate-limiter-package",
+              "path": "/docs/ferrox-php/category/rate-limiter-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/security-package",
+              "path": "/docs/ferrox-php/category/security-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/utils-package",
+              "path": "/docs/ferrox-php/category/utils-package",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/validation-package",
+              "path": "/docs/ferrox-php/category/validation-package",
               "sidebar": "tutorialSidebar"
             }
           ],

@@ -1,767 +1,1058 @@
 {
-  "/markdown-page-53a": {
-    "__comp": "1f391b9e",
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     },
-    "content": "4c678320"
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/markdown-page-53a": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---markdown-pagea-74-7b5"
+    },
+    "content": "content---markdown-page-4-c-6-c89"
   },
   "/docs/ferrox-front-2a0": {
-    "__comp": "5e95c892",
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "81320b77"
+      "plugin": "plugin---docs-ferrox-front-813-97d"
     }
   },
   "/docs/ferrox-front-80f": {
-    "__comp": "a7bd4aaa",
-    "__props": "c4887c3a"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-ferrox-frontc-48-0a6"
   },
   "/docs/ferrox-front-58d": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/ferrox-front/architecture-085": {
-    "__comp": "17896441",
-    "content": "c6b109ba"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-architecturec-6-b-31c"
   },
   "/docs/ferrox-front/components-889": {
-    "__comp": "17896441",
-    "content": "478b870c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-components-478-605"
   },
   "/docs/ferrox-front/core-7ac": {
-    "__comp": "17896441",
-    "content": "fef90efa"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-corefef-91b"
   },
   "/docs/ferrox-front/intro-681": {
-    "__comp": "17896441",
-    "content": "0d09fcd8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-intro-0-d-0-fda"
   },
   "/docs/ferrox-front/macros-778": {
-    "__comp": "17896441",
-    "content": "09950861"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-macros-099-91d"
   },
   "/docs/ferrox-front/overview-8a2": {
-    "__comp": "17896441",
-    "content": "8003b396"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-overview-800-5ad"
   },
   "/docs/ferrox-front/quickstart-279": {
-    "__comp": "17896441",
-    "content": "72737d00"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-quickstart-727-3fe"
   },
   "/docs/ferrox-front/reactivity-7dd": {
-    "__comp": "17896441",
-    "content": "9a498169"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-reactivity-9-a-4-96b"
   },
   "/docs/ferrox-front/routing-6ca": {
-    "__comp": "17896441",
-    "content": "c59f0185"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-routingc-59-23b"
   },
   "/docs/ferrox-front/security-2a7": {
-    "__comp": "17896441",
-    "content": "07927352"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-security-079-99a"
   },
   "/docs/ferrox-front/templates-7b9": {
-    "__comp": "17896441",
-    "content": "24decb7e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-templates-24-d-c73"
   },
   "/docs/ferrox-front/ui-components-e95": {
-    "__comp": "17896441",
-    "content": "339a6d74"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-ui-components-339-a78"
   },
   "/docs/ferrox-front/ws-ff8": {
-    "__comp": "17896441",
-    "content": "0170d36f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-front-ws-017-360"
   },
   "/docs/ferrox-node-f69": {
-    "__comp": "5e95c892",
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "b9f5a8e7"
+      "plugin": "plugin---docs-ferrox-nodeb-9-f-d8c"
     }
   },
   "/docs/ferrox-node-35a": {
-    "__comp": "a7bd4aaa",
-    "__props": "12752ed5"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-ferrox-node-127-0a2"
   },
   "/docs/ferrox-node-e59": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/ferrox-node/docs/components/auth-151": {
-    "__comp": "17896441",
-    "content": "2ab3146d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-auth-2-ab-a2b"
   },
   "/docs/ferrox-node/docs/components/config-531": {
-    "__comp": "17896441",
-    "content": "e744f5ba"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-confige-74-470"
   },
   "/docs/ferrox-node/docs/components/core-a8a": {
-    "__comp": "17896441",
-    "content": "cf5d3880"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-corecf-5-6d3"
   },
   "/docs/ferrox-node/docs/components/cqrs-59b": {
-    "__comp": "17896441",
-    "content": "67caf144"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-cqrs-67-c-69b"
   },
   "/docs/ferrox-node/docs/components/datagrid-6c0": {
-    "__comp": "17896441",
-    "content": "dcbb8cff"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-datagriddcb-d5d"
   },
   "/docs/ferrox-node/docs/components/guards-7fb": {
-    "__comp": "17896441",
-    "content": "c33d9480"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-guardsc-33-3fa"
   },
   "/docs/ferrox-node/docs/components/i18n-148": {
-    "__comp": "17896441",
-    "content": "e1f332f2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-i-18-ne-1-f-e87"
   },
   "/docs/ferrox-node/docs/components/interfaces-db7": {
-    "__comp": "17896441",
-    "content": "fe198a99"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-interfacesfe-1-afd"
   },
   "/docs/ferrox-node/docs/components/jobs-6cb": {
-    "__comp": "17896441",
-    "content": "dce37926"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-jobsdce-f3e"
   },
   "/docs/ferrox-node/docs/components/kernel-ed7": {
-    "__comp": "17896441",
-    "content": "e703bdd9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-kernele-70-0f1"
   },
   "/docs/ferrox-node/docs/components/resilience-f25": {
-    "__comp": "17896441",
-    "content": "fe79623f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-resiliencefe-7-cb2"
   },
   "/docs/ferrox-node/docs/components/routing-345": {
-    "__comp": "17896441",
-    "content": "5944863a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-routing-594-eb1"
   },
   "/docs/ferrox-node/docs/components/security-1de": {
-    "__comp": "17896441",
-    "content": "29ae0846"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-security-29-a-5b1"
   },
   "/docs/ferrox-node/docs/components/selftest-3d8": {
-    "__comp": "17896441",
-    "content": "63e3d9b3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-selftest-63-e-b4b"
   },
   "/docs/ferrox-node/docs/components/storage-48a": {
-    "__comp": "17896441",
-    "content": "00acab10"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-storage-00-a-293"
   },
   "/docs/ferrox-node/docs/components/tracing-762": {
-    "__comp": "17896441",
-    "content": "8b527737"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-tracing-8-b-5-21e"
   },
   "/docs/ferrox-node/docs/components/transports-bc9": {
-    "__comp": "17896441",
-    "content": "fe0c52f3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-components-transportsfe-0-2d8"
   },
   "/docs/ferrox-node/docs/intro-0f0": {
-    "__comp": "17896441",
-    "content": "e6f27e97"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-introe-6-f-618"
   },
   "/docs/ferrox-node/docs/quickstart-e98": {
-    "__comp": "17896441",
-    "content": "bdd0521b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-docs-quickstartbdd-747"
   },
   "/docs/ferrox-node/overview-300": {
-    "__comp": "17896441",
-    "content": "881a25f7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-node-overview-881-d42"
   },
-  "/docs/ferrox-php-cc9": {
-    "__comp": "5e95c892",
+  "/docs/ferrox-php-43b": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "bbc575e1"
+      "plugin": "plugin---docs-ferrox-phpbbc-15d"
     }
   },
-  "/docs/ferrox-php-c4c": {
-    "__comp": "a7bd4aaa",
-    "__props": "ff81fbf4"
+  "/docs/ferrox-php-d7c": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-ferrox-phpff-8-400"
   },
-  "/docs/ferrox-php-b15": {
-    "__comp": "a94703ab"
+  "/docs/ferrox-php-40f": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/ferrox-php/abstractions/crud-generator-a48": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-abstractions-crud-generatorda-3-a23"
   },
   "/docs/ferrox-php/abstractions/result-monad-450": {
-    "__comp": "17896441",
-    "content": "5fb24f44"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-abstractions-result-monad-5-fb-39c"
+  },
+  "/docs/ferrox-php/abstractions/validation-pipes-a9c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-abstractions-validation-pipesb-1-f-9ba"
   },
   "/docs/ferrox-php/api-reference-60e": {
-    "__comp": "17896441",
-    "content": "4f5510e4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-api-reference-4-f-5-f30"
   },
-  "/docs/ferrox-php/architectures/cqrs-0aa": {
-    "__comp": "17896441",
-    "content": "a33b85f9"
+  "/docs/ferrox-php/architectures/cqrs-sagas-0ab": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-architectures-cqrs-sagas-424-eb9"
   },
-  "/docs/ferrox-php/fundamentals/pipeline-b9c": {
-    "__comp": "17896441",
-    "content": "43cc4f1b"
+  "/docs/ferrox-php/architectures/event-driven-23c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-architectures-event-drivene-60-369"
+  },
+  "/docs/ferrox-php/architectures/outbox-pattern-355": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-architectures-outbox-patterne-6-a-d0b"
+  },
+  "/docs/ferrox-php/category/config-package-612": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-config-package-809-f61"
+  },
+  "/docs/ferrox-php/category/core-package-1f3": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-core-packaged-77-43e"
+  },
+  "/docs/ferrox-php/category/cqrs-package-330": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-cqrs-package-96-f-4f1"
+  },
+  "/docs/ferrox-php/category/crud-gen-package-826": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-crud-gen-package-431-f87"
+  },
+  "/docs/ferrox-php/category/data-package-d5c": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-data-packageb-7-a-326"
+  },
+  "/docs/ferrox-php/category/database-core-package-135": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-database-core-packaged-5-a-226"
+  },
+  "/docs/ferrox-php/category/events-package-fff": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-events-packagec-73-3a7"
+  },
+  "/docs/ferrox-php/category/front-package-5ad": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-front-package-955-00a"
+  },
+  "/docs/ferrox-php/category/rate-limiter-package-ea7": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-rate-limiter-package-6-e-8-87a"
+  },
+  "/docs/ferrox-php/category/security-package-da3": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-security-package-11-d-3b1"
+  },
+  "/docs/ferrox-php/category/utils-package-fee": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-utils-package-902-368"
+  },
+  "/docs/ferrox-php/category/validation-package-3aa": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-ferrox-php-category-validation-packageafb-e77"
+  },
+  "/docs/ferrox-php/databases/repository-pattern-497": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-databases-repository-pattern-7-a-4-42a"
+  },
+  "/docs/ferrox-php/databases/unit-of-work-85d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-databases-unit-of-worka-3-c-582"
+  },
+  "/docs/ferrox-php/fundamentals/configuration-660": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-fundamentals-configuration-57-a-976"
+  },
+  "/docs/ferrox-php/fundamentals/dependency-injection-93a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-fundamentals-dependency-injection-223-236"
+  },
+  "/docs/ferrox-php/fundamentals/error-handling-877": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-fundamentals-error-handlingc-7-a-4c1"
+  },
+  "/docs/ferrox-php/fundamentals/pipeline-middlewares-fb8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-fundamentals-pipeline-middlewaresca-5-c76"
+  },
+  "/docs/ferrox-php/observability/logging-c51": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-observability-loggingeaf-562"
+  },
+  "/docs/ferrox-php/observability/metrics-fb6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-observability-metricse-83-676"
+  },
+  "/docs/ferrox-php/observability/tracing-bab": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-observability-tracing-25-b-21d"
   },
   "/docs/ferrox-php/overview-1fb": {
-    "__comp": "17896441",
-    "content": "ca737ef0"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-overviewca-7-deb"
   },
-  "/docs/ferrox-php/security/sentinel-c3d": {
-    "__comp": "17896441",
-    "content": "b8b5634c"
+  "/docs/ferrox-php/overview/introduction-e0a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-overview-introduction-671-2fb"
+  },
+  "/docs/ferrox-php/overview/lifecycle-e7d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-overview-lifecyclec-7-a-086"
+  },
+  "/docs/ferrox-php/packages/config/overview-7d7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-config-overview-698-05c"
+  },
+  "/docs/ferrox-php/packages/core/app-b8e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-core-appa-73-2f9"
+  },
+  "/docs/ferrox-php/packages/core/container-385": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-core-container-7-c-9-3f6"
+  },
+  "/docs/ferrox-php/packages/core/decorators-799": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-core-decoratorsbc-6-109"
+  },
+  "/docs/ferrox-php/packages/core/errors-bcf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-core-errorsda-5-e46"
+  },
+  "/docs/ferrox-php/packages/core/http-9f3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-core-httpcba-cca"
+  },
+  "/docs/ferrox-php/packages/core/overview-8c2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-core-overview-70-d-514"
+  },
+  "/docs/ferrox-php/packages/core/security-05e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-core-security-4-eb-5c3"
+  },
+  "/docs/ferrox-php/packages/cqrs/core-762": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-cqrs-core-1-ee-c64"
+  },
+  "/docs/ferrox-php/packages/cqrs/overview-81c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-cqrs-overview-79-c-473"
+  },
+  "/docs/ferrox-php/packages/crud-gen/attributes-516": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-crud-gen-attributesd-2-a-e08"
+  },
+  "/docs/ferrox-php/packages/crud-gen/overview-179": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-crud-gen-overview-97-b-900"
+  },
+  "/docs/ferrox-php/packages/data/concurrency-c9f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-data-concurrency-78-b-45f"
+  },
+  "/docs/ferrox-php/packages/data/overview-15c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-data-overview-598-87a"
+  },
+  "/docs/ferrox-php/packages/database-core/core-9a9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-database-core-core-89-c-c30"
+  },
+  "/docs/ferrox-php/packages/database-core/overview-6ab": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-database-core-overview-206-b31"
+  },
+  "/docs/ferrox-php/packages/events/outbox-e6c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-events-outbox-5-e-2-cea"
+  },
+  "/docs/ferrox-php/packages/events/overview-773": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-events-overview-75-e-05f"
+  },
+  "/docs/ferrox-php/packages/front/overview-222": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-front-overviewefb-89b"
+  },
+  "/docs/ferrox-php/packages/rate-limiter/overview-b2e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-rate-limiter-overview-054-b38"
+  },
+  "/docs/ferrox-php/packages/security/auth-1c4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-security-authc-5-c-bd5"
+  },
+  "/docs/ferrox-php/packages/security/overview-d7d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-security-overviewd-48-c73"
+  },
+  "/docs/ferrox-php/packages/security/sentinel-d6d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-security-sentinel-31-d-216"
+  },
+  "/docs/ferrox-php/packages/utils/dates-b8f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-utils-dates-019-41d"
+  },
+  "/docs/ferrox-php/packages/utils/env-b25": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-utils-enve-6-d-bb0"
+  },
+  "/docs/ferrox-php/packages/utils/overview-6b3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-utils-overviewbe-3-0f1"
+  },
+  "/docs/ferrox-php/packages/utils/pagination-37e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-utils-paginationf-41-0f9"
+  },
+  "/docs/ferrox-php/packages/utils/strings-b0d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-utils-strings-40-f-6b6"
+  },
+  "/docs/ferrox-php/packages/utils/types-8b0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-utils-types-8-da-d4a"
+  },
+  "/docs/ferrox-php/packages/validation/attributes-66c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-validation-attributesc-93-7ff"
+  },
+  "/docs/ferrox-php/packages/validation/overview-165": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-packages-validation-overview-49-e-166"
+  },
+  "/docs/ferrox-php/performance/memory-management-c42": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-performance-memory-management-5-da-2a8"
+  },
+  "/docs/ferrox-php/performance/singleflight-7bf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-performance-singleflighte-80-e68"
+  },
+  "/docs/ferrox-php/security/paseto-auth-269": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-security-paseto-authcce-730"
+  },
+  "/docs/ferrox-php/security/rate-limiting-358": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-security-rate-limiting-22-f-ab3"
+  },
+  "/docs/ferrox-php/security/rbac-guards-cd3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-security-rbac-guards-1-f-4-ff3"
+  },
+  "/docs/ferrox-php/security/sentinel-engine-bd2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-php-security-sentinel-engineb-33-2b6"
   },
   "/docs/ferrox-py-44e": {
-    "__comp": "5e95c892",
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "84a17033"
+      "plugin": "plugin---docs-ferrox-py-84-a-e20"
     }
   },
   "/docs/ferrox-py-66e": {
-    "__comp": "a7bd4aaa",
-    "__props": "7cd51d08"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-ferrox-py-7-cd-377"
   },
   "/docs/ferrox-py-679": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/ferrox-py/abstractions/pipes-interceptors-46b": {
-    "__comp": "17896441",
-    "content": "ebf900a4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-abstractions-pipes-interceptorsebf-c6e"
   },
   "/docs/ferrox-py/architectures/task-scheduling-d00": {
-    "__comp": "17896441",
-    "content": "62b91795"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-architectures-task-scheduling-62-b-a1a"
   },
   "/docs/ferrox-py/auth/auth_service-bbf": {
-    "__comp": "17896441",
-    "content": "b9d00652"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-auth-auth-serviceb-9-d-a7a"
   },
   "/docs/ferrox-py/auth/gdpr_service-a55": {
-    "__comp": "17896441",
-    "content": "8d42afd2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-auth-gdpr-service-8-d-4-ebe"
   },
   "/docs/ferrox-py/auth/models-2c9": {
-    "__comp": "17896441",
-    "content": "25c88c66"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-auth-models-25-c-adf"
   },
   "/docs/ferrox-py/auth/overview-587": {
-    "__comp": "17896441",
-    "content": "4619490e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-auth-overview-461-d51"
   },
   "/docs/ferrox-py/auth/rbac-6c4": {
-    "__comp": "17896441",
-    "content": "4cd0cea5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-auth-rbac-4-cd-9f6"
   },
   "/docs/ferrox-py/commerce/controllers-20a": {
-    "__comp": "17896441",
-    "content": "74cec476"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-commerce-controllers-74-c-a00"
   },
   "/docs/ferrox-py/commerce/gateways-dc9": {
-    "__comp": "17896441",
-    "content": "269b4062"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-commerce-gateways-269-c7c"
   },
   "/docs/ferrox-py/commerce/overview-04c": {
-    "__comp": "17896441",
-    "content": "d842db8c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-commerce-overviewd-84-55e"
   },
   "/docs/ferrox-py/commerce/transaction_state-9b6": {
-    "__comp": "17896441",
-    "content": "c78915f1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-commerce-transaction-statec-78-090"
   },
   "/docs/ferrox-py/commerce/webhooks-9c8": {
-    "__comp": "17896441",
-    "content": "d2f6deeb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-commerce-webhooksd-2-f-cc5"
   },
   "/docs/ferrox-py/components/core-b74": {
-    "__comp": "17896441",
-    "content": "a3fe8de6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-components-corea-3-f-543"
   },
   "/docs/ferrox-py/components/cqrs-f0a": {
-    "__comp": "17896441",
-    "content": "8dfecbc4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-components-cqrs-8-df-692"
   },
   "/docs/ferrox-py/components/data-690": {
-    "__comp": "17896441",
-    "content": "9244d80b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-components-data-924-198"
   },
   "/docs/ferrox-py/components/observability-37e": {
-    "__comp": "17896441",
-    "content": "3da85698"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-components-observability-3-da-d7c"
   },
   "/docs/ferrox-py/components/security-84e": {
-    "__comp": "17896441",
-    "content": "96bcd8d4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-components-security-96-b-de2"
   },
   "/docs/ferrox-py/components/web-275": {
-    "__comp": "17896441",
-    "content": "8843934a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-components-web-884-384"
   },
   "/docs/ferrox-py/databases/sqlalchemy-624": {
-    "__comp": "17896441",
-    "content": "5b418bf7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-databases-sqlalchemy-5-b-4-593"
   },
   "/docs/ferrox-py/fundamentals/modules-22d": {
-    "__comp": "17896441",
-    "content": "82ce1dd9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-fundamentals-modules-82-c-c57"
   },
   "/docs/ferrox-py/fundamentals/providers-211": {
-    "__comp": "17896441",
-    "content": "a72a8532"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-fundamentals-providersa-72-c3f"
   },
   "/docs/ferrox-py/overview-546": {
-    "__comp": "17896441",
-    "content": "d8377663"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-overviewd-83-c48"
   },
   "/docs/ferrox-py/quickstart-440": {
-    "__comp": "17896441",
-    "content": "e8230377"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-quickstarte-82-cba"
   },
   "/docs/ferrox-py/utils/connectors-b8f": {
-    "__comp": "17896441",
-    "content": "c00eea67"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-utils-connectorsc-00-6b0"
   },
   "/docs/ferrox-py/utils/overview-fb8": {
-    "__comp": "17896441",
-    "content": "5459f6ec"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-utils-overview-545-5a8"
   },
   "/docs/ferrox-py/utils/pipelines-cfa": {
-    "__comp": "17896441",
-    "content": "2cde3d53"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-utils-pipelines-2-cd-552"
   },
   "/docs/ferrox-py/utils/schemas-3e2": {
-    "__comp": "17896441",
-    "content": "4532d084"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-py-utils-schemas-453-f40"
   },
   "/docs/ferrox-bc7": {
-    "__comp": "5e95c892",
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "b23c5c50"
+      "plugin": "plugin---docs-ferroxb-23-0a2"
     }
   },
   "/docs/ferrox-f9b": {
-    "__comp": "a7bd4aaa",
-    "__props": "1cb7ec1b"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-ferrox-1-cb-b50"
   },
   "/docs/ferrox-8c5": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/ferrox/abstractions/crud-generator-ca2": {
-    "__comp": "17896441",
-    "content": "63662578"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-abstractions-crud-generator-636-fb8"
   },
   "/docs/ferrox/abstractions/guards-640": {
-    "__comp": "17896441",
-    "content": "7af5efca"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-abstractions-guards-7-af-f90"
   },
   "/docs/ferrox/abstractions/pipes-02c": {
-    "__comp": "17896441",
-    "content": "3ca09fdc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-abstractions-pipes-3-ca-25f"
   },
   "/docs/ferrox/abstractions/validation-018": {
-    "__comp": "17896441",
-    "content": "06cb0528"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-abstractions-validation-06-c-2d6"
   },
   "/docs/ferrox/architectures/api-gateway-aa2": {
-    "__comp": "17896441",
-    "content": "efbeebab"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-architectures-api-gatewayefb-cd4"
   },
   "/docs/ferrox/architectures/caching-77c": {
-    "__comp": "17896441",
-    "content": "e7ee41a7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-architectures-cachinge-7-e-01e"
   },
   "/docs/ferrox/architectures/cqrs-bce": {
-    "__comp": "17896441",
-    "content": "048ffcc4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-architectures-cqrs-048-b49"
   },
   "/docs/ferrox/architectures/events-f11": {
-    "__comp": "17896441",
-    "content": "99d0eeaa"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-architectures-events-99-d-e9d"
   },
   "/docs/ferrox/architectures/queues-jobs-da6": {
-    "__comp": "17896441",
-    "content": "09eed891"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-architectures-queues-jobs-09-e-dd9"
   },
   "/docs/ferrox/architectures/sagas-a1f": {
-    "__comp": "17896441",
-    "content": "87e0bdb2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-architectures-sagas-87-e-f42"
   },
   "/docs/ferrox/architectures/task-scheduling-e88": {
-    "__comp": "17896441",
-    "content": "617e25ff"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-architectures-task-scheduling-617-ca9"
   },
   "/docs/ferrox/cli/code-factory-a8d": {
-    "__comp": "17896441",
-    "content": "e82daad4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-cli-code-factorye-82-b4c"
   },
   "/docs/ferrox/cli/commands-reference-31e": {
-    "__comp": "17896441",
-    "content": "d5f2379d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-cli-commands-referenced-5-f-596"
   },
   "/docs/ferrox/community/donations-94c": {
-    "__comp": "17896441",
-    "content": "8ab78c93"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-community-donations-8-ab-df2"
   },
   "/docs/ferrox/databases/migrations-ed7": {
-    "__comp": "17896441",
-    "content": "fdadb552"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-databases-migrationsfda-80e"
   },
   "/docs/ferrox/databases/mongodb-829": {
-    "__comp": "17896441",
-    "content": "8fae4002"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-databases-mongodb-8-fa-0c2"
   },
   "/docs/ferrox/databases/overview-4d1": {
-    "__comp": "17896441",
-    "content": "4afe040a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-databases-overview-4-af-1ac"
   },
   "/docs/ferrox/databases/redis-3eb": {
-    "__comp": "17896441",
-    "content": "0292b8de"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-databases-redis-029-37c"
   },
   "/docs/ferrox/databases/seaorm-061": {
-    "__comp": "17896441",
-    "content": "a09a6dc3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-databases-seaorma-09-b57"
   },
   "/docs/ferrox/deployment/ci-cd-0a8": {
-    "__comp": "17896441",
-    "content": "fa2fc790"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-deployment-ci-cdfa-2-ad0"
   },
   "/docs/ferrox/deployment/docker-kubernetes-026": {
-    "__comp": "17896441",
-    "content": "94d98f14"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-deployment-docker-kubernetes-94-d-0ee"
   },
   "/docs/ferrox/fundamentals/configuration-ecf": {
-    "__comp": "17896441",
-    "content": "d08eb387"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-fundamentals-configurationd-08-c8c"
   },
   "/docs/ferrox/fundamentals/controllers-e60": {
-    "__comp": "17896441",
-    "content": "3fc239de"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-fundamentals-controllers-3-fc-965"
   },
   "/docs/ferrox/fundamentals/errors-ce0": {
-    "__comp": "17896441",
-    "content": "fadf056b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-fundamentals-errorsfad-5ef"
   },
   "/docs/ferrox/fundamentals/interceptors-26d": {
-    "__comp": "17896441",
-    "content": "525a52dd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-fundamentals-interceptors-525-b27"
   },
   "/docs/ferrox/fundamentals/middlewares-6c3": {
-    "__comp": "17896441",
-    "content": "0b65ffce"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-fundamentals-middlewares-0-b-6-435"
   },
   "/docs/ferrox/fundamentals/providers-9a3": {
-    "__comp": "17896441",
-    "content": "16bc51c8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-fundamentals-providers-16-b-a74"
   },
   "/docs/ferrox/fundamentals/testing-b31": {
-    "__comp": "17896441",
-    "content": "ec2b0ed5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-fundamentals-testingec-2-95b"
   },
   "/docs/ferrox/integrations/feature-flags-391": {
-    "__comp": "17896441",
-    "content": "03930fd7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-feature-flags-039-5f7"
   },
   "/docs/ferrox/integrations/i18n-14e": {
-    "__comp": "17896441",
-    "content": "6443d71c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-i-18-n-644-e4b"
   },
   "/docs/ferrox/integrations/mailer-762": {
-    "__comp": "17896441",
-    "content": "b03dd1af"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-mailerb-03-f79"
   },
   "/docs/ferrox/integrations/notifications-218": {
-    "__comp": "17896441",
-    "content": "1d3965e5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-notifications-1-d-3-d61"
   },
   "/docs/ferrox/integrations/payments-af7": {
-    "__comp": "17896441",
-    "content": "0bd50f41"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-payments-0-bd-683"
   },
   "/docs/ferrox/integrations/reports-and-cloud-a5a": {
-    "__comp": "17896441",
-    "content": "b434d598"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-reports-and-cloudb-43-180"
   },
   "/docs/ferrox/integrations/search-aad": {
-    "__comp": "17896441",
-    "content": "ec680db9"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-searchec-6-5a2"
   },
   "/docs/ferrox/integrations/webhooks-1e5": {
-    "__comp": "17896441",
-    "content": "10f4df55"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-integrations-webhooks-10-f-88a"
   },
   "/docs/ferrox/observability/health-checks-02f": {
-    "__comp": "17896441",
-    "content": "f416dc7a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-observability-health-checksf-41-6fb"
   },
   "/docs/ferrox/observability/logging-8a0": {
-    "__comp": "17896441",
-    "content": "d04d48a3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-observability-loggingd-04-208"
   },
   "/docs/ferrox/observability/metrics-572": {
-    "__comp": "17896441",
-    "content": "a18fcfcb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-observability-metricsa-18-4f6"
   },
   "/docs/ferrox/observability/tracing-679": {
-    "__comp": "17896441",
-    "content": "9bcd00d4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-observability-tracing-9-bc-0e5"
   },
   "/docs/ferrox/overview-04f": {
-    "__comp": "17896441",
-    "content": "3f3dab2a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-overview-3-f-3-478"
   },
   "/docs/ferrox/overview/first-steps-abe": {
-    "__comp": "17896441",
-    "content": "ac843f0f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-overview-first-stepsac-8-4f0"
   },
   "/docs/ferrox/overview/introduction-e96": {
-    "__comp": "17896441",
-    "content": "41d147dd"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-overview-introduction-41-d-26d"
   },
   "/docs/ferrox/overview/lifecycle-71b": {
-    "__comp": "17896441",
-    "content": "c0429f01"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-overview-lifecyclec-04-7a7"
   },
   "/docs/ferrox/performance/benchmarks-708": {
-    "__comp": "17896441",
-    "content": "e7b6add1"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-performance-benchmarkse-7-b-319"
   },
   "/docs/ferrox/performance/profiling-c56": {
-    "__comp": "17896441",
-    "content": "5a919c7b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-performance-profiling-5-a-9-038"
   },
   "/docs/ferrox/security/advanced-auth-b0c": {
-    "__comp": "17896441",
-    "content": "3a9ae46d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-advanced-auth-3-a-9-d85"
   },
   "/docs/ferrox/security/circuit-breaker-909": {
-    "__comp": "17896441",
-    "content": "3bb2fb42"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-circuit-breaker-3-bb-2b6"
   },
   "/docs/ferrox/security/distributed-locks-924": {
-    "__comp": "17896441",
-    "content": "98e4c181"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-distributed-locks-98-e-510"
   },
   "/docs/ferrox/security/ferrox-selftest-249": {
-    "__comp": "17896441",
-    "content": "dae1831b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-ferrox-selftestdae-467"
   },
   "/docs/ferrox/security/ferrox-sentinel-a4c": {
-    "__comp": "17896441",
-    "content": "c35d7a10"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-ferrox-sentinelc-35-3ed"
   },
   "/docs/ferrox/security/jwt-1b1": {
-    "__comp": "17896441",
-    "content": "06902545"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-jwt-069-f07"
   },
   "/docs/ferrox/security/rate-limiting-0ab": {
-    "__comp": "17896441",
-    "content": "c90827f7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-rate-limitingc-90-bf7"
   },
   "/docs/ferrox/security/singleflight-355": {
-    "__comp": "17896441",
-    "content": "b5037e8d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-security-singleflightb-50-9f0"
   },
   "/docs/ferrox/transports/datagrid-4be": {
-    "__comp": "17896441",
-    "content": "89241679"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-transports-datagrid-892-a93"
   },
   "/docs/ferrox/transports/file-storage-4d5": {
-    "__comp": "17896441",
-    "content": "57491d0d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-transports-file-storage-574-000"
   },
   "/docs/ferrox/transports/graphql-f52": {
-    "__comp": "17896441",
-    "content": "351aef93"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-transports-graphql-351-75e"
   },
   "/docs/ferrox/transports/graphql-advanced-456": {
-    "__comp": "17896441",
-    "content": "52c7b969"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-transports-graphql-advanced-52-c-d19"
   },
   "/docs/ferrox/transports/sse-f7c": {
-    "__comp": "17896441",
-    "content": "4d2d54d5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-transports-sse-4-d-2-df3"
   },
   "/docs/ferrox/transports/sync-2e4": {
-    "__comp": "17896441",
-    "content": "3c12e0ef"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-transports-sync-3-c-1-86a"
   },
   "/docs/ferrox/transports/transports-overview-227": {
-    "__comp": "17896441",
-    "content": "f6c36416"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-transports-transports-overviewf-6-c-66f"
   },
   "/docs/ferrox/tutorial/building-the-core-6e6": {
-    "__comp": "17896441",
-    "content": "23a08b6d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-tutorial-building-the-core-23-a-596"
   },
   "/docs/ferrox/tutorial/code-factory-fa8": {
-    "__comp": "17896441",
-    "content": "77001773"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-tutorial-code-factory-770-8e1"
   },
   "/docs/ferrox/tutorial/setup-e01": {
-    "__comp": "17896441",
-    "content": "7b5b5a5d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ferrox-tutorial-setup-7-b-5-88f"
   },
   "/docs/nestjs-yalc-233": {
-    "__comp": "5e95c892",
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "7c173387"
+      "plugin": "plugin---docs-nestjs-yalc-7-c-1-9ce"
     }
   },
   "/docs/nestjs-yalc-b03": {
-    "__comp": "a7bd4aaa",
-    "__props": "bd5699c9"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-nestjs-yalcbd-5-e83"
   },
   "/docs/nestjs-yalc-a95": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/nestjs-yalc/architecture-49a": {
-    "__comp": "17896441",
-    "content": "44275d11"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-architecture-442-6ef"
   },
   "/docs/nestjs-yalc/docs/intro-b83": {
-    "__comp": "17896441",
-    "content": "8b2ac0f5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-intro-8-b-2-fdc"
   },
   "/docs/nestjs-yalc/docs/modules/ag-grid-2aa": {
-    "__comp": "17896441",
-    "content": "72e5d81b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-ag-grid-72-e-86f"
   },
   "/docs/nestjs-yalc/docs/modules/api-strategy-f28": {
-    "__comp": "17896441",
-    "content": "225cc41a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-api-strategy-225-9f2"
   },
   "/docs/nestjs-yalc/docs/modules/app-f9d": {
-    "__comp": "17896441",
-    "content": "13135060"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-app-131-63c"
   },
   "/docs/nestjs-yalc/docs/modules/audit-32c": {
-    "__comp": "17896441",
-    "content": "19881b6b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-audit-198-74d"
   },
   "/docs/nestjs-yalc/docs/modules/crud-gen-b33": {
-    "__comp": "17896441",
-    "content": "ebc35d81"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-crud-genebc-546"
   },
   "/docs/nestjs-yalc/docs/modules/data-loader-253": {
-    "__comp": "17896441",
-    "content": "e2a5f425"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-data-loadere-2-a-607"
   },
   "/docs/nestjs-yalc/docs/modules/database-54e": {
-    "__comp": "17896441",
-    "content": "025d5db7"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-database-025-4db"
   },
   "/docs/nestjs-yalc/docs/modules/errors-6f8": {
-    "__comp": "17896441",
-    "content": "d1c7a729"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-errorsd-1-c-e42"
   },
   "/docs/nestjs-yalc/docs/modules/event-manager-273": {
-    "__comp": "17896441",
-    "content": "86c639d3"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-event-manager-86-c-65e"
   },
   "/docs/nestjs-yalc/docs/modules/field-middleware-141": {
-    "__comp": "17896441",
-    "content": "f703dba2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-field-middlewaref-70-909"
   },
   "/docs/nestjs-yalc/docs/modules/graphql-9d4": {
-    "__comp": "17896441",
-    "content": "92510d10"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-graphql-925-a11"
   },
   "/docs/nestjs-yalc/docs/modules/jest-79c": {
-    "__comp": "17896441",
-    "content": "b62541fb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-jestb-62-10e"
   },
   "/docs/nestjs-yalc/docs/modules/kafka-9a9": {
-    "__comp": "17896441",
-    "content": "4156a737"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-kafka-415-a6e"
   },
   "/docs/nestjs-yalc/docs/modules/logger-268": {
-    "__comp": "17896441",
-    "content": "e9624e81"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-loggere-96-97e"
   },
   "/docs/nestjs-yalc/docs/modules/observability-b21": {
-    "__comp": "17896441",
-    "content": "9282ba57"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-observability-928-825"
   },
   "/docs/nestjs-yalc/docs/modules/sentinel-e8b": {
-    "__comp": "17896441",
-    "content": "fae9a723"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-sentinelfae-45e"
   },
   "/docs/nestjs-yalc/docs/modules/utils-dc3": {
-    "__comp": "17896441",
-    "content": "644c666c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-modules-utils-644-dab"
   },
   "/docs/nestjs-yalc/docs/quickstart-ec3": {
-    "__comp": "17896441",
-    "content": "dd1a1486"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-docs-quickstartdd-1-274"
   },
   "/docs/nestjs-yalc/modules/crud-gen-056": {
-    "__comp": "17896441",
-    "content": "ea892e9c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-modules-crud-genea-8-e90"
   },
   "/docs/nestjs-yalc/modules/logger-bab": {
-    "__comp": "17896441",
-    "content": "e71aed86"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-modules-loggere-71-282"
   },
   "/docs/nestjs-yalc/overview-3b7": {
-    "__comp": "17896441",
-    "content": "4a773e9d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nestjs-yalc-overview-4-a-7-105"
   },
   "/docs/node-yalc-04f": {
-    "__comp": "5e95c892",
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "2204ceca"
+      "plugin": "plugin---docs-node-yalc-220-090"
     }
   },
   "/docs/node-yalc-c5c": {
-    "__comp": "a7bd4aaa",
-    "__props": "d525de24"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-node-yalcd-52-5df"
   },
   "/docs/node-yalc-131": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/node-yalc/docs/intro-b05": {
-    "__comp": "17896441",
-    "content": "9f040684"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-intro-9-f-0-a36"
   },
   "/docs/node-yalc/docs/packages/aws-helpers-e7c": {
-    "__comp": "17896441",
-    "content": "f374d66e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-aws-helpersf-37-cfc"
   },
   "/docs/node-yalc/docs/packages/common-d40": {
-    "__comp": "17896441",
-    "content": "9e4b9c67"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-common-9-e-4-25d"
   },
   "/docs/node-yalc/docs/packages/errors-846": {
-    "__comp": "17896441",
-    "content": "76d3347d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-errors-76-d-3fb"
   },
   "/docs/node-yalc/docs/packages/event-manager-e44": {
-    "__comp": "17896441",
-    "content": "670c45a2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-event-manager-670-921"
   },
   "/docs/node-yalc/docs/packages/interfaces-898": {
-    "__comp": "17896441",
-    "content": "502ba20b"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-interfaces-502-08c"
   },
   "/docs/node-yalc/docs/packages/logger-0ab": {
-    "__comp": "17896441",
-    "content": "c95bc5fb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-loggerc-95-53a"
   },
   "/docs/node-yalc/docs/packages/types-c06": {
-    "__comp": "17896441",
-    "content": "23975711"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-types-239-13e"
   },
   "/docs/node-yalc/docs/packages/types-extends-80c": {
-    "__comp": "17896441",
-    "content": "dab48166"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-types-extendsdab-5e8"
   },
   "/docs/node-yalc/docs/packages/utils-0b7": {
-    "__comp": "17896441",
-    "content": "8b4c225c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-packages-utils-8-b-4-7da"
   },
   "/docs/node-yalc/docs/quickstart-202": {
-    "__comp": "17896441",
-    "content": "401968ed"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-docs-quickstart-401-560"
   },
   "/docs/node-yalc/overview-dc0": {
-    "__comp": "17896441",
-    "content": "5f3d0f86"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-node-yalc-overview-5-f-3-0ea"
   },
   "/-e5f": {
-    "__comp": "1df93b7f",
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---markdown-pagea-74-7b5"
     },
-    "config": "5e9f5e1a"
+    "config": "config---5-e-9-4f3"
   }
 }
