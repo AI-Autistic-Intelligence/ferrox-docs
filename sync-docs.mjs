@@ -4,7 +4,7 @@ import path from 'path';
 const REPOS = {
   'nestjs-yalc': { src: '../nestjs-yalc/docs', isDocusaurus: false },
   'node-yalc': { src: '../node-yalc/docs', isDocusaurus: false },
-  'ferrox-node': { src: '../ferrox-node/docs', isDocusaurus: false },
+  'ferrox-node': { src: '../ferrox-node/docs', isDocusaurus: true },
   'ferrox-py': { src: '../ferrox-py/docs', isDocusaurus: false },
   'ferrox-py/auth': { src: '../ferrox-py-auth/docs', isDocusaurus: false },
   'ferrox-py/commerce': { src: '../ferrox-py-commerce/docs', isDocusaurus: false },
