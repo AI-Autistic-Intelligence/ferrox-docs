@@ -4,14 +4,14 @@ import path from 'path';
 const REPOS = {
   'nestjs-yalc': { src: '../nestjs-yalc/docs', isDocusaurus: false },
   'node-yalc': { src: '../node-yalc/docs', isDocusaurus: false },
-  'ferrox-node': { src: '../ferrox-node/docs', isDocusaurus: true },
+  'ferrox-node': { src: '../ferrox-node/docs', isDocusaurus: false },
   'ferrox-py': { src: '../ferrox-py/docs', isDocusaurus: false },
   'ferrox-py/auth': { src: '../ferrox-py-auth/docs', isDocusaurus: false },
   'ferrox-py/commerce': { src: '../ferrox-py-commerce/docs', isDocusaurus: false },
   'ferrox-py/utils': { src: '../ferrox-py-utils/docs', isDocusaurus: false },
   'ferrox-java': { src: '../ferrox-java/docs', isDocusaurus: false },
   'ferrox-php': { src: '../ferrox-php/docs', isDocusaurus: false },
-  'ferrox-front': { src: '../ferrox-front/docs', isDocusaurus: true },
+  'ferrox-front': { src: '../ferrox-front/docs', isDocusaurus: false },
   'ferrox': { src: '../ferrox/docs', isDocusaurus: true },
 };
 

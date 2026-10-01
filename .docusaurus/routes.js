@@ -3,49 +3,90 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    exact: true
+  },
+  {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '53a'),
     exact: true
   },
   {
     path: '/docs/ferrox-front',
-    component: ComponentCreator('/docs/ferrox-front', '2a0'),
+    component: ComponentCreator('/docs/ferrox-front', '03d'),
     routes: [
       {
         path: '/docs/ferrox-front',
-        component: ComponentCreator('/docs/ferrox-front', '80f'),
+        component: ComponentCreator('/docs/ferrox-front', '8de'),
         routes: [
           {
             path: '/docs/ferrox-front',
-            component: ComponentCreator('/docs/ferrox-front', '58d'),
+            component: ComponentCreator('/docs/ferrox-front', '513'),
             routes: [
               {
-                path: '/docs/ferrox-front/architecture',
-                component: ComponentCreator('/docs/ferrox-front/architecture', '085'),
+                path: '/docs/ferrox-front/architectures/architecture',
+                component: ComponentCreator('/docs/ferrox-front/architectures/architecture', '604'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/components',
-                component: ComponentCreator('/docs/ferrox-front/components', '889'),
+                path: '/docs/ferrox-front/fundamentals/core',
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/core', '947'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/core',
-                component: ComponentCreator('/docs/ferrox-front/core', '7ac'),
+                path: '/docs/ferrox-front/fundamentals/macros',
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/macros', 'ebe'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/intro',
-                component: ComponentCreator('/docs/ferrox-front/intro', '681'),
+                path: '/docs/ferrox-front/fundamentals/reactivity',
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/reactivity', 'c18'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/macros',
-                component: ComponentCreator('/docs/ferrox-front/macros', '778'),
+                path: '/docs/ferrox-front/fundamentals/routing',
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/routing', 'cc1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-front/fundamentals/templates',
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/templates', '42d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -56,44 +97,38 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/quickstart',
-                component: ComponentCreator('/docs/ferrox-front/quickstart', '279'),
+                path: '/docs/ferrox-front/overview/intro',
+                component: ComponentCreator('/docs/ferrox-front/overview/intro', 'db3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/reactivity',
-                component: ComponentCreator('/docs/ferrox-front/reactivity', '7dd'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-front/routing',
-                component: ComponentCreator('/docs/ferrox-front/routing', '6ca'),
+                path: '/docs/ferrox-front/overview/quickstart',
+                component: ComponentCreator('/docs/ferrox-front/overview/quickstart', '41d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/ferrox-front/security',
-                component: ComponentCreator('/docs/ferrox-front/security', '2a7'),
+                component: ComponentCreator('/docs/ferrox-front/security', 'c39'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/templates',
-                component: ComponentCreator('/docs/ferrox-front/templates', '7b9'),
+                path: '/docs/ferrox-front/transports/ws',
+                component: ComponentCreator('/docs/ferrox-front/transports/ws', '2ea'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/ui-components',
-                component: ComponentCreator('/docs/ferrox-front/ui-components', 'e95'),
+                path: '/docs/ferrox-front/ui/components',
+                component: ComponentCreator('/docs/ferrox-front/ui/components', 'a3c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-front/ws',
-                component: ComponentCreator('/docs/ferrox-front/ws', 'ff8'),
+                path: '/docs/ferrox-front/ui/ui-components',
+                component: ComponentCreator('/docs/ferrox-front/ui/ui-components', '14a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -105,16 +140,40 @@ export default [
   },
   {
     path: '/docs/ferrox-node',
-    component: ComponentCreator('/docs/ferrox-node', '11a'),
+    component: ComponentCreator('/docs/ferrox-node', '5f5'),
     routes: [
       {
         path: '/docs/ferrox-node',
-        component: ComponentCreator('/docs/ferrox-node', '254'),
+        component: ComponentCreator('/docs/ferrox-node', '54f'),
         routes: [
           {
             path: '/docs/ferrox-node',
-            component: ComponentCreator('/docs/ferrox-node', 'c01'),
+            component: ComponentCreator('/docs/ferrox-node', '59a'),
             routes: [
+              {
+                path: '/docs/ferrox-node/abstractions/guards',
+                component: ComponentCreator('/docs/ferrox-node/abstractions/guards', '104'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/abstractions/interfaces',
+                component: ComponentCreator('/docs/ferrox-node/abstractions/interfaces', '09c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/architectures/cqrs',
+                component: ComponentCreator('/docs/ferrox-node/architectures/cqrs', '887'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/architectures/jobs',
+                component: ComponentCreator('/docs/ferrox-node/architectures/jobs', '9b9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/ferrox-node/architectures/onion',
                 component: ComponentCreator('/docs/ferrox-node/architectures/onion', '6e3'),
@@ -122,110 +181,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-node/components/auth',
-                component: ComponentCreator('/docs/ferrox-node/components/auth', '158'),
+                path: '/docs/ferrox-node/fundamentals/config',
+                component: ComponentCreator('/docs/ferrox-node/fundamentals/config', '3c8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-node/components/config',
-                component: ComponentCreator('/docs/ferrox-node/components/config', 'd30'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/core',
-                component: ComponentCreator('/docs/ferrox-node/components/core', '2b0'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/cqrs',
-                component: ComponentCreator('/docs/ferrox-node/components/cqrs', '805'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/datagrid',
-                component: ComponentCreator('/docs/ferrox-node/components/datagrid', '2e4'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/guards',
-                component: ComponentCreator('/docs/ferrox-node/components/guards', '156'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/i18n',
-                component: ComponentCreator('/docs/ferrox-node/components/i18n', '234'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/interfaces',
-                component: ComponentCreator('/docs/ferrox-node/components/interfaces', 'd17'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/jobs',
-                component: ComponentCreator('/docs/ferrox-node/components/jobs', '555'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/kernel',
-                component: ComponentCreator('/docs/ferrox-node/components/kernel', '61b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/resilience',
-                component: ComponentCreator('/docs/ferrox-node/components/resilience', 'bc7'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/routing',
-                component: ComponentCreator('/docs/ferrox-node/components/routing', 'e37'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/security',
-                component: ComponentCreator('/docs/ferrox-node/components/security', '58f'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/selftest',
-                component: ComponentCreator('/docs/ferrox-node/components/selftest', '654'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/storage',
-                component: ComponentCreator('/docs/ferrox-node/components/storage', '8df'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/tracing',
-                component: ComponentCreator('/docs/ferrox-node/components/tracing', 'f1c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/components/transports',
-                component: ComponentCreator('/docs/ferrox-node/components/transports', '4a0'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-node/dummy-app-guide',
-                component: ComponentCreator('/docs/ferrox-node/dummy-app-guide', '5fa'),
+                path: '/docs/ferrox-node/fundamentals/core',
+                component: ComponentCreator('/docs/ferrox-node/fundamentals/core', '846'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -236,8 +199,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-node/intro',
-                component: ComponentCreator('/docs/ferrox-node/intro', '3dd'),
+                path: '/docs/ferrox-node/fundamentals/kernel',
+                component: ComponentCreator('/docs/ferrox-node/fundamentals/kernel', '73b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/fundamentals/routing',
+                component: ComponentCreator('/docs/ferrox-node/fundamentals/routing', '662'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/integrations/i18n',
+                component: ComponentCreator('/docs/ferrox-node/integrations/i18n', 'e9d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/observability/tracing',
+                component: ComponentCreator('/docs/ferrox-node/observability/tracing', '13a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -248,14 +229,68 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-node/quickstart',
-                component: ComponentCreator('/docs/ferrox-node/quickstart', 'a72'),
+                path: '/docs/ferrox-node/overview/dummy-app-guide',
+                component: ComponentCreator('/docs/ferrox-node/overview/dummy-app-guide', 'fc0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/overview/intro',
+                component: ComponentCreator('/docs/ferrox-node/overview/intro', '4d3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/overview/quickstart',
+                component: ComponentCreator('/docs/ferrox-node/overview/quickstart', 'bb6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/security',
+                component: ComponentCreator('/docs/ferrox-node/security', '945'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/security/auth',
+                component: ComponentCreator('/docs/ferrox-node/security/auth', 'dec'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/ferrox-node/security/paseto',
                 component: ComponentCreator('/docs/ferrox-node/security/paseto', 'a94'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/security/resilience',
+                component: ComponentCreator('/docs/ferrox-node/security/resilience', 'e83'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/security/selftest',
+                component: ComponentCreator('/docs/ferrox-node/security/selftest', 'ab8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/transports/datagrid',
+                component: ComponentCreator('/docs/ferrox-node/transports/datagrid', 'f42'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/transports/storage',
+                component: ComponentCreator('/docs/ferrox-node/transports/storage', '3aa'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/transports/transports',
+                component: ComponentCreator('/docs/ferrox-node/transports/transports', '8f6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -819,19 +854,25 @@ export default [
   },
   {
     path: '/docs/ferrox-py',
-    component: ComponentCreator('/docs/ferrox-py', '44e'),
+    component: ComponentCreator('/docs/ferrox-py', 'bc4'),
     routes: [
       {
         path: '/docs/ferrox-py',
-        component: ComponentCreator('/docs/ferrox-py', '66e'),
+        component: ComponentCreator('/docs/ferrox-py', 'c3e'),
         routes: [
           {
             path: '/docs/ferrox-py',
-            component: ComponentCreator('/docs/ferrox-py', '679'),
+            component: ComponentCreator('/docs/ferrox-py', 'd00'),
             routes: [
               {
                 path: '/docs/ferrox-py/abstractions/pipes-interceptors',
                 component: ComponentCreator('/docs/ferrox-py/abstractions/pipes-interceptors', '46b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/architectures/cqrs',
+                component: ComponentCreator('/docs/ferrox-py/architectures/cqrs', 'bc1'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -902,44 +943,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-py/components/core',
-                component: ComponentCreator('/docs/ferrox-py/components/core', 'b74'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-py/components/cqrs',
-                component: ComponentCreator('/docs/ferrox-py/components/cqrs', 'f0a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-py/components/data',
-                component: ComponentCreator('/docs/ferrox-py/components/data', '690'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-py/components/observability',
-                component: ComponentCreator('/docs/ferrox-py/components/observability', '37e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-py/components/security',
-                component: ComponentCreator('/docs/ferrox-py/components/security', '84e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/ferrox-py/components/web',
-                component: ComponentCreator('/docs/ferrox-py/components/web', '275'),
+                path: '/docs/ferrox-py/databases/data',
+                component: ComponentCreator('/docs/ferrox-py/databases/data', '14b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/ferrox-py/databases/sqlalchemy',
                 component: ComponentCreator('/docs/ferrox-py/databases/sqlalchemy', '624'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/fundamentals/core',
+                component: ComponentCreator('/docs/ferrox-py/fundamentals/core', '4eb'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -956,14 +973,32 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-py/observability',
+                component: ComponentCreator('/docs/ferrox-py/observability', 'b47'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-py/overview',
                 component: ComponentCreator('/docs/ferrox-py/overview', '546'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-py/quickstart',
-                component: ComponentCreator('/docs/ferrox-py/quickstart', '440'),
+                path: '/docs/ferrox-py/overview/quickstart',
+                component: ComponentCreator('/docs/ferrox-py/overview/quickstart', '087'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/security',
+                component: ComponentCreator('/docs/ferrox-py/security', 'b0e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/transports/web',
+                component: ComponentCreator('/docs/ferrox-py/transports/web', '448'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -1401,151 +1436,139 @@ export default [
   },
   {
     path: '/docs/nestjs-yalc',
-    component: ComponentCreator('/docs/nestjs-yalc', '233'),
+    component: ComponentCreator('/docs/nestjs-yalc', '21b'),
     routes: [
       {
         path: '/docs/nestjs-yalc',
-        component: ComponentCreator('/docs/nestjs-yalc', 'b03'),
+        component: ComponentCreator('/docs/nestjs-yalc', '612'),
         routes: [
           {
             path: '/docs/nestjs-yalc',
-            component: ComponentCreator('/docs/nestjs-yalc', 'a95'),
+            component: ComponentCreator('/docs/nestjs-yalc', 'e49'),
             routes: [
               {
-                path: '/docs/nestjs-yalc/architecture',
-                component: ComponentCreator('/docs/nestjs-yalc/architecture', '49a'),
+                path: '/docs/nestjs-yalc/abstractions/crud-gen',
+                component: ComponentCreator('/docs/nestjs-yalc/abstractions/crud-gen', 'ec9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/intro',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/intro', 'b83'),
+                path: '/docs/nestjs-yalc/abstractions/field-middleware',
+                component: ComponentCreator('/docs/nestjs-yalc/abstractions/field-middleware', '043'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/ag-grid',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/ag-grid', '2aa'),
+                path: '/docs/nestjs-yalc/databases/database',
+                component: ComponentCreator('/docs/nestjs-yalc/databases/database', 'c90'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/api-strategy',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/api-strategy', 'f28'),
+                path: '/docs/nestjs-yalc/fundamentals/app',
+                component: ComponentCreator('/docs/nestjs-yalc/fundamentals/app', 'af2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/app',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/app', 'f9d'),
+                path: '/docs/nestjs-yalc/fundamentals/errors',
+                component: ComponentCreator('/docs/nestjs-yalc/fundamentals/errors', '5db'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/audit',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/audit', '32c'),
+                path: '/docs/nestjs-yalc/fundamentals/event-manager',
+                component: ComponentCreator('/docs/nestjs-yalc/fundamentals/event-manager', 'b9b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/crud-gen',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/crud-gen', 'b33'),
+                path: '/docs/nestjs-yalc/fundamentals/jest',
+                component: ComponentCreator('/docs/nestjs-yalc/fundamentals/jest', '801'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/data-loader',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/data-loader', '253'),
+                path: '/docs/nestjs-yalc/fundamentals/utils',
+                component: ComponentCreator('/docs/nestjs-yalc/fundamentals/utils', '669'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/database',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/database', '54e'),
+                path: '/docs/nestjs-yalc/integrations/ag-grid',
+                component: ComponentCreator('/docs/nestjs-yalc/integrations/ag-grid', '479'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/errors',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/errors', '6f8'),
+                path: '/docs/nestjs-yalc/integrations/kafka',
+                component: ComponentCreator('/docs/nestjs-yalc/integrations/kafka', '5df'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/event-manager',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/event-manager', '273'),
+                path: '/docs/nestjs-yalc/observability',
+                component: ComponentCreator('/docs/nestjs-yalc/observability', '8bb'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/field-middleware',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/field-middleware', '141'),
+                path: '/docs/nestjs-yalc/observability/audit',
+                component: ComponentCreator('/docs/nestjs-yalc/observability/audit', '5ba'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/nestjs-yalc/docs/modules/graphql',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/graphql', '9d4'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/docs/modules/jest',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/jest', '79c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/docs/modules/kafka',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/kafka', '9a9'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/docs/modules/logger',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/logger', '268'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/docs/modules/observability',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/observability', 'b21'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/docs/modules/sentinel',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/sentinel', 'e8b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/docs/modules/utils',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/modules/utils', 'dc3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/docs/quickstart',
-                component: ComponentCreator('/docs/nestjs-yalc/docs/quickstart', 'ec3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/modules/crud-gen',
-                component: ComponentCreator('/docs/nestjs-yalc/modules/crud-gen', '056'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/nestjs-yalc/modules/logger',
-                component: ComponentCreator('/docs/nestjs-yalc/modules/logger', 'bab'),
+                path: '/docs/nestjs-yalc/observability/logger',
+                component: ComponentCreator('/docs/nestjs-yalc/observability/logger', '88c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/nestjs-yalc/overview',
                 component: ComponentCreator('/docs/nestjs-yalc/overview', '3b7'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/nestjs-yalc/overview/architecture',
+                component: ComponentCreator('/docs/nestjs-yalc/overview/architecture', '521'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/nestjs-yalc/overview/intro',
+                component: ComponentCreator('/docs/nestjs-yalc/overview/intro', 'ba9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/nestjs-yalc/overview/quickstart',
+                component: ComponentCreator('/docs/nestjs-yalc/overview/quickstart', '056'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/nestjs-yalc/security/api-strategy',
+                component: ComponentCreator('/docs/nestjs-yalc/security/api-strategy', '555'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/nestjs-yalc/security/sentinel',
+                component: ComponentCreator('/docs/nestjs-yalc/security/sentinel', 'cf1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/nestjs-yalc/transports/data-loader',
+                component: ComponentCreator('/docs/nestjs-yalc/transports/data-loader', 'ea3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/nestjs-yalc/transports/graphql',
+                component: ComponentCreator('/docs/nestjs-yalc/transports/graphql', 'a75'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -1557,85 +1580,115 @@ export default [
   },
   {
     path: '/docs/node-yalc',
-    component: ComponentCreator('/docs/node-yalc', '04f'),
+    component: ComponentCreator('/docs/node-yalc', '7e7'),
     routes: [
       {
         path: '/docs/node-yalc',
-        component: ComponentCreator('/docs/node-yalc', 'c5c'),
+        component: ComponentCreator('/docs/node-yalc', 'f80'),
         routes: [
           {
             path: '/docs/node-yalc',
-            component: ComponentCreator('/docs/node-yalc', '131'),
+            component: ComponentCreator('/docs/node-yalc', '98f'),
             routes: [
               {
-                path: '/docs/node-yalc/docs/intro',
-                component: ComponentCreator('/docs/node-yalc/docs/intro', 'b05'),
+                path: '/docs/node-yalc/abstractions/interfaces',
+                component: ComponentCreator('/docs/node-yalc/abstractions/interfaces', '65e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/aws-helpers',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/aws-helpers', 'e7c'),
+                path: '/docs/node-yalc/architectures/event-manager',
+                component: ComponentCreator('/docs/node-yalc/architectures/event-manager', '270'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/common',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/common', 'd40'),
+                path: '/docs/node-yalc/databases/prisma',
+                component: ComponentCreator('/docs/node-yalc/databases/prisma', '1ea'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/errors',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/errors', '846'),
+                path: '/docs/node-yalc/deployment/ci-cd',
+                component: ComponentCreator('/docs/node-yalc/deployment/ci-cd', '660'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/event-manager',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/event-manager', 'e44'),
+                path: '/docs/node-yalc/fundamentals/common',
+                component: ComponentCreator('/docs/node-yalc/fundamentals/common', 'b50'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/interfaces',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/interfaces', '898'),
+                path: '/docs/node-yalc/fundamentals/errors',
+                component: ComponentCreator('/docs/node-yalc/fundamentals/errors', '313'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/logger',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/logger', '0ab'),
+                path: '/docs/node-yalc/fundamentals/types',
+                component: ComponentCreator('/docs/node-yalc/fundamentals/types', '97f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/types',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/types', 'c06'),
+                path: '/docs/node-yalc/fundamentals/types-extends',
+                component: ComponentCreator('/docs/node-yalc/fundamentals/types-extends', '626'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/types-extends',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/types-extends', '80c'),
+                path: '/docs/node-yalc/fundamentals/utils',
+                component: ComponentCreator('/docs/node-yalc/fundamentals/utils', '2ad'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/packages/utils',
-                component: ComponentCreator('/docs/node-yalc/docs/packages/utils', '0b7'),
+                path: '/docs/node-yalc/integrations/aws-helpers',
+                component: ComponentCreator('/docs/node-yalc/integrations/aws-helpers', '7b6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/node-yalc/docs/quickstart',
-                component: ComponentCreator('/docs/node-yalc/docs/quickstart', '202'),
+                path: '/docs/node-yalc/observability/logger',
+                component: ComponentCreator('/docs/node-yalc/observability/logger', 'e00'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/node-yalc/overview',
                 component: ComponentCreator('/docs/node-yalc/overview', 'dc0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/node-yalc/overview/intro',
+                component: ComponentCreator('/docs/node-yalc/overview/intro', '53c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/node-yalc/overview/quickstart',
+                component: ComponentCreator('/docs/node-yalc/overview/quickstart', '883'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/node-yalc/performance/caching',
+                component: ComponentCreator('/docs/node-yalc/performance/caching', '15d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/node-yalc/security/auth',
+                component: ComponentCreator('/docs/node-yalc/security/auth', 'c14'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/node-yalc/transports/http-client',
+                component: ComponentCreator('/docs/node-yalc/transports/http-client', 'bb4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

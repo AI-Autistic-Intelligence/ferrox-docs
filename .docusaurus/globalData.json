@@ -360,6 +360,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "architectures/cqrs",
+              "path": "/docs/ferrox-py/architectures/cqrs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "architectures/task-scheduling",
               "path": "/docs/ferrox-py/architectures/task-scheduling",
               "sidebar": "tutorialSidebar"
@@ -415,38 +420,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "components/core",
-              "path": "/docs/ferrox-py/components/core",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/cqrs",
-              "path": "/docs/ferrox-py/components/cqrs",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/data",
-              "path": "/docs/ferrox-py/components/data",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/observability",
-              "path": "/docs/ferrox-py/components/observability",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/security",
-              "path": "/docs/ferrox-py/components/security",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/web",
-              "path": "/docs/ferrox-py/components/web",
+              "id": "databases/data",
+              "path": "/docs/ferrox-py/databases/data",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "databases/sqlalchemy",
               "path": "/docs/ferrox-py/databases/sqlalchemy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/core",
+              "path": "/docs/ferrox-py/fundamentals/core",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -460,13 +445,28 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "observability/observability",
+              "path": "/docs/ferrox-py/observability/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "overview",
               "path": "/docs/ferrox-py/overview",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "quickstart",
-              "path": "/docs/ferrox-py/quickstart",
+              "id": "overview/quickstart",
+              "path": "/docs/ferrox-py/overview/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/security",
+              "path": "/docs/ferrox-py/security/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/web",
+              "path": "/docs/ferrox-py/transports/web",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -511,101 +511,41 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs/ferrox-node",
-          "mainDocId": "intro",
+          "mainDocId": "overview",
           "docs": [
+            {
+              "id": "abstractions/guards",
+              "path": "/docs/ferrox-node/abstractions/guards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "abstractions/interfaces",
+              "path": "/docs/ferrox-node/abstractions/interfaces",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architectures/cqrs",
+              "path": "/docs/ferrox-node/architectures/cqrs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architectures/jobs",
+              "path": "/docs/ferrox-node/architectures/jobs",
+              "sidebar": "tutorialSidebar"
+            },
             {
               "id": "architectures/onion",
               "path": "/docs/ferrox-node/architectures/onion",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "components/auth",
-              "path": "/docs/ferrox-node/components/auth",
+              "id": "fundamentals/config",
+              "path": "/docs/ferrox-node/fundamentals/config",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "components/config",
-              "path": "/docs/ferrox-node/components/config",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/core",
-              "path": "/docs/ferrox-node/components/core",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/cqrs",
-              "path": "/docs/ferrox-node/components/cqrs",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/datagrid",
-              "path": "/docs/ferrox-node/components/datagrid",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/guards",
-              "path": "/docs/ferrox-node/components/guards",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/i18n",
-              "path": "/docs/ferrox-node/components/i18n",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/interfaces",
-              "path": "/docs/ferrox-node/components/interfaces",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/jobs",
-              "path": "/docs/ferrox-node/components/jobs",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/kernel",
-              "path": "/docs/ferrox-node/components/kernel",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/resilience",
-              "path": "/docs/ferrox-node/components/resilience",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/routing",
-              "path": "/docs/ferrox-node/components/routing",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/security",
-              "path": "/docs/ferrox-node/components/security",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/selftest",
-              "path": "/docs/ferrox-node/components/selftest",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/storage",
-              "path": "/docs/ferrox-node/components/storage",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/tracing",
-              "path": "/docs/ferrox-node/components/tracing",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "components/transports",
-              "path": "/docs/ferrox-node/components/transports",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "dummy-app-guide",
-              "path": "/docs/ferrox-node/dummy-app-guide",
+              "id": "fundamentals/core",
+              "path": "/docs/ferrox-node/fundamentals/core",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -614,8 +554,23 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "intro",
-              "path": "/docs/ferrox-node/intro",
+              "id": "fundamentals/kernel",
+              "path": "/docs/ferrox-node/fundamentals/kernel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/routing",
+              "path": "/docs/ferrox-node/fundamentals/routing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/i18n",
+              "path": "/docs/ferrox-node/integrations/i18n",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "observability/tracing",
+              "path": "/docs/ferrox-node/observability/tracing",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -624,13 +579,58 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "quickstart",
-              "path": "/docs/ferrox-node/quickstart",
+              "id": "overview/dummy-app-guide",
+              "path": "/docs/ferrox-node/overview/dummy-app-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/intro",
+              "path": "/docs/ferrox-node/overview/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/quickstart",
+              "path": "/docs/ferrox-node/overview/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/auth",
+              "path": "/docs/ferrox-node/security/auth",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "security/paseto",
               "path": "/docs/ferrox-node/security/paseto",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/resilience",
+              "path": "/docs/ferrox-node/security/resilience",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/security",
+              "path": "/docs/ferrox-node/security/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/selftest",
+              "path": "/docs/ferrox-node/security/selftest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/datagrid",
+              "path": "/docs/ferrox-node/transports/datagrid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/storage",
+              "path": "/docs/ferrox-node/transports/storage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/transports",
+              "path": "/docs/ferrox-node/transports/transports",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -638,8 +638,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/ferrox-node/intro",
-                "label": "intro"
+                "path": "/docs/ferrox-node/overview",
+                "label": "overview"
               }
             }
           }
@@ -655,31 +655,36 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs/ferrox-front",
-          "mainDocId": "architecture",
+          "mainDocId": "overview",
           "docs": [
             {
-              "id": "architecture",
-              "path": "/docs/ferrox-front/architecture",
+              "id": "architectures/architecture",
+              "path": "/docs/ferrox-front/architectures/architecture",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "components",
-              "path": "/docs/ferrox-front/components",
+              "id": "fundamentals/core",
+              "path": "/docs/ferrox-front/fundamentals/core",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "core",
-              "path": "/docs/ferrox-front/core",
+              "id": "fundamentals/macros",
+              "path": "/docs/ferrox-front/fundamentals/macros",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "intro",
-              "path": "/docs/ferrox-front/intro",
+              "id": "fundamentals/reactivity",
+              "path": "/docs/ferrox-front/fundamentals/reactivity",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "macros",
-              "path": "/docs/ferrox-front/macros",
+              "id": "fundamentals/routing",
+              "path": "/docs/ferrox-front/fundamentals/routing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fundamentals/templates",
+              "path": "/docs/ferrox-front/fundamentals/templates",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -688,38 +693,33 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "quickstart",
-              "path": "/docs/ferrox-front/quickstart",
+              "id": "overview/intro",
+              "path": "/docs/ferrox-front/overview/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "reactivity",
-              "path": "/docs/ferrox-front/reactivity",
+              "id": "overview/quickstart",
+              "path": "/docs/ferrox-front/overview/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "routing",
-              "path": "/docs/ferrox-front/routing",
+              "id": "security/security",
+              "path": "/docs/ferrox-front/security/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "security",
-              "path": "/docs/ferrox-front/security",
+              "id": "transports/ws",
+              "path": "/docs/ferrox-front/transports/ws",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "templates",
-              "path": "/docs/ferrox-front/templates",
+              "id": "ui/components",
+              "path": "/docs/ferrox-front/ui/components",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "ui-components",
-              "path": "/docs/ferrox-front/ui-components",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "ws",
-              "path": "/docs/ferrox-front/ws",
+              "id": "ui/ui-components",
+              "path": "/docs/ferrox-front/ui/ui-components",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -727,8 +727,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/ferrox-front/architecture",
-                "label": "architecture"
+                "path": "/docs/ferrox-front/overview",
+                "label": "overview"
               }
             }
           }
@@ -1216,118 +1216,108 @@
           "mainDocId": "overview",
           "docs": [
             {
-              "id": "architecture",
-              "path": "/docs/nestjs-yalc/architecture",
+              "id": "abstractions/crud-gen",
+              "path": "/docs/nestjs-yalc/abstractions/crud-gen",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/intro",
-              "path": "/docs/nestjs-yalc/docs/intro",
+              "id": "abstractions/field-middleware",
+              "path": "/docs/nestjs-yalc/abstractions/field-middleware",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/ag-grid",
-              "path": "/docs/nestjs-yalc/docs/modules/ag-grid",
+              "id": "databases/database",
+              "path": "/docs/nestjs-yalc/databases/database",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/api-strategy",
-              "path": "/docs/nestjs-yalc/docs/modules/api-strategy",
+              "id": "fundamentals/app",
+              "path": "/docs/nestjs-yalc/fundamentals/app",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/app",
-              "path": "/docs/nestjs-yalc/docs/modules/app",
+              "id": "fundamentals/errors",
+              "path": "/docs/nestjs-yalc/fundamentals/errors",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/audit",
-              "path": "/docs/nestjs-yalc/docs/modules/audit",
+              "id": "fundamentals/event-manager",
+              "path": "/docs/nestjs-yalc/fundamentals/event-manager",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/crud-gen",
-              "path": "/docs/nestjs-yalc/docs/modules/crud-gen",
+              "id": "fundamentals/jest",
+              "path": "/docs/nestjs-yalc/fundamentals/jest",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/data-loader",
-              "path": "/docs/nestjs-yalc/docs/modules/data-loader",
+              "id": "fundamentals/utils",
+              "path": "/docs/nestjs-yalc/fundamentals/utils",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/database",
-              "path": "/docs/nestjs-yalc/docs/modules/database",
+              "id": "integrations/ag-grid",
+              "path": "/docs/nestjs-yalc/integrations/ag-grid",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/errors",
-              "path": "/docs/nestjs-yalc/docs/modules/errors",
+              "id": "integrations/kafka",
+              "path": "/docs/nestjs-yalc/integrations/kafka",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/event-manager",
-              "path": "/docs/nestjs-yalc/docs/modules/event-manager",
+              "id": "observability/audit",
+              "path": "/docs/nestjs-yalc/observability/audit",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/field-middleware",
-              "path": "/docs/nestjs-yalc/docs/modules/field-middleware",
+              "id": "observability/logger",
+              "path": "/docs/nestjs-yalc/observability/logger",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/modules/graphql",
-              "path": "/docs/nestjs-yalc/docs/modules/graphql",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/modules/jest",
-              "path": "/docs/nestjs-yalc/docs/modules/jest",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/modules/kafka",
-              "path": "/docs/nestjs-yalc/docs/modules/kafka",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/modules/logger",
-              "path": "/docs/nestjs-yalc/docs/modules/logger",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/modules/observability",
-              "path": "/docs/nestjs-yalc/docs/modules/observability",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/modules/sentinel",
-              "path": "/docs/nestjs-yalc/docs/modules/sentinel",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/modules/utils",
-              "path": "/docs/nestjs-yalc/docs/modules/utils",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "docs/quickstart",
-              "path": "/docs/nestjs-yalc/docs/quickstart",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "modules/crud-gen",
-              "path": "/docs/nestjs-yalc/modules/crud-gen",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "modules/logger",
-              "path": "/docs/nestjs-yalc/modules/logger",
+              "id": "observability/observability",
+              "path": "/docs/nestjs-yalc/observability/",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "overview",
               "path": "/docs/nestjs-yalc/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/architecture",
+              "path": "/docs/nestjs-yalc/overview/architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/intro",
+              "path": "/docs/nestjs-yalc/overview/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/quickstart",
+              "path": "/docs/nestjs-yalc/overview/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/api-strategy",
+              "path": "/docs/nestjs-yalc/security/api-strategy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel",
+              "path": "/docs/nestjs-yalc/security/sentinel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/data-loader",
+              "path": "/docs/nestjs-yalc/transports/data-loader",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/graphql",
+              "path": "/docs/nestjs-yalc/transports/graphql",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -1355,63 +1345,88 @@
           "mainDocId": "overview",
           "docs": [
             {
-              "id": "docs/intro",
-              "path": "/docs/node-yalc/docs/intro",
+              "id": "abstractions/interfaces",
+              "path": "/docs/node-yalc/abstractions/interfaces",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/aws-helpers",
-              "path": "/docs/node-yalc/docs/packages/aws-helpers",
+              "id": "architectures/event-manager",
+              "path": "/docs/node-yalc/architectures/event-manager",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/common",
-              "path": "/docs/node-yalc/docs/packages/common",
+              "id": "databases/prisma",
+              "path": "/docs/node-yalc/databases/prisma",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/errors",
-              "path": "/docs/node-yalc/docs/packages/errors",
+              "id": "deployment/ci-cd",
+              "path": "/docs/node-yalc/deployment/ci-cd",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/event-manager",
-              "path": "/docs/node-yalc/docs/packages/event-manager",
+              "id": "fundamentals/common",
+              "path": "/docs/node-yalc/fundamentals/common",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/interfaces",
-              "path": "/docs/node-yalc/docs/packages/interfaces",
+              "id": "fundamentals/errors",
+              "path": "/docs/node-yalc/fundamentals/errors",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/logger",
-              "path": "/docs/node-yalc/docs/packages/logger",
+              "id": "fundamentals/types",
+              "path": "/docs/node-yalc/fundamentals/types",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/types",
-              "path": "/docs/node-yalc/docs/packages/types",
+              "id": "fundamentals/types-extends",
+              "path": "/docs/node-yalc/fundamentals/types-extends",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/types-extends",
-              "path": "/docs/node-yalc/docs/packages/types-extends",
+              "id": "fundamentals/utils",
+              "path": "/docs/node-yalc/fundamentals/utils",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/packages/utils",
-              "path": "/docs/node-yalc/docs/packages/utils",
+              "id": "integrations/aws-helpers",
+              "path": "/docs/node-yalc/integrations/aws-helpers",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "docs/quickstart",
-              "path": "/docs/node-yalc/docs/quickstart",
+              "id": "observability/logger",
+              "path": "/docs/node-yalc/observability/logger",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "overview",
               "path": "/docs/node-yalc/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/intro",
+              "path": "/docs/node-yalc/overview/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "overview/quickstart",
+              "path": "/docs/node-yalc/overview/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/caching",
+              "path": "/docs/node-yalc/performance/caching",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/auth",
+              "path": "/docs/node-yalc/security/auth",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/http-client",
+              "path": "/docs/node-yalc/transports/http-client",
               "sidebar": "tutorialSidebar"
             }
           ],
