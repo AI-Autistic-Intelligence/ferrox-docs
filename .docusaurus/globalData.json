@@ -365,6 +365,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "architectures/sagas",
+              "path": "/docs/ferrox-py/architectures/sagas",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "architectures/task-scheduling",
               "path": "/docs/ferrox-py/architectures/task-scheduling",
               "sidebar": "tutorialSidebar"
@@ -420,6 +425,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "concurrency/singleflight",
+              "path": "/docs/ferrox-py/concurrency/singleflight",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "databases/data",
               "path": "/docs/ferrox-py/databases/data",
               "sidebar": "tutorialSidebar"
@@ -457,6 +467,21 @@
             {
               "id": "overview/quickstart",
               "path": "/docs/ferrox-py/overview/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "resilience/circuit-breaker",
+              "path": "/docs/ferrox-py/resilience/circuit-breaker",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/distributed-locks",
+              "path": "/docs/ferrox-py/security/distributed-locks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/rate-limiting",
+              "path": "/docs/ferrox-py/security/rate-limiting",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -566,6 +591,121 @@
             {
               "id": "integrations/i18n",
               "path": "/docs/ferrox-node/integrations/i18n",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/auth",
+              "path": "/docs/ferrox-node/modules/auth",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/aws-helpers",
+              "path": "/docs/ferrox-node/modules/aws-helpers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/common",
+              "path": "/docs/ferrox-node/modules/common",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/config",
+              "path": "/docs/ferrox-node/modules/config",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/cqrs",
+              "path": "/docs/ferrox-node/modules/cqrs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/datagrid",
+              "path": "/docs/ferrox-node/modules/datagrid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/errors",
+              "path": "/docs/ferrox-node/modules/errors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/event-manager",
+              "path": "/docs/ferrox-node/modules/event-manager",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/guards",
+              "path": "/docs/ferrox-node/modules/guards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/i18n",
+              "path": "/docs/ferrox-node/modules/i18n",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/interfaces",
+              "path": "/docs/ferrox-node/modules/interfaces",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/jobs",
+              "path": "/docs/ferrox-node/modules/jobs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/kernel",
+              "path": "/docs/ferrox-node/modules/kernel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/logger",
+              "path": "/docs/ferrox-node/modules/logger",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/resilience",
+              "path": "/docs/ferrox-node/modules/resilience",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/security",
+              "path": "/docs/ferrox-node/modules/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/selftest",
+              "path": "/docs/ferrox-node/modules/selftest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/storage",
+              "path": "/docs/ferrox-node/modules/storage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/tracing",
+              "path": "/docs/ferrox-node/modules/tracing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/transports",
+              "path": "/docs/ferrox-node/modules/transports",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/types",
+              "path": "/docs/ferrox-node/modules/types",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/types-extends",
+              "path": "/docs/ferrox-node/modules/types-extends",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "modules/utils",
+              "path": "/docs/ferrox-node/modules/utils",
               "sidebar": "tutorialSidebar"
             },
             {

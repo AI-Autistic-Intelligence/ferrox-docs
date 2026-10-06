@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '53a'),
     exact: true
@@ -140,15 +105,15 @@ export default [
   },
   {
     path: '/docs/ferrox-node',
-    component: ComponentCreator('/docs/ferrox-node', '5f5'),
+    component: ComponentCreator('/docs/ferrox-node', '208'),
     routes: [
       {
         path: '/docs/ferrox-node',
-        component: ComponentCreator('/docs/ferrox-node', '54f'),
+        component: ComponentCreator('/docs/ferrox-node', '8f1'),
         routes: [
           {
             path: '/docs/ferrox-node',
-            component: ComponentCreator('/docs/ferrox-node', '59a'),
+            component: ComponentCreator('/docs/ferrox-node', 'e0b'),
             routes: [
               {
                 path: '/docs/ferrox-node/abstractions/guards',
@@ -213,6 +178,144 @@ export default [
               {
                 path: '/docs/ferrox-node/integrations/i18n',
                 component: ComponentCreator('/docs/ferrox-node/integrations/i18n', 'e9d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/auth',
+                component: ComponentCreator('/docs/ferrox-node/modules/auth', '222'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/aws-helpers',
+                component: ComponentCreator('/docs/ferrox-node/modules/aws-helpers', 'cd6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/common',
+                component: ComponentCreator('/docs/ferrox-node/modules/common', '128'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/config',
+                component: ComponentCreator('/docs/ferrox-node/modules/config', 'da2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/cqrs',
+                component: ComponentCreator('/docs/ferrox-node/modules/cqrs', '793'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/datagrid',
+                component: ComponentCreator('/docs/ferrox-node/modules/datagrid', 'ca0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/errors',
+                component: ComponentCreator('/docs/ferrox-node/modules/errors', '652'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/event-manager',
+                component: ComponentCreator('/docs/ferrox-node/modules/event-manager', '7a9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/guards',
+                component: ComponentCreator('/docs/ferrox-node/modules/guards', '8e4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/i18n',
+                component: ComponentCreator('/docs/ferrox-node/modules/i18n', 'c16'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/interfaces',
+                component: ComponentCreator('/docs/ferrox-node/modules/interfaces', '08f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/jobs',
+                component: ComponentCreator('/docs/ferrox-node/modules/jobs', 'e79'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/kernel',
+                component: ComponentCreator('/docs/ferrox-node/modules/kernel', '1a1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/logger',
+                component: ComponentCreator('/docs/ferrox-node/modules/logger', '600'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/resilience',
+                component: ComponentCreator('/docs/ferrox-node/modules/resilience', 'f75'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/security',
+                component: ComponentCreator('/docs/ferrox-node/modules/security', '723'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/selftest',
+                component: ComponentCreator('/docs/ferrox-node/modules/selftest', '804'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/storage',
+                component: ComponentCreator('/docs/ferrox-node/modules/storage', '218'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/tracing',
+                component: ComponentCreator('/docs/ferrox-node/modules/tracing', 'cb5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/transports',
+                component: ComponentCreator('/docs/ferrox-node/modules/transports', 'eb9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/types',
+                component: ComponentCreator('/docs/ferrox-node/modules/types', '652'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/types-extends',
+                component: ComponentCreator('/docs/ferrox-node/modules/types-extends', 'e1e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-node/modules/utils',
+                component: ComponentCreator('/docs/ferrox-node/modules/utils', '846'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -854,15 +957,15 @@ export default [
   },
   {
     path: '/docs/ferrox-py',
-    component: ComponentCreator('/docs/ferrox-py', 'bc4'),
+    component: ComponentCreator('/docs/ferrox-py', '029'),
     routes: [
       {
         path: '/docs/ferrox-py',
-        component: ComponentCreator('/docs/ferrox-py', 'c3e'),
+        component: ComponentCreator('/docs/ferrox-py', '8b7'),
         routes: [
           {
             path: '/docs/ferrox-py',
-            component: ComponentCreator('/docs/ferrox-py', 'd00'),
+            component: ComponentCreator('/docs/ferrox-py', '4c9'),
             routes: [
               {
                 path: '/docs/ferrox-py/abstractions/pipes-interceptors',
@@ -873,6 +976,12 @@ export default [
               {
                 path: '/docs/ferrox-py/architectures/cqrs',
                 component: ComponentCreator('/docs/ferrox-py/architectures/cqrs', 'bc1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/architectures/sagas',
+                component: ComponentCreator('/docs/ferrox-py/architectures/sagas', '460'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -943,6 +1052,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-py/concurrency/singleflight',
+                component: ComponentCreator('/docs/ferrox-py/concurrency/singleflight', 'd5d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-py/databases/data',
                 component: ComponentCreator('/docs/ferrox-py/databases/data', '14b'),
                 exact: true,
@@ -991,8 +1106,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-py/resilience/circuit-breaker',
+                component: ComponentCreator('/docs/ferrox-py/resilience/circuit-breaker', '016'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-py/security',
                 component: ComponentCreator('/docs/ferrox-py/security', 'b0e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/security/distributed-locks',
+                component: ComponentCreator('/docs/ferrox-py/security/distributed-locks', '42b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/security/rate-limiting',
+                component: ComponentCreator('/docs/ferrox-py/security/rate-limiting', 'b4d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

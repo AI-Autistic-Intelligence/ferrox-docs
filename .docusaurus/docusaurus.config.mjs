@@ -33,7 +33,7 @@ export default {
   "baseUrl": "/",
   "organizationName": "AI-Autistic-Intelligence",
   "projectName": "ferrox-docs",
-  "deploymentBranch": "main",
+  "deploymentBranch": "gh-pages",
   "trailingSlash": false,
   "onBrokenLinks": "throw",
   "i18n": {
