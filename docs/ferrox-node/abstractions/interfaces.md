@@ -12,7 +12,7 @@ The `@ferrox/node` interfaces module exports all standard contract definitions, 
 
 ## 1. What It Is & Architectural Purpose
 
-Enterprise Node.js applications rely on standardized interface contracts to maintain loose coupling across core components (authentication guards, CQRS bus handlers, transport adapters, and background job runners). Without centralized type contracts, passing context objects across layers leads to type drift and runtime errors.
+Enterprise Node.js applications rely on standardized interface contracts to maintain loose coupling across core components (authentication guards, [CQRS](/docs/ferrox-node/modules/cqrs) bus handlers, transport adapters, and background job runners). Without centralized type contracts, passing context objects across layers leads to type drift and runtime errors.
 
 The `interfaces` module provides pure TypeScript type definitions that bind all `@ferrox/node` sub-components into a unified, type-safe framework.
 

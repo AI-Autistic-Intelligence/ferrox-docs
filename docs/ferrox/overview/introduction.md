@@ -42,7 +42,7 @@ Building production-ready software in Rust requires assembling multiple asynchro
 | **`ferrox-crud-gen`** | Automated CRUD | Auto-generates REST/GraphQL CRUD routes from SeaORM entities.|
 | **`ferrox-datagrid`** | Query Translation | Server-side AG-Grid / TanStack Table SeaORM query builder. |
 | **`ferrox-errors`** | System Taxonomy | Type-safe error taxonomies with localized messages. |
-| **`ferrox-events`** | Event Bus | In-process and distributed Kafka/AMQP event bus. |
+| **`ferrox-events`** | [Event Bus](/docs/ferrox/architectures/events) | In-process and distributed Kafka/AMQP event bus. |
 | **`ferrox-graphql`** | Transport | Async-GraphQL schema stitching, scalars, and federation. |
 | **`ferrox-guards`** | Security & Auth | Declarative RBAC / ABAC / Multi-Tenant access guards. |
 | **`ferrox-health`** | Diagnostics | Health checks, readiness probes, and liveness endpoints. |
@@ -54,7 +54,7 @@ Building production-ready software in Rust requires assembling multiple asynchro
 | **`ferrox-metrics`** | Observability | Prometheus metric exporter (`req/sec`, latency histograms). |
 | **`ferrox-migrations`** | Database Schema | Versioned schema migration runner & SQL DDL generator. |
 | **`ferrox-rate-limiter`**| Security | Sliding Window Log & Token Bucket rate limiters. |
-| **`ferrox-saga`** | Distributed Sagas | Distributed transaction orchestrator with compensations. |
+| **`ferrox-saga`** | Distributed [Sagas](/docs/ferrox/architectures/sagas) | Distributed transaction orchestrator with compensations. |
 | **`ferrox-schedule`** | Task Scheduling | Distributed Cron scheduler engine & heartbeat workers. |
 | **`ferrox-search`** | Search Integration | Full-text & vector search integration (Meilisearch/Qdrant). |
 | **`ferrox-security`** | Cryptography | JWT signing (Ed25519), AES-256-GCM, distributed Redlock locks.|
@@ -68,7 +68,7 @@ Building production-ready software in Rust requires assembling multiple asynchro
 | **`ferrox-transports`**| Multi-Protocol | Unified HTTP, gRPC, and Kafka transport engine. |
 | **`ferrox-types`** | Type Primitives | Shared type primitives & value objects. |
 | **`ferrox-utils`** | Shared Tools | High-performance helper routines & collections. |
-| **`ferrox-validation`**| Schema Validation | Zero-cost validation macros & JSON schema checks. |
+| **`ferrox-validation`**| Schema [Validation](/docs/ferrox/abstractions/validation) | Zero-cost validation macros & JSON schema checks. |
 
 ---
 
@@ -91,15 +91,15 @@ Share identical data models between backend Rust microservices and frontend WebA
 sequenceDiagram
     autonumber
     participant Client as Client Request
-    participant Sentinel as ferrox-sentinel Shield
+    participant [Sentinel](/docs/ferrox/security/ferrox-sentinel) as ferrox-sentinel Shield
     participant App as Ferrox Kernel
     participant Guard as Security Guard
-    participant Bus as CQRS CommandBus
+    participant Bus as [CQRS](/docs/ferrox/architectures/cqrs) CommandBus
     participant DB as Database (SeaORM)
 
-    Client->>Sentinel: Incoming HTTP / gRPC Request
-    Sentinel->>Sentinel: Verify CSP Headers, CORS & Payload Size Limit
-    Sentinel->>App: Forward Clean Request
+    Client->>[Sentinel](/docs/ferrox/security/ferrox-sentinel): Incoming HTTP / gRPC Request
+    [Sentinel](/docs/ferrox/security/ferrox-sentinel)->>[Sentinel](/docs/ferrox/security/ferrox-sentinel): Verify CSP Headers, CORS & Payload Size Limit
+    [Sentinel](/docs/ferrox/security/ferrox-sentinel)->>App: Forward Clean Request
     App->>Guard: Evaluate Roles & Tenant Isolation
     Guard-->>App: Access Granted
     App->>Bus: Dispatch Command ('CreateOrderCommand')

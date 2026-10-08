@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 🎯 DTO Validation & AutoZod Extractor
+# 🎯 DTO [Validation](/docs/ferrox/abstractions/validation) & AutoZod Extractor
 
 In NestJS, developer productivity relies heavily on `class-validator` and `ValidationPipe`. In Rust, `ferrox-validation` provides the `ValidatedJson<T>` extractor—a mechanism that behaves like Zod's `.parse()`.
 
@@ -61,14 +61,14 @@ pub async fn create_user(
 
 ---
 
-## 3. How "Fail Fast" Validation Works
+## 3. How "Fail Fast" [Validation](/docs/ferrox/abstractions/validation) Works
 
 If a client sends an invalid payload (e.g. `age: 15` or malformed email `not-an-email`), `ValidatedJson<T>` intercepts the request **before** executing your handler and returns a `400 Bad Request` response:
 
 ```json
 {
   "status": 400,
-  "message": "Validation failed: email: Invalid email address format, age: Age must be between 18 and 120"
+  "message": "[Validation](/docs/ferrox/abstractions/validation) failed: email: Invalid email address format, age: Age must be between 18 and 120"
 }
 ```
 
@@ -83,7 +83,7 @@ HTTP Client ---> [ ValidatedJson Extractor ]
 
 ---
 
-## 4. Custom Validation Functions
+## 4. Custom [Validation](/docs/ferrox/abstractions/validation) Functions
 
 You can attach custom validation functions to complex DTOs using `#[validate(custom = "path::to::fn")]`:
 

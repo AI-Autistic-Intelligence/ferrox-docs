@@ -51,5 +51,5 @@ During the creation of this template, specific choices and compromises were made
 
 The `dummy-app.ts` file is designed as a starting point. Developers can:
 1. Uncomment the `DatabaseFactory` logic by providing real credentials in `.env`.
-2. Add Guards (`@UseGuard`) to methods exposed by the controller to automate PASETO protection.
+2. Add [Guards](/docs/ferrox-node/modules/guards) (`@UseGuard`) to methods exposed by the controller to automate PASETO protection.
 3. Extend Controllers and Services using the exclusive `FerroxDIContainer`.

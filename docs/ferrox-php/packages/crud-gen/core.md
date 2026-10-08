@@ -20,5 +20,5 @@ Below is the highly detailed documentation extracted and inferred directly from 
 The `CrudGenerator` is responsible for enterprise-grade execution of operations within `ferrox-php-crud-gen/src/CrudGenerator.php`.
 
 - **`generateRoutesForEntity(Container $container, string $entityClass, bool $exposeBusinessMetrics = true) : void`**
-  - In a real application, this scans the `src/Entities` directory, reads #[CrudResource] attributes, and dynamically registers CQRS Handlers and Http Routes into the Container and Pipeline.
+  - In a real application, this scans the `src/Entities` directory, reads #[CrudResource] attributes, and dynamically registers [CQRS](/docs/ferrox-php/architectures/cqrs-sagas) Handlers and Http Routes into the Container and Pipeline.
 

@@ -12,7 +12,7 @@ The `webhooks` module delivers outbound webhook notification pipelines. It featu
 
 ## 1. What It Is & Architectural Purpose
 
-Modern SaaS platforms send real-time event updates (e.g., `invoice.payment_succeeded`, `user.registered`) to third-party customer endpoint URLs via Webhooks. Delivering webhooks reliably over public internet networks requires handling client server downtime, timeout delays, and security verification.
+Modern SaaS platforms send real-time event updates (e.g., `invoice.payment_succeeded`, `user.registered`) to third-party customer endpoint URLs via [Webhooks](/docs/ferrox/integrations/webhooks). Delivering webhooks reliably over public internet networks requires handling client server downtime, timeout delays, and security verification.
 
 The `WebhookEngine` in Ferrox automates reliable outbound webhook delivery. It signs payloads with HMAC-SHA256 signatures, manages exponential backoff retry attempts, and logs delivery receipts.
 
@@ -81,7 +81,7 @@ sequenceDiagram
 
 ## 5. Practical Usage Guide & Extended Code Examples
 
-### 5.1 Dispatching Outbound Webhooks
+### 5.1 Dispatching Outbound [Webhooks](/docs/ferrox/integrations/webhooks)
 
 ```rust
 use ferrox_integrations::webhooks::{WebhookEngine, WebhookPayload};

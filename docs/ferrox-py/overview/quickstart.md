@@ -41,4 +41,4 @@ if __name__ == "__main__":
 ```
 
 ## 7. Ecosystem Integration
-This quickstart setup is the foundational block for the entire ecosystem. Once `FerroxApp` is running, you can progressively plug in other modules such as the Task Scheduling architecture, Database adapters (like SQLAlchemy integrations), and comprehensive Observability hooks without altering this base initialization code.
+This quickstart setup is the foundational block for the entire ecosystem. Once `FerroxApp` is running, you can progressively plug in other modules such as the Task Scheduling architecture, Database adapters (like SQLAlchemy integrations), and comprehensive [Observability](/docs/ferrox-py/observability/observability) hooks without altering this base initialization code.

@@ -1,12 +1,12 @@
 ---
 id: resilience
-title: Circuit Breaker, Singleflight & Resilience Patterns
+title: Circuit Breaker, [Singleflight](/docs/ferrox/security/singleflight) & Resilience Patterns
 sidebar_position: 10
 ---
 
-# Circuit Breaker, Singleflight & Resilience Patterns
+# Circuit Breaker, [Singleflight](/docs/ferrox/security/singleflight) & Resilience Patterns
 
-The `@ferrox/node` resilience component delivers fault-tolerance mechanisms for Node.js microservices: Circuit Breakers (`Closed`, `Open`, `HalfOpen`), Singleflight Request Deduplication, Exponential Backoff Retries, and Rate-Limiting Bouncers.
+The `@ferrox/node` resilience component delivers fault-tolerance mechanisms for Node.js microservices: Circuit Breakers (`Closed`, `Open`, `HalfOpen`), [Singleflight](/docs/ferrox/security/singleflight) Request Deduplication, Exponential Backoff Retries, and Rate-Limiting Bouncers.
 
 ---
 
@@ -20,7 +20,7 @@ The `resilience` module implements battle-tested resilience patterns in TypeScri
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        Ferrox Resilience Engine                        │
 ├──────────────────────────────────┬─────────────────────────────────────┤
-│  Circuit Breaker State Machine   │  Singleflight Deduplicator          │
+│  Circuit Breaker State Machine   │  [Singleflight](/docs/ferrox/security/singleflight) Deduplicator          │
 │  (Closed -> Open -> HalfOpen)    │  (In-Flight Concurrent Request Join)│
 └────────────────┬─────────────────┴──────────────────┬──────────────────┘
                  │ Intercept Failure / Burst
@@ -37,7 +37,7 @@ The `resilience` module implements battle-tested resilience patterns in TypeScri
 ## 2. What It Does & Key Capabilities
 
 - **Circuit Breaker State Machine**: Switches states between `Closed` (normal), `Open` (failing, rejects calls immediately with fallback), and `HalfOpen` (probing recovery).
-- **Singleflight Request Deduplication**: Consolidates multiple concurrent identical request calls into a single underlying execution promise.
+- **[Singleflight](/docs/ferrox/security/singleflight) Request Deduplication**: Consolidates multiple concurrent identical request calls into a single underlying execution promise.
 - **Exponential Backoff Retries**: Retries transient network failures automatically with configurable jitter algorithm.
 - **Fallback Execution Decorators**: Seamlessly returns degraded fallback responses or cached data when downstream services fail.
 
@@ -45,26 +45,26 @@ The `resilience` module implements battle-tested resilience patterns in TypeScri
 
 ## 3. How It Works Under the Hood
 
-### Singleflight & Circuit Breaker Mechanics
+### [Singleflight](/docs/ferrox/security/singleflight) & Circuit Breaker Mechanics
 
 ```mermaid
 sequenceDiagram
     autonumber
     participant Client1 as Client Request 1
     participant Client2 as Client Request 2
-    participant Singleflight as Singleflight Group
+    participant [Singleflight](/docs/ferrox/security/singleflight) as [Singleflight](/docs/ferrox/security/singleflight) Group
     participant Breaker as Circuit Breaker (Closed)
     participant Downstream as Remote External API
 
-    Client1->>Singleflight: Execute getResource("user_100")
-    Singleflight->>Breaker: Check Circuit Breaker State (Closed)
+    Client1->>[Singleflight](/docs/ferrox/security/singleflight): Execute getResource("user_100")
+    [Singleflight](/docs/ferrox/security/singleflight)->>Breaker: Check Circuit Breaker State (Closed)
     Breaker->>Downstream: Dispatch HTTP GET /api/users/100
-    Client2->>Singleflight: Execute getResource("user_100") [Simultaneous]
-    Note over Singleflight: In-flight execution found! Attach Client 2 to Promise 1
+    Client2->>[Singleflight](/docs/ferrox/security/singleflight): Execute getResource("user_100") [Simultaneous]
+    Note over [Singleflight](/docs/ferrox/security/singleflight): In-flight execution found! Attach Client 2 to Promise 1
     Downstream-->>Breaker: Return Response HTTP 200 OK
-    Breaker-->>Singleflight: Resolve Promise 1
-    Singleflight-->>Client1: Deliver User Data JSON
-    Singleflight-->>Client2: Deliver Identical Shared User Data JSON
+    Breaker-->>[Singleflight](/docs/ferrox/security/singleflight): Resolve Promise 1
+    [Singleflight](/docs/ferrox/security/singleflight)-->>Client1: Deliver User Data JSON
+    [Singleflight](/docs/ferrox/security/singleflight)-->>Client2: Deliver Identical Shared User Data JSON
 ```
 
 ---
@@ -73,7 +73,7 @@ sequenceDiagram
 
 | Feature | Standard Unprotected Calls | Ferrox Resilience Engine |
 | :--- | :--- | :--- |
-| **Thundering Herd** | 100 concurrent requests trigger 100 identical DB reads. | Singleflight deduplicates 100 requests into 1 single DB query. |
+| **Thundering Herd** | 100 concurrent requests trigger 100 identical DB reads. | [Singleflight](/docs/ferrox/security/singleflight) deduplicates 100 requests into 1 single DB query. |
 | **Cascading Failure**| Dying payment gateway causes 1000s of HTTP connections to hang. | Circuit Breaker opens after 5 failures and fails fast with fallback. |
 | **Recovery** | Manual app restarts required after downstream outage. | `HalfOpen` state probes service recovery automatically. |
 
@@ -81,7 +81,7 @@ sequenceDiagram
 
 ## 5. Practical Usage Guide & Extended Code Examples
 
-### 5.1 Using Singleflight Group Deduplication
+### 5.1 Using [Singleflight](/docs/ferrox/security/singleflight) Group Deduplication
 
 ```typescript
 import { SingleflightGroup } from '@ferrox/node';
@@ -137,5 +137,5 @@ export async function processPaymentWithResilience(paymentData: any) {
 ## 7. Pro-Tips & Best Practices
 
 > [!TIP]
-> **Pro-Tip 1: Combining Singleflight and Circuit Breaker**
+> **Pro-Tip 1: Combining [Singleflight](/docs/ferrox/security/singleflight) and Circuit Breaker**
 > Wrap singleflight execution inside a Circuit Breaker to get both thundering-herd protection and fail-fast resilience for heavy database queries.

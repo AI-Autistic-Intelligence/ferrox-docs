@@ -53,7 +53,7 @@ Unlike standard Passport.js or express-jwt middlewares, `@yalc/security/auth` is
 
 ## 🚀 5. Usage Guide & Code Examples
 
-### Standard JWT Validation Flow
+### Standard JWT [Validation](/docs/ferrox/abstractions/validation) Flow
 
 ```typescript
 import { validateJwt, extractBearerToken } from '@yalc/security/auth';

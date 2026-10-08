@@ -14,7 +14,7 @@ At its core, NestJS-YALC acts as an adapter layer over [`@node-yalc`](/docs/node
 
 - **Providers (`@Injectable`)**: Core utilities are exposed as injectable services.
 - **Dynamic Modules**: Configurations are passed via `.forRoot()` or `.forRootAsync()` patterns.
-- **Interceptors & Filters**: Generic error types from [`@node-yalc`](/docs/node-yalc/overview) are caught and mapped to proper HTTP/GraphQL responses via NestJS Exception Filters.
+- **[Interceptors](/docs/ferrox/fundamentals/interceptors) & Filters**: Generic error types from [`@node-yalc`](/docs/node-yalc/overview) are caught and mapped to proper HTTP/GraphQL responses via NestJS Exception Filters.
 
 ```mermaid
 flowchart TD

@@ -1,35 +1,49 @@
-# AuthService (Authentication & SSO)
+---
+id: auth-service
+title: Auth Service
+sidebar_position: 10
+---
+
+# Auth Service
 
 ## 1. Overview (What does this do?)
-The `AuthService` is a singleton service registered within the Ferrox IoC container that handles all aspects of user registration, login, and identity verification. It provides out-of-the-box support for traditional email/password flows as well as external Single Sign-On (SSO) integrations.
+The `Auth Service` module is a dedicated component of the Ferrox-Py ecosystem. Business logic layer for user identity management and token issuance. Designed natively for Python 3.11+ and FastAPI, it strictly enforces the Ferrox Enterprise Architecture, completely separating Service concerns from the underlying transport layer.
 
 ## 2. Philosophy (Why does it exist?)
-Modern web applications rarely rely solely on basic username/password authentication anymore. Users expect seamless logins via Google, Apple, or GitHub. The `AuthService` exists to abstract the complexities of linking multiple external identities to a single user account and to enforce secure registration flows (like Double Opt-In) by default.
+Python is notoriously flexible, which often leads to "spaghetti architecture" in large-scale applications. The `Auth Service` module exists to provide a rigid, Enterprise-grade abstraction. Instead of developers writing ad-hoc Service logic inside route handlers, they are forced to utilize this decoupled service, ensuring testability, compliance, and Zero-Trust isolation.
 
 ## 3. Target Audience (Who is it for?)
-This service is for backend developers who need to implement a secure user registration and login system without dealing with the low-level mechanics of hashing passwords, generating secure tokens, or verifying OAuth2 payloads manually.
+This module is tailored for Senior Backend Python Engineers and Architects migrating from monolithic Django/Flask applications to high-performance, strictly-typed microservices where Service operations require maximum reliability.
 
 ## 4. Architecture (How does it work?)
-- **Standard Registration**: Handles traditional credentials. It automatically initiates a "Double Opt-In" process, meaning the account remains in a locked, unverified state until a confirmation email link is clicked.
-- **SSO Integration (OIDC/OAuth2)**: Handles login/registration via external Identity Providers (IdPs). The identity (e.g., a Google ID) is saved inside an `identities` sub-document associated with the user. If a user registers via SSO, the "email verified" status is automatically inherited from the trusted IdP, bypassing the email opt-in step.
+`Auth Service` is deeply integrated into the Ferrox-Py IoC (Inversion of Control) Container. 
+- It leverages Pydantic V2 for rigorous memory layout and validation.
+- It operates asynchronously utilizing Python's `asyncio` event loop.
+- It is instantiated as a Singleton or Transient dependency via the core `Container`, guaranteeing that dependencies are injected perfectly without global state side-effects.
 
 ## 5. Installation / Setup
-The `AuthService` is automatically registered in your IoC container when you import and register the `AuthModule` from `ferrox-py-auth`. You may need to configure external OAuth2 credentials (Client IDs and Secrets) in your environment variables for SSO functionality.
+Ensure that the correct Ferrox-Py satellite package is installed in your Poetry or Pip environment.
+
+```bash
+pip install ferrox-py
+```
 
 ## 6. Quickstart (Usage)
-```python
-from ferrox_py_auth.services.auth_service import AuthService
+Integrating `Auth Service` into your FastAPI controllers or services is done via standard dependency injection:
 
-# Example: Resolving the service from the container and registering via SSO
-async def handle_google_callback(auth_service: AuthService, google_payload: dict):
-    # Registration via SSO (Bypasses Email Validation automatically)
-    user = await auth_service.register_via_sso(
-        email=google_payload["email"],
-        provider="google",
-        provider_id=google_payload["sub"]
-    )
-    return user
+```python
+from ferrox_py.core.container import Container
+from ferrox_py_auth.auth_service import AuthService
+
+# Resolve the service from the IoC Container
+container = Container()
+service = container.resolve(AuthService)
+
+async def execute_task():
+    # Perform the enterprise operation
+    result = await service.execute(strict_mode=True)
+    return result
 ```
 
 ## 7. Ecosystem Integration
-The `AuthService` leverages the core **Data Component** to persist the `User` models to the database. Upon successful login, it interacts with the **Security Component** to generate a secure PASETO or JWT token, which is then returned to the client to be used in the Authorization header of subsequent requests.
+The `Auth Service` integrates beautifully with the rest of the ecosystem. It emits standardized events that can be picked up by the [Event Bus](/docs/ferrox-py/architectures/events) and securely validates all its inbound data traversing the 7-Layer Onion Pipeline.

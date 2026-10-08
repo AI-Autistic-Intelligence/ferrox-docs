@@ -1,10 +1,10 @@
-# Guards Module (`node-yalc/guards`)
+# [Guards](/docs/ferrox-node/modules/guards) Module (`node-yalc/guards`)
 
-The Guards module provides reusable security interceptors for the Ferrox-Node Framework. Guards are executed before route handlers to ensure the incoming request meets specific authentication, authorization, or compliance criteria. If a guard fails, the request is immediately rejected with the appropriate HTTP status code (e.g., 401 or 403), completely bypassing business logic.
+The [Guards](/docs/ferrox-node/modules/guards) module provides reusable security interceptors for the Ferrox-Node Framework. [Guards](/docs/ferrox-node/modules/guards) are executed before route handlers to ensure the incoming request meets specific authentication, authorization, or compliance criteria. If a guard fails, the request is immediately rejected with the appropriate HTTP status code (e.g., 401 or 403), completely bypassing business logic.
 
 ## Overview
 
-Ferrox promotes defense-in-depth. Instead of writing authentication logic inside every controller, you attach Guards to your routes. 
+Ferrox promotes defense-in-depth. Instead of writing authentication logic inside every controller, you attach [Guards](/docs/ferrox-node/modules/guards) to your routes. 
 
 ### `RbacGuard`
 The Role-Based Access Control (RBAC) Guard integrates directly with the `@node-yalc/auth` module. It verifies `v4.local` PASETO tokens and enforces role requirements.

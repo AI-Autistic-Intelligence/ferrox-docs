@@ -32,4 +32,4 @@ class CommerceApiController:
 ```
 
 ## 7. Ecosystem Integration
-These controllers act as the bridge between the external network and the internal **Gateways** and **Transaction State Machines**. The `WebhooksController` specifically relies heavily on the **Event Dispatcher (CQRS)** from the core ecosystem to broadcast standardized payment events into the system once a payload is verified.
+These controllers act as the bridge between the external network and the internal **Gateways** and **Transaction State Machines**. The `WebhooksController` specifically relies heavily on the **Event Dispatcher ([CQRS](/docs/ferrox-py/architectures/cqrs))** from the core ecosystem to broadcast standardized payment events into the system once a payload is verified.

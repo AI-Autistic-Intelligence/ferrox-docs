@@ -1,9 +1,9 @@
 ---
 id: sentinel-engine
-title: Sentinel Threat Engine
+title: [Sentinel](/docs/ferrox-php/security/sentinel-engine) Threat Engine
 ---
 
-# Sentinel Threat Engine
+# [Sentinel](/docs/ferrox-php/security/sentinel-engine) Threat Engine
 
 ## 1. Philosophy / Purpose
 Shannon Entropy AI security layer... The purpose of this component is to ensure enterprise-grade stability and zero-trust security in Ferrox PHP. It strictly rejects the legacy paradigms of standard PHP (like global state and silent failures) in favor of deterministic, compile-time-like safety.

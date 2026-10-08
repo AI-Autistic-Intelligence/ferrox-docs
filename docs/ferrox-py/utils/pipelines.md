@@ -42,4 +42,4 @@ assert final_context['transformed'] == [10, 20, 30]
 ```
 
 ## 7. Ecosystem Integration
-The `PipelineOrchestrator` relies heavily on the **Observability Component** from the core `ferrox-py` framework. Because the orchestrator controls the execution loop, it automatically injects logging trace IDs and emits structured logs (e.g., `Step 'Extraction Step' completed in 0.4s`) into the centralized logging system, ensuring complete visibility over background data jobs.
+The `PipelineOrchestrator` relies heavily on the **[Observability](/docs/ferrox-py/observability/observability) Component** from the core `ferrox-py` framework. Because the orchestrator controls the execution loop, it automatically injects logging trace IDs and emits structured logs (e.g., `Step 'Extraction Step' completed in 0.4s`) into the centralized logging system, ensuring complete visibility over background data jobs.

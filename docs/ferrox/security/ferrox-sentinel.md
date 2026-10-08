@@ -1,10 +1,10 @@
 ---
 id: ferrox-sentinel
-title: Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer
+title: Ferrox [Sentinel](/docs/ferrox/security/ferrox-sentinel) Edge Shield, CSP Directives & Payload Bouncer
 sidebar_position: 1
 ---
 
-# Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer
+# Ferrox [Sentinel](/docs/ferrox/security/ferrox-sentinel) Edge Shield, CSP Directives & Payload Bouncer
 
 The `ferrox-sentinel` crate is the edge security bouncer for the Ferrox framework. It delivers automated HTTP security headers (Helmet CSP, HSTS, X-Frame-Options), CORS origin regex validation, payload size bouncers, and malicious request parameter sanitization.
 
@@ -44,25 +44,25 @@ Web applications are exposed to edge security threats: Cross-Site Scripting (XSS
 
 ## 3. How It Works Under the Hood
 
-### Sentinel Edge Interception Sequence
+### [Sentinel](/docs/ferrox/security/ferrox-sentinel) Edge Interception Sequence
 
 ```mermaid
 sequenceDiagram
     autonumber
     participant Client as Web Client Browser
-    participant Sentinel as ferrox-sentinel Interceptor
+    participant [Sentinel](/docs/ferrox/security/ferrox-sentinel) as ferrox-sentinel Interceptor
     participant App as Ferrox Application Handler
 
-    Client->>Sentinel: HTTP POST /api/v1/data (Header Origin: "https://example.com")
-    Sentinel->>Sentinel: Verify Origin against CORS Regex Whitelist
-    Sentinel->>Sentinel: Inspect Content-Length (Payload < Max Limit?)
+    Client->>[Sentinel](/docs/ferrox/security/ferrox-sentinel): HTTP POST /api/v1/data (Header Origin: "https://example.com")
+    [Sentinel](/docs/ferrox/security/ferrox-sentinel)->>[Sentinel](/docs/ferrox/security/ferrox-sentinel): Verify Origin against CORS Regex Whitelist
+    [Sentinel](/docs/ferrox/security/ferrox-sentinel)->>[Sentinel](/docs/ferrox/security/ferrox-sentinel): Inspect Content-Length (Payload < Max Limit?)
     alt Origin Valid & Payload Size OK
-        Sentinel->>App: Forward Request to Application Handler
-        App-->>Sentinel: Return HTTP Response Data
-        Sentinel->>Sentinel: Inject Helmet Security Headers (CSP, HSTS)
-        Sentinel-->>Client: Deliver Hardened Response Payload
+        [Sentinel](/docs/ferrox/security/ferrox-sentinel)->>App: Forward Request to Application Handler
+        App-->>[Sentinel](/docs/ferrox/security/ferrox-sentinel): Return HTTP Response Data
+        [Sentinel](/docs/ferrox/security/ferrox-sentinel)->>[Sentinel](/docs/ferrox/security/ferrox-sentinel): Inject Helmet Security Headers (CSP, HSTS)
+        [Sentinel](/docs/ferrox/security/ferrox-sentinel)-->>Client: Deliver Hardened Response Payload
     else Origin Invalid or Payload Exceeds Max Limit
-        Sentinel-->>Client: 403 Forbidden / 413 Payload Too Large
+        [Sentinel](/docs/ferrox/security/ferrox-sentinel)-->>Client: 403 Forbidden / 413 Payload Too Large
     end
 ```
 
@@ -73,14 +73,14 @@ sequenceDiagram
 | Feature | Manual Server Header Config | ferrox-sentinel Edge Shield |
 | :--- | :--- | :--- |
 | **Consistency** | Web headers omitted when running apps in local Docker pods. | Framework-level guarantee. Headers injected in all environments. |
-| **DoS Protection** | Large 100MB payload buffered in RAM before throwing error. | Sentinel bounces oversized streams at the transport socket level. |
+| **DoS Protection** | Large 100MB payload buffered in RAM before throwing error. | [Sentinel](/docs/ferrox/security/ferrox-sentinel) bounces oversized streams at the transport socket level. |
 | **CORS Security** | Wildcard `Access-Control-Allow-Origin: *` with credentials bug. | Strict origin regex validation supporting credentialed CORS. |
 
 ---
 
 ## 5. Practical Usage Guide & Extended Code Examples
 
-### 5.1 Configuring Sentinel Middleware in Rust
+### 5.1 Configuring [Sentinel](/docs/ferrox/security/ferrox-sentinel) Middleware in Rust
 
 ```rust
 use ferrox_sentinel::{SentinelEngine, SentinelOptions, CspDirective};

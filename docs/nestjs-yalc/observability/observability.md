@@ -4,7 +4,7 @@ title: "@nest-yalc-2/observability"
 sidebar_position: 5
 ---
 
-# 🔭 OpenTelemetry & Sentry Observability (`@nest-yalc-2/observability`)
+# 🔭 OpenTelemetry & Sentry [Observability](/docs/nestjs-yalc/observability/observability) (`@nest-yalc-2/observability`)
 
 `@nest-yalc-2/observability` provides enterprise distributed tracing, metrics collection, and exception tracking for NestJS 11+. It integrates **OpenTelemetry OTLP exporters**, **Prometheus metric collectors**, and **Sentry error reporting** into a unified NestJS module.
 
@@ -54,7 +54,7 @@ flowchart TD
 
 ## 🚀 Practical Usage & Production Code Examples
 
-### 1. Initializing Observability Module in `main.ts` & `AppModule`
+### 1. Initializing [Observability](/docs/nestjs-yalc/observability/observability) Module in `main.ts` & `AppModule`
 
 ```typescript
 import { YalcObservabilityModule, initOpenTelemetrySDK } from '@nest-yalc-2/observability';

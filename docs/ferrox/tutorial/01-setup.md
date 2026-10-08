@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome to the Ferrox Zero-to-Hero Tutorial.
 
-In this tutorial, we will build a complete **Ticketing / Task Management** system. We won't just write a "Hello World". We will build a production-ready microservice with in-memory state, JWT Security, DTO Validation, and automatic TypeScript Client generation.
+In this tutorial, we will build a complete **Ticketing / Task Management** system. We won't just write a "Hello World". We will build a production-ready microservice with in-memory state, JWT Security, DTO [Validation](/docs/ferrox/abstractions/validation), and automatic TypeScript Client generation.
 
 ## 1. Installation
 

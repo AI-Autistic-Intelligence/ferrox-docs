@@ -81,8 +81,8 @@ export class Product {
 
 ## ⚠️ 6. Anti-Patterns: How NOT to Use It
 
-1. ❌ **DO NOT expose all CRUD routes on sensitive entities without Auth Guards**: Enabling `deleteOne` or `updateOne` without applying `@UseGuards()` exposes public data mutation endpoints.
-2. ❌ **DO NOT use `crud-gen` for complex business workflows requiring Sagas**: For operations involving payment providers or multi-step sagas, write a custom Controller/Resolver instead of standard CRUD logic.
+1. ❌ **DO NOT expose all CRUD routes on sensitive entities without Auth [Guards](/docs/ferrox/abstractions/guards)**: Enabling `deleteOne` or `updateOne` without applying `@UseGuards()` exposes public data mutation endpoints.
+2. ❌ **DO NOT use `crud-gen` for complex business workflows requiring [Sagas](/docs/ferrox/architectures/sagas)**: For operations involving payment providers or multi-step sagas, write a custom Controller/Resolver instead of standard CRUD logic.
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 id: singleflight
-title: Singleflight Request Deduplication & Cache Stampede Shield
+title: [Singleflight](/docs/ferrox/security/singleflight) Request Deduplication & Cache Stampede Shield
 sidebar_position: 7
 ---
 
-# Singleflight Request Deduplication & Cache Stampede Shield
+# [Singleflight](/docs/ferrox/security/singleflight) Request Deduplication & Cache Stampede Shield
 
 The `singleflight` security module delivers lock-free, concurrent request deduplication for Rust microservices (`ferrox-singleflight`). It prevents thundering herd cache stampedes by executing concurrent duplicate work items exactly once.
 
@@ -45,14 +45,14 @@ When a popular cached database key expires (or a high-traffic endpoint experienc
 
 ## 3. How It Works Under the Hood
 
-### Singleflight Execution Sequence
+### [Singleflight](/docs/ferrox/security/singleflight) Execution Sequence
 
 ```mermaid
 sequenceDiagram
     autonumber
     participant Req1 as Request Thread 1
     participant Req2 as Request Thread 2
-    participant Group as Singleflight Group
+    participant Group as [Singleflight](/docs/ferrox/security/singleflight) Group
     participant DB as SeaORM Database Query
 
     Req1->>Group: Group.work("user_100", async || fetch_db("user_100"))
@@ -121,5 +121,5 @@ impl UserRepository {
 ## 7. Pro-Tips & Best Practices
 
 > [!TIP]
-> **Pro-Tip 1: Combining Singleflight with Cache Writes**
+> **Pro-Tip 1: Combining [Singleflight](/docs/ferrox/security/singleflight) with Cache Writes**
 > Inside your singleflight closure, write the fetched data to your Redis cache *before* returning the result, ensuring subsequent requests hit Redis directly.

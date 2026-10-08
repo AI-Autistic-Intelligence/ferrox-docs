@@ -34,10 +34,10 @@ The `AbstractRepository` is responsible for enterprise-grade execution of operat
 The `RepositoryInterface` is responsible for enterprise-grade execution of operations within `ferrox-php-database-core/src/RepositoryInterface.php`.
 
 - **`findById(PublicId|int|string $id) : ?object`**
-  - Queries the persistence layer securely to retrieve entities matching the `findById` criteria, utilizing Singleflight to prevent cache stampedes.
+  - Queries the persistence layer securely to retrieve entities matching the `findById` criteria, utilizing [Singleflight](/docs/ferrox-php/performance/singleflight) to prevent cache stampedes.
 
 - **`findAll(PageRequest $request) : PageResult`**
-  - Queries the persistence layer securely to retrieve entities matching the `findAll` criteria, utilizing Singleflight to prevent cache stampedes.
+  - Queries the persistence layer securely to retrieve entities matching the `findAll` criteria, utilizing [Singleflight](/docs/ferrox-php/performance/singleflight) to prevent cache stampedes.
 
 - **`save(object $entity) : void`**
   - Persists the domain entity to the database strictly within a transactional Unit of Work boundary.

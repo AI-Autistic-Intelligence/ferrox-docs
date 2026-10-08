@@ -12,7 +12,7 @@ This component is for backend developers who need reliable, scalable database co
 ## 4. Architecture (How does it work?)
 - **SQL (SQLAlchemy)**: Native integration with asynchronous SQLAlchemy V2. It provides a Singleton Async Engine, transparent session lifecycle management (often tied to the request lifecycle), and an abstract `BaseRepository` with standard CRUD methods.
 - **NoSQL (MongoDB)**: An optimized wrapper over `motor` (asynchronous PyMongo). It supports native serialization and deserialization between Pydantic models and BSON, along with async queries.
-- **Caching & Idempotency (Redis)**: Integrated wrapper for distributed locks (Singleflight), rate limiting, caching, and state machines.
+- **Caching & Idempotency (Redis)**: Integrated wrapper for distributed locks ([Singleflight](/docs/ferrox-py/concurrency/singleflight)), rate limiting, caching, and state machines.
 - **Migrations**: Unified migration management integrating Alembic behind the scenes, allowing programmatic schema upgrades during the `FerroxApp` boot sequence.
 
 ## 5. Installation / Setup
@@ -47,4 +47,4 @@ class SqlUserRepository(BaseRepository):
 ```
 
 ## 7. Ecosystem Integration
-The Data Component is universally utilized. It provides the foundation for the **AuthModule** (storing users and RBAC roles), the **Commerce** ecosystem (maintaining strict idempotency using Redis and transactional SQL for orders), and integrates with the **Core IoC** for injecting valid database sessions into the CQRS Command Handlers.
+The Data Component is universally utilized. It provides the foundation for the **AuthModule** (storing users and RBAC roles), the **Commerce** ecosystem (maintaining strict idempotency using Redis and transactional SQL for orders), and integrates with the **Core IoC** for injecting valid database sessions into the [CQRS](/docs/ferrox-py/architectures/cqrs) Command Handlers.

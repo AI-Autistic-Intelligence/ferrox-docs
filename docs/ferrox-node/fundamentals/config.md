@@ -1,10 +1,10 @@
 ---
 id: config
-title: Dynamic Configuration Engine & Validation Schemas
+title: Dynamic Configuration Engine & [Validation](/docs/ferrox/abstractions/validation) Schemas
 sidebar_position: 2
 ---
 
-# Dynamic Configuration Engine & Validation Schemas
+# Dynamic Configuration Engine & [Validation](/docs/ferrox/abstractions/validation) Schemas
 
 The `@ferrox/node` config module provides environment variable parsing, YAML / JSON configuration file loading, runtime schema validation (via Zod / Joi), secrets manager integration (AWS Secrets Manager / Vault), and hot-reloading settings managers.
 
@@ -36,7 +36,7 @@ The `ConfigEngine` in Ferrox Node guarantees environment configuration integrity
 
 ## 2. What It Does & Key Capabilities
 
-- **Fail-Fast Startup Validation**: Halts application bootstrap immediately with descriptive error logs if required variables are missing or malformed.
+- **Fail-Fast Startup [Validation](/docs/ferrox/abstractions/validation)**: Halts application bootstrap immediately with descriptive error logs if required variables are missing or malformed.
 - **Multi-Source Layering**: Merges environment variables (`process.env`), local `.env` files, YAML configuration files, and remote Cloud Secrets Managers.
 - **Strongly Typed Accessors**: Provides `config.get('database.port')` with full TypeScript type inferencing.
 - **Sensitive Key Redaction**: Prevents sensitive keys (passwords, JWT secrets, API tokens) from leaking in log files or debug outputs.
@@ -45,7 +45,7 @@ The `ConfigEngine` in Ferrox Node guarantees environment configuration integrity
 
 ## 3. How It Works Under the Hood
 
-### Configuration Loading & Validation Sequence
+### Configuration Loading & [Validation](/docs/ferrox/abstractions/validation) Sequence
 
 ```mermaid
 sequenceDiagram
@@ -60,10 +60,10 @@ sequenceDiagram
     Config->>Vault: Fetch Dynamic Secrets ('prod/db/secret')
     Vault-->>Config: Return Encrypted Credentials
     Config->>Schema: Validate Merged Config Object against Schema
-    alt Validation Succeeded
+    alt [Validation](/docs/ferrox/abstractions/validation) Succeeded
         Schema-->>Config: Clean Validated Config Object
         Config-->>App: Strongly Typed ConfigInstance
-    else Validation Failed
+    else [Validation](/docs/ferrox/abstractions/validation) Failed
         Schema-->>Config: Throw ValidationException (Missing Required Vars)
         Config-->>App: Halt Application Bootstrap (Exit Code 1)
     end

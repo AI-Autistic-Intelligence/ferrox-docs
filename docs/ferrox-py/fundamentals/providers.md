@@ -38,4 +38,4 @@ class NotificationService:
 ```
 
 ## 7. Ecosystem Integration
-Providers are intrinsically linked to **Modules**. A Provider is only active if it is registered in the `providers` array of a `@module`. They are also the fundamental building blocks consumed by the **CQRS Command Handlers** and the **Controller Layer** to execute actual domain logic.
+Providers are intrinsically linked to **Modules**. A Provider is only active if it is registered in the `providers` array of a `@module`. They are also the fundamental building blocks consumed by the **[CQRS](/docs/ferrox-py/architectures/cqrs) Command Handlers** and the **Controller Layer** to execute actual domain logic.

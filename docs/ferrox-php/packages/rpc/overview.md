@@ -36,4 +36,4 @@ $container->singleton(ExampleComponent::class, fn() => new ExampleComponent());
 ```
 
 ## 7. Ecosystem Integration
-The concepts described in this architectural overview integrate closely with every other component in the ferrox-php ecosystem. `ferrox-php-rpc` interacts natively with the Dependency Injection container, the Singleflight components, and the Security guards to form a highly resilient application core.
+The concepts described in this architectural overview integrate closely with every other component in the ferrox-php ecosystem. `ferrox-php-rpc` interacts natively with the Dependency Injection container, the [Singleflight](/docs/ferrox-php/performance/singleflight) components, and the Security guards to form a highly resilient application core.

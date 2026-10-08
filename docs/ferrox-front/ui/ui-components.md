@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # 🎨 Glassmorphism Design System & UI Components (`ferrox-front-ui`)
 
-`ferrox-front-ui` provides a complete, enterprise-grade **Glassmorphism Design System** for WebAssembly applications. It includes **Design Tokens**, a **12-column responsive layout grid**, a **Virtualized DataGrid** (1,000,000+ rows), and a comprehensive library of pre-styled UI components.
+`ferrox-front-ui` provides a complete, enterprise-grade **Glassmorphism Design System** for WebAssembly applications. It includes **Design Tokens**, a **12-column responsive layout grid**, a **Virtualized [DataGrid](/docs/ferrox/transports/datagrid)** (1,000,000+ rows), and a comprehensive library of pre-styled UI components.
 
 ---
 
@@ -109,7 +109,7 @@ let user_avatar = avatar("SC");
 
 ---
 
-## 📊 Virtualized DataGrid (`virtual_data_grid`)
+## 📊 Virtualized [DataGrid](/docs/ferrox/transports/datagrid) (`virtual_data_grid`)
 
 `virtual_data_grid` mounts only visible viewport rows into the DOM, maintaining 60fps scrolling performance even with 1,000,000 data rows.
 

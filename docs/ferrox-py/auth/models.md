@@ -41,4 +41,4 @@ print(new_user.model_dump_json())
 ```
 
 ## 7. Ecosystem Integration
-These models are utilized by the **Validation Pipes** (Layer 5) to validate incoming request bodies containing user data. They are also intrinsically linked to the **Data Component**, where they act as the primary interface between the `AuthService` and the database repository.
+These models are utilized by the **[Validation](/docs/ferrox/abstractions/validation) [Pipes](/docs/ferrox-py/abstractions/pipes-interceptors)** (Layer 5) to validate incoming request bodies containing user data. They are also intrinsically linked to the **Data Component**, where they act as the primary interface between the `AuthService` and the database repository.

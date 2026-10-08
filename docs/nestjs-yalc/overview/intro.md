@@ -20,7 +20,7 @@ NestJS is an exceptional framework for structuring enterprise backend applicatio
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                                   YOUR ENTERPRISE APP                                  │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  AG-Grid  │  CRUD-Gen  │  Audit Log  │  Sentinel Sec  │  Kafka Bus  │  GraphQL DataLoader │
+│  AG-Grid  │  CRUD-Gen  │  Audit Log  │  [Sentinel](/docs/nestjs-yalc/security/sentinel) Sec  │  Kafka Bus  │  GraphQL DataLoader │
 ├───────────┴────────────┴─────────────┴────────────────┴─────────────┴────────────────────┤
 │                                    NESTJS-YALC KERNEL                                  │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
@@ -72,7 +72,7 @@ Built on top of Fastify, Pino, and native SQL query building, NestJS-YALC introd
 ```mermaid
 sequenceDiagram
     autonumber
-    participant Gateway as Sentinel Gateway
+    participant Gateway as [Sentinel](/docs/nestjs-yalc/security/sentinel) Gateway
     participant App as YalcAppModule
     participant Controller as CRUD Controller
     participant Audit as Audit Middleware

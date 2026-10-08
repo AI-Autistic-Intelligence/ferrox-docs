@@ -94,4 +94,4 @@ applySecuritySandboxing().catch(console.error);
 ## 💡 7. Pro-Tips & Best Practices
 
 > [!TIP]
-> **Production Hardening**: Combine `KernelSandboxService` with `SentinelIntegrationService` to achieve double-layer protection: Sentinel isolates HTTP payload threats while KernelSandbox stops OS system exploits.
+> **Production Hardening**: Combine `KernelSandboxService` with `SentinelIntegrationService` to achieve double-layer protection: [Sentinel](/docs/ferrox/security/ferrox-sentinel) isolates HTTP payload threats while KernelSandbox stops OS system exploits.

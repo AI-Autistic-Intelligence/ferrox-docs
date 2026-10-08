@@ -42,7 +42,7 @@ flowchart TD
 
 | Feature / Dimension | 📬 `@nest-yalc-2/kafka` | 🐢 NestJS Microservice Kafka Transport |
 |---|---|---|
-| **Confluent Schema Registry** | **Native Avro / JSON Schema Validation** | Not Supported (Raw Unvalidated JSON) |
+| **Confluent Schema Registry** | **Native Avro / JSON Schema [Validation](/docs/ferrox/abstractions/validation)** | Not Supported (Raw Unvalidated JSON) |
 | **Dead Letter Queue (DLQ)** | **Automated DLQ Router on Failures** | Manual Error Catching & Routing |
 | **Trace Correlation** | **Automatic W3C Trace Parent Header Injection** | Manual Header Parsing |
 

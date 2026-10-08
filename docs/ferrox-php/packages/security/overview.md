@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## 1. Overview (What does this do?)
 The `ferrox-php-security` component is an essential part of the robust backend development framework, centered around the 7-Layer Onion Request Pipeline. It adapts the stringent, enterprise-grade conventions established by the original Ferrox ecosystem specifically for PHP 8.3+. 
-Zero-trust security layer including PASETO v4 Auth and Sentinel Threat Engine.
+Zero-trust security layer including PASETO v4 Auth and [Sentinel](/docs/ferrox-php/security/sentinel-engine) Threat Engine.
 
 ## 2. Philosophy (Why does it exist?)
 The overarching philosophy of `ferrox-php-security` is zero-trust security and maximum decoupling. It exists to solve the common issue of unmaintainable, tightly coupled backend monoliths in standard PHP applications. By enforcing strict boundaries, it prevents developers from taking shortcuts that would compromise the system architecture.
@@ -36,4 +36,4 @@ $container->singleton(ExampleComponent::class, fn() => new ExampleComponent());
 ```
 
 ## 7. Ecosystem Integration
-The concepts described in this architectural overview integrate closely with every other component in the ferrox-php ecosystem. `ferrox-php-security` interacts natively with the Dependency Injection container, the Singleflight components, and the Security guards to form a highly resilient application core.
+The concepts described in this architectural overview integrate closely with every other component in the ferrox-php ecosystem. `ferrox-php-security` interacts natively with the Dependency Injection container, the [Singleflight](/docs/ferrox-php/performance/singleflight) components, and the Security guards to form a highly resilient application core.

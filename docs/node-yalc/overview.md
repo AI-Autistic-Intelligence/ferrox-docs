@@ -26,6 +26,6 @@ It is designed to be:
 
 ## Integration with NestJS-YALC
 
-In a typical enterprise setup, `node-yalc` is included as a Git Submodule within the [`nestjs-yalc`](/docs/nestjs-yalc/overview) repository. [`nestjs-yalc`](/docs/nestjs-yalc/overview) then provides the "glue" (Interceptors, Providers, Dynamic Modules) to inject these pure Node.js constructs into the NestJS lifecycle.
+In a typical enterprise setup, `node-yalc` is included as a Git Submodule within the [`nestjs-yalc`](/docs/nestjs-yalc/overview) repository. [`nestjs-yalc`](/docs/nestjs-yalc/overview) then provides the "glue" ([Interceptors](/docs/ferrox/fundamentals/interceptors), Providers, Dynamic Modules) to inject these pure Node.js constructs into the NestJS lifecycle.
 
 For example, a `BadRequestError` thrown from a pure domain function (using `node-yalc`) is automatically caught by the `YalcExceptionFilter` (in [`nestjs-yalc`](/docs/nestjs-yalc/overview)) and transformed into a standardized HTTP 400 response.

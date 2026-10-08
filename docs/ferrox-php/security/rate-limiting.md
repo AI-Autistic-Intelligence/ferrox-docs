@@ -1,9 +1,9 @@
 ---
 id: rate-limiting
-title: Rate Limiting
+title: [Rate Limiting](/docs/ferrox-php/security/rate-limiting)
 ---
 
-# Rate Limiting
+# [Rate Limiting](/docs/ferrox-php/security/rate-limiting)
 
 ## 1. Philosophy / Purpose
 Distributed Redis token buckets... The purpose of this component is to ensure enterprise-grade stability and zero-trust security in Ferrox PHP. It strictly rejects the legacy paradigms of standard PHP (like global state and silent failures) in favor of deterministic, compile-time-like safety.

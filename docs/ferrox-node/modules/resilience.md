@@ -39,11 +39,11 @@ if (limiter.allowRequest(1)) {
 }
 ```
 
-### 3. Singleflight (Promise Coalescing)
-A defense against the "Thundering Herd" problem. If a cache expires and 1,000 concurrent requests suddenly hit your endpoint asking for the exact same expensive database query, `Singleflight` ensures only *one* database query executes. The other 999 requests simply wait for that single promise to resolve and share the result.
+### 3. [Singleflight](/docs/ferrox/security/singleflight) (Promise Coalescing)
+A defense against the "Thundering Herd" problem. If a cache expires and 1,000 concurrent requests suddenly hit your endpoint asking for the exact same expensive database query, `[Singleflight](/docs/ferrox/security/singleflight)` ensures only *one* database query executes. The other 999 requests simply wait for that single promise to resolve and share the result.
 
 ```typescript
-import { Singleflight } from '@node-yalc/resilience';
+import { [Singleflight](/docs/ferrox/security/singleflight) } from '@node-yalc/resilience';
 
 const flight = new Singleflight();
 

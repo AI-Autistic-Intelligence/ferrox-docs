@@ -1,6 +1,6 @@
-# CQRS Module (`node-yalc/cqrs`)
+# [CQRS](/docs/ferrox-node/modules/cqrs) Module (`node-yalc/cqrs`)
 
-The CQRS module implements the Command Query Responsibility Segregation (CQRS) architectural pattern alongside Distributed Sagas for the Ferrox-Node framework. It provides the building blocks for creating highly scalable, decoupled microservices.
+The [CQRS](/docs/ferrox-node/modules/cqrs) module implements the Command Query Responsibility Segregation ([CQRS](/docs/ferrox-node/modules/cqrs)) architectural pattern alongside Distributed [Sagas](/docs/ferrox/architectures/sagas) for the Ferrox-Node framework. It provides the building blocks for creating highly scalable, decoupled microservices.
 
 ## Overview
 

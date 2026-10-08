@@ -14,10 +14,10 @@ By isolating `Concurrency` into its own distinct submodule, Ferrox enforces the 
 ## 3. API & Function Reference
 Below is the highly detailed documentation extracted and inferred directly from the codebase for every path, class, and single function within the `Concurrency` submodule:
 
-### Path: `ferrox-php-data/src/Concurrency/Singleflight.php`
+### Path: `ferrox-php-data/src/Concurrency/[Singleflight](/docs/ferrox-php/performance/singleflight).php`
 
-#### Class / Interface: `Singleflight`
-The `Singleflight` is responsible for enterprise-grade execution of operations within `ferrox-php-data/src/Concurrency/Singleflight.php`.
+#### Class / Interface: `[Singleflight](/docs/ferrox-php/performance/singleflight)`
+The `[Singleflight](/docs/ferrox-php/performance/singleflight)` is responsible for enterprise-grade execution of operations within `ferrox-php-data/src/Concurrency/[Singleflight](/docs/ferrox-php/performance/singleflight).php`.
 
 - **`work(string $key, Closure $callback) : mixed`**
   - @var array&lt;string, mixed&gt; Active requests currently in flight. / private array $flights = []; /** Executes the given closure. If multiple concurrent requests call this method with the same key, only the first one will execute the closure. The others will wait via Swoole Coroutine Channels and receive the same result, dramatically reducing database or API load.

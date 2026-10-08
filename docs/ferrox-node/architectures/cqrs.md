@@ -1,13 +1,13 @@
 ---
 id: cqrs
-title: CQRS & Event Sourcing
+title: [CQRS](/docs/ferrox-node/modules/cqrs) & Event Sourcing
 sidebar_position: 3
 ---
 
-# 📡 CQRS & Event Sourcing (`@ferrox-node/cqrs`)
+# 📡 [CQRS](/docs/ferrox-node/modules/cqrs) & Event Sourcing (`@ferrox-node/cqrs`)
 
 ## 💡 1. What It Is & Architectural Purpose
-CQRS (Command Query Responsibility Segregation) is an architectural pattern that separates read operations (Queries) from write operations (Commands). The `@ferrox-node/cqrs` module provides a native, highly-optimized message bus to implement this pattern. Its architectural purpose is to allow independent scaling, caching, and optimization of the Read and Write models in highly complex domains.
+[CQRS](/docs/ferrox-node/modules/cqrs) (Command Query Responsibility Segregation) is an architectural pattern that separates read operations (Queries) from write operations (Commands). The `@ferrox-node/cqrs` module provides a native, highly-optimized message bus to implement this pattern. Its architectural purpose is to allow independent scaling, caching, and optimization of the Read and Write models in highly complex domains.
 
 ---
 
@@ -50,7 +50,7 @@ Commands mutate state in a highly normalized relational database. The resulting 
 
 ## 🧠 4. Why It Was Designed This Way (Rationale)
 
-In a traditional CRUD system, the same database schema is used for both writes and reads. As the system scales, complex SQL JOINs for dashboards become the bottleneck. CQRS solves this by decoupling the models. `@ferrox-node/cqrs` provides the routing infrastructure entirely in-memory using RxJS, achieving sub-millisecond dispatch times compared to generic pub/sub systems.
+In a traditional CRUD system, the same database schema is used for both writes and reads. As the system scales, complex SQL JOINs for dashboards become the bottleneck. [CQRS](/docs/ferrox-node/modules/cqrs) solves this by decoupling the models. `@ferrox-node/cqrs` provides the routing infrastructure entirely in-memory using RxJS, achieving sub-millisecond dispatch times compared to generic pub/sub systems.
 
 ---
 
@@ -92,8 +92,8 @@ export class TransferFundsHandler implements ICommandHandler<TransferFundsComman
 > A Command should return `void` or a simple ID. Do not return rich domain objects or query results from a Command Handler. If you need data, issue a Query after the Command.
 
 > [!CAUTION]
-> **Anti-Pattern 2: Overusing CQRS**
-> Do not use CQRS for simple CRUD applications. The boilerplate outweighs the benefits. Use it only for bounded contexts with complex business rules or extreme scalability needs.
+> **Anti-Pattern 2: Overusing [CQRS](/docs/ferrox-node/modules/cqrs)**
+> Do not use [CQRS](/docs/ferrox-node/modules/cqrs) for simple CRUD applications. The boilerplate outweighs the benefits. Use it only for bounded contexts with complex business rules or extreme scalability needs.
 
 ---
 

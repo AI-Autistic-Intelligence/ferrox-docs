@@ -11,13 +11,13 @@ This component is essential for security engineers, system architects, and devel
 
 ## 4. Architecture (How does it work?)
 - **Moving Target Defense (MTD) & Sanitization**: HTTP responses are sanitized (e.g., stripping `X-Powered-By`) and armed with strict HSTS and CSP headers by default.
-- **Distributed Rate Limiting**: Built on top of Redis using a sliding window token bucket algorithm to mitigate DDoS and brute-force attacks by limiting requests per IP or API Key.
-- **Advanced Auth (PASETO/JWT)**: The Auth Guards securely extract, verify, and decode Platform-Agnostic Security Tokens (PASETO) or standard JWTs before the request reaches the controller.
+- **Distributed [Rate Limiting](/docs/ferrox-py/security/rate-limiting)**: Built on top of Redis using a sliding window token bucket algorithm to mitigate DDoS and brute-force attacks by limiting requests per IP or API Key.
+- **Advanced Auth (PASETO/JWT)**: The Auth [Guards](/docs/ferrox/abstractions/guards) securely extract, verify, and decode Platform-Agnostic Security Tokens (PASETO) or standard JWTs before the request reaches the controller.
 - **Self-Auditing (WSTG Auditor)**: The `SecuritySelfTest` class allows the application to audit its own environment upon booting (e.g., checking file permissions, TLS configurations, and secret entropy).
 - **Distributed Locks**: Utilizes Redis (Redlock algorithm) to prevent race conditions in clustered environments.
 
 ## 5. Installation / Setup
-Security abstractions are built-in, but to utilize distributed features like Rate Limiting and Redlock, a Redis server and the corresponding python driver are required. PASETO support requires external cryptographic libraries.
+Security abstractions are built-in, but to utilize distributed features like [Rate Limiting](/docs/ferrox-py/security/rate-limiting) and Redlock, a Redis server and the corresponding python driver are required. PASETO support requires external cryptographic libraries.
 
 ```bash
 pip install redis pyseto
@@ -43,4 +43,4 @@ def recharge_wallet(redis_client, user_id: int):
 ```
 
 ## 7. Ecosystem Integration
-The Security module is the absolute core of the **7-Layer Request Pipeline**, specifically managing Layers 1 (Security Headers), 2 (Rate Limiting), 3 (Sentinel Threat Engine), and 4 (Auth Guards). It relies on the **Data Component** (specifically the Redis wrappers) to maintain distributed state for rate limiters and locks.
+The Security module is the absolute core of the **7-Layer Request Pipeline**, specifically managing Layers 1 (Security Headers), 2 ([Rate Limiting](/docs/ferrox-py/security/rate-limiting)), 3 ([Sentinel](/docs/ferrox-py/security/sentinel-algorithms) Threat Engine), and 4 (Auth [Guards](/docs/ferrox/abstractions/guards)). It relies on the **Data Component** (specifically the Redis wrappers) to maintain distributed state for rate limiters and locks.

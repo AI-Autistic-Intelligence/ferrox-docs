@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# 🛡️ Guards (Authorization)
+# 🛡️ [Guards](/docs/ferrox/abstractions/guards) (Authorization)
 
-Guards have a single responsibility: they determine whether a given request will be handled by the route handler or not, depending on certain conditions (like permissions, roles, ACLs, etc.) present at run-time.
+[Guards](/docs/ferrox/abstractions/guards) have a single responsibility: they determine whether a given request will be handled by the route handler or not, depending on certain conditions (like permissions, roles, ACLs, etc.) present at run-time.
 
-In Ferrox, Guards are evaluated right after Middlewares but *before* Pipes and Controllers.
+In Ferrox, [Guards](/docs/ferrox/abstractions/guards) are evaluated right after [Middlewares](/docs/ferrox/fundamentals/middlewares) but *before* [Pipes](/docs/ferrox/abstractions/pipes) and Controllers.
 
 ## High-Level Example
 
@@ -22,7 +22,7 @@ async fn delete_database(
 ) -> Json<&'static str> {
     
     if auth.role != Role::Admin {
-        // You can also handle it manually, but Ferrox Security Middlewares 
+        // You can also handle it manually, but Ferrox Security [Middlewares](/docs/ferrox/fundamentals/middlewares) 
         // usually prevent the request from even reaching this point.
         return Json("Nice try.");
     }
@@ -35,7 +35,7 @@ async fn delete_database(
 
 Under the hood, a Guard in Ferrox is simply an implementation of the `FromRequestParts` trait in Axum.
 
-Unlike `FromRequest` (which consumes the request body, like a JSON Pipe), `FromRequestParts` only looks at the HTTP Headers (like the `Authorization` header). This means multiple Guards can be chained sequentially.
+Unlike `FromRequest` (which consumes the request body, like a JSON Pipe), `FromRequestParts` only looks at the HTTP Headers (like the `Authorization` header). This means multiple [Guards](/docs/ferrox/abstractions/guards) can be chained sequentially.
 
 If a Guard fails (e.g., the JWT signature is invalid), it returns a `ferrox_errors::AppError::Unauthorized`. Because of Ferrox's early-return architecture, the TCP connection is immediately answered with a 401/403 status code, saving database connections and memory.
 \n\n---\n\n## 1. Philosophy / Purpose\n\n*Document the philosophy and core purpose of this component here.*\n\n## 2. Architectural Layering\n\n*Explain where this component sits within the Onion Architecture (e.g., Domain, Application, Infrastructure, or Presentation).* \n\n## 4. Why it was designed this way\n\n*Explain the historical context, trade-offs, and design rationale.*\n\n## 6. Anti-Patterns\n\n*List common mistakes, misconfigurations, and patterns to avoid when using this component.*\n\n## 7. Pro-Tips / Best Practices\n\n*Provide advanced tips, performance optimizations, and recommended patterns.*

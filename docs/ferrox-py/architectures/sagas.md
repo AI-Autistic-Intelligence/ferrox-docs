@@ -54,4 +54,4 @@ async def run_saga():
 ```
 
 ## 7. Ecosystem Integration
-The Saga Orchestrator perfectly pairs with the **CQRS** (Command Query Responsibility Segregation) module. Typically, a Command Handler will instantiate a Saga to perform multi-step data mutations. Furthermore, the orchestrator utilizes the **Observability** suite (Tracing) to ensure that if a compensation occurs, the entire timeline is clearly visible in Grafana or Jaeger.
+The Saga Orchestrator perfectly pairs with the **[CQRS](/docs/ferrox-py/architectures/cqrs)** (Command Query Responsibility Segregation) module. Typically, a Command Handler will instantiate a Saga to perform multi-step data mutations. Furthermore, the orchestrator utilizes the **[Observability](/docs/ferrox-py/observability/observability)** suite (Tracing) to ensure that if a compensation occurs, the entire timeline is clearly visible in Grafana or Jaeger.

@@ -44,4 +44,4 @@ async def main():
 ```
 
 ## 7. Ecosystem Integration
-The Circuit Breaker integrates deeply with the **Integration Connectors** found in `ferrox-py-utils`. Specifically, the `@connector_policy` decorator automatically wraps outbound I/O in a Circuit Breaker logic block. It also alerts the **Observability** suite, logging critical warnings when a circuit opens so DevOps engineers are immediately notified of external degradation.
+The Circuit Breaker integrates deeply with the **Integration Connectors** found in `ferrox-py-utils`. Specifically, the `@connector_policy` decorator automatically wraps outbound I/O in a Circuit Breaker logic block. It also alerts the **[Observability](/docs/ferrox-py/observability/observability)** suite, logging critical warnings when a circuit opens so DevOps engineers are immediately notified of external degradation.

@@ -11,7 +11,7 @@ This component is vital for Data Engineers who manage data lakes or data warehou
 
 ## 4. Architecture (How does it work?)
 - **Registration**: At application boot, developers map string names (e.g., `"user_import"`) to corresponding Pydantic schemas.
-- **Validation**: During a pipeline execution, a transformation step can invoke `SchemaRegistry.validate("user_import", raw_dict)`. The registry locates the schema and processes the dictionary.
+- **[Validation](/docs/ferrox/abstractions/validation)**: During a pipeline execution, a transformation step can invoke `SchemaRegistry.validate("user_import", raw_dict)`. The registry locates the schema and processes the dictionary.
 - **Error Handling**: If the raw data violates the schema (e.g., a missing required field or wrong data type), Pydantic raises a detailed validation error, allowing the orchestrator to log the specific malformed row and continue or halt appropriately.
 
 ## 5. Installation / Setup
@@ -44,4 +44,4 @@ print(type(valid_user.id))  # <class 'int'>
 ```
 
 ## 7. Ecosystem Integration
-The Schema Registry serves the exact same purpose in the Data Engineering layer as the **Validation Pipe** (Layer 5) serves in the Web/HTTP layer of the core `ferrox-py` framework. It ensures that the **CQRS Bus** and **Data Repositories** only ever interact with strongly-typed, predictable Domain Objects.
+The Schema Registry serves the exact same purpose in the Data Engineering layer as the **[Validation](/docs/ferrox/abstractions/validation) Pipe** (Layer 5) serves in the Web/HTTP layer of the core `ferrox-py` framework. It ensures that the **[CQRS](/docs/ferrox-py/architectures/cqrs) Bus** and **Data Repositories** only ever interact with strongly-typed, predictable Domain Objects.

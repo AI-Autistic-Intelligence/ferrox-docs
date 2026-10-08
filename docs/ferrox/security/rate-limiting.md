@@ -1,10 +1,10 @@
 ---
 id: rate-limiting
-title: Rate Limiting Engine, Leaky Bucket & Sliding Window Log
+title: [Rate Limiting](/docs/ferrox/security/rate-limiting) Engine, Leaky Bucket & Sliding Window Log
 sidebar_position: 5
 ---
 
-# Rate Limiting Engine, Leaky Bucket & Sliding Window Log
+# [Rate Limiting](/docs/ferrox/security/rate-limiting) Engine, Leaky Bucket & Sliding Window Log
 
 The `rate-limiting` security module delivers distributed rate-limiting and traffic shaping for Rust web applications (`ferrox-rate-limiter`). It features Sliding Window Log, Token Bucket, and Leaky Bucket algorithms backed by atomic Redis operations.
 
@@ -76,7 +76,7 @@ sequenceDiagram
 
 ## 5. Practical Usage Guide & Extended Code Examples
 
-### 5.1 Applying Rate Limiting to Endpoints
+### 5.1 Applying [Rate Limiting](/docs/ferrox/security/rate-limiting) to Endpoints
 
 ```rust
 use ferrox_rate_limiter::{RateLimiter, RateLimitConfig, Algorithm};
@@ -117,5 +117,5 @@ pub async fn protect_login_endpoint(
 ## 7. Pro-Tips & Best Practices
 
 > [!TIP]
-> **Pro-Tip 1: Tiered Rate Limiting**
+> **Pro-Tip 1: Tiered [Rate Limiting](/docs/ferrox/security/rate-limiting)**
 > Configure higher rate limits for authenticated premium users (`10,000 req/min`) versus unauthenticated guest traffic (`60 req/min`).

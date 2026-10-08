@@ -1,7 +1,7 @@
-# CQRS, Events, and Sagas Component
+# [CQRS](/docs/ferrox-py/architectures/cqrs), Events, and [Sagas](/docs/ferrox-py/architectures/sagas) Component
 
 ## 1. Overview (What does this do?)
-The CQRS (Command Query Responsibility Segregation) component provides integrated patterns for separating read operations (Queries) from write operations (Commands). It also provides an Event Dispatcher for Event-Driven Architectures and supports Sagas for managing distributed transactions across multiple microservices or database boundaries.
+The [CQRS](/docs/ferrox-py/architectures/cqrs) (Command Query Responsibility Segregation) component provides integrated patterns for separating read operations (Queries) from write operations (Commands). It also provides an Event Dispatcher for Event-Driven Architectures and supports [Sagas](/docs/ferrox-py/architectures/sagas) for managing distributed transactions across multiple microservices or database boundaries.
 
 ## 2. Philosophy (Why does it exist?)
 In complex Enterprise architectures and microservices, having Controllers directly call Repositories to mutate state leads to tightly coupled, hard-to-maintain code. By forcing mutations through a Command Bus and reads through a Query Bus, `ferrox-py` enforces a clear separation of concerns. This allows read paths to be optimized (e.g., using caching or read replicas) entirely independently of the write paths, and enables reactive event-driven flows.
@@ -12,10 +12,10 @@ This component is designed for advanced architects and developers building compl
 ## 4. Architecture (How does it work?)
 - **Command/Query Bus**: Resolves incoming Commands/Queries to their registered Handlers.
 - **Event Dispatcher**: An in-memory Pub/Sub bus where Publishers emit Events (e.g., `PaymentCompleted`) and Subscribers asynchronously react to them. It is designed to be easily extensible to external message brokers like Redis Pub/Sub or RabbitMQ.
-- **Sagas**: A state machine engine that executes a sequence of local transactions. If one step fails, the Saga orchestrator automatically triggers compensating actions (rollbacks) for all previously successful steps.
+- **[Sagas](/docs/ferrox-py/architectures/sagas)**: A state machine engine that executes a sequence of local transactions. If one step fails, the Saga orchestrator automatically triggers compensating actions (rollbacks) for all previously successful steps.
 
 ## 5. Installation / Setup
-The in-memory CQRS and Event buses are included natively in `ferrox-py`. For distributed messaging (e.g., RabbitMQ or Redis), additional specific driver packages must be installed and configured within the IoC Container.
+The in-memory [CQRS](/docs/ferrox-py/architectures/cqrs) and Event buses are included natively in `ferrox-py`. For distributed messaging (e.g., RabbitMQ or Redis), additional specific driver packages must be installed and configured within the IoC Container.
 
 ## 6. Quickstart (Usage)
 ```python
@@ -44,4 +44,4 @@ result = bus.dispatch(CreateOrderCommand(item_id="12345"))
 ```
 
 ## 7. Ecosystem Integration
-CQRS integrates heavily with the **Data Component** (for actual persistence executed by the Handlers) and the **Pipes/Interceptors**. Specifically, a Validation Pipe is often attached to the Command Bus to ensure that every Command object is structurally valid before it ever reaches the Business Service layer.
+[CQRS](/docs/ferrox-py/architectures/cqrs) integrates heavily with the **Data Component** (for actual persistence executed by the Handlers) and the **[Pipes](/docs/ferrox-py/abstractions/pipes-interceptors)/[Interceptors](/docs/ferrox-py/abstractions/pipes-interceptors)**. Specifically, a [Validation](/docs/ferrox/abstractions/validation) Pipe is often attached to the Command Bus to ensure that every Command object is structurally valid before it ever reaches the Business Service layer.

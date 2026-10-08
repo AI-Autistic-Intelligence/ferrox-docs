@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# 🔄 Interceptors: Request Execution Pipeline
+# 🔄 [Interceptors](/docs/ferrox/fundamentals/interceptors): Request Execution Pipeline
 
-An **Interceptor** in Ferrox is a middle layer that wraps handler execution, inspired by NestJS Interceptors and Aspect-Oriented Programming (AOP). Interceptors allow you to inspect, transform, or log incoming HTTP requests and outgoing HTTP responses.
+An **Interceptor** in Ferrox is a middle layer that wraps handler execution, inspired by NestJS [Interceptors](/docs/ferrox/fundamentals/interceptors) and Aspect-Oriented Programming (AOP). [Interceptors](/docs/ferrox/fundamentals/interceptors) allow you to inspect, transform, or log incoming HTTP requests and outgoing HTTP responses.
 
 The `ferrox-interceptors` crate provides zero-cost middleware hooks for Axum routes.
 
@@ -12,7 +12,7 @@ The `ferrox-interceptors` crate provides zero-cost middleware hooks for Axum rou
 
 ## 1. Responsibilities of an Interceptor
 
-Interceptors excel at:
+[Interceptors](/docs/ferrox/fundamentals/interceptors) excel at:
 - **Execution Time Profiling**: Measuring microsecond request processing latency.
 - **Response Transformation**: Wrapping response bodies in standard JSON formats.
 - **Cache Interception**: Returning cached responses before executing route logic (`CacheInterceptor`).
@@ -106,7 +106,7 @@ pub async fn custom_header_interceptor(
 
 ## 5. ✅ Best Practices
 
-- **Use Interceptors for Cross-Cutting Concerns**: Keep controllers clean by moving timing, tracing headers, and compression into interceptors.
+- **Use [Interceptors](/docs/ferrox/fundamentals/interceptors) for Cross-Cutting Concerns**: Keep controllers clean by moving timing, tracing headers, and compression into interceptors.
 - **Order Layers Correctly**: Middleware layers evaluate in reverse order of addition in Axum. Place authentication guards before caching interceptors to prevent caching unauthorized responses.
 
 ---

@@ -1,9 +1,9 @@
 ---
 id: singleflight
-title: Circuit Breaker & Singleflight
+title: Circuit Breaker & [Singleflight](/docs/ferrox-php/performance/singleflight)
 ---
 
-# Circuit Breaker & Singleflight
+# Circuit Breaker & [Singleflight](/docs/ferrox-php/performance/singleflight)
 
 ## 1. Philosophy / Purpose
 Preventing Cache Stampedes natively... The purpose of this component is to ensure enterprise-grade stability and zero-trust security in Ferrox PHP. It strictly rejects the legacy paradigms of standard PHP (like global state and silent failures) in favor of deterministic, compile-time-like safety.

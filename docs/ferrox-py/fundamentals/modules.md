@@ -38,4 +38,4 @@ class UserModule:
 ```
 
 ## 7. Ecosystem Integration
-Modules are the glue that holds the entire framework together. For example, if you want to add Authentication to your app, you simply import the `AuthModule` from the `ferrox-py-auth` package into your root `AppModule`. The framework will automatically register its Auth Guards, JWT services, and Webhooks into your container.
+Modules are the glue that holds the entire framework together. For example, if you want to add Authentication to your app, you simply import the `AuthModule` from the `ferrox-py-auth` package into your root `AppModule`. The framework will automatically register its Auth [Guards](/docs/ferrox/abstractions/guards), JWT services, and [Webhooks](/docs/ferrox-py/transports/web) into your container.

@@ -1,10 +1,10 @@
-# Singleflight Concurrency
+# [Singleflight](/docs/ferrox-py/concurrency/singleflight) Concurrency
 
 ## 1. Overview (What does this do?)
-The `SingleflightManager` is a highly specialized concurrency utility designed to suppress duplicate function executions. When multiple identical requests are triggered at the exact same time (e.g., fetching the same database record), Singleflight intercepts them. It allows only the *first* request to actually execute the heavy I/O operation, while the subsequent identical requests simply wait. Once the first request finishes, its result is automatically shared with all waiting callers.
+The `SingleflightManager` is a highly specialized concurrency utility designed to suppress duplicate function executions. When multiple identical requests are triggered at the exact same time (e.g., fetching the same database record), [Singleflight](/docs/ferrox-py/concurrency/singleflight) intercepts them. It allows only the *first* request to actually execute the heavy I/O operation, while the subsequent identical requests simply wait. Once the first request finishes, its result is automatically shared with all waiting callers.
 
 ## 2. Philosophy (Why does it exist?)
-The primary philosophy of Singleflight is Cache Stampede prevention (also known as a thundering herd). When a popular cache key expires, thousands of concurrent requests might hit the server simultaneously, forcing the database to process the same heavy query thousands of times in parallel, leading to an immediate database crash. Singleflight guarantees that regardless of how many concurrent requests ask for the same data, the database is queried exactly once.
+The primary philosophy of [Singleflight](/docs/ferrox-py/concurrency/singleflight) is Cache Stampede prevention (also known as a thundering herd). When a popular cache key expires, thousands of concurrent requests might hit the server simultaneously, forcing the database to process the same heavy query thousands of times in parallel, leading to an immediate database crash. [Singleflight](/docs/ferrox-py/concurrency/singleflight) guarantees that regardless of how many concurrent requests ask for the same data, the database is queried exactly once.
 
 ## 3. Target Audience (Who is it for?)
 This is a critical performance optimization tool for backend engineers building high-traffic, read-heavy platforms (like media catalogs, dashboards, and live trading platforms). It is meant for systems where massive spikes in identical traffic are expected and must be absorbed gracefully without scaling the database hardware.
@@ -17,7 +17,7 @@ The `SingleflightManager` is implemented completely in-memory using `asyncio` pr
 4. When the first task resolves, the `Future` is fulfilled, propagating the result simultaneously to all waiters, and the key is cleaned up.
 
 ## 5. Installation / Setup
-Singleflight is purely algorithmic and relies exclusively on native Python `asyncio`. It requires zero external dependencies, no Redis, and no configuration.
+[Singleflight](/docs/ferrox-py/concurrency/singleflight) is purely algorithmic and relies exclusively on native Python `asyncio`. It requires zero external dependencies, no Redis, and no configuration.
 
 ```bash
 pip install ferrox-py
@@ -51,4 +51,4 @@ if __name__ == "__main__":
 ```
 
 ## 7. Ecosystem Integration
-Singleflight is the invisible shield of the **Controllers** (Layer 6) and **Business Services** (Layer 7). It works elegantly alongside the **CQRS** query handlers. By wrapping complex read queries inside a Singleflight key, the Ferrox ecosystem natively guarantees absolute protection against cache stampedes without requiring the developer to manually manage complex Redis caching logic.
+[Singleflight](/docs/ferrox-py/concurrency/singleflight) is the invisible shield of the **Controllers** (Layer 6) and **Business Services** (Layer 7). It works elegantly alongside the **[CQRS](/docs/ferrox-py/architectures/cqrs)** query handlers. By wrapping complex read queries inside a [Singleflight](/docs/ferrox-py/concurrency/singleflight) key, the Ferrox ecosystem natively guarantees absolute protection against cache stampedes without requiring the developer to manually manage complex Redis caching logic.

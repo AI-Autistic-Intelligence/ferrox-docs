@@ -41,7 +41,7 @@ Writing WebAssembly DOM code in raw Rust using `web_sys` requires verbose boiler
 - **`#[component]` Macro**: Annotates Rust functions as reusable UI components, automatically converting function parameters into strongly typed component props.
 - **`view!` Macro**: Parses JSX-style HTML syntax, attributes, dynamic signal closures, and event handlers into static DOM node clones.
 - **`derive(Store)` Macro**: Automatically derives reactive store traits for nested Rust data structs, turning struct fields into reactive signals.
-- **Compile-Time Prop Validation**: Catches missing or incorrectly typed component properties at Rust compile time.
+- **Compile-Time Prop [Validation](/docs/ferrox/abstractions/validation)**: Catches missing or incorrectly typed component properties at Rust compile time.
 
 ---
 

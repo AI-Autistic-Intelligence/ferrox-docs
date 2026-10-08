@@ -1,9 +1,9 @@
 ---
 id: pipeline-middlewares
-title: HTTP Pipeline & Middlewares
+title: HTTP Pipeline & [Middlewares](/docs/ferrox-php/packages/observability/middleware)
 ---
 
-# HTTP Pipeline & Middlewares
+# HTTP Pipeline & [Middlewares](/docs/ferrox-php/packages/observability/middleware)
 
 ## 1. Philosophy / Purpose
 OWASP WSTG-INPV-005 compliant pipeline... The purpose of this component is to ensure enterprise-grade stability and zero-trust security in Ferrox PHP. It strictly rejects the legacy paradigms of standard PHP (like global state and silent failures) in favor of deterministic, compile-time-like safety.

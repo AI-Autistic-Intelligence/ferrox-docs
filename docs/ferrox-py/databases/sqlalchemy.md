@@ -43,4 +43,4 @@ class UserRepository(BaseRepository):
 ```
 
 ## 7. Ecosystem Integration
-The SQLAlchemy module is deeply integrated into the **Data Component**. It plays perfectly with the **CQRS Bus**, allowing Command Handlers to execute complex, multi-table transactions natively while being oblivious to the underlying connection management logic handled by the Core framework.
+The SQLAlchemy module is deeply integrated into the **Data Component**. It plays perfectly with the **[CQRS](/docs/ferrox-py/architectures/cqrs) Bus**, allowing Command Handlers to execute complex, multi-table transactions natively while being oblivious to the underlying connection management logic handled by the Core framework.

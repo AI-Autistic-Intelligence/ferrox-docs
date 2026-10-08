@@ -47,4 +47,4 @@ async def process_payment(user_id: str):
 ```
 
 ## 7. Ecosystem Integration
-Distributed Locks are heavily leveraged by the **Commerce Module** (`ferrox-py-commerce`) to ensure Stripe and PayPal webhook idempotency, guaranteeing that an invoice is never fulfilled twice. It is also used by the **CQRS** bus to prevent concurrent processing of the exact same command hash in distributed environments.
+Distributed Locks are heavily leveraged by the **Commerce Module** (`ferrox-py-commerce`) to ensure Stripe and PayPal webhook idempotency, guaranteeing that an invoice is never fulfilled twice. It is also used by the **[CQRS](/docs/ferrox-py/architectures/cqrs)** bus to prevent concurrent processing of the exact same command hash in distributed environments.

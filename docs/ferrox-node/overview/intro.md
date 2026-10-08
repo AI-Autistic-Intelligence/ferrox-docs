@@ -22,7 +22,7 @@ Building production-ready microservices in Node.js requires integrating dozens o
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                                 YOUR FERROX MICROSERVICE                               │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  Routing Engine  │  CQRS Bus  │  Resilience Engine  │  Datagrid  │  Storage  │  Auth Guard │
+│  Routing Engine  │  [CQRS](/docs/ferrox-node/modules/cqrs) Bus  │  Resilience Engine  │  Datagrid  │  Storage  │  Auth Guard │
 ├──────────────────┴───────────┴────────────────────┴────────────┴───────────┴────────────┤
 │                                 FERROX-NODE CORE KERNEL                                │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
@@ -35,14 +35,14 @@ Building production-ready microservices in Node.js requires integrating dozens o
 ## 2. Core Architectural Philosophy
 
 The core philosophy of Ferrox-Node is **Fail-Safe Execution, Resilience, and Zero-Trust**.
-In massive distributed systems, uncaught promise rejections, V8 memory leaks, or third-party API timeouts can cause catastrophic cascading failures (Event Loop blocking). Ferrox-Node eradicates these risks by moving away from traditional Express.js patterns (Fat Controllers, untyped middleware chains) in favor of **CQRS, Circuit Breakers, Dependency Injection, and PASETO Auth**.
+In massive distributed systems, uncaught promise rejections, V8 memory leaks, or third-party API timeouts can cause catastrophic cascading failures (Event Loop blocking). Ferrox-Node eradicates these risks by moving away from traditional Express.js patterns (Fat Controllers, untyped middleware chains) in favor of **[CQRS](/docs/ferrox-node/modules/cqrs), Circuit Breakers, Dependency Injection, and PASETO Auth**.
 
 ### 1. High Performance & Low Latency
 Built around Fastify and Pino, Ferrox-Node avoids synchronous blocking bottlenecks and uses zero-copy memory pipelines wherever possible.
 
-### 2. Built-in Resilience (Circuit Breaker & Singleflight)
+### 2. Built-in Resilience (Circuit Breaker & [Singleflight](/docs/ferrox/security/singleflight))
 Building standard Node.js endpoints often leaves the Event Loop vulnerable to cache stampedes (Thundering Herd problem). Ferrox-Node solves this natively.
-- **The Singleflight Pattern**: If 10,000 requests hit your endpoint simultaneously asking for the same heavy query, the `Singleflight` deduplicator ensures the database query executes exactly **once**. All 10,000 promises resolve with the same result, saving the database from crashing.
+- **The [Singleflight](/docs/ferrox/security/singleflight) Pattern**: If 10,000 requests hit your endpoint simultaneously asking for the same heavy query, the `[Singleflight](/docs/ferrox/security/singleflight)` deduplicator ensures the database query executes exactly **once**. All 10,000 promises resolve with the same result, saving the database from crashing.
 - **The Circuit Breaker Pattern**: Never block the Event Loop waiting for an external ERP. The `CircuitBreaker` wraps these calls: if the ERP times out 3 times in a row, the circuit *opens* and immediately returns an HTTP 503 (Fast-Fail).
 
 ### 3. Comprehensive Observability
@@ -64,7 +64,7 @@ Every log entry, HTTP request, database query, and Kafka event automatically ret
 | **`interfaces`**| Core Contracts | Shared type definitions & standard response envelopes. |
 | **`jobs`** | Background Queues | Distributed queue processing powered by Redis & BullMQ. |
 | **`kernel`** | Microservice Engine | Context propagation & graceful shutdown orchestration. |
-| **`resilience`** | Fault Tolerance | Circuit Breaker, Singleflight deduplication & retries. |
+| **`resilience`** | Fault Tolerance | Circuit Breaker, [Singleflight](/docs/ferrox/security/singleflight) deduplication & retries. |
 | **`routing`** | Multi-Protocol | Declarative REST, WebSocket & RPC route decorators. |
 | **`security`** | Edge Protection | Helmet CSP headers, rate limiters, payload bouncers. |
 | **`selftest`** | Health Diagnostics | OWASP security compliance runner & latency benchmarks. |
@@ -82,7 +82,7 @@ sequenceDiagram
     participant Gateway as API Gateway
     participant Kernel as Ferrox Kernel
     participant Guard as Security Guard
-    participant Bus as CQRS CommandBus
+    participant Bus as [CQRS](/docs/ferrox-node/modules/cqrs) CommandBus
     participant DB as Database / Resilience Engine
     participant Trace as Tracing Engine
 
@@ -91,7 +91,7 @@ sequenceDiagram
     Kernel->>Guard: Evaluate Authorization & Tenant Isolation (PASETO)
     Guard-->>Kernel: Access Granted
     Kernel->>Bus: Dispatch Command ('CreateOrderCommand')
-    Bus->>DB: Execute Query inside CircuitBreaker & Singleflight
+    Bus->>DB: Execute Query inside CircuitBreaker & [Singleflight](/docs/ferrox/security/singleflight)
     DB-->>Bus: Return Saved Order Entity
     Bus-->>Kernel: Command Result (Result Monad)
     Kernel-->>Gateway: Deliver Standard Response Envelope { success: true, data }
@@ -103,7 +103,7 @@ sequenceDiagram
 
 - **✅ Use the Dependency Injection (DI) Container**: Never use `new Service()` inside a controller. Always rely on `@Injectable()` and the `FerroxDIContainer`.
 - **✅ Fail Fast with Yalc Errors**: Throw strongly-typed exceptions (`InternalServerError`, `UnauthorizedError`). The Global Exception Filter will format them into standard RFC 7807 JSONs.
-- **❌ Fat Controllers**: Do not execute business logic or heavy ORM operations directly in the Controller. *Always dispatch to a Service or the CQRS CommandBus.*
+- **❌ Fat Controllers**: Do not execute business logic or heavy ORM operations directly in the Controller. *Always dispatch to a Service or the [CQRS](/docs/ferrox-node/modules/cqrs) CommandBus.*
 - **❌ Sync Blocking**: Never use `fs.readFileSync` or CPU-bound crypto operations without worker threads. Use Ferrox's async utilities to respect the V8 Event Loop.
 
 ---

@@ -10,7 +10,7 @@ In a Microservice architecture, this is impossible. You cannot lock a row in the
 
 Ferrox solves this using the **Saga Pattern** via `ferrox-saga`.
 
-## How Sagas Work
+## How [Sagas](/docs/ferrox/architectures/sagas) Work
 
 A Saga is a sequence of local transactions. Each local transaction updates the database and publishes an event to trigger the next local transaction in the saga. 
 

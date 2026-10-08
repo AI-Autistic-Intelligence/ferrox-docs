@@ -20,7 +20,7 @@ The `RoutingEngine` in Ferrox Node abstracts protocol-specific transport layers.
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        Ferrox RoutingEngine                            │
 ├──────────────────────────────────┬─────────────────────────────────────┤
-│  Declarative Decorators          │  Middleware & Validation Pipeline    │
+│  Declarative Decorators          │  Middleware & [Validation](/docs/ferrox/abstractions/validation) Pipeline    │
 │  (@Get, @Post, @MessagePattern)  │  (Zod / Class-Validator / RateLimit)│
 └────────────────┬─────────────────┴──────────────────┬──────────────────┘
                  │ Multi-Protocol Route Dispatch
@@ -37,7 +37,7 @@ The `RoutingEngine` in Ferrox Node abstracts protocol-specific transport layers.
 
 - **Unified Controller Decorators**: Provide `@Controller()`, `@Get()`, `@Post()`, `@Put()`, `@Delete()`, and `@Patch()` decorators.
 - **Protocol Agnostic Parameter Mapping**: Extracts path parameters (`@Param()`), query parameters (`@Query()`), request body (`@Body()`), and context (`@Context()`).
-- **Automated Validation Pipe**: Validates incoming payloads using Zod or `class-validator` schemas before reaching controller methods.
+- **Automated [Validation](/docs/ferrox/abstractions/validation) Pipe**: Validates incoming payloads using Zod or `class-validator` schemas before reaching controller methods.
 - **OpenAPI / Swagger Generation**: Automatically generates OpenAPI v3 JSON spec definitions directly from controller metadata decorators.
 
 ---
@@ -52,12 +52,12 @@ sequenceDiagram
     participant Client as Client Request
     participant Transport as Transport Adapter (Fastify)
     participant Router as Ferrox RoutingEngine
-    participant Pipe as Validation Pipe
+    participant Pipe as [Validation](/docs/ferrox/abstractions/validation) Pipe
     participant Controller as Domain Controller
 
     Client->>Transport: HTTP POST /api/v1/users (JSON Body)
     Transport->>Router: Match Route Path & Method
-    Router->>Pipe: Run Schema Validation (Zod / Class-Validator)
+    Router->>Pipe: Run Schema [Validation](/docs/ferrox/abstractions/validation) (Zod / Class-Validator)
     alt Payload Valid
         Pipe-->>Router: Valid DTO Object
         Router->>Controller: Invoke Method Handler(dto, context)
@@ -78,7 +78,7 @@ sequenceDiagram
 | Feature | Standard Express Routing | Ferrox RoutingEngine |
 | :--- | :--- | :--- |
 | **Protocol Parity** | Code bound to `req` and `res` Express APIs. | Handlers receive protocol-agnostic DTO and `IFerroxContext`. |
-| **Validation** | Manual validation checks inside every route handler. | Automated validation pipe intercepts before controller execution. |
+| **[Validation](/docs/ferrox/abstractions/validation)** | Manual validation checks inside every route handler. | Automated validation pipe intercepts before controller execution. |
 | **Documentation** | Hand-written Swagger YAML files drift out of date. | Auto-generated OpenAPI spec directly from TS types & decorators. |
 
 ---

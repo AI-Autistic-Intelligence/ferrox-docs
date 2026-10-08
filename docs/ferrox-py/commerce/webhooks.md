@@ -1,7 +1,7 @@
-# Webhooks Controller
+# [Webhooks](/docs/ferrox-py/transports/web) Controller
 
 ## 1. Overview (What does this do?)
-The Webhooks Controller is the asynchronous interface between external payment providers (e.g., Stripe, PayPal) and the internal Ferrox application. It acts as a universal translator, securely receiving HTTP POST requests, verifying their authenticity, and converting them into internal domain events.
+The [Webhooks](/docs/ferrox-py/transports/web) Controller is the asynchronous interface between external payment providers (e.g., Stripe, PayPal) and the internal Ferrox application. It acts as a universal translator, securely receiving HTTP POST requests, verifying their authenticity, and converting them into internal domain events.
 
 ## 2. Philosophy (Why does it exist?)
 Payment providers send JSON payloads that differ vastly in structure. Stripe nests data under `data.object`, while PayPal uses a completely different schema. Writing business logic that depends directly on Stripe's specific JSON syntax tightly couples the core database to a third-party vendor. The philosophy here is absolute decoupling: the business logic must never know which provider sent the payment.
@@ -17,7 +17,7 @@ This component is for backend developers who need to expose secure, public-facin
 4. **Dispatch**: The standardized Pydantic model is forwarded to the core logic (Layer 7 of the Onion Pipeline). At this point, the business logic only sees a generic `PaymentSuccessEvent` and has no awareness of the original provider.
 
 ## 5. Installation / Setup
-The Webhooks Controller is built-in. It simply requires configuring the provider-specific webhook signing secrets in your environment variables so the HMAC verification step can function correctly.
+The [Webhooks](/docs/ferrox-py/transports/web) Controller is built-in. It simply requires configuring the provider-specific webhook signing secrets in your environment variables so the HMAC verification step can function correctly.
 
 ## 6. Quickstart (Usage)
 ```python
@@ -45,4 +45,4 @@ class WebhooksController:
 ```
 
 ## 7. Ecosystem Integration
-The Webhooks Controller relies heavily on the **CQRS and Event Dispatcher** core module. Instead of invoking database repositories directly, the controller broadcasts the translated `PaymentSuccessEvent` to the Event Bus. The **Transaction State** service, listening on that bus, then picks up the event to enforce idempotency.
+The [Webhooks](/docs/ferrox-py/transports/web) Controller relies heavily on the **[CQRS](/docs/ferrox-py/architectures/cqrs) and Event Dispatcher** core module. Instead of invoking database repositories directly, the controller broadcasts the translated `PaymentSuccessEvent` to the Event Bus. The **Transaction State** service, listening on that bus, then picks up the event to enforce idempotency.

@@ -1,4 +1,4 @@
-# Distributed Rate Limiting
+# Distributed [Rate Limiting](/docs/ferrox-py/security/rate-limiting)
 
 ## 1. Overview (What does this do?)
 The `DistributedRateLimiter` enforces strict API quotas and usage throttling across an entire server cluster. Instead of tracking requests per-second in local memory, it uses Redis to globally synchronize how many times a specific user, tenant, or IP address has accessed a resource, denying access gracefully when their quota is exceeded.
@@ -41,4 +41,4 @@ async def check_api_quota(tenant_id: str):
 ```
 
 ## 7. Ecosystem Integration
-The Rate Limiter operates directly within the **Sentinel Threat Engine** (Layer 3 of the pipeline) to globally throttle suspicious IP addresses. It also integrates seamlessly with the **Connectors** (via `ferrox-py-utils`), ensuring that outgoing requests to sensitive third-party APIs (like Shopify or AWS) never exceed the vendor's hard rate limits, thus preventing account bans.
+The Rate Limiter operates directly within the **[Sentinel](/docs/ferrox-py/security/sentinel-algorithms) Threat Engine** (Layer 3 of the pipeline) to globally throttle suspicious IP addresses. It also integrates seamlessly with the **Connectors** (via `ferrox-py-utils`), ensuring that outgoing requests to sensitive third-party APIs (like Shopify or AWS) never exceed the vendor's hard rate limits, thus preventing account bans.

@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# 🗃️ CQRS (Command Query Responsibility Segregation)
+# 🗃️ [CQRS](/docs/ferrox/architectures/cqrs) (Command Query Responsibility Segregation)
 
-CQRS is an architectural pattern that separates reading data (Queries) from writing data (Commands). 
+[CQRS](/docs/ferrox/architectures/cqrs) is an architectural pattern that separates reading data (Queries) from writing data (Commands). 
 
 In traditional CRUD architectures, the same data model is used to query and update a database. As applications scale, this becomes a severe bottleneck. The read model and the write model have entirely different performance characteristics, caching strategies, and security requirements.
 
@@ -12,7 +12,7 @@ Ferrox natively provides an in-memory **Command Bus** and **Query Bus** via the 
 
 ## High-Level Example
 
-In CQRS, you never call a database repository directly from a Controller. Instead, you dispatch a Command.
+In [CQRS](/docs/ferrox/architectures/cqrs), you never call a database repository directly from a Controller. Instead, you dispatch a Command.
 
 ```rust
 use axum::{extract::State, Json};

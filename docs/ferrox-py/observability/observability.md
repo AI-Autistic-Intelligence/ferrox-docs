@@ -1,7 +1,7 @@
-# Observability Component
+# [Observability](/docs/ferrox-py/observability/observability) Component
 
 ## 1. Overview (What does this do?)
-The Observability component provides built-in mechanisms for logging, tracing, and monitoring the health of a `ferrox-py` application. It centralizes output streams, ensuring that all log messages generated within a single request lifecycle are tied together via a unique Correlation ID.
+The [Observability](/docs/ferrox-py/observability/observability) component provides built-in mechanisms for logging, tracing, and monitoring the health of a `ferrox-py` application. It centralizes output streams, ensuring that all log messages generated within a single request lifecycle are tied together via a unique Correlation ID.
 
 ## 2. Philosophy (Why does it exist?)
 In asynchronous Python applications, traditional logging mechanisms often fail to track a single request accurately because multiple concurrent requests interleave their logs. The philosophy here is that developers shouldn't have to manually pass a logger object to every function. By leveraging `ContextVars`, the framework ensures that logs are asynchronous-safe and natively structured.
@@ -40,4 +40,4 @@ async def process_payment(amount: float):
 ```
 
 ## 7. Ecosystem Integration
-The Observability component acts as a cross-cutting concern. It integrates deeply with the **Web Transports** (to automatically log incoming requests and response codes) and the **CQRS Bus** (to trace when events are published or consumed). It is strictly considered an anti-pattern to use the standard Python `logging` module directly without going through this component, as you will lose context variables and correlation tracking.
+The [Observability](/docs/ferrox-py/observability/observability) component acts as a cross-cutting concern. It integrates deeply with the **Web Transports** (to automatically log incoming requests and response codes) and the **[CQRS](/docs/ferrox-py/architectures/cqrs) Bus** (to trace when events are published or consumed). It is strictly considered an anti-pattern to use the standard Python `logging` module directly without going through this component, as you will lose context variables and correlation tracking.

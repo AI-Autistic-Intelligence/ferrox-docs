@@ -10,7 +10,7 @@ In complex distributed systems and modern SaaS architectures, authentication is 
 This package is built for application architects and backend engineers tasked with building secure platforms that require strict user identity tracking, varied permission levels (RBAC), and legal compliance with international privacy laws.
 
 ## 4. Architecture (How does it work?)
-The Auth package seamlessly hooks into Layer 3 (Threat Engine) and Layer 4 (Auth Guards) of the `ferrox-py` Onion Request Pipeline. It provides the practical implementation for parsing tokens, validating user state, and persisting user data.
+The Auth package seamlessly hooks into Layer 3 (Threat Engine) and Layer 4 (Auth [Guards](/docs/ferrox/abstractions/guards)) of the `ferrox-py` Onion Request Pipeline. It provides the practical implementation for parsing tokens, validating user state, and persisting user data.
 Integrated features include:
 - Management of multiple users with SSO identities linked to the same aggregate entity.
 - Granular Role-Based Access Control (RBAC).

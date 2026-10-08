@@ -4,7 +4,7 @@ title: "@nest-yalc-2/sentinel"
 sidebar_position: 6
 ---
 
-# 🛡️ Sentinel Security Middleware (`@nest-yalc-2/sentinel`)
+# 🛡️ [Sentinel](/docs/nestjs-yalc/security/sentinel) Security Middleware (`@nest-yalc-2/sentinel`)
 
 `@nest-yalc-2/sentinel` is the security middleware and policy enforcement module for NestJS 11+. It enforces OWASP recommended HTTP security headers, CORS origin policies, request payload size bounds, and input sanitization across all REST and GraphQL endpoints.
 
@@ -25,7 +25,7 @@ sidebar_position: 6
 flowchart TD
     Inbound["Inbound HTTP Stream"]
     HeaderCheck["Security Headers Middleware"]
-    CorsCheck["CORS Origin Validation"]
+    CorsCheck["CORS Origin [Validation](/docs/ferrox/abstractions/validation)"]
     SizeCheck["Payload Size Bouncer (< 2MB)"]
     Sanitizer["XSS & Tag Sanitizer"]
     Next["Pass to Controller Router"]
@@ -53,7 +53,7 @@ flowchart TD
 
 ## 🚀 Practical Usage & Production Code Examples
 
-### 1. Registering Sentinel Security Module in `AppModule`
+### 1. Registering [Sentinel](/docs/nestjs-yalc/security/sentinel) Security Module in `AppModule`
 
 ```typescript
 import { Module } from '@nestjs/common';

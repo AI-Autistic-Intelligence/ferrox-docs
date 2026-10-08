@@ -1,10 +1,10 @@
 # Security Module (`node-yalc/security`)
 
-The Security module houses the **Ferrox Sentinel Security Engine**. This is the ultimate line of defense for the framework, combining advanced zero-trust architecture, AI guardrails, and cryptographic protections into a single cohesive unit.
+The Security module houses the **Ferrox [Sentinel](/docs/ferrox/security/ferrox-sentinel) Security Engine**. This is the ultimate line of defense for the framework, combining advanced zero-trust architecture, AI guardrails, and cryptographic protections into a single cohesive unit.
 
 ## Overview
 
-Unlike standard firewalls that only look at ports and IPs, Sentinel performs Deep Packet Inspection and behavioral analysis.
+Unlike standard firewalls that only look at ports and IPs, [Sentinel](/docs/ferrox/security/ferrox-sentinel) performs Deep Packet Inspection and behavioral analysis.
 
 ### Core Engines
 

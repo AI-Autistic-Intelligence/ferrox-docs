@@ -1,9 +1,9 @@
 ---
 id: validation-pipes
-title: Validation Pipes & DTOs
+title: [Validation](/docs/ferrox-php/abstractions/validation-pipes) [Pipes](/docs/ferrox-php/abstractions/validation-pipes) & DTOs
 ---
 
-# Validation Pipes & DTOs
+# [Validation](/docs/ferrox-php/abstractions/validation-pipes) [Pipes](/docs/ferrox-php/abstractions/validation-pipes) & DTOs
 
 ## 1. Philosophy / Purpose
 Strict type assertion via PHP 8 Attributes... The purpose of this component is to ensure enterprise-grade stability and zero-trust security in Ferrox PHP. It strictly rejects the legacy paradigms of standard PHP (like global state and silent failures) in favor of deterministic, compile-time-like safety.

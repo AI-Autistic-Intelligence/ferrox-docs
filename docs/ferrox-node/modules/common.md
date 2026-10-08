@@ -26,4 +26,4 @@ The core of Ferrox-Node's request pipeline operates using standard interceptor p
 
 ## Usage Note
 
-When creating custom Guards, Pipes, or Interceptors in your application, always implement the interfaces from this package to ensure full compatibility with the internal execution engine.
+When creating custom [Guards](/docs/ferrox-node/modules/guards), [Pipes](/docs/ferrox/abstractions/pipes), or [Interceptors](/docs/ferrox/fundamentals/interceptors) in your application, always implement the interfaces from this package to ensure full compatibility with the internal execution engine.

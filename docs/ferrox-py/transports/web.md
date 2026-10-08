@@ -41,10 +41,10 @@ async def create_user_handler(payload: UserPayload):
     # At this point, the user is an admin and the payload is guaranteed valid
     return {"message": f"User {payload.name} created successfully."}
 
-# Custom utilities are also provided, e.g., parsing DataGrid queries:
+# Custom utilities are also provided, e.g., parsing [DataGrid](/docs/ferrox-py/databases/data) queries:
 from ferrox_py.transports.datagrid import parse_ag_grid_query
 # query_opts = parse_ag_grid_query(request.url)
 ```
 
 ## 7. Ecosystem Integration
-The Web component is the entry point for external data and therefore integrates directly with the **Security** component (to evaluate headers and tokens), the **Pipes/Interceptors** (for validating schemas), and the **Observability** component (to extract and log Correlation IDs from incoming requests).
+The Web component is the entry point for external data and therefore integrates directly with the **Security** component (to evaluate headers and tokens), the **[Pipes](/docs/ferrox-py/abstractions/pipes-interceptors)/[Interceptors](/docs/ferrox-py/abstractions/pipes-interceptors)** (for validating schemas), and the **[Observability](/docs/ferrox-py/observability/observability)** component (to extract and log Correlation IDs from incoming requests).

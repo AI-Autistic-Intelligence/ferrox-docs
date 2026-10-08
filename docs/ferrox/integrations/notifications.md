@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Multi-Channel Notifications (Push, SMS, Slack, WebSockets)
 
-The `notifications` module delivers multi-channel notification dispatching across APNs (Apple Push Notification service), FCM (Firebase Cloud Messaging), Twilio SMS, Slack Webhooks, Discord Webhooks, and WebSockets in Rust microservices.
+The `notifications` module delivers multi-channel notification dispatching across APNs (Apple Push Notification service), FCM (Firebase Cloud Messaging), Twilio SMS, Slack [Webhooks](/docs/ferrox/integrations/webhooks), Discord [Webhooks](/docs/ferrox/integrations/webhooks), and WebSockets in Rust microservices.
 
 ---
 

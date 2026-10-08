@@ -1,10 +1,10 @@
 ---
 id: types
-title: Type Primitives, Utility Types & Type Guards
+title: Type Primitives, Utility Types & Type [Guards](/docs/ferrox/abstractions/guards)
 sidebar_position: 1
 ---
 
-# Type Primitives, Utility Types & Type Guards
+# Type Primitives, Utility Types & Type [Guards](/docs/ferrox/abstractions/guards)
 
 The `@node-yalc/types` package provides core TypeScript primitive types, advanced conditional utility types (`DeepPartial`, `Nullable`, `KeysMatching`), type guards, and compile-time type validation primitives.
 
@@ -23,7 +23,7 @@ TypeScript's built-in utility types (`Partial<T>`, `Required<T>`, `Pick<T, K>`) 
 │  • DeepPartial<T>, DeepRequired<T>, DeepReadonly<T>                    │
 │  • Nullable<T>, Maybe<T>, Optional<T>                                  │
 │  • KeysMatching<T, Type>, PropertyPath<T>                              │
-│  • IsDefined(), IsNonEmptyString(), IsObject() Type Guards             │
+│  • IsDefined(), IsNonEmptyString(), IsObject() Type [Guards](/docs/ferrox/abstractions/guards)             │
 └──────────────────────────────────┬─────────────────────────────────────┘
                                    │
                                    ▼
@@ -39,7 +39,7 @@ TypeScript's built-in utility types (`Partial<T>`, `Required<T>`, `Pick<T, K>`) 
 - **`DeepPartial<T>`**: Recursively makes all properties (and nested object/array properties) of `T` optional.
 - **`Nullable<T>` & `Maybe<T>`**: Standardized type alias wrappers for `T | null` and `T | null | undefined`.
 - **`KeysMatching<T, V>`**: Extracts property keys from `T` whose values match type `V` (e.g., extracting all `string` keys).
-- **Runtime Type Guards**: Type-narrowing guard functions (`isDefined()`, `isString()`, `isObject()`, `isPromise()`).
+- **Runtime Type [Guards](/docs/ferrox/abstractions/guards)**: Type-narrowing guard functions (`isDefined()`, `isString()`, `isObject()`, `isPromise()`).
 
 ---
 
@@ -69,7 +69,7 @@ sequenceDiagram
 | :--- | :--- | :--- |
 | **Nested Objects** | Only makes top-level properties optional. | Recursively makes all sub-objects and arrays optional. |
 | **Type Safety** | Requires manual casting for deep patch updates. | Automatic recursive type inference. |
-| **Runtime Guards** | Standard `typeof` checks miss `null` objects (`typeof null === 'object'`). | `isObject()` correctly excludes `null` and `Array`. |
+| **Runtime [Guards](/docs/ferrox/abstractions/guards)** | Standard `typeof` checks miss `null` objects (`typeof null === 'object'`). | `isObject()` correctly excludes `null` and `Array`. |
 
 ---
 
@@ -111,7 +111,7 @@ export function updateProfile(
 }
 ```
 
-### 5.2 Using Runtime Type Guards
+### 5.2 Using Runtime Type [Guards](/docs/ferrox/abstractions/guards)
 
 ```typescript
 import { isDefined, isNonEmptyString, isObject } from '@node-yalc/types';

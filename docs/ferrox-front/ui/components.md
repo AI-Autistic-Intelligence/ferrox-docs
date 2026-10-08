@@ -28,7 +28,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 1. **📝 Live JSON Data Editing**: Edit the raw JSON data inside the right control panel textarea (e.g. `[{ "x": 10, "y": 150, "label": "Jan ($150k)" }, ...]`) and click **Apply Live JSON Data** to watch the vector SVG chart update instantly!
 2. **📈 Dynamic Curve Controls**: Switch between *Smooth Spline (Bezier)*, *Linear Straight Lines*, and *Stepped Digital Waves*, or adjust the stroke width slider from 1px to 10px.
-3. **📊 Virtualized DataGrid Testing**: Switch the DataGrid row count between 500, 10,000, and 1,000,000 enterprise rows to test viewport scrolling performance.
+3. **📊 Virtualized [DataGrid](/docs/ferrox/transports/datagrid) Testing**: Switch the [DataGrid](/docs/ferrox/transports/datagrid) row count between 500, 10,000, and 1,000,000 enterprise rows to test viewport scrolling performance.
 4. **🔒 Zero-Trust RBAC Simulator**: Toggle current user role (`Guest`, `User`, `Admin`) to observe how `<Secure require="admin:delete">` dynamically mounts/unmounts DOM nodes directly in WebAssembly linear memory heap.
 5. **🎨 Glassmorphism Theme Switcher**: Click on any theme button (`Cyber`, `Ocean`, `Forest`, `Sunset`, `Corporate`) to switch 60fps CSS variables live.
 6. **📜 Rust Code Inspector**: Copy the live-generated Rust code snippet dynamically updated based on your selected dataset and options.
@@ -158,7 +158,7 @@ use ferrox_front_ui::components::spinner;
 spinner();
 ```
 
-### 📊 12. Virtualized DataGrid
+### 📊 12. Virtualized [DataGrid](/docs/ferrox/transports/datagrid)
 
 `virtual_data_grid` renders tables with 1,000,000+ rows instantly by calculating viewport scroll offsets and mounting only visible rows into the DOM.
 

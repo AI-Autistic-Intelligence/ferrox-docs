@@ -57,7 +57,7 @@ sequenceDiagram
     K8s->>Endpoint: HTTP GET /internal/selftest
     Endpoint->>Engine: SelftestRunner.execute_suite()
     Engine->>DB: Test Database Query Latency (Target < 10ms)
-    Engine->>Engine: Verify Sentinel Security Headers Registered
+    Engine->>Engine: Verify [Sentinel](/docs/ferrox/security/ferrox-sentinel) Security Headers Registered
     Engine->>Engine: Check SSL / TLS Encryption Parameters
     alt All Checks PASSED
         Engine-->>Endpoint: SelftestReport { status: PASSED, p95_latency: "2.4ms" }

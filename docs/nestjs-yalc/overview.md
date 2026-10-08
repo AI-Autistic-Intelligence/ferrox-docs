@@ -23,10 +23,10 @@ The core tenets of NestJS-YALC are:
 
 - 🛠️ **Automated CRUD (`@nest-yalc-2/crud-gen`)**: Automatically generate TypeORM REST endpoints and GraphQL resolvers with advanced dynamic filtering.
 - 📦 **GraphQL DataLoader (`@nest-yalc-2/data-loader`)**: Solve the N+1 query problem out-of-the-box with automated field batching.
-- 📊 **Observability (`@nest-yalc-2/observability`)**: Seamless OpenTelemetry tracing, Prometheus metrics exporter, and Sentry exception reporting.
+- 📊 **[Observability](/docs/nestjs-yalc/observability/observability) (`@nest-yalc-2/observability`)**: Seamless OpenTelemetry tracing, Prometheus metrics exporter, and Sentry exception reporting.
 - 🗄️ **Database Enhancements (`@nest-yalc-2/database`)**: TypeORM database connection factories, transactional repository runners, and sophisticated seeding helpers.
 - 📬 **Event Driven (`@nest-yalc-2/kafka` & `@nest-yalc-2/event-manager`)**: KafkaJS client integration with schema registry, and distributed event bus modules with typed payloads.
-- 🔐 **Security Sentinel (`@nest-yalc-2/sentinel`)**: Security middleware enforcing HTTP headers, CORS policies, and payload sanitization.
+- 🔐 **Security [Sentinel](/docs/nestjs-yalc/security/sentinel) (`@nest-yalc-2/sentinel`)**: Security middleware enforcing HTTP headers, CORS policies, and payload sanitization.
 
 ## Getting Started
 

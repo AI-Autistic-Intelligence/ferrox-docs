@@ -34,4 +34,4 @@ container.register("cleanup_service", CleanupService)
 ```
 
 ## 7. Ecosystem Integration
-The Task Scheduling module interacts heavily with the Observability components. Every background task execution generates trace IDs and metrics, which are logged automatically. If a background job fails, it integrates with the centralized error handler to send alerts (e.g., triggering a webhook to a Slack channel) without bringing down the main API server.
+The Task Scheduling module interacts heavily with the [Observability](/docs/ferrox-py/observability/observability) components. Every background task execution generates trace IDs and metrics, which are logged automatically. If a background job fails, it integrates with the centralized error handler to send alerts (e.g., triggering a webhook to a Slack channel) without bringing down the main API server.

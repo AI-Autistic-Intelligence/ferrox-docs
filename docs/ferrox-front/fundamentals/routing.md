@@ -1,10 +1,10 @@
 ---
 id: routing
-title: Client-Side Router, Route Guards & Lazy Loading
+title: Client-Side Router, Route [Guards](/docs/ferrox/abstractions/guards) & Lazy Loading
 sidebar_position: 4
 ---
 
-# Client-Side Router, Route Guards & Lazy Loading
+# Client-Side Router, Route [Guards](/docs/ferrox/abstractions/guards) & Lazy Loading
 
 The `ferrox-front-router` crate delivers client-side SPA navigation for WebAssembly apps. It features HTML5 History API integration, route path parameter matching, nested layout outlets, route protection guards, and code-split WebAssembly module lazy loading.
 
@@ -36,7 +36,7 @@ Single-page WebAssembly applications require seamless page transitions without f
 
 - **Declarative Route Definition**: Provides `<Router>`, `<Routes>`, `<Route>`, and `<Outlet>` components.
 - **Dynamic Path Parameter Extraction**: Extracts named route parameters (`/orders/:order_id`) into typed Rust variables.
-- **Route Authorization Guards**: Blocks unauthorized client navigation via custom `Guard` traits before mounting views.
+- **Route Authorization [Guards](/docs/ferrox/abstractions/guards)**: Blocks unauthorized client navigation via custom `Guard` traits before mounting views.
 - **Nested Layout Outlets**: Supports nested layout hierarchies (e.g., sidebar layout wrapping nested dashboard sub-pages).
 
 ---

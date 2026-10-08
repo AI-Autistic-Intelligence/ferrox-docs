@@ -22,7 +22,7 @@ pub enum AppError {
     #[error("Not Found: {0}")]
     NotFound(String),
 
-    #[error("Validation Error: {0}")]
+    #[error("[Validation](/docs/ferrox/abstractions/validation) Error: {0}")]
     ValidationError(String),
 
     #[error("Unauthorized: {0}")]

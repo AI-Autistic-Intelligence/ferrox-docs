@@ -46,7 +46,7 @@ In microservice monorepos, shared primitives like environment flags (`NODE_ENV`)
 
 ## 3. How It Works Under the Hood
 
-### Environment Validation & Value Object Resolution
+### Environment [Validation](/docs/ferrox/abstractions/validation) & Value Object Resolution
 
 ```mermaid
 sequenceDiagram

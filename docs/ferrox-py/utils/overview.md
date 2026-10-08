@@ -13,7 +13,7 @@ This overview is for Software Architects and Data Engineers who are designing th
 The data engineering process is strictly divided into three phases:
 1. **Isolated Extraction (I/O)**: Data is read from external sources (S3, Databases, APIs) exclusively through specialized *Connectors*.
 2. **In-Memory Transformation**: A *PipelineOrchestrator* executes a sequence of functional steps, mutating a shared state object (`context`) in a predictable order.
-3. **Guaranteed Validation**: The *Schema Registry* ensures that the data being transformed strictly adheres to predefined contracts (DTOs) before it is passed to the next step or loaded into the final Database (the Bronze/Silver/Gold layers).
+3. **Guaranteed [Validation](/docs/ferrox/abstractions/validation)**: The *Schema Registry* ensures that the data being transformed strictly adheres to predefined contracts (DTOs) before it is passed to the next step or loaded into the final Database (the Bronze/Silver/Gold layers).
 
 ## 5. Installation / Setup
 The package is installed via standard pip mechanics. It relies heavily on the core `ferrox-py` framework for architectural consistency.

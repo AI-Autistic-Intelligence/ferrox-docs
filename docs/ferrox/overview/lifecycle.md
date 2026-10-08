@@ -19,7 +19,7 @@ sequenceDiagram
     participant Tokio as Tokio Worker Thread
     participant Middleware as Global Middleware
     participant Guard as Auth Guard
-    participant Pipe as Validation Pipe
+    participant Pipe as [Validation](/docs/ferrox/abstractions/validation) Pipe
     participant Controller
     participant Service as Fat Provider (Service)
     participant DB as Database
@@ -29,7 +29,7 @@ sequenceDiagram
     
     rect rgb(30, 30, 30)
         note right of Tokio: Ferrox Application Boundary
-        Tokio->>Middleware: 1. Logging & Rate Limiting
+        Tokio->>Middleware: 1. Logging & [Rate Limiting](/docs/ferrox/security/rate-limiting)
         
         alt Rate Limit Exceeded
             Middleware-->>Client: 429 Too Many Requests
@@ -62,7 +62,7 @@ sequenceDiagram
 ### Why this matters (The "Fail Fast" Philosophy)
 
 Notice the `alt` branches in the diagram. Ferrox employs a **"Fail Fast"** philosophy. 
-If a user sends an invalid JSON payload, the `Validation Pipe` rejects the request and returns a `400 Bad Request` *before* the Controller or the Database is ever invoked.
+If a user sends an invalid JSON payload, the `[Validation](/docs/ferrox/abstractions/validation) Pipe` rejects the request and returns a `400 Bad Request` *before* the Controller or the Database is ever invoked.
 
 This mathematically guarantees that your business logic (the Service) only ever operates on sanitized, authenticated, and authorized data, saving massive amounts of CPU cycles and database connections.
 

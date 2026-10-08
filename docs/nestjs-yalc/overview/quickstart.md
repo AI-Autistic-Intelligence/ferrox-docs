@@ -31,7 +31,7 @@ npm install @nestjs-yalc/app @nestjs-yalc/logger @nestjs-yalc/errors @nestjs-yal
 # Database & CRUD Generation
 npm install @nestjs-yalc/database @nestjs-yalc/crud-gen @nestjs-yalc/ag-grid
 
-# Security & Observability
+# Security & [Observability](/docs/nestjs-yalc/observability/observability)
 npm install @nestjs-yalc/sentinel @nestjs-yalc/observability
 ```
 

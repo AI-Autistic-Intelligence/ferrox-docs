@@ -5,7 +5,7 @@ The `ferrox-py-commerce` module is specifically engineered to safely and efficie
 
 ## 2. Philosophy (Why does it exist?)
 Modern e-commerce integrations suffer from three highly complex issues:
-1. **Out-of-Sequence Webhooks**: Due to network delays, a provider like Stripe might send an `invoice.paid` event *before* the `charge.succeeded` event.
+1. **Out-of-Sequence [Webhooks](/docs/ferrox-py/transports/web)**: Due to network delays, a provider like Stripe might send an `invoice.paid` event *before* the `charge.succeeded` event.
 2. **Double Charges**: A user clicks the "Pay" button twice in rapid succession, launching two concurrent payment intents.
 3. **Vendor Lock-In**: Tying domain logic to Stripe's specific JSON syntax makes switching to PayPal financially prohibitive.
 This module exists to solve all three problems through a rigorous, highly decoupled architecture.
@@ -37,4 +37,4 @@ container.register_module(CommerceModule)
 ```
 
 ## 7. Ecosystem Integration
-The commerce logic integrates perfectly with the core **CQRS Bus**. When the Standardized Webhook Controller parses a successful payment, it dispatches an Event to the bus. Other microservices (like a Notification service sending a receipt email, or a provisioning service unlocking premium features) simply subscribe to the Bus, remaining completely uncoupled from the billing module itself.
+The commerce logic integrates perfectly with the core **[CQRS](/docs/ferrox-py/architectures/cqrs) Bus**. When the Standardized Webhook Controller parses a successful payment, it dispatches an Event to the bus. Other microservices (like a Notification service sending a receipt email, or a provisioning service unlocking premium features) simply subscribe to the Bus, remaining completely uncoupled from the billing module itself.

@@ -77,7 +77,7 @@ try {
   getUserProfile('');
 } catch (err: any) {
   if (err instanceof ValidationError) {
-    console.log('Validation Error HTTP Code:', err.statusCode); // 400
+    console.log('[Validation](/docs/ferrox/abstractions/validation) Error HTTP Code:', err.statusCode); // 400
     console.log('Details:', err.errors);
   }
 }

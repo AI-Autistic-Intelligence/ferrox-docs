@@ -13,7 +13,7 @@ While PHP is traditionally viewed as a request-response scripting language, **Fe
 ## 1. Philosophy / Purpose
 
 The core philosophy of Ferrox PHP is **Fail-Safe Execution & Zero-Trust**.
-In massive enterprise SaaS environments (like E-Commerce or Fashion ERPs), unexpected exceptions or SQL deadlocks can cause catastrophic data loss. Ferrox PHP eradicates these risks by moving away from traditional PHP patterns (`try/catch`, Fat Controllers) in favor of **CQRS, Unit of Work, and Result Monads**.
+In massive enterprise SaaS environments (like E-Commerce or Fashion ERPs), unexpected exceptions or SQL deadlocks can cause catastrophic data loss. Ferrox PHP eradicates these risks by moving away from traditional PHP patterns (`try/catch`, Fat Controllers) in favor of **[CQRS](/docs/ferrox-php/architectures/cqrs-sagas), Unit of Work, and Result Monads**.
 
 ---
 
@@ -24,7 +24,7 @@ You cannot inject a Repository (Layer 6) directly into a Controller (Layer 4). A
 
 - **Layer 1-3 (Security & Entry)**: `FerroxApp` Pipeline, `PasetoAuthGuard`, and `SentinelThreatEngineMiddleware`.
 - **Layer 4-5 (Application & Domain)**: `CommandBus`, Handlers, and `DomainEventInterface`.
-- **Layer 6 (Infrastructure)**: `UnitOfWorkInterface` and `Singleflight` (Anti-Dogpiling).
+- **Layer 6 (Infrastructure)**: `UnitOfWorkInterface` and `[Singleflight](/docs/ferrox-php/performance/singleflight)` (Anti-Dogpiling).
 
 ---
 
@@ -48,7 +48,7 @@ class OrderEntity {
 }
 ```
 
-Under the hood, at boot time, the `CrudGenerator` scans this attribute and automatically wires the HTTP Routes, the CQRS `CreateEntityCommand`, and the `UnitOfWork` wrappers. It even registers OpenTelemetry metrics (`ferrox_crud_order_requests_total`).
+Under the hood, at boot time, the `CrudGenerator` scans this attribute and automatically wires the HTTP Routes, the [CQRS](/docs/ferrox-php/architectures/cqrs-sagas) `CreateEntityCommand`, and the `UnitOfWork` wrappers. It even registers OpenTelemetry metrics (`ferrox_crud_order_requests_total`).
 
 ---
 
@@ -61,7 +61,7 @@ Under the hood, at boot time, the `CrudGenerator` scans this attribute and autom
 
 ## 5. ✅ Best Practices
 
-- **Use the Singleflight Module**: For heavy database queries or external API calls, wrap them in `$singleflight->work()`. If 1,000 requests hit the endpoint simultaneously, the query executes only once, preventing cache stampedes.
+- **Use the [Singleflight](/docs/ferrox-php/performance/singleflight) Module**: For heavy database queries or external API calls, wrap them in `$singleflight->work()`. If 1,000 requests hit the endpoint simultaneously, the query executes only once, preventing cache stampedes.
 - **Never use JWT**: Always use the `PasetoAuthGuard`.
 
 ---
@@ -70,4 +70,4 @@ Under the hood, at boot time, the `CrudGenerator` scans this attribute and autom
 
 - **Fat Controllers**: Executing business logic or saving to the DB directly in an HTTP Middleware or Controller. *Always dispatch a Command to the CommandBus.*
 - **Throwing Exceptions for Control Flow**: Do not throw `Exception` to signal a failed validation or API timeout. Return `Result::err()` instead.
-- **Synchronous Webhooks**: Never block the HTTP thread waiting for an external API (Stripe/ERP). Emit an event and let the background worker handle it.
+- **Synchronous [Webhooks](/docs/ferrox/integrations/webhooks)**: Never block the HTTP thread waiting for an external API (Stripe/ERP). Emit an event and let the background worker handle it.

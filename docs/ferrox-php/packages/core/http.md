@@ -23,7 +23,7 @@ The `AbstractController` is responsible for enterprise-grade execution of operat
   - Initializes a new instance of the class, enforcing strict constructor Dependency Injection (IoC) to guarantee internal memory-safety and immutability.
 
 - **`execute(CommandInterface $command) : Response`**
-  - Executes a CQRS command and returns a standardized JSON Response.
+  - Executes a [CQRS](/docs/ferrox-php/architectures/cqrs-sagas) command and returns a standardized JSON Response.
 
 - **`error(string $message, int $statusCode = 400) : Response`**
   - Standardized error response.

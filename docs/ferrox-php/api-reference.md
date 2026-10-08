@@ -17,8 +17,8 @@ Finalizes the application build process and verifies security invariants.
 
 ---
 
-## `Ferrox\Security\Sentinel\SentinelThreatEngineMiddleware`
-Ferrox Layer 2: Sentinel Threat Engine. Evaluates incoming payloads for anomalies, such as high Shannon Entropy indicative of obfuscated shellcode, SQLi, or AI RAG poisoning attempts.
+## `Ferrox\Security\[Sentinel](/docs/ferrox-php/security/sentinel-engine)\SentinelThreatEngineMiddleware`
+Ferrox Layer 2: [Sentinel](/docs/ferrox-php/security/sentinel-engine) Threat Engine. Evaluates incoming payloads for anomalies, such as high Shannon Entropy indicative of obfuscated shellcode, SQLi, or AI RAG poisoning attempts.
 
 ### `calculateEntropy(string $data): float`
 Calculates the Shannon Entropy of a given string. Higher values (> 4.8) generally indicate compressed, encrypted, or highly obfuscated data.
@@ -29,7 +29,7 @@ Calculates the Shannon Entropy of a given string. Higher values (> 4.8) generall
 ---
 
 ## `Ferrox\Cqrs\CommandBus`
-Core CQRS Command Bus. Responsible for routing Commands to their respective Handlers. In Ferrox, executing business logic directly in controllers is prohibited; all mutations must flow through this Bus to guarantee ACID transactions and Outbox publishing.
+Core [CQRS](/docs/ferrox-php/architectures/cqrs-sagas) Command Bus. Responsible for routing Commands to their respective Handlers. In Ferrox, executing business logic directly in controllers is prohibited; all mutations must flow through this Bus to guarantee ACID transactions and Outbox publishing.
 
 ### `dispatch(CommandInterface $command): mixed`
 Dispatches a Command to its registered Handler.

@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 📡 Event-Driven Architecture & Event Bus
+# 📡 Event-Driven Architecture & [Event Bus](/docs/ferrox/architectures/events)
 
 Event-driven architecture decouples producers of business events from subscribers that react to them (e.g. sending welcome emails when a `UserCreatedEvent` fires, updating analytics counters, or invalidating caches).
 
@@ -42,7 +42,7 @@ use ferrox_events::{InMemoryDispatcher, EventDispatcher};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Initialize Event Bus with capacity for 100 queued events
+    // Initialize [Event Bus](/docs/ferrox/architectures/events) with capacity for 100 queued events
     let dispatcher = InMemoryDispatcher::<UserCreatedEvent>::new(100);
 
     // 1. Subscribe Event Listeners

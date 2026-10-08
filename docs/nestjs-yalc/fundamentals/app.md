@@ -23,7 +23,7 @@ In enterprise NestJS architectures, microservices often duplicate complex bootst
 │  1. Init Global Logger (Pino / Winston)                                │
 │  2. Attach OpenTelemetry Tracing Context                              │
 │  3. Register Global ValidationPipes & ExceptionFilters                 │
-│  4. Mount Sentinel Security Headers & CORS                             │
+│  4. Mount [Sentinel](/docs/nestjs-yalc/security/sentinel) Security Headers & CORS                             │
 │  5. Setup Graceful Shutdown Listeners (SIGTERM/SIGINT)                 │
 └──────────────────────────────────┬─────────────────────────────────────┘
                                    │
@@ -60,7 +60,7 @@ sequenceDiagram
     Main->>Factory: YalcApplicationFactory.create(AppModule, options)
     Factory->>Nest: NestFactory.create(AppModule, { logger: YalcLogger })
     Nest->>App: Resolve Module Tree & Dependecies
-    App->>App: Register Global Interceptors, Pipes & Filters
+    App->>App: Register Global [Interceptors](/docs/ferrox/fundamentals/interceptors), [Pipes](/docs/ferrox/abstractions/pipes) & Filters
     Factory->>Nest: app.enableShutdownHooks(['SIGTERM', 'SIGINT'])
     Factory->>Nest: app.listen(port)
     Nest-->>Main: INestApplication Instance
