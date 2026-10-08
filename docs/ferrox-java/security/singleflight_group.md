@@ -1,6 +1,6 @@
 ---
 id: singleflight-group
-title: [Singleflight](/docs/ferrox-java/security/singleflight_group) Group
+title: Singleflight Group
 sidebar_position: 10
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: validation-pipes
-title: [Validation](/docs/ferrox-php/abstractions/validation-pipes) [Pipes](/docs/ferrox-php/abstractions/validation-pipes) & DTOs
+title: Validation Pipes & DTOs
 ---
 
 # [Validation](/docs/ferrox-php/abstractions/validation-pipes) [Pipes](/docs/ferrox-php/abstractions/validation-pipes) & DTOs

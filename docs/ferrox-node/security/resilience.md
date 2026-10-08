@@ -1,6 +1,6 @@
 ---
 id: resilience
-title: Circuit Breaker, [Singleflight](/docs/ferrox/security/singleflight) & Resilience Patterns
+title: Circuit Breaker, Singleflight & Resilience Patterns
 sidebar_position: 10
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: pipeline-middlewares
-title: HTTP Pipeline & [Middlewares](/docs/ferrox-php/packages/observability/middleware)
+title: HTTP Pipeline & Middlewares
 ---
 
 # HTTP Pipeline & [Middlewares](/docs/ferrox-php/packages/observability/middleware)

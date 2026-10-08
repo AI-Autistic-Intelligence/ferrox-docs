@@ -272,17 +272,17 @@
     "__comp": "17896441",
     "content": "612c1be9"
   },
-  "/docs/ferrox-php-731": {
+  "/docs/ferrox-php-e24": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "bbc575e1"
     }
   },
-  "/docs/ferrox-php-b95": {
+  "/docs/ferrox-php-d84": {
     "__comp": "a7bd4aaa",
     "__props": "ff81fbf4"
   },
-  "/docs/ferrox-php-d4b": {
+  "/docs/ferrox-php-247": {
     "__comp": "a94703ab"
   },
   "/docs/ferrox-php/abstractions/crud-generator-a48": {
@@ -637,30 +637,54 @@
     "__comp": "17896441",
     "content": "1f44f64d"
   },
+  "/docs/ferrox-php/security/sentinel-algorithms-46a": {
+    "__comp": "17896441",
+    "content": "20a95d2d"
+  },
   "/docs/ferrox-php/security/sentinel-engine-bd2": {
     "__comp": "17896441",
     "content": "b33f40a5"
   },
-  "/docs/ferrox-py-029": {
+  "/docs/ferrox-py-61e": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "84a17033"
     }
   },
-  "/docs/ferrox-py-8b7": {
+  "/docs/ferrox-py-963": {
     "__comp": "a7bd4aaa",
     "__props": "7cd51d08"
   },
-  "/docs/ferrox-py-4c9": {
+  "/docs/ferrox-py-0c5": {
     "__comp": "a94703ab"
+  },
+  "/docs/ferrox-py/abstractions/crud-generator-b41": {
+    "__comp": "17896441",
+    "content": "f4c0015b"
+  },
+  "/docs/ferrox-py/abstractions/guards-advanced-fa3": {
+    "__comp": "17896441",
+    "content": "5b9d3b53"
   },
   "/docs/ferrox-py/abstractions/pipes-interceptors-46b": {
     "__comp": "17896441",
     "content": "ebf900a4"
   },
+  "/docs/ferrox-py/architectures/api-gateway-158": {
+    "__comp": "17896441",
+    "content": "3668d817"
+  },
   "/docs/ferrox-py/architectures/cqrs-bc1": {
     "__comp": "17896441",
     "content": "e37dc2ed"
+  },
+  "/docs/ferrox-py/architectures/dag-b1f": {
+    "__comp": "17896441",
+    "content": "e60329d8"
+  },
+  "/docs/ferrox-py/architectures/queues-jobs-0ea": {
+    "__comp": "17896441",
+    "content": "014715d6"
   },
   "/docs/ferrox-py/architectures/sagas-460": {
     "__comp": "17896441",
@@ -670,11 +694,19 @@
     "__comp": "17896441",
     "content": "62b91795"
   },
-  "/docs/ferrox-py/auth/auth_service-bbf": {
+  "/docs/ferrox-py/auth/advanced-auth-9e2": {
+    "__comp": "17896441",
+    "content": "a8fd006b"
+  },
+  "/docs/ferrox-py/auth/auth-controller-74f": {
+    "__comp": "17896441",
+    "content": "5d049681"
+  },
+  "/docs/ferrox-py/auth/auth-service-a91": {
     "__comp": "17896441",
     "content": "b9d00652"
   },
-  "/docs/ferrox-py/auth/gdpr_service-a55": {
+  "/docs/ferrox-py/auth/gdpr-service-875": {
     "__comp": "17896441",
     "content": "8d42afd2"
   },
@@ -690,6 +722,14 @@
     "__comp": "17896441",
     "content": "4cd0cea5"
   },
+  "/docs/ferrox-py/cli/code-factory-913": {
+    "__comp": "17896441",
+    "content": "bcd169b6"
+  },
+  "/docs/ferrox-py/commerce/commerce-api-controller-92e": {
+    "__comp": "17896441",
+    "content": "8715177e"
+  },
   "/docs/ferrox-py/commerce/controllers-20a": {
     "__comp": "17896441",
     "content": "74cec476"
@@ -702,7 +742,15 @@
     "__comp": "17896441",
     "content": "d842db8c"
   },
-  "/docs/ferrox-py/commerce/transaction_state-9b6": {
+  "/docs/ferrox-py/commerce/paypal-gateway-4f2": {
+    "__comp": "17896441",
+    "content": "1a4618aa"
+  },
+  "/docs/ferrox-py/commerce/stripe-gateway-345": {
+    "__comp": "17896441",
+    "content": "8e2c316c"
+  },
+  "/docs/ferrox-py/commerce/transaction-state-787": {
     "__comp": "17896441",
     "content": "c78915f1"
   },
@@ -734,6 +782,30 @@
     "__comp": "17896441",
     "content": "a72a8532"
   },
+  "/docs/ferrox-py/integrations/cloud-4ce": {
+    "__comp": "17896441",
+    "content": "138969dd"
+  },
+  "/docs/ferrox-py/integrations/feature-flags-39b": {
+    "__comp": "17896441",
+    "content": "46030c63"
+  },
+  "/docs/ferrox-py/integrations/i18n-2ca": {
+    "__comp": "17896441",
+    "content": "9dac2949"
+  },
+  "/docs/ferrox-py/integrations/integration-connector-bba": {
+    "__comp": "17896441",
+    "content": "a66ed95e"
+  },
+  "/docs/ferrox-py/integrations/mailer-b49": {
+    "__comp": "17896441",
+    "content": "6fa974c7"
+  },
+  "/docs/ferrox-py/integrations/webhooks-controller-038": {
+    "__comp": "17896441",
+    "content": "4052f170"
+  },
   "/docs/ferrox-py/observability-b47": {
     "__comp": "17896441",
     "content": "d6a75e34"
@@ -762,6 +834,14 @@
     "__comp": "17896441",
     "content": "4ba7b021"
   },
+  "/docs/ferrox-py/security/sentinel-algorithms-e33": {
+    "__comp": "17896441",
+    "content": "705eead5"
+  },
+  "/docs/ferrox-py/transports/file-storage-066": {
+    "__comp": "17896441",
+    "content": "759e96f4"
+  },
   "/docs/ferrox-py/transports/web-448": {
     "__comp": "17896441",
     "content": "d9155be1"
@@ -782,17 +862,17 @@
     "__comp": "17896441",
     "content": "4532d084"
   },
-  "/docs/ferrox-bc7": {
+  "/docs/ferrox-727": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "b23c5c50"
     }
   },
-  "/docs/ferrox-f9b": {
+  "/docs/ferrox-05d": {
     "__comp": "a7bd4aaa",
     "__props": "1cb7ec1b"
   },
-  "/docs/ferrox-8c5": {
+  "/docs/ferrox-8ed": {
     "__comp": "a94703ab"
   },
   "/docs/ferrox/abstractions/crud-generator-ca2": {
@@ -879,6 +959,10 @@
     "__comp": "17896441",
     "content": "94d98f14"
   },
+  "/docs/ferrox/fundamentals/auth-middleware-228": {
+    "__comp": "17896441",
+    "content": "eeadf797"
+  },
   "/docs/ferrox/fundamentals/configuration-ecf": {
     "__comp": "17896441",
     "content": "d08eb387"
@@ -903,6 +987,10 @@
     "__comp": "17896441",
     "content": "16bc51c8"
   },
+  "/docs/ferrox/fundamentals/public-id-8d5": {
+    "__comp": "17896441",
+    "content": "01c3944c"
+  },
   "/docs/ferrox/fundamentals/testing-b31": {
     "__comp": "17896441",
     "content": "ec2b0ed5"
@@ -910,6 +998,14 @@
   "/docs/ferrox/integrations/feature-flags-391": {
     "__comp": "17896441",
     "content": "03930fd7"
+  },
+  "/docs/ferrox/integrations/ftp-df4": {
+    "__comp": "17896441",
+    "content": "df43098d"
+  },
+  "/docs/ferrox/integrations/gcp-7d8": {
+    "__comp": "17896441",
+    "content": "04b4530d"
   },
   "/docs/ferrox/integrations/i18n-14e": {
     "__comp": "17896441",
@@ -935,9 +1031,17 @@
     "__comp": "17896441",
     "content": "ec680db9"
   },
+  "/docs/ferrox/integrations/telemetry-exporter-a11": {
+    "__comp": "17896441",
+    "content": "95d943e6"
+  },
   "/docs/ferrox/integrations/webhooks-1e5": {
     "__comp": "17896441",
     "content": "10f4df55"
+  },
+  "/docs/ferrox/integrations/weekly-report-c68": {
+    "__comp": "17896441",
+    "content": "844175c2"
   },
   "/docs/ferrox/observability/health-checks-02f": {
     "__comp": "17896441",
@@ -991,6 +1095,10 @@
     "__comp": "17896441",
     "content": "98e4c181"
   },
+  "/docs/ferrox/security/dual-token-974": {
+    "__comp": "17896441",
+    "content": "acba9096"
+  },
   "/docs/ferrox/security/ferrox-selftest-249": {
     "__comp": "17896441",
     "content": "dae1831b"
@@ -1007,9 +1115,233 @@
     "__comp": "17896441",
     "content": "c90827f7"
   },
+  "/docs/ferrox/security/sentinel/ai-cognitive-security-a9c": {
+    "__comp": "17896441",
+    "content": "425bb467"
+  },
+  "/docs/ferrox/security/sentinel/ai-guardrails-70e": {
+    "__comp": "17896441",
+    "content": "2144c594"
+  },
+  "/docs/ferrox/security/sentinel/attack-graph-ccb": {
+    "__comp": "17896441",
+    "content": "dd1632d0"
+  },
+  "/docs/ferrox/security/sentinel/behavioral-biometrics-087": {
+    "__comp": "17896441",
+    "content": "d6fa86f3"
+  },
+  "/docs/ferrox/security/sentinel/canary-tokens-d2e": {
+    "__comp": "17896441",
+    "content": "e70765c6"
+  },
+  "/docs/ferrox/security/sentinel/continuous-security-metrics-3e9": {
+    "__comp": "17896441",
+    "content": "6c4193e6"
+  },
+  "/docs/ferrox/security/sentinel/cryptographic-downgrade-guard-b6c": {
+    "__comp": "17896441",
+    "content": "4d7a1cae"
+  },
+  "/docs/ferrox/security/sentinel/deep-packet-signature-dpi-cec": {
+    "__comp": "17896441",
+    "content": "4a65eea0"
+  },
+  "/docs/ferrox/security/sentinel/deterministic-replay-0e6": {
+    "__comp": "17896441",
+    "content": "19190a97"
+  },
+  "/docs/ferrox/security/sentinel/differential-privacy-534": {
+    "__comp": "17896441",
+    "content": "f15b04aa"
+  },
+  "/docs/ferrox/security/sentinel/double-ratchet-c54": {
+    "__comp": "17896441",
+    "content": "59c59d27"
+  },
+  "/docs/ferrox/security/sentinel/drift-a18": {
+    "__comp": "17896441",
+    "content": "6aa43d8d"
+  },
+  "/docs/ferrox/security/sentinel/edr-anti-evasion-8ff": {
+    "__comp": "17896441",
+    "content": "887b66ea"
+  },
+  "/docs/ferrox/security/sentinel/entropy-7f7": {
+    "__comp": "17896441",
+    "content": "834d0476"
+  },
+  "/docs/ferrox/security/sentinel/etwti-telemetry-guard-b15": {
+    "__comp": "17896441",
+    "content": "1187daa7"
+  },
+  "/docs/ferrox/security/sentinel/fingerprint-cb1": {
+    "__comp": "17896441",
+    "content": "a285b7ac"
+  },
+  "/docs/ferrox/security/sentinel/founder-05c": {
+    "__comp": "17896441",
+    "content": "fa6fe545"
+  },
+  "/docs/ferrox/security/sentinel/garbled-circuits-25b": {
+    "__comp": "17896441",
+    "content": "c1e7e963"
+  },
+  "/docs/ferrox/security/sentinel/hashing-trick-c98": {
+    "__comp": "17896441",
+    "content": "7d34eaf7"
+  },
+  "/docs/ferrox/security/sentinel/homomorphic-telemetry-4d8": {
+    "__comp": "17896441",
+    "content": "edac2aaf"
+  },
+  "/docs/ferrox/security/sentinel/honeynet-mesh-b95": {
+    "__comp": "17896441",
+    "content": "423600a7"
+  },
+  "/docs/ferrox/security/sentinel/honeypot-decoy-4ab": {
+    "__comp": "17896441",
+    "content": "3c7c35e4"
+  },
+  "/docs/ferrox/security/sentinel/integrity-watchdog-0a0": {
+    "__comp": "17896441",
+    "content": "c1b83412"
+  },
+  "/docs/ferrox/security/sentinel/isolation-forest-7af": {
+    "__comp": "17896441",
+    "content": "c8cb6eb9"
+  },
+  "/docs/ferrox/security/sentinel/isolation-playbooks-d76": {
+    "__comp": "17896441",
+    "content": "958fcb10"
+  },
+  "/docs/ferrox/security/sentinel/kernel-sysctl-hardener-268": {
+    "__comp": "17896441",
+    "content": "7860652a"
+  },
+  "/docs/ferrox/security/sentinel/lsass-credential-guard-ffe": {
+    "__comp": "17896441",
+    "content": "2fe234ee"
+  },
+  "/docs/ferrox/security/sentinel/markov-bbb": {
+    "__comp": "17896441",
+    "content": "2e82c1d4"
+  },
+  "/docs/ferrox/security/sentinel/merkle-284": {
+    "__comp": "17896441",
+    "content": "5d782c13"
+  },
+  "/docs/ferrox/security/sentinel/merkle-audit-chain-3e1": {
+    "__comp": "17896441",
+    "content": "1bb47b23"
+  },
+  "/docs/ferrox/security/sentinel/minhash-lsh-a54": {
+    "__comp": "17896441",
+    "content": "5f4ff45c"
+  },
+  "/docs/ferrox/security/sentinel/mtd-263": {
+    "__comp": "17896441",
+    "content": "395cc4b4"
+  },
+  "/docs/ferrox/security/sentinel/mtd-mutation-e67": {
+    "__comp": "17896441",
+    "content": "39adb714"
+  },
+  "/docs/ferrox/security/sentinel/multimodal-ai-guardrails-651": {
+    "__comp": "17896441",
+    "content": "2fd3b598"
+  },
+  "/docs/ferrox/security/sentinel/network-protocol-mesh-9ab": {
+    "__comp": "17896441",
+    "content": "d7b2c18d"
+  },
+  "/docs/ferrox/security/sentinel/ngrams-7cc": {
+    "__comp": "17896441",
+    "content": "0ab72a6e"
+  },
+  "/docs/ferrox/security/sentinel/pe-static-analyzer-11f": {
+    "__comp": "17896441",
+    "content": "c5e314d0"
+  },
+  "/docs/ferrox/security/sentinel/playbooks-862": {
+    "__comp": "17896441",
+    "content": "303c4fbd"
+  },
+  "/docs/ferrox/security/sentinel/polymorphic-routes-eed": {
+    "__comp": "17896441",
+    "content": "15d0b6f4"
+  },
+  "/docs/ferrox/security/sentinel/post-quantum-375": {
+    "__comp": "17896441",
+    "content": "42e538e2"
+  },
+  "/docs/ferrox/security/sentinel/protocol-fuzzer-sanitizer-31b": {
+    "__comp": "17896441",
+    "content": "89dd4e9c"
+  },
+  "/docs/ferrox/security/sentinel/rag-hallucination-groundedness-0ed": {
+    "__comp": "17896441",
+    "content": "91a68404"
+  },
+  "/docs/ferrox/security/sentinel/reduction-ed8": {
+    "__comp": "17896441",
+    "content": "6a3315e3"
+  },
+  "/docs/ferrox/security/sentinel/reinforcement-tuner-777": {
+    "__comp": "17896441",
+    "content": "987809ca"
+  },
+  "/docs/ferrox/security/sentinel/sbom-supply-chain-verifier-321": {
+    "__comp": "17896441",
+    "content": "74420049"
+  },
+  "/docs/ferrox/security/sentinel/seccomp-landlock-sandbox-5d1": {
+    "__comp": "17896441",
+    "content": "0724528e"
+  },
+  "/docs/ferrox/security/sentinel/self-healing-078": {
+    "__comp": "17896441",
+    "content": "35ccb351"
+  },
+  "/docs/ferrox/security/sentinel/session-replay-guard-d14": {
+    "__comp": "17896441",
+    "content": "a1e689b6"
+  },
+  "/docs/ferrox/security/sentinel/soar-vps-enforcer-583": {
+    "__comp": "17896441",
+    "content": "0a1e1646"
+  },
+  "/docs/ferrox/security/sentinel/squeezer-4ba": {
+    "__comp": "17896441",
+    "content": "00df0b5a"
+  },
+  "/docs/ferrox/security/sentinel/uap-b79": {
+    "__comp": "17896441",
+    "content": "4bc29bee"
+  },
+  "/docs/ferrox/security/sentinel/unbypassable-enforcer-21f": {
+    "__comp": "17896441",
+    "content": "05ecc3ed"
+  },
+  "/docs/ferrox/security/sentinel/vps-guard-107": {
+    "__comp": "17896441",
+    "content": "a6fdafdc"
+  },
+  "/docs/ferrox/security/sentinel/zk-burraco-attest-935": {
+    "__comp": "17896441",
+    "content": "a6650be2"
+  },
+  "/docs/ferrox/security/sentinel/zscore-0ee": {
+    "__comp": "17896441",
+    "content": "c548206d"
+  },
   "/docs/ferrox/security/singleflight-355": {
     "__comp": "17896441",
     "content": "b5037e8d"
+  },
+  "/docs/ferrox/transports/aggrid-07c": {
+    "__comp": "17896441",
+    "content": "d560e360"
   },
   "/docs/ferrox/transports/datagrid-4be": {
     "__comp": "17896441",
@@ -1026,6 +1358,10 @@
   "/docs/ferrox/transports/graphql-advanced-456": {
     "__comp": "17896441",
     "content": "52c7b969"
+  },
+  "/docs/ferrox/transports/mui-4f5": {
+    "__comp": "17896441",
+    "content": "866d2be2"
   },
   "/docs/ferrox/transports/sse-f7c": {
     "__comp": "17896441",

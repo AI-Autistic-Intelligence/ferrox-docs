@@ -1,6 +1,6 @@
 ---
 id: config
-title: Dynamic Configuration Engine & [Validation](/docs/ferrox/abstractions/validation) Schemas
+title: Dynamic Configuration Engine & Validation Schemas
 sidebar_position: 2
 ---
 

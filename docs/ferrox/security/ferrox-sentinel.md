@@ -1,6 +1,6 @@
 ---
 id: ferrox-sentinel
-title: Ferrox [Sentinel](/docs/ferrox/security/ferrox-sentinel) Edge Shield, CSP Directives & Payload Bouncer
+title: Ferrox Sentinel Edge Shield, CSP Directives & Payload Bouncer
 sidebar_position: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: overview
-title: [Validation](/docs/ferrox-php/abstractions/validation-pipes) Package Overview
+title: Validation Package Overview
 sidebar_position: 1
 ---
 

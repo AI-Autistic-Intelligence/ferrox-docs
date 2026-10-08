@@ -116,6 +116,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "fundamentals/auth-middleware",
+              "path": "/docs/ferrox/fundamentals/auth-middleware",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "fundamentals/configuration",
               "path": "/docs/ferrox/fundamentals/configuration",
               "sidebar": "tutorialSidebar"
@@ -146,6 +151,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "fundamentals/public-id",
+              "path": "/docs/ferrox/fundamentals/public-id",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "fundamentals/testing",
               "path": "/docs/ferrox/fundamentals/testing",
               "sidebar": "tutorialSidebar"
@@ -153,6 +163,16 @@
             {
               "id": "integrations/feature-flags",
               "path": "/docs/ferrox/integrations/feature-flags",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/ftp",
+              "path": "/docs/ferrox/integrations/ftp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/gcp",
+              "path": "/docs/ferrox/integrations/gcp",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -186,8 +206,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "integrations/telemetry-exporter",
+              "path": "/docs/ferrox/integrations/telemetry-exporter",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "integrations/webhooks",
               "path": "/docs/ferrox/integrations/webhooks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/weekly-report",
+              "path": "/docs/ferrox/integrations/weekly-report",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -256,6 +286,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "security/dual-token",
+              "path": "/docs/ferrox/security/dual-token",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "security/ferrox-selftest",
               "path": "/docs/ferrox/security/ferrox-selftest",
               "sidebar": "tutorialSidebar"
@@ -276,8 +311,288 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "security/sentinel/ai-cognitive-security",
+              "path": "/docs/ferrox/security/sentinel/ai-cognitive-security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/ai-guardrails",
+              "path": "/docs/ferrox/security/sentinel/ai-guardrails",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/attack-graph",
+              "path": "/docs/ferrox/security/sentinel/attack-graph",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/behavioral-biometrics",
+              "path": "/docs/ferrox/security/sentinel/behavioral-biometrics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/canary-tokens",
+              "path": "/docs/ferrox/security/sentinel/canary-tokens",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/continuous-security-metrics",
+              "path": "/docs/ferrox/security/sentinel/continuous-security-metrics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/cryptographic-downgrade-guard",
+              "path": "/docs/ferrox/security/sentinel/cryptographic-downgrade-guard",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/deep-packet-signature-dpi",
+              "path": "/docs/ferrox/security/sentinel/deep-packet-signature-dpi",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/deterministic-replay",
+              "path": "/docs/ferrox/security/sentinel/deterministic-replay",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/differential-privacy",
+              "path": "/docs/ferrox/security/sentinel/differential-privacy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/double-ratchet",
+              "path": "/docs/ferrox/security/sentinel/double-ratchet",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/drift",
+              "path": "/docs/ferrox/security/sentinel/drift",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/edr-anti-evasion",
+              "path": "/docs/ferrox/security/sentinel/edr-anti-evasion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/entropy",
+              "path": "/docs/ferrox/security/sentinel/entropy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/etwti-telemetry-guard",
+              "path": "/docs/ferrox/security/sentinel/etwti-telemetry-guard",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/fingerprint",
+              "path": "/docs/ferrox/security/sentinel/fingerprint",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/founder",
+              "path": "/docs/ferrox/security/sentinel/founder",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/garbled-circuits",
+              "path": "/docs/ferrox/security/sentinel/garbled-circuits",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/hashing-trick",
+              "path": "/docs/ferrox/security/sentinel/hashing-trick",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/homomorphic-telemetry",
+              "path": "/docs/ferrox/security/sentinel/homomorphic-telemetry",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/honeynet-mesh",
+              "path": "/docs/ferrox/security/sentinel/honeynet-mesh",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/honeypot-decoy",
+              "path": "/docs/ferrox/security/sentinel/honeypot-decoy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/integrity-watchdog",
+              "path": "/docs/ferrox/security/sentinel/integrity-watchdog",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/isolation-forest",
+              "path": "/docs/ferrox/security/sentinel/isolation-forest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/isolation-playbooks",
+              "path": "/docs/ferrox/security/sentinel/isolation-playbooks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/kernel-sysctl-hardener",
+              "path": "/docs/ferrox/security/sentinel/kernel-sysctl-hardener",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/lsass-credential-guard",
+              "path": "/docs/ferrox/security/sentinel/lsass-credential-guard",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/markov",
+              "path": "/docs/ferrox/security/sentinel/markov",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/merkle",
+              "path": "/docs/ferrox/security/sentinel/merkle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/merkle-audit-chain",
+              "path": "/docs/ferrox/security/sentinel/merkle-audit-chain",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/minhash-lsh",
+              "path": "/docs/ferrox/security/sentinel/minhash-lsh",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/mtd",
+              "path": "/docs/ferrox/security/sentinel/mtd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/mtd-mutation",
+              "path": "/docs/ferrox/security/sentinel/mtd-mutation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/multimodal-ai-guardrails",
+              "path": "/docs/ferrox/security/sentinel/multimodal-ai-guardrails",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/network-protocol-mesh",
+              "path": "/docs/ferrox/security/sentinel/network-protocol-mesh",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/ngrams",
+              "path": "/docs/ferrox/security/sentinel/ngrams",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/pe-static-analyzer",
+              "path": "/docs/ferrox/security/sentinel/pe-static-analyzer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/playbooks",
+              "path": "/docs/ferrox/security/sentinel/playbooks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/polymorphic-routes",
+              "path": "/docs/ferrox/security/sentinel/polymorphic-routes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/post-quantum",
+              "path": "/docs/ferrox/security/sentinel/post-quantum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/protocol-fuzzer-sanitizer",
+              "path": "/docs/ferrox/security/sentinel/protocol-fuzzer-sanitizer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/rag-hallucination-groundedness",
+              "path": "/docs/ferrox/security/sentinel/rag-hallucination-groundedness",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/reduction",
+              "path": "/docs/ferrox/security/sentinel/reduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/reinforcement-tuner",
+              "path": "/docs/ferrox/security/sentinel/reinforcement-tuner",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/sbom-supply-chain-verifier",
+              "path": "/docs/ferrox/security/sentinel/sbom-supply-chain-verifier",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/seccomp-landlock-sandbox",
+              "path": "/docs/ferrox/security/sentinel/seccomp-landlock-sandbox",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/self-healing",
+              "path": "/docs/ferrox/security/sentinel/self-healing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/session-replay-guard",
+              "path": "/docs/ferrox/security/sentinel/session-replay-guard",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/soar-vps-enforcer",
+              "path": "/docs/ferrox/security/sentinel/soar-vps-enforcer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/squeezer",
+              "path": "/docs/ferrox/security/sentinel/squeezer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/uap",
+              "path": "/docs/ferrox/security/sentinel/uap",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/unbypassable-enforcer",
+              "path": "/docs/ferrox/security/sentinel/unbypassable-enforcer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/vps-guard",
+              "path": "/docs/ferrox/security/sentinel/vps-guard",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/zk-burraco-attest",
+              "path": "/docs/ferrox/security/sentinel/zk-burraco-attest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel/zscore",
+              "path": "/docs/ferrox/security/sentinel/zscore",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "security/singleflight",
               "path": "/docs/ferrox/security/singleflight",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/aggrid",
+              "path": "/docs/ferrox/transports/aggrid",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -298,6 +613,11 @@
             {
               "id": "transports/graphql-advanced",
               "path": "/docs/ferrox/transports/graphql-advanced",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/mui",
+              "path": "/docs/ferrox/transports/mui",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -352,16 +672,41 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs/ferrox-py",
-          "mainDocId": "abstractions/pipes-interceptors",
+          "mainDocId": "abstractions/crud-generator",
           "docs": [
+            {
+              "id": "abstractions/crud-generator",
+              "path": "/docs/ferrox-py/abstractions/crud-generator",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "abstractions/guards-advanced",
+              "path": "/docs/ferrox-py/abstractions/guards-advanced",
+              "sidebar": "tutorialSidebar"
+            },
             {
               "id": "abstractions/pipes-interceptors",
               "path": "/docs/ferrox-py/abstractions/pipes-interceptors",
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "architectures/api-gateway",
+              "path": "/docs/ferrox-py/architectures/api-gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "architectures/cqrs",
               "path": "/docs/ferrox-py/architectures/cqrs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architectures/dag",
+              "path": "/docs/ferrox-py/architectures/dag",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architectures/queues-jobs",
+              "path": "/docs/ferrox-py/architectures/queues-jobs",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -375,13 +720,23 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "auth/auth_service",
-              "path": "/docs/ferrox-py/auth/auth_service",
+              "id": "auth/advanced-auth",
+              "path": "/docs/ferrox-py/auth/advanced-auth",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "auth/gdpr_service",
-              "path": "/docs/ferrox-py/auth/gdpr_service",
+              "id": "auth/auth-controller",
+              "path": "/docs/ferrox-py/auth/auth-controller",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "auth/auth-service",
+              "path": "/docs/ferrox-py/auth/auth-service",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "auth/gdpr-service",
+              "path": "/docs/ferrox-py/auth/gdpr-service",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -400,6 +755,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "cli/code-factory",
+              "path": "/docs/ferrox-py/cli/code-factory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/commerce-api-controller",
+              "path": "/docs/ferrox-py/commerce/commerce-api-controller",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "commerce/controllers",
               "path": "/docs/ferrox-py/commerce/controllers",
               "sidebar": "tutorialSidebar"
@@ -415,8 +780,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "commerce/transaction_state",
-              "path": "/docs/ferrox-py/commerce/transaction_state",
+              "id": "commerce/paypal-gateway",
+              "path": "/docs/ferrox-py/commerce/paypal-gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/stripe-gateway",
+              "path": "/docs/ferrox-py/commerce/stripe-gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "commerce/transaction-state",
+              "path": "/docs/ferrox-py/commerce/transaction-state",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -455,6 +830,36 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "integrations/cloud",
+              "path": "/docs/ferrox-py/integrations/cloud",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/feature-flags",
+              "path": "/docs/ferrox-py/integrations/feature-flags",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/i18n",
+              "path": "/docs/ferrox-py/integrations/i18n",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/integration-connector",
+              "path": "/docs/ferrox-py/integrations/integration-connector",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/mailer",
+              "path": "/docs/ferrox-py/integrations/mailer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integrations/webhooks-controller",
+              "path": "/docs/ferrox-py/integrations/webhooks-controller",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "observability/observability",
               "path": "/docs/ferrox-py/observability/",
               "sidebar": "tutorialSidebar"
@@ -490,6 +895,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "security/sentinel-algorithms",
+              "path": "/docs/ferrox-py/security/sentinel-algorithms",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "transports/file-storage",
+              "path": "/docs/ferrox-py/transports/file-storage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "transports/web",
               "path": "/docs/ferrox-py/transports/web",
               "sidebar": "tutorialSidebar"
@@ -519,8 +934,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/ferrox-py/abstractions/pipes-interceptors",
-                "label": "abstractions/pipes-interceptors"
+                "path": "/docs/ferrox-py/abstractions/crud-generator",
+                "label": "abstractions/crud-generator"
               }
             }
           }
@@ -1324,6 +1739,11 @@
             {
               "id": "security/rbac-guards",
               "path": "/docs/ferrox-php/security/rbac-guards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/sentinel-algorithms",
+              "path": "/docs/ferrox-php/security/sentinel-algorithms",
               "sidebar": "tutorialSidebar"
             },
             {

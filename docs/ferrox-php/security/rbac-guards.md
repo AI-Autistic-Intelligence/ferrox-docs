@@ -1,6 +1,6 @@
 ---
 id: rbac-guards
-title: RBAC & Security [Guards](/docs/ferrox-php/security/rbac-guards)
+title: RBAC & Security Guards
 ---
 
 # RBAC & Security [Guards](/docs/ferrox-php/security/rbac-guards)

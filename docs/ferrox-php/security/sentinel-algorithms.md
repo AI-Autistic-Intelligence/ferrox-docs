@@ -1,6 +1,6 @@
 ---
 id: sentinel-algorithms
-title: [Sentinel](/docs/ferrox-php/security/sentinel-engine) AI Algorithms
+title: Sentinel AI Algorithms
 sidebar_position: 4
 ---
 

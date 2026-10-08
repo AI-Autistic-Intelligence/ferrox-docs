@@ -1,6 +1,6 @@
 ---
 id: sentinel-engine
-title: [Sentinel](/docs/ferrox-php/security/sentinel-engine) Threat Engine
+title: Sentinel Threat Engine
 ---
 
 # [Sentinel](/docs/ferrox-php/security/sentinel-engine) Threat Engine

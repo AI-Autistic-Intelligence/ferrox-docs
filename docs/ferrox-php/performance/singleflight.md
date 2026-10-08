@@ -1,6 +1,6 @@
 ---
 id: singleflight
-title: Circuit Breaker & [Singleflight](/docs/ferrox-php/performance/singleflight)
+title: Circuit Breaker & Singleflight
 ---
 
 # Circuit Breaker & [Singleflight](/docs/ferrox-php/performance/singleflight)

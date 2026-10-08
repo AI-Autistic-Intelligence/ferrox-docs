@@ -1,6 +1,6 @@
 ---
 id: types
-title: Type Primitives, Utility Types & Type [Guards](/docs/ferrox/abstractions/guards)
+title: Type Primitives, Utility Types & Type Guards
 sidebar_position: 1
 ---
 

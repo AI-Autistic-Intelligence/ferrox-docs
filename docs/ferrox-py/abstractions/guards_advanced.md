@@ -1,6 +1,6 @@
 ---
 id: guards-advanced
-title: [Guards](/docs/ferrox-py/abstractions/guards_advanced) Advanced
+title: Guards Advanced
 sidebar_position: 10
 ---
 

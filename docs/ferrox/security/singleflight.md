@@ -1,6 +1,6 @@
 ---
 id: singleflight
-title: [Singleflight](/docs/ferrox/security/singleflight) Request Deduplication & Cache Stampede Shield
+title: Singleflight Request Deduplication & Cache Stampede Shield
 sidebar_position: 7
 ---
 

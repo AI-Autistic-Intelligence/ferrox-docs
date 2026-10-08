@@ -1,6 +1,6 @@
 ---
 id: rate-limiting
-title: [Rate Limiting](/docs/ferrox-php/security/rate-limiting)
+title: Rate Limiting
 ---
 
 # [Rate Limiting](/docs/ferrox-php/security/rate-limiting)

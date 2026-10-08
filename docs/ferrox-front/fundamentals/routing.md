@@ -1,6 +1,6 @@
 ---
 id: routing
-title: Client-Side Router, Route [Guards](/docs/ferrox/abstractions/guards) & Lazy Loading
+title: Client-Side Router, Route Guards & Lazy Loading
 sidebar_position: 4
 ---
 

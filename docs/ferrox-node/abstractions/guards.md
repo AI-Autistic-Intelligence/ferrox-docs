@@ -1,6 +1,6 @@
 ---
 id: guards
-title: Security [Guards](/docs/ferrox-node/modules/guards), RBAC & Role Permission Engine
+title: Security Guards, RBAC & Role Permission Engine
 sidebar_position: 6
 ---
 

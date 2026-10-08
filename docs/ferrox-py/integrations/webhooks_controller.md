@@ -1,6 +1,6 @@
 ---
 id: webhooks-controller
-title: [Webhooks](/docs/ferrox-py/transports/web) Controller
+title: Webhooks Controller
 sidebar_position: 10
 ---
 

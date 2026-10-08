@@ -1,6 +1,6 @@
 ---
 id: sentinel-algorithms
-title: [Sentinel](/docs/ferrox-py/security/sentinel-algorithms) AI Algorithms
+title: Sentinel AI Algorithms
 sidebar_position: 4
 ---
 

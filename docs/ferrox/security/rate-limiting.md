@@ -1,6 +1,6 @@
 ---
 id: rate-limiting
-title: [Rate Limiting](/docs/ferrox/security/rate-limiting) Engine, Leaky Bucket & Sliding Window Log
+title: Rate Limiting Engine, Leaky Bucket & Sliding Window Log
 sidebar_position: 5
 ---
 

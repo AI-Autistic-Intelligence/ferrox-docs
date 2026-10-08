@@ -1,6 +1,6 @@
 ---
 id: cqrs
-title: [CQRS](/docs/ferrox-node/modules/cqrs) & Event Sourcing
+title: CQRS & Event Sourcing
 sidebar_position: 1
 ---
 

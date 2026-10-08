@@ -1,6 +1,6 @@
 ---
 id: sentinel-threat-engine
-title: [Sentinel](/docs/ferrox-java/security/sentinel_threat_engine) Threat Engine
+title: Sentinel Threat Engine
 sidebar_position: 10
 ---
 

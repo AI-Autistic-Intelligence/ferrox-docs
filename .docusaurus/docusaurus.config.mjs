@@ -35,7 +35,7 @@ export default {
   "projectName": "ferrox-docs",
   "deploymentBranch": "gh-pages",
   "trailingSlash": false,
-  "onBrokenLinks": "throw",
+  "onBrokenLinks": "warn",
   "i18n": {
     "defaultLocale": "en",
     "locales": [

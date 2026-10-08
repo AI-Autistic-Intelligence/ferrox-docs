@@ -1,6 +1,6 @@
 ---
 id: cqrs-sagas
-title: [CQRS](/docs/ferrox-php/architectures/cqrs-sagas) & [Sagas](/docs/ferrox-php/architectures/cqrs-sagas)
+title: CQRS & Sagas
 ---
 
 # [CQRS](/docs/ferrox-php/architectures/cqrs-sagas) & [Sagas](/docs/ferrox-php/architectures/cqrs-sagas)

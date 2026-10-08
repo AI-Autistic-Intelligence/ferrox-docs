@@ -405,15 +405,15 @@ export default [
   },
   {
     path: '/docs/ferrox-php',
-    component: ComponentCreator('/docs/ferrox-php', '731'),
+    component: ComponentCreator('/docs/ferrox-php', 'e24'),
     routes: [
       {
         path: '/docs/ferrox-php',
-        component: ComponentCreator('/docs/ferrox-php', 'b95'),
+        component: ComponentCreator('/docs/ferrox-php', 'd84'),
         routes: [
           {
             path: '/docs/ferrox-php',
-            component: ComponentCreator('/docs/ferrox-php', 'd4b'),
+            component: ComponentCreator('/docs/ferrox-php', '247'),
             routes: [
               {
                 path: '/docs/ferrox-php/abstractions/crud-generator',
@@ -944,6 +944,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-php/security/sentinel-algorithms',
+                component: ComponentCreator('/docs/ferrox-php/security/sentinel-algorithms', '46a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-php/security/sentinel-engine',
                 component: ComponentCreator('/docs/ferrox-php/security/sentinel-engine', 'bd2'),
                 exact: true,
@@ -957,16 +963,28 @@ export default [
   },
   {
     path: '/docs/ferrox-py',
-    component: ComponentCreator('/docs/ferrox-py', '029'),
+    component: ComponentCreator('/docs/ferrox-py', '61e'),
     routes: [
       {
         path: '/docs/ferrox-py',
-        component: ComponentCreator('/docs/ferrox-py', '8b7'),
+        component: ComponentCreator('/docs/ferrox-py', '963'),
         routes: [
           {
             path: '/docs/ferrox-py',
-            component: ComponentCreator('/docs/ferrox-py', '4c9'),
+            component: ComponentCreator('/docs/ferrox-py', '0c5'),
             routes: [
+              {
+                path: '/docs/ferrox-py/abstractions/crud-generator',
+                component: ComponentCreator('/docs/ferrox-py/abstractions/crud-generator', 'b41'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/abstractions/guards-advanced',
+                component: ComponentCreator('/docs/ferrox-py/abstractions/guards-advanced', 'fa3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/ferrox-py/abstractions/pipes-interceptors',
                 component: ComponentCreator('/docs/ferrox-py/abstractions/pipes-interceptors', '46b'),
@@ -974,8 +992,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-py/architectures/api-gateway',
+                component: ComponentCreator('/docs/ferrox-py/architectures/api-gateway', '158'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-py/architectures/cqrs',
                 component: ComponentCreator('/docs/ferrox-py/architectures/cqrs', 'bc1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/architectures/dag',
+                component: ComponentCreator('/docs/ferrox-py/architectures/dag', 'b1f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/architectures/queues-jobs',
+                component: ComponentCreator('/docs/ferrox-py/architectures/queues-jobs', '0ea'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -992,14 +1028,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-py/auth/auth_service',
-                component: ComponentCreator('/docs/ferrox-py/auth/auth_service', 'bbf'),
+                path: '/docs/ferrox-py/auth/advanced-auth',
+                component: ComponentCreator('/docs/ferrox-py/auth/advanced-auth', '9e2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-py/auth/gdpr_service',
-                component: ComponentCreator('/docs/ferrox-py/auth/gdpr_service', 'a55'),
+                path: '/docs/ferrox-py/auth/auth-controller',
+                component: ComponentCreator('/docs/ferrox-py/auth/auth-controller', '74f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/auth/auth-service',
+                component: ComponentCreator('/docs/ferrox-py/auth/auth-service', 'a91'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/auth/gdpr-service',
+                component: ComponentCreator('/docs/ferrox-py/auth/gdpr-service', '875'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -1022,6 +1070,18 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-py/cli/code-factory',
+                component: ComponentCreator('/docs/ferrox-py/cli/code-factory', '913'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/commerce-api-controller',
+                component: ComponentCreator('/docs/ferrox-py/commerce/commerce-api-controller', '92e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-py/commerce/controllers',
                 component: ComponentCreator('/docs/ferrox-py/commerce/controllers', '20a'),
                 exact: true,
@@ -1040,8 +1100,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ferrox-py/commerce/transaction_state',
-                component: ComponentCreator('/docs/ferrox-py/commerce/transaction_state', '9b6'),
+                path: '/docs/ferrox-py/commerce/paypal-gateway',
+                component: ComponentCreator('/docs/ferrox-py/commerce/paypal-gateway', '4f2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/stripe-gateway',
+                component: ComponentCreator('/docs/ferrox-py/commerce/stripe-gateway', '345'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/commerce/transaction-state',
+                component: ComponentCreator('/docs/ferrox-py/commerce/transaction-state', '787'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -1088,6 +1160,42 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-py/integrations/cloud',
+                component: ComponentCreator('/docs/ferrox-py/integrations/cloud', '4ce'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/integrations/feature-flags',
+                component: ComponentCreator('/docs/ferrox-py/integrations/feature-flags', '39b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/integrations/i18n',
+                component: ComponentCreator('/docs/ferrox-py/integrations/i18n', '2ca'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/integrations/integration-connector',
+                component: ComponentCreator('/docs/ferrox-py/integrations/integration-connector', 'bba'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/integrations/mailer',
+                component: ComponentCreator('/docs/ferrox-py/integrations/mailer', 'b49'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/integrations/webhooks-controller',
+                component: ComponentCreator('/docs/ferrox-py/integrations/webhooks-controller', '038'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-py/observability',
                 component: ComponentCreator('/docs/ferrox-py/observability', 'b47'),
                 exact: true,
@@ -1130,6 +1238,18 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox-py/security/sentinel-algorithms',
+                component: ComponentCreator('/docs/ferrox-py/security/sentinel-algorithms', 'e33'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox-py/transports/file-storage',
+                component: ComponentCreator('/docs/ferrox-py/transports/file-storage', '066'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox-py/transports/web',
                 component: ComponentCreator('/docs/ferrox-py/transports/web', '448'),
                 exact: true,
@@ -1167,15 +1287,15 @@ export default [
   },
   {
     path: '/docs/ferrox',
-    component: ComponentCreator('/docs/ferrox', 'bc7'),
+    component: ComponentCreator('/docs/ferrox', '727'),
     routes: [
       {
         path: '/docs/ferrox',
-        component: ComponentCreator('/docs/ferrox', 'f9b'),
+        component: ComponentCreator('/docs/ferrox', '05d'),
         routes: [
           {
             path: '/docs/ferrox',
-            component: ComponentCreator('/docs/ferrox', '8c5'),
+            component: ComponentCreator('/docs/ferrox', '8ed'),
             routes: [
               {
                 path: '/docs/ferrox/abstractions/crud-generator',
@@ -1304,6 +1424,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox/fundamentals/auth-middleware',
+                component: ComponentCreator('/docs/ferrox/fundamentals/auth-middleware', '228'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox/fundamentals/configuration',
                 component: ComponentCreator('/docs/ferrox/fundamentals/configuration', 'ecf'),
                 exact: true,
@@ -1340,6 +1466,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox/fundamentals/public-id',
+                component: ComponentCreator('/docs/ferrox/fundamentals/public-id', '8d5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox/fundamentals/testing',
                 component: ComponentCreator('/docs/ferrox/fundamentals/testing', 'b31'),
                 exact: true,
@@ -1348,6 +1480,18 @@ export default [
               {
                 path: '/docs/ferrox/integrations/feature-flags',
                 component: ComponentCreator('/docs/ferrox/integrations/feature-flags', '391'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/integrations/ftp',
+                component: ComponentCreator('/docs/ferrox/integrations/ftp', 'df4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/integrations/gcp',
+                component: ComponentCreator('/docs/ferrox/integrations/gcp', '7d8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -1388,8 +1532,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox/integrations/telemetry-exporter',
+                component: ComponentCreator('/docs/ferrox/integrations/telemetry-exporter', 'a11'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox/integrations/webhooks',
                 component: ComponentCreator('/docs/ferrox/integrations/webhooks', '1e5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/integrations/weekly-report',
+                component: ComponentCreator('/docs/ferrox/integrations/weekly-report', 'c68'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -1472,6 +1628,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox/security/dual-token',
+                component: ComponentCreator('/docs/ferrox/security/dual-token', '974'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox/security/ferrox-selftest',
                 component: ComponentCreator('/docs/ferrox/security/ferrox-selftest', '249'),
                 exact: true,
@@ -1496,8 +1658,344 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/ferrox/security/sentinel/ai-cognitive-security',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/ai-cognitive-security', 'a9c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/ai-guardrails',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/ai-guardrails', '70e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/attack-graph',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/attack-graph', 'ccb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/behavioral-biometrics',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/behavioral-biometrics', '087'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/canary-tokens',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/canary-tokens', 'd2e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/continuous-security-metrics',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/continuous-security-metrics', '3e9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/cryptographic-downgrade-guard',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/cryptographic-downgrade-guard', 'b6c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/deep-packet-signature-dpi',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/deep-packet-signature-dpi', 'cec'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/deterministic-replay',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/deterministic-replay', '0e6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/differential-privacy',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/differential-privacy', '534'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/double-ratchet',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/double-ratchet', 'c54'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/drift',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/drift', 'a18'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/edr-anti-evasion',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/edr-anti-evasion', '8ff'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/entropy',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/entropy', '7f7'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/etwti-telemetry-guard',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/etwti-telemetry-guard', 'b15'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/fingerprint',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/fingerprint', 'cb1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/founder',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/founder', '05c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/garbled-circuits',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/garbled-circuits', '25b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/hashing-trick',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/hashing-trick', 'c98'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/homomorphic-telemetry',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/homomorphic-telemetry', '4d8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/honeynet-mesh',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/honeynet-mesh', 'b95'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/honeypot-decoy',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/honeypot-decoy', '4ab'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/integrity-watchdog',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/integrity-watchdog', '0a0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/isolation-forest',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/isolation-forest', '7af'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/isolation-playbooks',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/isolation-playbooks', 'd76'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/kernel-sysctl-hardener',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/kernel-sysctl-hardener', '268'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/lsass-credential-guard',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/lsass-credential-guard', 'ffe'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/markov',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/markov', 'bbb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/merkle',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/merkle', '284'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/merkle-audit-chain',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/merkle-audit-chain', '3e1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/minhash-lsh',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/minhash-lsh', 'a54'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/mtd',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/mtd', '263'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/mtd-mutation',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/mtd-mutation', 'e67'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/multimodal-ai-guardrails',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/multimodal-ai-guardrails', '651'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/network-protocol-mesh',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/network-protocol-mesh', '9ab'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/ngrams',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/ngrams', '7cc'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/pe-static-analyzer',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/pe-static-analyzer', '11f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/playbooks',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/playbooks', '862'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/polymorphic-routes',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/polymorphic-routes', 'eed'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/post-quantum',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/post-quantum', '375'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/protocol-fuzzer-sanitizer',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/protocol-fuzzer-sanitizer', '31b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/rag-hallucination-groundedness',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/rag-hallucination-groundedness', '0ed'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/reduction',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/reduction', 'ed8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/reinforcement-tuner',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/reinforcement-tuner', '777'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/sbom-supply-chain-verifier',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/sbom-supply-chain-verifier', '321'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/seccomp-landlock-sandbox',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/seccomp-landlock-sandbox', '5d1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/self-healing',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/self-healing', '078'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/session-replay-guard',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/session-replay-guard', 'd14'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/soar-vps-enforcer',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/soar-vps-enforcer', '583'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/squeezer',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/squeezer', '4ba'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/uap',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/uap', 'b79'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/unbypassable-enforcer',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/unbypassable-enforcer', '21f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/vps-guard',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/vps-guard', '107'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/zk-burraco-attest',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/zk-burraco-attest', '935'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/security/sentinel/zscore',
+                component: ComponentCreator('/docs/ferrox/security/sentinel/zscore', '0ee'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/ferrox/security/singleflight',
                 component: ComponentCreator('/docs/ferrox/security/singleflight', '355'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/transports/aggrid',
+                component: ComponentCreator('/docs/ferrox/transports/aggrid', '07c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -1522,6 +2020,12 @@ export default [
               {
                 path: '/docs/ferrox/transports/graphql-advanced',
                 component: ComponentCreator('/docs/ferrox/transports/graphql-advanced', '456'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/transports/mui',
+                component: ComponentCreator('/docs/ferrox/transports/mui', '4f5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

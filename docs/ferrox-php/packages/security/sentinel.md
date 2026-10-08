@@ -1,6 +1,6 @@
 ---
 id: sentinel
-title: [Sentinel](/docs/ferrox-php/security/sentinel-engine) Submodule
+title: Sentinel Submodule
 ---
 
 # [Sentinel](/docs/ferrox-php/security/sentinel-engine) Submodule
