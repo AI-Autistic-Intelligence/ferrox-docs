@@ -1,0 +1,8 @@
+{
+  "label": "Enterprise Modules",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Premium modules to turn Ferrox into the 'Pure Code WordPress': Universal OAuth, KYC identity verification, and Cloud/IaC provisioning."
+  }
+}
