@@ -87,7 +87,7 @@ export default {
         "id": "ferrox-front",
         "path": "docs/ferrox-front",
         "routeBasePath": "docs/ferrox-front",
-        "sidebarPath": "./sidebars.js"
+        "sidebarPath": "./sidebarsFerroxFront.js"
       }
     ],
     [
@@ -160,6 +160,11 @@ export default {
         {
           "to": "/docs/ferrox-front/overview",
           "label": "Ferrox Front",
+          "position": "left"
+        },
+        {
+          "to": "/docs/ferrox/performance/1m-rps",
+          "label": "⚡ 1M RPS Benchmark",
           "position": "left"
         },
         {

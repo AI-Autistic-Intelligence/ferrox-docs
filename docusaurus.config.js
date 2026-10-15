@@ -90,7 +90,7 @@ const config = {
         id: 'ferrox-front',
         path: 'docs/ferrox-front',
         routeBasePath: 'docs/ferrox-front',
-        sidebarPath: './sidebars.js',
+        sidebarPath: './sidebarsFerroxFront.js',
       },
     ],
 
@@ -146,6 +146,7 @@ const config = {
           { to: '/docs/ferrox-node/overview', label: 'Ferrox Node', position: 'left' },
           { to: '/docs/ferrox-py/overview', label: 'Ferrox Py', position: 'left' },
           { to: '/docs/ferrox-front/overview', label: 'Ferrox Front', position: 'left' },
+          { to: '/docs/ferrox/performance/1m-rps', label: '⚡ 1M RPS Benchmark', position: 'left' },
 
           { to: '/docs/ferrox-php/overview', label: 'Ferrox PHP', position: 'left' },
           { to: '/docs/nestjs-yalc/overview', label: 'NestJS YALC', position: 'left' },

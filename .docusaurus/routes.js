@@ -9,93 +9,105 @@ export default [
   },
   {
     path: '/docs/ferrox-front',
-    component: ComponentCreator('/docs/ferrox-front', '03d'),
+    component: ComponentCreator('/docs/ferrox-front', 'eae'),
     routes: [
       {
         path: '/docs/ferrox-front',
-        component: ComponentCreator('/docs/ferrox-front', '8de'),
+        component: ComponentCreator('/docs/ferrox-front', '944'),
         routes: [
           {
             path: '/docs/ferrox-front',
-            component: ComponentCreator('/docs/ferrox-front', '513'),
+            component: ComponentCreator('/docs/ferrox-front', '298'),
             routes: [
               {
                 path: '/docs/ferrox-front/architectures/architecture',
-                component: ComponentCreator('/docs/ferrox-front/architectures/architecture', '604'),
+                component: ComponentCreator('/docs/ferrox-front/architectures/architecture', '2cf'),
+                exact: true
+              },
+              {
+                path: '/docs/ferrox-front/charts',
+                component: ComponentCreator('/docs/ferrox-front/charts', 'ca0'),
                 exact: true,
-                sidebar: "tutorialSidebar"
+                sidebar: "ferroxFrontSidebar"
+              },
+              {
+                path: '/docs/ferrox-front/components',
+                component: ComponentCreator('/docs/ferrox-front/components', '3d0'),
+                exact: true,
+                sidebar: "ferroxFrontSidebar"
+              },
+              {
+                path: '/docs/ferrox-front/datagrid',
+                component: ComponentCreator('/docs/ferrox-front/datagrid', 'd38'),
+                exact: true,
+                sidebar: "ferroxFrontSidebar"
               },
               {
                 path: '/docs/ferrox-front/fundamentals/core',
-                component: ComponentCreator('/docs/ferrox-front/fundamentals/core', '947'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/core', 'e4f'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/fundamentals/macros',
-                component: ComponentCreator('/docs/ferrox-front/fundamentals/macros', 'ebe'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/macros', '504'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/fundamentals/reactivity',
-                component: ComponentCreator('/docs/ferrox-front/fundamentals/reactivity', 'c18'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/reactivity', 'e21'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/fundamentals/routing',
-                component: ComponentCreator('/docs/ferrox-front/fundamentals/routing', 'cc1'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/routing', '3c0'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/fundamentals/templates',
-                component: ComponentCreator('/docs/ferrox-front/fundamentals/templates', '42d'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/fundamentals/templates', '817'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/overview',
-                component: ComponentCreator('/docs/ferrox-front/overview', '8a2'),
+                component: ComponentCreator('/docs/ferrox-front/overview', 'c40'),
                 exact: true,
-                sidebar: "tutorialSidebar"
+                sidebar: "ferroxFrontSidebar"
               },
               {
                 path: '/docs/ferrox-front/overview/intro',
-                component: ComponentCreator('/docs/ferrox-front/overview/intro', 'db3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/overview/intro', '7da'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/overview/quickstart',
-                component: ComponentCreator('/docs/ferrox-front/overview/quickstart', '41d'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/overview/quickstart', '985'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/security',
-                component: ComponentCreator('/docs/ferrox-front/security', 'c39'),
+                component: ComponentCreator('/docs/ferrox-front/security', '94d'),
+                exact: true
+              },
+              {
+                path: '/docs/ferrox-front/trading-desk',
+                component: ComponentCreator('/docs/ferrox-front/trading-desk', '944'),
                 exact: true,
-                sidebar: "tutorialSidebar"
+                sidebar: "ferroxFrontSidebar"
               },
               {
                 path: '/docs/ferrox-front/transports/ws',
-                component: ComponentCreator('/docs/ferrox-front/transports/ws', '2ea'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/transports/ws', '3c7'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/ui/components',
-                component: ComponentCreator('/docs/ferrox-front/ui/components', 'a3c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/ui/components', '062'),
+                exact: true
               },
               {
                 path: '/docs/ferrox-front/ui/ui-components',
-                component: ComponentCreator('/docs/ferrox-front/ui/ui-components', '14a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/ferrox-front/ui/ui-components', '3ee'),
+                exact: true
               }
             ]
           }
@@ -1287,15 +1299,15 @@ export default [
   },
   {
     path: '/docs/ferrox',
-    component: ComponentCreator('/docs/ferrox', '727'),
+    component: ComponentCreator('/docs/ferrox', '766'),
     routes: [
       {
         path: '/docs/ferrox',
-        component: ComponentCreator('/docs/ferrox', '05d'),
+        component: ComponentCreator('/docs/ferrox', '718'),
         routes: [
           {
             path: '/docs/ferrox',
-            component: ComponentCreator('/docs/ferrox', '8ed'),
+            component: ComponentCreator('/docs/ferrox', '0ff'),
             routes: [
               {
                 path: '/docs/ferrox/abstractions/crud-generator',
@@ -1360,6 +1372,12 @@ export default [
               {
                 path: '/docs/ferrox/architectures/task-scheduling',
                 component: ComponentCreator('/docs/ferrox/architectures/task-scheduling', 'e88'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/benchmarks/1m-rps',
+                component: ComponentCreator('/docs/ferrox/benchmarks/1m-rps', '98a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -1594,6 +1612,12 @@ export default [
               {
                 path: '/docs/ferrox/overview/lifecycle',
                 component: ComponentCreator('/docs/ferrox/overview/lifecycle', '71b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/ferrox/performance/1m-rps',
+                component: ComponentCreator('/docs/ferrox/performance/1m-rps', 'c57'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

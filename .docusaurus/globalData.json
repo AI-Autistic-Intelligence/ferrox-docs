@@ -66,6 +66,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "benchmarks/1m-rps",
+              "path": "/docs/ferrox/benchmarks/1m-rps",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "cli/code-factory",
               "path": "/docs/ferrox/cli/code-factory",
               "sidebar": "tutorialSidebar"
@@ -258,6 +263,11 @@
             {
               "id": "overview/lifecycle",
               "path": "/docs/ferrox/overview/lifecycle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/1m-rps",
+              "path": "/docs/ferrox/performance/1m-rps",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -1214,73 +1224,81 @@
           "docs": [
             {
               "id": "architectures/architecture",
-              "path": "/docs/ferrox-front/architectures/architecture",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/architectures/architecture"
+            },
+            {
+              "id": "charts",
+              "path": "/docs/ferrox-front/charts",
+              "sidebar": "ferroxFrontSidebar"
+            },
+            {
+              "id": "components",
+              "path": "/docs/ferrox-front/components",
+              "sidebar": "ferroxFrontSidebar"
+            },
+            {
+              "id": "datagrid",
+              "path": "/docs/ferrox-front/datagrid",
+              "sidebar": "ferroxFrontSidebar"
             },
             {
               "id": "fundamentals/core",
-              "path": "/docs/ferrox-front/fundamentals/core",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/fundamentals/core"
             },
             {
               "id": "fundamentals/macros",
-              "path": "/docs/ferrox-front/fundamentals/macros",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/fundamentals/macros"
             },
             {
               "id": "fundamentals/reactivity",
-              "path": "/docs/ferrox-front/fundamentals/reactivity",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/fundamentals/reactivity"
             },
             {
               "id": "fundamentals/routing",
-              "path": "/docs/ferrox-front/fundamentals/routing",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/fundamentals/routing"
             },
             {
               "id": "fundamentals/templates",
-              "path": "/docs/ferrox-front/fundamentals/templates",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/fundamentals/templates"
             },
             {
               "id": "overview",
               "path": "/docs/ferrox-front/overview",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "ferroxFrontSidebar"
             },
             {
               "id": "overview/intro",
-              "path": "/docs/ferrox-front/overview/intro",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/overview/intro"
             },
             {
               "id": "overview/quickstart",
-              "path": "/docs/ferrox-front/overview/quickstart",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/overview/quickstart"
             },
             {
               "id": "security/security",
-              "path": "/docs/ferrox-front/security/",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/security/"
+            },
+            {
+              "id": "trading-desk",
+              "path": "/docs/ferrox-front/trading-desk",
+              "sidebar": "ferroxFrontSidebar"
             },
             {
               "id": "transports/ws",
-              "path": "/docs/ferrox-front/transports/ws",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/transports/ws"
             },
             {
               "id": "ui/components",
-              "path": "/docs/ferrox-front/ui/components",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/ui/components"
             },
             {
               "id": "ui/ui-components",
-              "path": "/docs/ferrox-front/ui/ui-components",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/ferrox-front/ui/ui-components"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "tutorialSidebar": {
+            "ferroxFrontSidebar": {
               "link": {
                 "path": "/docs/ferrox-front/overview",
                 "label": "overview"

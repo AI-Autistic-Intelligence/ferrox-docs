@@ -6,68 +6,84 @@
     },
     "content": "4c678320"
   },
-  "/docs/ferrox-front-03d": {
+  "/docs/ferrox-front-eae": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "81320b77"
     }
   },
-  "/docs/ferrox-front-8de": {
+  "/docs/ferrox-front-944": {
     "__comp": "a7bd4aaa",
     "__props": "c4887c3a"
   },
-  "/docs/ferrox-front-513": {
+  "/docs/ferrox-front-298": {
     "__comp": "a94703ab"
   },
-  "/docs/ferrox-front/architectures/architecture-604": {
+  "/docs/ferrox-front/architectures/architecture-2cf": {
     "__comp": "17896441",
     "content": "44f1961d"
   },
-  "/docs/ferrox-front/fundamentals/core-947": {
+  "/docs/ferrox-front/charts-ca0": {
+    "__comp": "17896441",
+    "content": "41f51700"
+  },
+  "/docs/ferrox-front/components-3d0": {
+    "__comp": "17896441",
+    "content": "478b870c"
+  },
+  "/docs/ferrox-front/datagrid-d38": {
+    "__comp": "17896441",
+    "content": "3ace941c"
+  },
+  "/docs/ferrox-front/fundamentals/core-e4f": {
     "__comp": "17896441",
     "content": "aab440c8"
   },
-  "/docs/ferrox-front/fundamentals/macros-ebe": {
+  "/docs/ferrox-front/fundamentals/macros-504": {
     "__comp": "17896441",
     "content": "c498baa6"
   },
-  "/docs/ferrox-front/fundamentals/reactivity-c18": {
+  "/docs/ferrox-front/fundamentals/reactivity-e21": {
     "__comp": "17896441",
     "content": "66dbadf5"
   },
-  "/docs/ferrox-front/fundamentals/routing-cc1": {
+  "/docs/ferrox-front/fundamentals/routing-3c0": {
     "__comp": "17896441",
     "content": "247faf94"
   },
-  "/docs/ferrox-front/fundamentals/templates-42d": {
+  "/docs/ferrox-front/fundamentals/templates-817": {
     "__comp": "17896441",
     "content": "db569292"
   },
-  "/docs/ferrox-front/overview-8a2": {
+  "/docs/ferrox-front/overview-c40": {
     "__comp": "17896441",
     "content": "8003b396"
   },
-  "/docs/ferrox-front/overview/intro-db3": {
+  "/docs/ferrox-front/overview/intro-7da": {
     "__comp": "17896441",
     "content": "055d4486"
   },
-  "/docs/ferrox-front/overview/quickstart-41d": {
+  "/docs/ferrox-front/overview/quickstart-985": {
     "__comp": "17896441",
     "content": "4f500b43"
   },
-  "/docs/ferrox-front/security-c39": {
+  "/docs/ferrox-front/security-94d": {
     "__comp": "17896441",
     "content": "eb4575a2"
   },
-  "/docs/ferrox-front/transports/ws-2ea": {
+  "/docs/ferrox-front/trading-desk-944": {
+    "__comp": "17896441",
+    "content": "3792e159"
+  },
+  "/docs/ferrox-front/transports/ws-3c7": {
     "__comp": "17896441",
     "content": "55e88728"
   },
-  "/docs/ferrox-front/ui/components-a3c": {
+  "/docs/ferrox-front/ui/components-062": {
     "__comp": "17896441",
     "content": "850c71b8"
   },
-  "/docs/ferrox-front/ui/ui-components-14a": {
+  "/docs/ferrox-front/ui/ui-components-3ee": {
     "__comp": "17896441",
     "content": "5ba48623"
   },
@@ -862,17 +878,17 @@
     "__comp": "17896441",
     "content": "4532d084"
   },
-  "/docs/ferrox-727": {
+  "/docs/ferrox-766": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "b23c5c50"
     }
   },
-  "/docs/ferrox-05d": {
+  "/docs/ferrox-718": {
     "__comp": "a7bd4aaa",
     "__props": "1cb7ec1b"
   },
-  "/docs/ferrox-8ed": {
+  "/docs/ferrox-0ff": {
     "__comp": "a94703ab"
   },
   "/docs/ferrox/abstractions/crud-generator-ca2": {
@@ -918,6 +934,10 @@
   "/docs/ferrox/architectures/task-scheduling-e88": {
     "__comp": "17896441",
     "content": "617e25ff"
+  },
+  "/docs/ferrox/benchmarks/1m-rps-98a": {
+    "__comp": "17896441",
+    "content": "f9738bf7"
   },
   "/docs/ferrox/cli/code-factory-a8d": {
     "__comp": "17896441",
@@ -1074,6 +1094,10 @@
   "/docs/ferrox/overview/lifecycle-71b": {
     "__comp": "17896441",
     "content": "c0429f01"
+  },
+  "/docs/ferrox/performance/1m-rps-c57": {
+    "__comp": "17896441",
+    "content": "b1880357"
   },
   "/docs/ferrox/performance/benchmarks-708": {
     "__comp": "17896441",
