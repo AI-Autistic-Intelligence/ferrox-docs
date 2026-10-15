@@ -1,0 +1,70 @@
+name: Deploy Ferrox Documentation to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'docs/**'
+      - 'src/**'
+      - 'static/**'
+      - 'docusaurus.config.js'
+      - 'sidebars*.js'
+      - 'package*.json'
+      - '.github/workflows/deploy-docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci --prefer-offline --no-audit
+
+      - name: Verify WebAssembly Static Assets
+        run: |
+          echo "Verifying Wasm Admin Dashboard assets..."
+          test -d static/wasm/admin-dashboard || { echo "Missing static/wasm/admin-dashboard"; exit 1; }
+          ls -la static/wasm/admin-dashboard/
+
+      - name: Build Docusaurus Static Site
+        run: npm run build
+
+      - name: Verify Build Artifacts
+        run: |
+          echo "Checking generated build directory..."
+          test -d build || { echo "Missing build directory"; exit 1; }
+          test -f build/wasm/admin-dashboard/index.html || { echo "Missing build wasm index.html"; exit 1; }
+          echo "Build verification passed. Generated files:"
+          ls -la build/wasm/admin-dashboard/
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          cname: ferrox-rust.dev
