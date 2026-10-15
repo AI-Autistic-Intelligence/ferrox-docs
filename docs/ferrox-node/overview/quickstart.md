@@ -48,9 +48,9 @@ export const config = ConfigEngine.load({ schema: ServiceConfigSchema });
 
 ---
 
-## 3. Step 2: Implement [Singleflight](/docs/ferrox/security/singleflight) Service Layer
+## 3. Step 2: Implement Singleflight Service Layer
 
-Create `src/order.service.ts` featuring [Singleflight](/docs/ferrox/security/singleflight) request deduplication:
+Create `src/order.service.ts` featuring Singleflight request deduplication:
 
 ```typescript
 import { SingleflightGroup } from '@ferrox/node';
@@ -82,7 +82,7 @@ export class OrderService {
 
 ---
 
-## 4. Step 3: Create Controller with [Guards](/docs/ferrox-node/modules/guards)
+## 4. Step 3: Create Controller with Guards
 
 Create `src/order.controller.ts`:
 

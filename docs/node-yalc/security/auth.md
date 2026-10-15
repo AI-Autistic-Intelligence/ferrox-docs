@@ -53,7 +53,7 @@ Unlike standard Passport.js or express-jwt middlewares, `@yalc/security/auth` is
 
 ## 🚀 5. Usage Guide & Code Examples
 
-### Standard JWT [Validation](/docs/ferrox/abstractions/validation) Flow
+### Standard JWT Validation Flow
 
 ```typescript
 import { validateJwt, extractBearerToken } from '@yalc/security/auth';
@@ -96,3 +96,12 @@ export async function authMiddleware(req: IncomingMessage, res: ServerResponse) 
 > [!TIP]
 > **Pro-Tip: Asymmetric Keys (RS256)**
 > For microservice architectures, prefer using RS256 (Public/Private keypairs) instead of HS256. This allows downstream services to validate tokens using only the public key, preventing secret sprawl.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Node-YALC Errors](../fundamentals/errors.md)

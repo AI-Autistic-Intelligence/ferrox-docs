@@ -77,7 +77,7 @@ try {
   getUserProfile('');
 } catch (err: any) {
   if (err instanceof ValidationError) {
-    console.log('[Validation](/docs/ferrox/abstractions/validation) Error HTTP Code:', err.statusCode); // 400
+    console.log('Validation Error HTTP Code:', err.statusCode); // 400
     console.log('Details:', err.errors);
   }
 }
@@ -96,3 +96,13 @@ try {
 
 > [!TIP]
 > **Exception Filters Integration**: `@node-yalc/errors` integrates natively with `nestjs-yalc` and Ferrox-Node Exception Filters, converting exceptions directly into RFC 7807 compliant Problem Details JSON responses.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Database & TypeORM](../../../nestjs-yalc/docs/databases/database.md)
+- [GraphQL Transport Module](../../../nestjs-yalc/docs/transports/graphql.md)

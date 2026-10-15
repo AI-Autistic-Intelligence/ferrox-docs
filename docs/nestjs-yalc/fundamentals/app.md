@@ -6,7 +6,7 @@ sidebar_position: 15
 
 # Application Lifecycle, Bootstrap & Module Composition
 
-The `@nestjs-yalc/app` module provides a standardized, enterprise-ready application bootstrapping kernel for NestJS microservices and monolithic servers. It abstracts boilerplate startup routines—such as graceful shutdown signal handlers, unified configuration loading, global interceptors/filters registration, health-check lifecycle hooks, and multi-tenant context injection.
+The `@nestjs-yalc/app` module provides a standardized, enterprise-ready application bootstrapping kernel for NestJS microservices and monolithic servers. It abstracts boilerplate startup routines - such as graceful shutdown signal handlers, unified configuration loading, global interceptors/filters registration, health-check lifecycle hooks, and multi-tenant context injection.
 
 ---
 
@@ -23,7 +23,7 @@ In enterprise NestJS architectures, microservices often duplicate complex bootst
 │  1. Init Global Logger (Pino / Winston)                                │
 │  2. Attach OpenTelemetry Tracing Context                              │
 │  3. Register Global ValidationPipes & ExceptionFilters                 │
-│  4. Mount [Sentinel](/docs/nestjs-yalc/security/sentinel) Security Headers & CORS                             │
+│  4. Mount Sentinel Security Headers & CORS                             │
 │  5. Setup Graceful Shutdown Listeners (SIGTERM/SIGINT)                 │
 └──────────────────────────────────┬─────────────────────────────────────┘
                                    │
@@ -60,7 +60,7 @@ sequenceDiagram
     Main->>Factory: YalcApplicationFactory.create(AppModule, options)
     Factory->>Nest: NestFactory.create(AppModule, { logger: YalcLogger })
     Nest->>App: Resolve Module Tree & Dependecies
-    App->>App: Register Global [Interceptors](/docs/ferrox/fundamentals/interceptors), [Pipes](/docs/ferrox/abstractions/pipes) & Filters
+    App->>App: Register Global Interceptors, Pipes & Filters
     Factory->>Nest: app.enableShutdownHooks(['SIGTERM', 'SIGINT'])
     Factory->>Nest: app.listen(port)
     Nest-->>Main: INestApplication Instance
@@ -169,3 +169,18 @@ const app = await YalcApplicationFactory.create(AppModule, options);
 > [!NOTE]
 > **Pro-Tip 2: Multi-Environment Config Profiles**
 > Pass `envFilePath` arrays to automatically overlay target environments (`.env.production`, `.env.staging`, `.env.local`) cleanly.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Database & TypeORM](../databases/database.md)
+- [Event Manager](../../node-yalc/docs/architectures/event-manager.md)
+- [GraphQL Transport Module](../transports/graphql.md)
+- [Kafka Integration](../integrations/kafka.md)
+- [Node-YALC Errors](../../node-yalc/docs/fundamentals/errors.md)
+- [Observability & Logger](../observability/logger.md)
+- [System Observability](../observability/observability.md)

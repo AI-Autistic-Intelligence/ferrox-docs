@@ -20,7 +20,7 @@ NestJS is an exceptional framework for structuring enterprise backend applicatio
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                                   YOUR ENTERPRISE APP                                  │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  AG-Grid  │  CRUD-Gen  │  Audit Log  │  [Sentinel](/docs/nestjs-yalc/security/sentinel) Sec  │  Kafka Bus  │  GraphQL DataLoader │
+│  AG-Grid  │  CRUD-Gen  │  Audit Log  │  Sentinel Sec  │  Kafka Bus  │  GraphQL DataLoader │
 ├───────────┴────────────┴─────────────┴────────────────┴─────────────┴────────────────────┤
 │                                    NESTJS-YALC KERNEL                                  │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
@@ -72,7 +72,7 @@ Built on top of Fastify, Pino, and native SQL query building, NestJS-YALC introd
 ```mermaid
 sequenceDiagram
     autonumber
-    participant Gateway as [Sentinel](/docs/nestjs-yalc/security/sentinel) Gateway
+    participant Gateway as Sentinel Gateway
     participant App as YalcAppModule
     participant Controller as CRUD Controller
     participant Audit as Audit Middleware
@@ -98,3 +98,18 @@ sequenceDiagram
 
 - Proceed to the [Quickstart Guide](quickstart.md) to bootstrap your first NestJS-YALC microservice.
 - Explore individual package guides in the **Monorepo Modules** section.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Database & TypeORM](../databases/database.md)
+- [Event Manager](../../node-yalc/docs/architectures/event-manager.md)
+- [GraphQL Transport Module](../transports/graphql.md)
+- [Kafka Integration](../integrations/kafka.md)
+- [Node-YALC Errors](../../node-yalc/docs/fundamentals/errors.md)
+- [Observability & Logger](../observability/logger.md)
+- [System Observability](../observability/observability.md)

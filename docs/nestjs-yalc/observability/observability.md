@@ -4,7 +4,7 @@ title: "@nest-yalc-2/observability"
 sidebar_position: 5
 ---
 
-# 🔭 OpenTelemetry & Sentry [Observability](/docs/nestjs-yalc/observability/observability) (`@nest-yalc-2/observability`)
+# 🔭 OpenTelemetry & Sentry Observability (`@nest-yalc-2/observability`)
 
 `@nest-yalc-2/observability` provides enterprise distributed tracing, metrics collection, and exception tracking for NestJS 11+. It integrates **OpenTelemetry OTLP exporters**, **Prometheus metric collectors**, and **Sentry error reporting** into a unified NestJS module.
 
@@ -54,7 +54,7 @@ flowchart TD
 
 ## 🚀 Practical Usage & Production Code Examples
 
-### 1. Initializing [Observability](/docs/nestjs-yalc/observability/observability) Module in `main.ts` & `AppModule`
+### 1. Initializing Observability Module in `main.ts` & `AppModule`
 
 ```typescript
 import { YalcObservabilityModule, initOpenTelemetrySDK } from '@nest-yalc-2/observability';
@@ -109,3 +109,14 @@ export class OrderFulfillmentService {
 
 > [!TIP]
 > **Jaeger & Grafana Integration**: Route OTLP trace exports to an OpenTelemetry Collector daemon, which forwards spans to Jaeger for distributed trace visualization and Grafana for latency dashboards.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Database & TypeORM](../databases/database.md)
+- [Kafka Integration](../integrations/kafka.md)
+- [Node-YALC Errors](../../node-yalc/docs/fundamentals/errors.md)

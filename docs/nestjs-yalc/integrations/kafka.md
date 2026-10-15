@@ -42,7 +42,7 @@ flowchart TD
 
 | Feature / Dimension | 📬 `@nest-yalc-2/kafka` | 🐢 NestJS Microservice Kafka Transport |
 |---|---|---|
-| **Confluent Schema Registry** | **Native Avro / JSON Schema [Validation](/docs/ferrox/abstractions/validation)** | Not Supported (Raw Unvalidated JSON) |
+| **Confluent Schema Registry** | **Native Avro / JSON Schema Validation** | Not Supported (Raw Unvalidated JSON) |
 | **Dead Letter Queue (DLQ)** | **Automated DLQ Router on Failures** | Manual Error Catching & Routing |
 | **Trace Correlation** | **Automatic W3C Trace Parent Header Injection** | Manual Header Parsing |
 
@@ -111,3 +111,14 @@ export class OrderEventPublisher {
 
 > [!TIP]
 > **Idempotent Consumers**: Ensure consumer handlers check if an event ID has already been processed using Redis or an audit table to handle potential duplicate message deliveries gracefully.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Database & TypeORM](../databases/database.md)
+- [Event Manager](../../node-yalc/docs/architectures/event-manager.md)
+- [Node-YALC Errors](../../node-yalc/docs/fundamentals/errors.md)

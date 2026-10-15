@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 🔗 [Middlewares](/docs/ferrox/fundamentals/middlewares)
+# 🔗 Middlewares
 
 Middleware is a function which is called **before** the route handler. Middleware functions have access to the request and response objects, and the `next()` middleware function in the application’s request-response cycle.
 

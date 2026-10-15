@@ -142,5 +142,17 @@ export const CurrencyFormatterMiddleware: FieldMiddleware = async (
 ## 7. Pro-Tips & Best Practices
 
 > [!TIP]
-> **Pro-Tip 1: Combining with NestJS [Guards](/docs/ferrox/abstractions/guards)**
-> Use Field Middleware for property-level transformation while keeping NestJS [Guards](/docs/ferrox/abstractions/guards) responsible for overall endpoint routing access.
+> **Pro-Tip 1: Combining with NestJS Guards**
+> Use Field Middleware for property-level transformation while keeping NestJS Guards responsible for overall endpoint routing access.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Authentication & Auth](../../node-yalc/docs/security/auth.md)
+- [Database & TypeORM](../databases/database.md)
+- [GraphQL Transport Module](../transports/graphql.md)
+- [Sentinel Security Guards](../security/sentinel.md)

@@ -12,7 +12,7 @@ The `@node-yalc/common` package provides enterprise-wide value objects, system c
 
 ## 1. What It Is & Architectural Purpose
 
-In microservice monorepos, shared primitives like environment flags (`NODE_ENV`), currency codes, execution status strings, standard date formats, and HTTP header names often end up hardcoded across multiple repositories. This duplication causes inconsistencies—such as one service expecting `"prod"` while another checks `"production"`.
+In microservice monorepos, shared primitives like environment flags (`NODE_ENV`), currency codes, execution status strings, standard date formats, and HTTP header names often end up hardcoded across multiple repositories. This duplication causes inconsistencies - such as one service expecting `"prod"` while another checks `"production"`.
 
 `@node-yalc/common` centralizes these foundational constants and value objects into a single, zero-dependency package. It guarantees absolute consistency across backend Node.js microservices, NestJS applications, CLI tools, and serverless Lambda functions.
 
@@ -46,7 +46,7 @@ In microservice monorepos, shared primitives like environment flags (`NODE_ENV`)
 
 ## 3. How It Works Under the Hood
 
-### Environment [Validation](/docs/ferrox/abstractions/validation) & Value Object Resolution
+### Environment Validation & Value Object Resolution
 
 ```mermaid
 sequenceDiagram
@@ -120,3 +120,12 @@ console.log(total.toCents()); // 5999
 > [!TIP]
 > **Pro-Tip 1: Centralized Constant Export**
 > Import headers directly from `HttpHeaders` constant maps to maintain parity across frontend web clients, Node.js API gateways, and serverless functions.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Observability & Logger](../../../nestjs-yalc/docs/observability/logger.md)

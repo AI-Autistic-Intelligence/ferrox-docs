@@ -81,8 +81,8 @@ export class Product {
 
 ## ⚠️ 6. Anti-Patterns: How NOT to Use It
 
-1. ❌ **DO NOT expose all CRUD routes on sensitive entities without Auth [Guards](/docs/ferrox/abstractions/guards)**: Enabling `deleteOne` or `updateOne` without applying `@UseGuards()` exposes public data mutation endpoints.
-2. ❌ **DO NOT use `crud-gen` for complex business workflows requiring [Sagas](/docs/ferrox/architectures/sagas)**: For operations involving payment providers or multi-step sagas, write a custom Controller/Resolver instead of standard CRUD logic.
+1. ❌ **DO NOT expose all CRUD routes on sensitive entities without Auth Guards**: Enabling `deleteOne` or `updateOne` without applying `@UseGuards()` exposes public data mutation endpoints.
+2. ❌ **DO NOT use `crud-gen` for complex business workflows requiring Sagas**: For operations involving payment providers or multi-step sagas, write a custom Controller/Resolver instead of standard CRUD logic.
 
 ---
 
@@ -90,3 +90,14 @@ export class Product {
 
 > [!TIP]
 > **Customizing Generated Routes**: You can override or extend any automatically generated route by declaring a custom Controller extending the base class produced by `crud-gen`.
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Authentication & Auth](../../node-yalc/docs/security/auth.md)
+- [Database & TypeORM](../databases/database.md)
+- [GraphQL Transport Module](../transports/graphql.md)

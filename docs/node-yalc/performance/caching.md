@@ -18,13 +18,13 @@ The `@yalc/performance/cache` module provides a unified, multi-tier caching abst
 | **`CacheManager`** | Unified API for setting and getting cached data. | General application caching. |
 | **`MemoryDriver`** | High-speed LRU (Least Recently Used) cache. | Caching immutable configuration data. |
 | **`RedisDriver`** | Distributed cache using `ioredis`. | Sharing cache across microservice instances. |
-| **`StampedeProtector`** | [Singleflight](/docs/ferrox/security/singleflight) deduplication for cache misses. | Preventing database meltdown on key expiration. |
+| **`StampedeProtector`** | Singleflight deduplication for cache misses. | Preventing database meltdown on key expiration. |
 
 ---
 
 ## 🔬 3. How It Works Under the Hood
 
-When a cache miss occurs, the system utilizes the `StampedeProtector` ([Singleflight](/docs/ferrox/security/singleflight) pattern) to ensure that if 1,000 concurrent requests ask for the same missing key, only ONE query is dispatched to the database. The other 999 requests wait for the first one to populate the cache.
+When a cache miss occurs, the system utilizes the `StampedeProtector` (Singleflight pattern) to ensure that if 1,000 concurrent requests ask for the same missing key, only ONE query is dispatched to the database. The other 999 requests wait for the first one to populate the cache.
 
 ```mermaid
 sequenceDiagram
@@ -46,7 +46,7 @@ sequenceDiagram
 
 ## 🧠 4. Why It Was Designed This Way (Rationale)
 
-Standard caching solutions like `node-cache` or raw `redis` clients do not inherently protect against cache stampedes (thundering herds). By building [Singleflight](/docs/ferrox/security/singleflight) into the core caching abstraction, Node-YALC guarantees stability even under sudden viral traffic spikes.
+Standard caching solutions like `node-cache` or raw `redis` clients do not inherently protect against cache stampedes (thundering herds). By building Singleflight into the core caching abstraction, Node-YALC guarantees stability even under sudden viral traffic spikes.
 
 ---
 
@@ -90,3 +90,12 @@ async function getUserProfile(userId: string) {
 > [!TIP]
 > **Pro-Tip: Stale-While-Revalidate**
 > Enable the `staleWhileRevalidate` option on the `CacheManager`. This allows the system to serve slightly expired data to the user instantly, while silently refreshing the cache in the background, ensuring 0ms perceived latency!
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Database & TypeORM](../../../nestjs-yalc/docs/databases/database.md)

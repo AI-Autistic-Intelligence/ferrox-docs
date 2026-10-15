@@ -3,7 +3,7 @@ id: rbac-guards
 title: RBAC & Security Guards
 ---
 
-# RBAC & Security [Guards](/docs/ferrox-php/security/rbac-guards)
+# RBAC & Security Guards
 
 ## 1. Philosophy / Purpose
 Role-based access control via Attributes... The purpose of this component is to ensure enterprise-grade stability and zero-trust security in Ferrox PHP. It strictly rejects the legacy paradigms of standard PHP (like global state and silent failures) in favor of deterministic, compile-time-like safety.

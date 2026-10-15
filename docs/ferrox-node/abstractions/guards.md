@@ -4,7 +4,7 @@ title: Security Guards, RBAC & Role Permission Engine
 sidebar_position: 6
 ---
 
-# Security [Guards](/docs/ferrox-node/modules/guards), RBAC & Role Permission Engine
+# Security Guards, RBAC & Role Permission Engine
 
 The `@ferrox/node` guards module provides role-based access control (RBAC), attribute-based access control (ABAC), tenant isolation enforcement, and permission verification middleware for Node.js microservices.
 

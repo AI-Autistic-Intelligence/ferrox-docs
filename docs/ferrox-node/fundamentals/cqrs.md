@@ -4,9 +4,9 @@ title: CQRS & Event Sourcing
 sidebar_position: 1
 ---
 
-# Command Query Responsibility Segregation ([CQRS](/docs/ferrox-node/modules/cqrs))
+# Command Query Responsibility Segregation (CQRS)
 
-Ferrox-Node strongly encourages the use of [CQRS](/docs/ferrox-node/modules/cqrs) for complex microservices. This pattern separates the read model (Queries) from the write model (Commands).
+Ferrox-Node strongly encourages the use of CQRS for complex microservices. This pattern separates the read model (Queries) from the write model (Commands).
 
 ## The Command Bus
 

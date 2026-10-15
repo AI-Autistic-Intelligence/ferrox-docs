@@ -31,7 +31,7 @@ npm install @nestjs-yalc/app @nestjs-yalc/logger @nestjs-yalc/errors @nestjs-yal
 # Database & CRUD Generation
 npm install @nestjs-yalc/database @nestjs-yalc/crud-gen @nestjs-yalc/ag-grid
 
-# Security & [Observability](/docs/nestjs-yalc/observability/observability)
+# Security & Observability
 npm install @nestjs-yalc/sentinel @nestjs-yalc/observability
 ```
 
@@ -240,3 +240,16 @@ Output:
   }
 }
 ```
+
+
+---
+
+## 🔗 Cross-References
+
+To see how this module integrates with the rest of the Ferrox architecture, refer to the following documentation:
+
+- [Database & TypeORM](../databases/database.md)
+- [Event Manager](../../node-yalc/docs/architectures/event-manager.md)
+- [Kafka Integration](../integrations/kafka.md)
+- [Observability & Logger](../observability/logger.md)
+- [System Observability](../observability/observability.md)
