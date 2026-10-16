@@ -4,9 +4,23 @@ title: Enterprise DataGrid (1M Rows & CSV Export)
 sidebar_position: 4
 ---
 
+import FerroxWasmPlayground from '@site/src/components/FerroxWasmPlayground';
+
 # Enterprise DataGrid (`ferrox-front-ui::ferrox_datagrid`)
 
 The `EnterpriseDataGrid` component in Ferrox Front is engineered to exceed the capabilities of heavy JavaScript table frameworks like AG-Grid Enterprise and TanStack Table, guaranteeing **zero garbage collection pauses** even across datasets exceeding 1,000,000 records.
+
+---
+
+## 🎮 Interactive 1,000,000-Row Virtualized DataGrid Playground
+
+Experience extreme viewport virtualization and client-side RFC 4180 CSV export running directly inside WebAssembly linear memory with zero JavaScript runtime overhead:
+
+<FerroxWasmPlayground 
+  initialTab="datagrid" 
+  height="780px" 
+  title="Ferrox Front • Enterprise DataGrid Playground (1M Rows & CSV Export)" 
+/>
 
 ---
 
