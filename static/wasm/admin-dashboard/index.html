@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="/wasm/admin-dashboard/styles-9acf42429f6797b8.css" integrity="sha384-QKdop0llmJVGbV+UhBWTE0INYiSyLoRFVsUyFSxtsqH0xIKY9D94ShVPWQNXzNHG"/>
     
 <script type="module">
-import init, * as bindings from '/wasm/admin-dashboard/admin-dashboard-f0bdb0c6df51826c.js';
-const wasm = await init({ module_or_path: '/wasm/admin-dashboard/admin-dashboard-f0bdb0c6df51826c_bg.wasm' });
+import init, * as bindings from '/wasm/admin-dashboard/admin-dashboard-1edcc2ce1364b26b.js';
+const wasm = await init({ module_or_path: '/wasm/admin-dashboard/admin-dashboard-1edcc2ce1364b26b_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -63,7 +63,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
         .stream-entry.saga-node { background: rgba(16, 185, 129, 0.12); border-left: 3px solid #10b981; }
         .stream-entry.threat { background: rgba(239, 68, 68, 0.15); border-left: 3px solid #ef4444; }
     </style>
-<link rel="modulepreload" href="/wasm/admin-dashboard/admin-dashboard-f0bdb0c6df51826c.js" crossorigin="anonymous" integrity="sha384-1W+zaHIMt2seOCjdSa7jlEvafSNZ/hWeZUBFhcdQGsz8dWcKMtdzh7b0rdjStSZm"><link rel="preload" href="/wasm/admin-dashboard/admin-dashboard-f0bdb0c6df51826c_bg.wasm" crossorigin="anonymous" integrity="sha384-rV6zDJgwvNgdK2nK0JJ3WaFHS2TTlQ2GV1Pqf57h+q5ksJQ4KeUdRpDCtNwiQMfu" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/wasm/admin-dashboard/admin-dashboard-1edcc2ce1364b26b.js" crossorigin="anonymous" integrity="sha384-1W+zaHIMt2seOCjdSa7jlEvafSNZ/hWeZUBFhcdQGsz8dWcKMtdzh7b0rdjStSZm"><link rel="preload" href="/wasm/admin-dashboard/admin-dashboard-1edcc2ce1364b26b_bg.wasm" crossorigin="anonymous" integrity="sha384-txjDCNj+Mz8aei7XG3XSGzdpT1CiQ/WFAkB3I+y6t47orMMCfCtymcLwuIQImn/w" as="fetch" type="application/wasm"></head>
 <body data-theme="ferrox-cyber">
     <div id="root">
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #020617; color: #94a3b8; font-family: Inter, system-ui, sans-serif; gap: 16px;">
