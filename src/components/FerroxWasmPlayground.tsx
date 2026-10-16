@@ -27,6 +27,7 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
     if (iframeRef.current && iframeRef.current.contentWindow) {
       try {
         iframeRef.current.contentWindow.location.hash = `#${tab}`;
+        iframeRef.current.contentWindow.postMessage(`ferrox-set-tab:${tab}`, '*');
       } catch {
         setKey((prev) => prev + 1);
       }
@@ -62,6 +63,21 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => {
       document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleMessage = (e: MessageEvent) => {
+      if (typeof e.data === 'string' && e.data.startsWith('ferrox-tab:')) {
+        const tab = e.data.replace('ferrox-tab:', '') as 'trading' | 'datagrid' | 'form' | 'explorer';
+        if (['trading', 'datagrid', 'form', 'explorer'].includes(tab)) {
+          setActiveTab(tab);
+        }
+      }
+    };
+    window.addEventListener('message', handleMessage);
+    return () => {
+      window.removeEventListener('message', handleMessage);
     };
   }, []);
 
@@ -210,7 +226,7 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <button
             onClick={handleReload}
-            title="Ricarica Istanza WebAssembly"
+            title="Reload WebAssembly Instance"
             type="button"
             style={{
               background: 'rgba(30, 41, 59, 0.7)',
@@ -225,11 +241,11 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
               gap: '4px',
             }}
           >
-            🔄 Ricarica
+            🔄 Reload
           </button>
           <button
             onClick={toggleFullscreen}
-            title={isFullscreen ? 'Esci da schermo intero' : 'Schermo intero'}
+            title={isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
             type="button"
             style={{
               background: 'rgba(30, 41, 59, 0.7)',
@@ -244,7 +260,7 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
               gap: '4px',
             }}
           >
-            {isFullscreen ? '⤢ Chiudi' : '⤢ Tutto Schermo'}
+            {isFullscreen ? '⤢ Exit' : '⤢ Fullscreen'}
           </button>
         </div>
       </div>
@@ -286,7 +302,7 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
               }}
             />
             <span style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: 500 }}>
-              Caricamento Runtime Wasm & ferrox-engine in corso...
+              Loading Wasm Runtime & ferrox-engine...
             </span>
             <style>{`
               @keyframes ferrox-spin {
@@ -324,12 +340,12 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <span>Motore: <strong style={{ color: '#38bdf8' }}>ferrox-engine v0.1.0</strong> (In-Memory BTreeMap)</span>
-          <span>Latenza: <strong style={{ color: '#10b981' }}>&lt; 1.8 μs</strong></span>
+          <span>Engine: <strong style={{ color: '#38bdf8' }}>ferrox-engine v0.1.0</strong> (In-Memory BTreeMap)</span>
+          <span>Latency: <strong style={{ color: '#10b981' }}>&lt; 1.8 μs</strong></span>
           <span>Target: <strong style={{ color: '#cbd5e1' }}>wasm32-unknown-unknown</strong></span>
         </div>
         <div>
-          <span>Architettura: <strong style={{ color: '#a855f7' }}>Zero JavaScript / 100% Rust Signals</strong></span>
+          <span>Architecture: <strong style={{ color: '#a855f7' }}>Zero JavaScript / 100% Rust Signals</strong></span>
         </div>
       </div>
     </div>
@@ -338,7 +354,7 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
 
 export default function FerroxWasmPlayground(props: FerroxWasmPlaygroundProps) {
   return (
-    <BrowserOnly fallback={<div style={{ padding: '2rem', textAlign: 'center', color: '#64748b' }}>Caricamento Playground WebAssembly...</div>}>
+    <BrowserOnly fallback={<div style={{ padding: '2rem', textAlign: 'center', color: '#64748b' }}>Loading WebAssembly Playground...</div>}>
       {() => <WasmPlaygroundInner {...props} />}
     </BrowserOnly>
   );
