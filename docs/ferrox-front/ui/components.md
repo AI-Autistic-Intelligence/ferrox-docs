@@ -18,7 +18,7 @@ import FerroxWasmPlayground from '@site/src/components/FerroxWasmPlayground';
 
 <FerroxWasmPlayground 
   initialTab="components" 
-  height="880px" 
+  height="980px" 
   title="Ferrox Front • Design System & UI Component Library Playground" 
 />
 

@@ -18,7 +18,7 @@ Test the pure WebAssembly vector charting engine live in your browser: explore i
 
 <FerroxWasmPlayground 
   initialTab="charts" 
-  height="880px" 
+  height="980px" 
   title="Ferrox Front • SVG Vector Financial Charting Suite Playground" 
 />
 

@@ -18,7 +18,7 @@ Test the live interactive Design System and UI Component library compiled direct
 
 <FerroxWasmPlayground 
   initialTab="components" 
-  height="880px" 
+  height="980px" 
   title="Ferrox Front • Design System & UI Component Library Playground" 
 />
 

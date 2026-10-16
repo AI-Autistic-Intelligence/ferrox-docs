@@ -20,7 +20,7 @@ You can interact directly with the embedded application below: switch tabs, simu
 
 <FerroxWasmPlayground 
   initialTab="trading" 
-  height="820px" 
+  height="920px" 
   title="Ferrox Trading Desk Pro • In-Memory Matching Engine" 
 />
 

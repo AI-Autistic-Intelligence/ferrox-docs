@@ -18,7 +18,7 @@ Experience extreme viewport virtualization and client-side RFC 4180 CSV export r
 
 <FerroxWasmPlayground 
   initialTab="datagrid" 
-  height="780px" 
+  height="880px" 
   title="Ferrox Front • Enterprise DataGrid Playground (1M Rows & CSV Export)" 
 />
 
