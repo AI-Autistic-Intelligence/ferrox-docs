@@ -60,6 +60,11 @@ async function main() {
       continue;
     }
 
+    // Clean generated bundles/artifacts to prevent accumulating stale hashes in git
+    if (entry.name === 'assets' || entry.name === 'wasm') {
+      await fs.rm(destPath, { recursive: true, force: true });
+    }
+
     await copyRecursive(srcPath, destPath);
     exportedCount++;
   }
