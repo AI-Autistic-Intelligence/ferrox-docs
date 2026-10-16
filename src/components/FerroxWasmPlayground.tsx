@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+export type FerroxTab = 'trading' | 'datagrid' | 'form' | 'explorer' | 'components' | 'charts' | 'chart-studio' | 'theme-studio';
+
 interface FerroxWasmPlaygroundProps {
-  initialTab?: 'trading' | 'datagrid' | 'form' | 'explorer' | 'components' | 'charts';
+  initialTab?: FerroxTab;
   height?: string;
   title?: string;
 }
@@ -12,7 +14,7 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
   height = '780px',
   title = 'Ferrox Front • WebAssembly Live Trading Desk',
 }) => {
-  const [activeTab, setActiveTab] = useState<'trading' | 'datagrid' | 'form' | 'explorer' | 'components' | 'charts'>(initialTab);
+  const [activeTab, setActiveTab] = useState<FerroxTab>(initialTab);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [key, setKey] = useState(0);
@@ -22,7 +24,7 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
   const baseUrl = '/wasm/admin-dashboard/index.html';
   const iframeSrc = `${baseUrl}#${activeTab}`;
 
-  const switchTab = (tab: 'trading' | 'datagrid' | 'form' | 'explorer' | 'components' | 'charts') => {
+  const switchTab = (tab: FerroxTab) => {
     setActiveTab(tab);
     if (iframeRef.current && iframeRef.current.contentWindow) {
       try {
@@ -69,8 +71,8 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
   useEffect(() => {
     const handleMessage = (e: MessageEvent) => {
       if (typeof e.data === 'string' && e.data.startsWith('ferrox-tab:')) {
-        const tab = e.data.replace('ferrox-tab:', '') as 'trading' | 'datagrid' | 'form' | 'explorer' | 'components' | 'charts';
-        if (['trading', 'datagrid', 'form', 'explorer', 'components', 'charts'].includes(tab)) {
+        const tab = e.data.replace('ferrox-tab:', '') as FerroxTab;
+        if (['trading', 'datagrid', 'form', 'explorer', 'components', 'charts', 'chart-studio', 'theme-studio'].includes(tab)) {
           setActiveTab(tab);
         }
       }
@@ -220,6 +222,40 @@ const WasmPlaygroundInner: React.FC<FerroxWasmPlaygroundProps> = ({
             }}
           >
             📈 Charting Suite
+          </button>
+          <button
+            onClick={() => switchTab('chart-studio')}
+            type="button"
+            style={{
+              padding: '5px 12px',
+              fontSize: '0.78rem',
+              fontWeight: activeTab === 'chart-studio' ? 700 : 500,
+              borderRadius: '7px',
+              border: 'none',
+              cursor: 'pointer',
+              background: activeTab === 'chart-studio' ? '#6366f1' : 'transparent',
+              color: activeTab === 'chart-studio' ? '#ffffff' : '#94a3b8',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            📊 Chart Studio
+          </button>
+          <button
+            onClick={() => switchTab('theme-studio')}
+            type="button"
+            style={{
+              padding: '5px 12px',
+              fontSize: '0.78rem',
+              fontWeight: activeTab === 'theme-studio' ? 700 : 500,
+              borderRadius: '7px',
+              border: 'none',
+              cursor: 'pointer',
+              background: activeTab === 'theme-studio' ? '#6366f1' : 'transparent',
+              color: activeTab === 'theme-studio' ? '#ffffff' : '#94a3b8',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            🎨 Theme Studio
           </button>
           <button
             onClick={() => switchTab('form')}

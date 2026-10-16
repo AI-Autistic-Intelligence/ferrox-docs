@@ -16,7 +16,20 @@ async function copyRecursive(src, dest) {
       await copyRecursive(srcPath, destPath);
     }
   } else {
-    await fs.copyFile(src, dest);
+    let retries = 5;
+    while (retries > 0) {
+      try {
+        await fs.copyFile(src, dest);
+        break;
+      } catch (err) {
+        retries--;
+        if (retries === 0) {
+          console.warn(`[WARN] Could not copy ${src} -> ${dest}: ${err.message}`);
+        } else {
+          await new Promise((r) => setTimeout(r, 150));
+        }
+      }
+    }
   }
 }
 
@@ -61,8 +74,12 @@ async function main() {
     }
 
     // Clean generated bundles/artifacts to prevent accumulating stale hashes in git
-    if (entry.name === 'assets' || entry.name === 'wasm') {
-      await fs.rm(destPath, { recursive: true, force: true });
+    if (entry.name === 'assets') {
+      try {
+        await fs.rm(destPath, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
+      } catch (e) {
+        console.warn(`[WARN] Could not clean ${destPath}: ${e.message}`);
+      }
     }
 
     await copyRecursive(srcPath, destPath);
