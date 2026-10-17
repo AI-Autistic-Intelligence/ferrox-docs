@@ -328,39 +328,39 @@
 - [@node-yalc/selftest](https://ferrox-rust.dev/node-yalc/security/selftest): Ecosystem technical documentation and architecture reference.
 - [@node-yalc/security](https://ferrox-rust.dev/node-yalc/security/sentinel): Ecosystem technical documentation and architecture reference.
 - [HTTP & RPC Transports](https://ferrox-rust.dev/node-yalc/transports/http-client): Ecosystem technical documentation and architecture reference.
-- [Enterprise Showcase & Polyglot Mesh Guide 2.0](https://ferrox-rust.dev/core/showcase-guide): Ecosystem technical documentation and architecture reference.
 - [🛡️ Ferrox Enterprise Security Audit & Penetration Testing Report](https://ferrox-rust.dev/core/security/audit): Ecosystem technical documentation and architecture reference.
 - [Overview](https://ferrox-rust.dev/core): Ecosystem technical documentation and architecture reference.
 - [Overview](https://ferrox-rust.dev/core/architecture): Ecosystem technical documentation and architecture reference.
 - [1M RPS Benchmark Whitepaper](https://ferrox-rust.dev/core/benchmarks/1m-rps): Ecosystem technical documentation and architecture reference.
+- [Enterprise Showcase & Polyglot Mesh Guide 2.0](https://ferrox-rust.dev/core/showcase-guide): Ecosystem technical documentation and architecture reference.
 - [Live Trading Desk (Interactive Wasm)](https://ferrox-rust.dev/front/trading-desk): Ecosystem technical documentation and architecture reference.
+- [Zero-JS Vision & Architecture](https://ferrox-rust.dev/front): Ecosystem technical documentation and architecture reference.
 - [Enterprise UI Component Catalog](https://ferrox-rust.dev/front/components): Ecosystem technical documentation and architecture reference.
 - [Enterprise DataGrid (1M Rows & CSV Export)](https://ferrox-rust.dev/front/datagrid): Ecosystem technical documentation and architecture reference.
 - [SVG Vector Financial Charting Engine](https://ferrox-rust.dev/front/charts): Ecosystem technical documentation and architecture reference.
-- [Zero-JS Vision & Architecture](https://ferrox-rust.dev/front): Ecosystem technical documentation and architecture reference.
+- [Overview](https://ferrox-rust.dev/node/nestjs-yalc): Ecosystem technical documentation and architecture reference.
 - [Overview](https://ferrox-rust.dev/node/yalc): Ecosystem technical documentation and architecture reference.
 - [Overview](https://ferrox-rust.dev/node): Ecosystem technical documentation and architecture reference.
 - [Overview](https://ferrox-rust.dev/node/node-yalc): Ecosystem technical documentation and architecture reference.
-- [Overview](https://ferrox-rust.dev/node/nestjs-yalc): Ecosystem technical documentation and architecture reference.
 - [Ferrox-Py Overview](https://ferrox-rust.dev/py): Ecosystem technical documentation and architecture reference.
-- [AuthService (Authentication & SSO)](https://ferrox-rust.dev/auth/auth_service): Ecosystem technical documentation and architecture reference.
 - [RBAC (Role-Based Access Control)](https://ferrox-rust.dev/auth/rbac): Ecosystem technical documentation and architecture reference.
-- [Models (Pydantic / Mongo)](https://ferrox-rust.dev/auth/models): Ecosystem technical documentation and architecture reference.
-- [Ferrox-Py-Auth Overview](https://ferrox-rust.dev/auth): Ecosystem technical documentation and architecture reference.
 - [GdprService](https://ferrox-rust.dev/auth/gdpr_service): Ecosystem technical documentation and architecture reference.
-- [Controllers](https://ferrox-rust.dev/commerce/controllers): Ecosystem technical documentation and architecture reference.
+- [Ferrox-Py-Auth Overview](https://ferrox-rust.dev/auth): Ecosystem technical documentation and architecture reference.
+- [AuthService (Authentication & SSO)](https://ferrox-rust.dev/auth/auth_service): Ecosystem technical documentation and architecture reference.
+- [Models (Pydantic / Mongo)](https://ferrox-rust.dev/auth/models): Ecosystem technical documentation and architecture reference.
+- [Gateways](https://ferrox-rust.dev/commerce/gateways): Ecosystem technical documentation and architecture reference.
 - [Webhooks Controller](https://ferrox-rust.dev/commerce/webhooks): Ecosystem technical documentation and architecture reference.
 - [Ferrox-Py-Commerce Overview](https://ferrox-rust.dev/commerce): Ecosystem technical documentation and architecture reference.
-- [Gateways](https://ferrox-rust.dev/commerce/gateways): Ecosystem technical documentation and architecture reference.
+- [Controllers](https://ferrox-rust.dev/commerce/controllers): Ecosystem technical documentation and architecture reference.
 - [Transaction State (Idempotency and Redis)](https://ferrox-rust.dev/commerce/transaction_state): Ecosystem technical documentation and architecture reference.
+- [Ferrox-Py-Utils Overview](https://ferrox-rust.dev/utils): Ecosystem technical documentation and architecture reference.
+- [Pipelines](https://ferrox-rust.dev/utils/pipelines): Ecosystem technical documentation and architecture reference.
 - [Connectors](https://ferrox-rust.dev/utils/connectors): Ecosystem technical documentation and architecture reference.
 - [Schema Registry](https://ferrox-rust.dev/utils/schemas): Ecosystem technical documentation and architecture reference.
-- [Pipelines](https://ferrox-rust.dev/utils/pipelines): Ecosystem technical documentation and architecture reference.
-- [Ferrox-Py-Utils Overview](https://ferrox-rust.dev/utils): Ecosystem technical documentation and architecture reference.
 - [Official Example Projects](https://ferrox-rust.dev/polyglot): Ecosystem technical documentation and architecture reference.
+- [Ferrox PHP Architecture](https://ferrox-rust.dev/polyglot/php): Ecosystem technical documentation and architecture reference.
 - [API Reference](https://ferrox-rust.dev/polyglot/php/api-reference): Ecosystem technical documentation and architecture reference.
 - [java](https://ferrox-rust.dev/polyglot/java): Ecosystem technical documentation and architecture reference.
-- [Ferrox PHP Architecture](https://ferrox-rust.dev/polyglot/php): Ecosystem technical documentation and architecture reference.
 
 ## Machine-Readable Resources
 - [Full LLM Context Corpus](https://ferrox-rust.dev/llms-full.txt): Complete, consolidated plain-text documentation corpus for deep retrieval.
