@@ -4,23 +4,9 @@ title: SVG Vector Financial Charting Engine
 sidebar_position: 5
 ---
 
-import FerroxWasmPlayground from '@site/src/components/FerroxWasmPlayground';
-
 # Financial Charting Engine (`ferrox-front-charts`)
 
 `ferrox-front-charts` is an ultra-high-precision SVG vector graphics library engineered specifically for financial dashboards, trading desks, and quantitative telemetry, featuring **zero JavaScript or Canvas dependencies**.
-
----
-
-## 🎮 Interactive Financial Charting Suite Playground
-
-Test the pure WebAssembly vector charting engine live in your browser: explore interactive candlestick charts with technical indicators (SMA 20/50, Bollinger Bands, RSI 14, MACD differential histogram), real-time order book market depth liquidity curves, telemetry speedometer gauges, and multi-asset sparklines.
-
-<FerroxWasmPlayground 
-  initialTab="charts" 
-  height="980px" 
-  title="Ferrox Front • SVG Vector Financial Charting Suite Playground" 
-/>
 
 ---
 

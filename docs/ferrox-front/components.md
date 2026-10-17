@@ -4,23 +4,9 @@ title: Enterprise UI Component Catalog
 sidebar_position: 3
 ---
 
-import FerroxWasmPlayground from '@site/src/components/FerroxWasmPlayground';
-
 # Enterprise Component Catalog (`ferrox-front-ui`)
 
 The `ferrox-front-ui` crate implements an enterprise-grade, strongly-typed Design System conforming to WCAG 2.1 AA accessibility guidelines. All components support rich visual variants, micro-animations, accessible `:focus-visible` focus rings, and glassmorphism styling.
-
----
-
-## 🎮 Interactive Design System & UI Elements Playground
-
-Test the live interactive Design System and UI Component library compiled directly into WebAssembly below: click button variants and sizes, test reactive form validation with instant error states, adjust range sliders, toggle dark mode switches, trigger modal dialogs, and inspect the compiled pure Rust 29+ SVG vector icon catalog.
-
-<FerroxWasmPlayground 
-  initialTab="components" 
-  height="980px" 
-  title="Ferrox Front • Design System & UI Component Library Playground" 
-/>
 
 ---
 

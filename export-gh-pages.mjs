@@ -42,18 +42,26 @@ async function main() {
   console.log('Target Domain  : ferrox-rust.dev (Branch: main)');
   console.log('----------------------------------------------------------------');
 
-  // Step 1: Execute Docusaurus Build
-  console.log('[1/4] Running Docusaurus build (npm run build)...');
-  execSync('npm run build', { stdio: 'inherit', cwd: ROOT_DIR });
-  console.log('  -> Docusaurus build completed successfully.');
-
-  // Step 2: Verify Build Output
-  console.log('[2/4] Verifying generated build artifacts...');
+  // Step 1: Execute Native Rust/Wasm ferrox-codex Build
+  console.log('[1/3] Running ferrox-codex native build & export...');
   try {
-    await fs.stat(BUILD_DIR);
-    await fs.stat(path.join(BUILD_DIR, 'index.html'));
-    await fs.stat(path.join(BUILD_DIR, 'wasm', 'admin-dashboard', 'index.html'));
-    console.log('  -> Core build artifacts (index.html, wasm dashboard) verified.');
+    execSync('cargo run --manifest-path ../ferrox-front/Cargo.toml -p ferrox-codex --bin ferrox-codex-cli -- export-gh-pages', {
+      stdio: 'inherit',
+      cwd: ROOT_DIR,
+    });
+    console.log('  -> ferrox-codex build and export completed successfully.');
+  } catch (err) {
+    console.error(`[ERROR] ferrox-codex build failed: ${err.message}`);
+    process.exit(1);
+  }
+
+  // Step 2: Verify Build Output in Root
+  console.log('[2/3] Verifying generated WebAssembly artifacts in root...');
+  try {
+    await fs.stat(path.join(ROOT_DIR, 'index.html'));
+    await fs.stat(path.join(ROOT_DIR, 'CNAME'));
+    await fs.stat(path.join(ROOT_DIR, '.nojekyll'));
+    console.log('  -> Core WebAssembly build artifacts verified.');
   } catch (err) {
     console.error(`[ERROR] Build verification failed: ${err.message}`);
     process.exit(1);
