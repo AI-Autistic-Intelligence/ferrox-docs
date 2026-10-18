@@ -12,6 +12,7 @@ const REPOS = {
   'ferrox-java': { src: '../ferrox-java/docs', isDocusaurus: false },
   'ferrox-php': { src: '../ferrox-php/docs', isDocusaurus: false },
   'ferrox-front': { src: '../ferrox-front/docs', isDocusaurus: false },
+  'ferrox-agent-toolkit': { src: '../ferrox-agent-toolkit/docs', isDocusaurus: false },
   'ferrox': { src: '../ferrox/docs', isDocusaurus: true },
 };
 
