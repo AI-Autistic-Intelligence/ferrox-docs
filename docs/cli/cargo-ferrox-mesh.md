@@ -72,6 +72,29 @@ Injects automated resilience chaos scenarios to validate self-healing behavior:
 2. **`timeout`**: Injects simulated network degradation into downstream settlement, validating fast-fail Circuit Breaker transitions and PostgreSQL Outbox buffering.
 3. **`worker-kill`**: Sends an abrupt termination signal to the PHP Saga coordinator mid-flight to confirm Redpanda partition rebalancing and outbox recovery.
 
+### `cargo ferrox mesh publish`
+Directly packages and publishes multi-stage Docker images to GitHub Container Registry (GHCR) or any OCI registry without consuming GitHub Actions runner minutes ($0.00 cloud cost):
+```bash
+# Build & tag locally
+cargo ferrox mesh publish
+
+# Build, tag, and push to GHCR directly
+cargo ferrox mesh publish --push
+
+# Dry run inspection
+cargo ferrox mesh publish --dry-run
+
+# Target single service
+cargo ferrox mesh publish --service front --push
+```
+
+### `cargo ferrox mesh up --standalone`
+Spins up the entire Living Mesh using the zero-cloning distributed standalone manifest (`docker-compose.standalone.yml`):
+```bash
+cargo ferrox mesh up --standalone
+cargo ferrox mesh down --standalone
+```
+
 ---
 
 ## 3. Sentinel Security Audit: `cargo ferrox check --security`
@@ -97,3 +120,14 @@ Guarantees:
 - **Zero Accounting Drift**: $\sum \text{debits} == \sum \text{credits}$
 - **Zero Deadlocks**: 100% of acquired Redis Redlock mutexes released
 - **Sub-2ms Latency Percentiles**: p50 $\approx 1.48\text{ms}$, p95 $\approx 1.88\text{ms}$, p99 $\approx 1.95\text{ms}$ at $>60,000\text{ TPS}$.
+
+---
+
+## 5. Global Zero-Cloning Quickstart (One-Liner)
+
+Third parties can launch the full multi-runtime stack without cloning the repository or installing developer toolchains:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/AI-Autistic-Intelligence/ferrox-infrastructure/master/docker-compose.standalone.yml | docker compose -f - up -d
+```
+
