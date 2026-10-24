@@ -3813,6 +3813,186 @@ Trunk will compile your Rust code into WebAssembly, launch a local web server wi
 
 
 ===============================================================================
+DOCUMENT: Interactive Component Playbook & High-Density Workbench
+ROUTE: /ferrox-front/playbook-handbook
+===============================================================================
+
+import FerroxWasmPlayground from '@site/src/components/FerroxWasmPlayground';
+
+# 📘 Interactive Component Playbook & High-Density Workbench
+
+`ferrox-front` provides a production-grade WebAssembly frontend ecosystem engineered in **100% pure Rust** with **zero external JavaScript dependencies**. It couples an ultra-fast vector SVG charting engine (`ferrox-front-charts`) with an enterprise Glassmorphism Design System (`ferrox-front-ui`).
+
+The **Component Playbook** is a professional, high-density engineering workbench ("Playbook & Live Knobs Inspector") providing typed domain architectures per component, real-time reactive knobs inspection, a pervasive color engine, mathematical data generators, and live synchronized Rust code generation.
+
+---
+
+## 🕹️ Live Interactive Workbench 2.0
+
+Interact directly with the WebAssembly microfrontend below to test vector charts, customize theme tokens, inspect props in real-time, and copy synchronized Rust code:
+
+<FerroxWasmPlayground initialTab="chart-studio" height="880px" title="Ferrox Front • High-Density Component Workbench" />
+
+---
+
+## 1. Typed Component Data Architectures
+
+Rather than flattening data into a single generic float vector, each component in `ferrox-front` is governed by a dedicated domain data structure tailored to its geometry and operational domain:
+
+| Component | Dedicated Configuration Model | Core Parameters & Invariants |
+| :--- | :--- | :--- |
+| **Line Chart** | `LineConfig` | `points: Vec<(f64, f64)>`, `curve: LineCurve` (Linear, Monotone, Stepped), `stroke_width: f64`, `show_dots: bool`, `show_axes: bool` |
+| **Area Chart** | `AreaConfig` | `points: Vec<(f64, f64)>`, `curve: LineCurve`, `stroke_width: f64`, `fill_opacity: f64` (gradient stops to 0%), `show_axes: bool` |
+| **Bar Chart** | `BarConfig` | `items: Vec<BarItem>` (`label`, `value`, `color`), `padding: f64`, `rounded_corners: bool`, `show_axes: bool` |
+| **Donut / Pie** | `DonutConfig` | `segments: Vec<DonutItem>` (`label`, `value`, `color`), `inner_radius_pct: f64` (0% solid pie $\to$ 85% slim ring), `pad_angle: f64` |
+| **Radar Spider** | `RadarConfig` | `dimensions: Vec<RadarAxis>` (`label`, `value`), `ring_count: usize` (3 to 6 polygonal grids), `fill_opacity: f64` |
+| **Gauge Meter** | `GaugeConfig` | `value: f64`, `min: f64`, `max: f64`, `target: f64`, `unit: String`, `show_ticks: bool`, `warning_thresh: f64`, `critical_thresh: f64` |
+| **Sparkline** | `SparklineConfig` | `ticks: Vec<f64>`, `spark_type: SparklineType` (Area, Line, Bar), `show_trend: bool` with trend velocity calculation |
+
+All configurations are encapsulated inside the reactive `PlaybookState`, ensuring zero-latency updates upon any knob mutation.
+
+---
+
+## 2. Mathematical Rigor: GaugeMeter Concentric Geometry
+
+The semi-circular Speedometer/GaugeMeter (`gauge_chart_styled`) visualizes telemetry and KPI metrics along a $180^\circ$ semicircle sweeping clockwise from $-\pi$ ($180^\circ$) to $0$ ($0^\circ$).
+
+### The SVG Arc Distortion Bug & Solution
+In standard SVG path syntax:
+```text
+A rx ry x-axis-rotation large-arc-flag sweep-flag x y
+```
+Because the gauge is constrained to a semicircle ($\Delta\theta \le \pi$), any value arc on this quadrant has an angular span $\le 180^\circ$. Setting `large-arc-flag` to `1` when ratio $> 0.5$ mistakenly instructed SVG renderers to draw the *major arc* ($> 180^\circ$), forcing the stroke to bulge unnaturally outside the track.
+
+**The Fix:**
+- The `large-arc` flag is strictly set to `0`:
+  $$\Delta\theta \le \pi \implies \text{large-arc} \equiv 0$$
+- Track, value arc, needle end, and indicator bead are co-aligned to the exact center $(c_x, c_y)$ and radius $r$:
+  $$x_{\text{tip}} = c_x + r \cdot \cos(\theta), \quad y_{\text{tip}} = c_y + r \cdot \sin(\theta)$$
+- The indicator bead sits exactly on $(x_{\text{tip}}, y_{\text{tip}})$, guaranteeing 100% concentricity.
+
+```rust
+use ferrox_front_charts::{gauge_chart_styled, GaugeChartOptions};
+
+let mut options = GaugeChartOptions::default();
+options.warning_threshold = 0.60;
+options.critical_threshold = 0.85;
+options.custom_color = Some("#ec4899".into());
+
+let gauge = gauge_chart_styled(
+    "telemetry-gauge",
+    73.5,
+    0.0,
+    100.0,
+    "Telemetry Speedometer",
+    "%",
+    340,
+    190,
+    &options,
+);
+```
+
+---
+
+## 3. Real-Time Props & Knobs Inspector
+
+The lateral inspector column gives developers interactive control over every visual and geometric parameter:
+
+- **Line & Area Knobs:**
+  - *Interpolation Curve:* Toggle dynamically between `Linear`, `Monotone` (cubic Bezier with smooth tangents), and `Stepped` (horizontal/vertical orthogonal transitions).
+  - *Stroke Width:* Instant scalar selection from `1.5px` to `7.0px`.
+  - *Fill Opacity:* Adjust gradient area density from `15%` to `90%`.
+  - *Visual Aids:* Toggles for data point dots and coordinate grid axes.
+- **Bar Knobs:**
+  - *Bar Spacing / Padding:* Fine-tune inter-column gap from `10px` to `36px`.
+  - *Rounded Corners:* Toggle SVG rounded caps (`rx = 6`).
+- **Donut Knobs:**
+  - *Cutout Radius:* Seamlessly morph from solid pie (`0%`) to standard donut (`62%`) up to ultra-slim ring (`85%`).
+- **Radar Knobs:**
+  - *Polygonal Rings:* Select between 3, 4, 5, or 6 concentric spider grid polygons.
+  - *Area Fill Opacity:* Adjust polygon background translucency.
+- **Gauge Knobs:**
+  - *Live Speedometer Value:* Increment/decrement telemetry values with boundary clamping.
+  - *Threshold Zones:* Adjust Warning and Critical transition limits.
+- **Sparkline Knobs:**
+  - *Representation Variants:* Switch instantly between `Area`, `Line`, and `Bar` sparklines.
+  - *Trend Velocity:* Displays percentage rate-of-change ($\Delta\% = \frac{v_{\text{last}} - v_{\text{first}}}{v_{\text{first}}} \times 100$) with directional indicators (`▲ +` / `▼ -`).
+
+---
+
+## 4. Pervasive Color Engine
+
+The workbench features a **Pervasive Color Engine** providing 6 curated harmonic palettes that cascade instantaneously across all component types:
+
+1. **Cyber Neon:** `#ec4899` (Pink) • `#06b6d4` (Cyan) • `#a855f7` (Purple)
+2. **Emerald Flow:** `#10b981` (Mint) • `#059669` (Emerald) • `#14b8a6` (Teal)
+3. **Amber Solar:** `#f59e0b` (Gold) • `#f97316` (Orange) • `#ef4444` (Crimson)
+4. **Deep Ocean:** `#0284c7` (Azure) • `#38bdf8` (Sky) • `#6366f1` (Indigo)
+5. **Zinc Mono:** `#94a3b8` (Slate) • `#71717a` (Zinc) • `#f8fafc` (White)
+6. **Synthwave Violet:** `#8b5cf6` (Violet) • `#d946ef` (Fuchsia) • `#6366f1` (Indigo)
+
+Direct tint selectors and custom hex overrides provide instant brand harmonization.
+
+---
+
+## 5. Algorithmic Data Generators
+
+To eliminate static mock arrays, `data_generators.rs` implements mathematical stochastic generators using a zero-dependency deterministic `FastRng` (SplitMix64 / Box-Muller transform) executing identically in native Rust and WebAssembly:
+
+- 🎲 **Brownian Motion:** Simulates financial random walk trajectories with volatility and directional drift:
+  $$S_t = S_{t-1} + \mu + \sigma Z_t, \quad Z_t \sim \mathcal{N}(0, 1)$$
+- 🌊 **Harmonic Wave:** Generates multi-frequency sinusoidal waveforms combined with Gaussian noise to emulate periodic sensor telemetry:
+  $$y(t) = y_0 + A_1 \sin\left(\frac{2\pi t}{T_1}\right) + A_2 \cos\left(\frac{2\pi t}{T_2}\right) + \epsilon$$
+- ⚡ **Traffic Spikes:** Simulates stochastic server ingress with exponential burst spikes and gradual recovery.
+- 📊 **Normal Bell:** Generates Gaussian bell distributions centered symmetrically across the discrete steps:
+  $$f(x) = H \cdot \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)$$
+
+---
+
+## 6. Interactive Data Table Editor
+
+Located in the center column beneath the SVG preview canvas, the **Data Table Editor** allows granular control over active datasets:
+- **Direct Point Modification:** Quick numeric increment (`+5`) and decrement (`-5`) buttons per item.
+- **Individual Point Deletion:** Deletion (`×`) with minimum record safeguarding.
+- **Dynamic Point Addition:** `[➕ Add Next Point]` button that calculates appropriate next steps according to component domain rules.
+
+---
+
+## 7. Segmented Glass Pill Bar & 3-Zone Layout
+
+The layout follows a professional **3-Zone High-Density Workbench** architecture:
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       SEGMENTED GLASS PILL BAR                              │
+│ [Line] [Area] [Bar] [Donut / Pie] [Radar Spider] [Gauge Meter] [Sparkline]  │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────┬─────────────────────────┐
+│  ZONE 1: KNOBS    │     ZONE 2: CANVAS & TABLE    │   ZONE 3: RUST CODE     │
+│  (Col 3 / 12)     │         (Col 6 / 12)          │      (Col 3 / 12)       │
+├───────────────────┼───────────────────────────────┼─────────────────────────┤
+│ • Props Inspector │ • Interactive Vector SVG      │ • Strongly-typed        │
+│   (Curve, Stroke, │   Preview Canvas (60 FPS)     │   Rust DomBuilder       │
+│   Cutout, Opacity)│ • Algorithmic Generators      │   Code Generator        │
+│ • Color Engine    │   (Brownian, Wave, Spikes)    │ • 1-Click Clipboard     │
+│   (6 Palettes &   │ • Interactive Data Table      │   Copy with Toast       │
+│   Direct Tints)   │   Point Editor (+5, -5, ×)    │                         │
+└───────────────────┴───────────────────────────────┴─────────────────────────┘
+```
+
+The **Segmented Glass Pill Bar** uses:
+- Vitrified dark-glass container (`rgba(15, 23, 42, 0.8)` with `backdrop-filter: blur(20px)`).
+- Luminescent active state (`linear-gradient(135deg, #6366f1, #a855f7)` with glowing border `rgba(255, 255, 255, 0.4)` and a distinct `● ACTIVE` badge).
+- Inactive pills with soft hover states.
+
+---
+
+## 8. Synchronized Pure Rust Code Generation
+
+Every adjustment in the inspector is dynamically reflected in copy-ready Rust code using `ferrox-front-charts` and `DomBuilder`. A single click on **"📋 Copy Snippet"** delivers an idiomatic, strongly-typed code snippet directly to the clipboard, completely ready for production deployment.
+
+
+===============================================================================
 DOCUMENT: Zero-Trust Wasm Security, WebCrypto & XSS Sanitization
 ROUTE: /ferrox-front/security/security
 ===============================================================================
@@ -4089,7 +4269,7 @@ ROUTE: /ferrox-front/ui/components
 
 # 🎨 Component Library & Interactive Playground
 
-Explore and interact with the **Ferrox Front** component library live in your browser using our **Nivo-Style Interactive Playground**.
+Explore and interact with the **Ferrox Front** component library live in your browser using our **High-Density Interactive Workbench & Playground**.
 
 You can edit JSON datasets live in real-time, adjust dynamic sliders (stroke width, curve styles, row counts), toggle glassmorphism themes, simulate **Zero-Trust RBAC security actions**, and inspect auto-generated Rust component code (`rsx!`).
 
@@ -26920,6 +27100,117 @@ To see how this module integrates with the rest of the Ferrox architecture, refe
 
 
 ===============================================================================
+DOCUMENT: Polyglot Super-Showcase 2.0 (Real-Time Mesh)
+ROUTE: /overview/polyglot-mesh-showcase
+===============================================================================
+
+# 🌐 Ferrox Polyglot Super-Showcase 2.0
+## Real-Time High-Frequency Trading, Distributed Sagas & Event Mesh
+
+The **Ferrox Polyglot Super-Showcase** represents the definitive demonstration of the Ferrox ecosystem. It orchestrates 6 distinct runtimes (Rust, WebAssembly, Python, Java 21, PHP 8.3, and Node.js) into a unified, resilient, sub-millisecond distributed application.
+
+```mermaid
+flowchart TD
+    Client["Client Browser (Pure Wasm SPA)"] -->|HTTP / WebSocket :4000| Gateway["Traefik v3 API Gateway :80"]
+    
+    subgraph "Event Streaming Tier"
+        Redpanda["Redpanda C++ (Kafka API :9092)"]
+        Redis["Redis 7 Redlock & Shannon Guard :6379"]
+    end
+
+    subgraph "Polyglot Microservices Tier"
+        Gateway -->|/api/v1/rust| RustSaaS["ferrox SaaS Backend :8080"]
+        Gateway -->|/api/v1/match| RustMatch["ferrox-match (Fast-Path :8086)"]
+        Gateway -->|/api/v1/py| PyData["ferrox-py FastData Platform :8001"]
+        Gateway -->|/api/v1/java| JavaLoom["ferrox-java Loom Settlement :8082"]
+        Gateway -->|/api/v1/bid| JavaBid["ferrox-bid Auction Engine :8081"]
+        Gateway -->|/api/v1/php| PhpSaga["ferrox-php FrankenPHP E-Shop :8000"]
+        Gateway -->|/api/v1/node| NodeGw["ferrox-node & nestjs-yalc :3000"]
+    end
+
+    PyData -->|market.ticks.v1| Redpanda
+    Redpanda -->|market.ticks.v1| RustMatch
+    NodeGw -->|orders.placed.v1| Redpanda
+    RustMatch -->|orders.matched.v1| Redpanda
+    Redpanda -->|orders.matched.v1| JavaLoom
+    Redpanda -->|orders.settled.v1| PhpSaga
+    PhpSaga <-->|Redlock Distributed Mutex| Redis
+```
+
+---
+
+## 🏛️ Polyglot Architecture & Roles
+
+| Service | Runtime | Key Architecture & Technology | Latency / SLA | Role in Showcase |
+| :--- | :--- | :--- | :--- | :--- |
+| **`ferrox-match`** | Rust 1.80+ | Zero-alloc memory slabs, price-time matching, Node-API | **380 ns / order** | High-Frequency Order Book & matching core |
+| **`ferrox-front`** | Rust Wasm | Pure WebAssembly (`Signal<T>`), Zero JS, Vector SVG | **< 16 ms (60 FPS)** | Polyglot Mesh Hub & Trading Desk Pro UI |
+| **`ferrox-py`** | Python 3.12+ | Polars Series vectorized processing, PyO3 bindings | **1.4 ms / batch** | Real-time exchange tick ingestion & streaming |
+| **`ferrox-java`** | Java 21 | Project Loom Virtual Threads, Panama off-heap FFI | **2.1 ms / settlement**| Double-entry ledger settlement at scale |
+| **`ferrox-bid`** | Java 21 | Loom concurrency, Singleflight request coalescing | **1.2 ms / bid** | High-concurrency auction bidding |
+| **`ferrox-php`** | PHP 8.3+ | FrankenPHP worker mode, Redis Outbox Saga | **3.8 ms / saga** | Distributed order fulfillment & compensations |
+| **`ferrox-node`** | Node.js 20 | Fastify 5, `nestjs-yalc` CQRS, PASETO v4 local tokens | **1.1 ms / request** | Ingress API Gateway & Command bus |
+| **`redpanda`** | C++ Native | Kafka API v24.1, Raft consensus, zero JVM overhead | **< 0.8 ms** | Sub-millisecond CloudEvents streaming broker |
+| **`redis`** | C / Alpine | Redis 7, Redlock distributed algorithm | **0.3 ms** | Distributed mutex & Shannon entropy cache |
+
+---
+
+## 🔄 The Cross-Service Distributed Transaction Journey
+
+When an order is submitted from the Wasm frontend (`ferrox-front`), it triggers an orchestrated choreography across all 6 runtimes:
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User as Trader (Wasm UI)
+    participant GW as API Gateway (Node Fastify)
+    participant RP as Redpanda (Kafka Stream)
+    participant MT as ferrox-match (Rust Engine)
+    participant LM as ferrox-java (Loom Ledger)
+    participant SG as ferrox-php (FrankenPHP Saga)
+
+    User->>GW: POST /api/v1/node/orders (PASETO v4 Auth)
+    GW->>RP: Emit 'orders.placed.v1' (CloudEvents)
+    RP->>MT: Consume Order in Fast-Path
+    Note over MT: Sub-microsecond Match (380ns)<br/>Zero Heap Allocations
+    MT->>RP: Emit 'orders.matched.v1'
+    RP->>LM: Stream to Virtual Thread Worker
+    Note over LM: Project Loom Virtual Thread<br/>Double-Entry Ledger Balance Update
+    LM->>RP: Emit 'orders.settled.v1'
+    RP->>SG: Trigger OrderFulfillmentSaga
+    Note over SG: Redis Redlock Mutex<br/>PostgreSQL Outbox Commit
+    SG-->>User: Wasm UI Event Notification (Trade Confirmed)
+```
+
+---
+
+## 🚀 Running the Polyglot Mesh Locally
+
+The entire polyglot mesh is orchestrated through Docker Compose in `ferrox-infrastructure`:
+
+```bash
+cd ferrox-infrastructure
+
+# 1. Start the core mesh infrastructure & all 6 runtimes
+docker compose -f docker-compose.mesh.yml up -d
+
+# 2. Check cluster health status
+docker compose -f docker-compose.mesh.yml ps
+```
+
+### Access Endpoints
+- **Wasm Admin Dashboard & Mesh Hub**: [http://localhost:4000](http://localhost:4000)
+- **Central API Gateway (Traefik)**: [http://localhost:80](http://localhost:80)
+- **Traefik Admin Console**: [http://localhost:8088](http://localhost:8088)
+- **Rust Matching Engine API**: [http://localhost:80/api/v1/match](http://localhost:80/api/v1/match)
+- **Python FastData Platform**: [http://localhost:80/api/v1/py](http://localhost:80/api/v1/py)
+- **Java 21 Loom Ledger**: [http://localhost:80/api/v1/java](http://localhost:80/api/v1/java)
+- **PHP FrankenPHP E-Shop**: [http://localhost:80/api/v1/php](http://localhost:80/api/v1/php)
+- **Prometheus Telemetry**: [http://localhost:9090](http://localhost:9090)
+- **Grafana Dashboards**: [http://localhost:3001](http://localhost:3001) (Credentials: `admin` / `admin`)
+
+
+===============================================================================
 DOCUMENT: Overview
 ROUTE: /core
 ===============================================================================
@@ -26971,6 +27262,101 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ```
 
 Explore the documentation to see how to define entities, generate CRUD routes, and handle distributed events.
+
+
+===============================================================================
+DOCUMENT: 🛡️ Ferrox Enterprise Security Audit & Penetration Testing Report
+ROUTE: /core/security/audit
+===============================================================================
+
+# 🛡️ Ferrox Enterprise Security Audit & Penetration Testing Report
+
+![OWASP WSTG](https://img.shields.io/badge/Standard-OWASP_WSTG_v4.2_%2F_v5.0-blue.svg)
+![Score](https://img.shields.io/badge/Compliance_Score-100%25_PASSED-brightgreen.svg)
+![Status](https://img.shields.io/badge/Audit_Status-VERIFIED_SECURE-green.svg)
+![Date](https://img.shields.io/badge/Date-October_2026-orange.svg)
+
+This document provides the formal **Enterprise Security Audit and Hardening Report** for the Ferrox & Yalc polyglot ecosystem, generated via automated verification suites in `ferrox-pentest-private` conforming to the **OWASP Web Security Testing Guide (WSTG v4.2 / v5.0)**.
+
+---
+
+## 📊 Executive Summary & Compliance Scorecard
+
+Across **11 critical penetration and hardening test categories**, all test cases passed successfully with **100.0% compliance**.
+
+```mermaid
+pie title OWASP WSTG Compliance Breakdown
+    "Input Validation & Entropy WAF (WSTG-INPV)" : 36
+    "Cryptographic Verification (WSTG-CRYP/ATHN)" : 27
+    "Business Logic & Distributed Locking (WSTG-BUSL)" : 18
+    "Resilience & DoS Mitigation (WSTG-CLNT)" : 19
+```
+
+### Runtime Compliance Matrix
+
+| Runtime / Service | Primary Language / Framework | WSTG Score | Cryptographic Standard | Memory Safety & Isolation Tier |
+| :--- | :--- | :---: | :--- | :--- |
+| **`ferrox`** | Rust 1.76+ (Axum / N-API) | **100%** | PASETO v4.local / Ed25519 | Native Rust Borrow Checker (Zero-Cost) |
+| **`ferrox-java`** | Java 21 LTS (Virtual Threads Loom) | **100%** | PASETO v4 (`jpaseto`) | Project Panama `MemorySegment` Zero-GC |
+| **`ferrox-php`** | PHP 8.3 (FrankenPHP Worker Mode) | **100%** | PASETO v4 (`paragonie/paseto`) | C-Level Caddy Thread Isolation |
+| **`ferrox-node`** | Node.js 20+ (Fastify 5) | **100%** | PASETO v4 (`paseto.js`) | V8 Isolate Sandboxing |
+| **`nestjs-yalc`** | TypeScript / Node.js 20+ | **100%** | PASETO v4 / JWT | Multi-Tenant Database Schema Isolation |
+| **`ferrox-py`** | Python 3.11+ (FastAPI / Polars) | **100%** | PASETO v4 (`pypaseto`) | Rust-backed Polars GIL-free Execution |
+| **`ferrox-front`** | Rust (WebAssembly / Trunk) | **100%** | AES-GCM-SIV Wasm Sealed | Wasm Linear Memory Boundary (No JS Leak) |
+
+---
+
+## 🔍 Detailed Domain Findings & Test Results
+
+### 1. Sentinel Bypass Fuzzing (WSTG-INPV-01 / WSTG-INPV-05)
+- **Objective**: Ensure the Shannon Entropy filter and signature analyzer cannot be bypassed via obfuscation, double encoding, or polymorphic mutations.
+- **Test Results**:
+  - `WSTG-INPV-01.1` [PASS]: Clean business payloads ($H(X) = 4.14$) are allowed without false positives.
+  - `WSTG-INPV-01.2` [PASS]: High-entropy shellcodes ($H(X) = 5.27 > 4.8$) are intercepted in $O(N)$ linear time and blocked with `HTTP 403 Forbidden` (`application/problem+json`).
+  - `WSTG-INPV-05.1` [PASS]: Multi-layer URL and hex-encoded SQL injection vectors (`%2527%2520%2555%254e...`) are canonicalized and rejected prior to ORM/database execution.
+  - `WSTG-INPV-05.2` [PASS]: Directory traversal attacks using percent-encoded climbers (`..%2f..%2f`) are intercepted by `PATH_TRAVERSAL_PATTERN`.
+
+### 2. PASETO Cryptographic Validation (WSTG-CRYP-01 / WSTG-ATHN-04)
+- **Objective**: Validate resistance against key degradation, footer tampering, and token replay.
+- **Test Results**:
+  - `WSTG-CRYP-01.1` [PASS]: Symmetric keys initialized with all-zero or repeated patterns are rejected at startup by the key generation guard.
+  - `WSTG-CRYP-01.2` [PASS]: Tampering with unauthenticated footers in `v4.local` tokens invalidates the Poly1305 MAC tag, returning `HTTP 401 Unauthorized`.
+  - `WSTG-ATHN-04.1` [PASS]: Expired tokens and tokens exceeding a 10-second clock skew threshold are discarded immediately.
+
+### 3. Saga Concurrency & Distributed Locking (WSTG-BUSL-01 / WSTG-BUSL-02)
+- **Objective**: Prevent double-spending, inventory overselling, and race conditions during high-volume checkout.
+- **Test Results**:
+  - `WSTG-BUSL-01.1` [PASS]: 20 concurrent threads attempting to purchase 3 remaining inventory items resulted in exactly 3 successful orders and 17 locked rejections with zero negative inventory.
+  - `WSTG-BUSL-02.1` [PASS]: `SingleflightController` in `ferrox-java-data` collapsed 10 simultaneous high-load quoting flights for the same ticker into 1 execution, protecting downstream data feeds from cache stampede.
+
+### 4. Rate Limiting & DoS Mitigation (WSTG-INPV-08 / WSTG-CLNT-05)
+- **Objective**: Verify sliding window throttling and circuit breaker fault isolation under burst traffic.
+- **Test Results**:
+  - `WSTG-INPV-08.1` [PASS]: Burst of 25 rapid requests correctly allowed 10 requests and throttled 15 with `HTTP 429 Too Many Requests`.
+  - `WSTG-CLNT-05.1` [PASS]: 5 consecutive simulated service failures tripped the Virtual Thread Circuit Breaker from `CLOSED` to `OPEN`, immediately returning fallback responses without thread pool exhaustion.
+
+---
+
+## 🛠 Applied Hardening Remediations
+
+1. **Spring Security & MockMvc Filter Chain Wiring**:
+   - `SentinelThreatFilter` is explicitly mounted before `UsernamePasswordAuthenticationFilter` to ensure all REST routes, actuators, and query parameters are inspected before execution.
+2. **Double URL Encoding Canonicalization**:
+   - Query strings and request parameter maps are recursively decoded to detect hidden injection signatures.
+3. **Stateless Project Loom Thread Isolation**:
+   - Thread-local leakage in Virtual Threads is prevented by binding correlation IDs and PASETO security context directly to request scope.
+4. **Project Panama Arena Lifecycle**:
+   - Off-heap native memory segments allocated with `Arena.ofShared()` are deterministically freed upon JVM shutdown via registered clean-up hooks.
+
+---
+
+## 🏃 Running the Automated Audit
+
+```powershell
+# From workspace root:
+cd ferrox-pentest-private
+./run_wstg_audit.ps1
+```
 
 
 ===============================================================================
@@ -27386,343 +27772,115 @@ node report_generator.js
 
 
 ===============================================================================
-DOCUMENT: 🛡️ Ferrox Enterprise Security Audit & Penetration Testing Report
-ROUTE: /core/security/audit
+DOCUMENT: Zero-JS Vision & Architecture
+ROUTE: /front
 ===============================================================================
 
-# 🛡️ Ferrox Enterprise Security Audit & Penetration Testing Report
+# Ferrox Front: Enterprise Zero-JS WebAssembly Framework
 
-![OWASP WSTG](https://img.shields.io/badge/Standard-OWASP_WSTG_v4.2_%2F_v5.0-blue.svg)
-![Score](https://img.shields.io/badge/Compliance_Score-100%25_PASSED-brightgreen.svg)
-![Status](https://img.shields.io/badge/Audit_Status-VERIFIED_SECURE-green.svg)
-![Date](https://img.shields.io/badge/Date-October_2026-orange.svg)
-
-This document provides the formal **Enterprise Security Audit and Hardening Report** for the Ferrox & Yalc polyglot ecosystem, generated via automated verification suites in `ferrox-pentest-private` conforming to the **OWASP Web Security Testing Guide (WSTG v4.2 / v5.0)**.
+**Ferrox Front** is a next-generation enterprise frontend framework and Design System written entirely in **Rust WebAssembly (`wasm32-unknown-unknown`)**, specifically engineered to eliminate JavaScript, React, and npm bundlers from mission-critical web applications and high-frequency financial platforms.
 
 ---
 
-## 📊 Executive Summary & Compliance Scorecard
+## 🚀 Why Zero-JS and Rust WebAssembly?
 
-Across **11 critical penetration and hardening test categories**, all test cases passed successfully with **100.0% compliance**.
+In modern high-performance software (trading desks, analytical dashboards, real-time data streaming), traditional JavaScript/TypeScript architectures encounter fundamental bottlenecks:
+
+1. **Virtual DOM Overhead**: Continuous reconciliation and diffing of virtual tree nodes on every re-render cycle.
+2. **Garbage Collection (GC) Stutters**: Unpredictable main-thread stalls for memory reclamation, intolerable when processing high-throughput L2/L3 market tick feeds.
+3. **Dependency Fragility**: Thousands of transitive `npm` packages introducing supply-chain security risks and bundling complexity.
+4. **Lack of Shared Domain Logic**: Duplicating data models, serialization, and business rules across backend (Rust/C++) and frontend (TypeScript).
+
+Ferrox Front transforms this paradigm: **the entire graphical user interface, fine-grained reactive state, order book matching engine, and charting pipeline execute inside a single optimized, compiled WebAssembly binary**.
+
+---
+
+## ⚡ Performance Benchmark: Ferrox Front vs React 19
+
+| Metric | React 19 + Shadcn / TanStack | Ferrox Front (Rust Wasm) | Ferrox Advantage |
+| :--- | :--- | :--- | :--- |
+| **Runtime Engine** | JavaScript V8 / Hermes | Native Compiled Wasm32 | **No JIT compilation or interpretation** |
+| **Reactivity Model** | Virtual DOM Tree Diffing | **Fine-Grained Signals** (`Signal<T>`) | **O(1) Direct DOM Mutation** |
+| **Memory Management** | Continuous Tracing GC | **Deterministic Rust RAII** | **Zero GC Pauses** |
+| **DataGrid (100,000 Rows)** | Render lag / main thread freeze | Smooth 60 FPS Virtualization | **Zero memory leaks** |
+| **Order Matching Engine** | HTTP Proxy / Slow JS Worker | In-process compiled `ferrox-engine` | **Latency &lt; 1.8 μs** |
+| **Technical Charts** | Heavy Canvas / proprietary licensing | **Pure Zero-Copy Vector SVG** | **Zero external JS charting libraries** |
+| **NPM Dependencies** | 1,200+ `node_modules` packages | **0 JS packages / 0 npm dependencies** | **Maximum supply chain security** |
+
+---
+
+## 🧩 Modular Core Crates Ecosystem
+
+Adhering strictly to the **DRY (Don't Repeat Yourself)** architectural principle, all computation engines, visual components, and network protocols are decoupled into standalone, reusable crates:
 
 ```mermaid
-pie title OWASP WSTG Compliance Breakdown
-    "Input Validation & Entropy WAF (WSTG-INPV)" : 36
-    "Cryptographic Verification (WSTG-CRYP/ATHN)" : 27
-    "Business Logic & Distributed Locking (WSTG-BUSL)" : 18
-    "Resilience & DoS Mitigation (WSTG-CLNT)" : 19
+graph TD
+    A["ferrox-front-core<br/>(Signals & DOM Builder)"] --> B["ferrox-front-ui<br/>(Design System & DataGrid)"]
+    A --> C["ferrox-front-charts<br/>(SVG Technical & Depth Charts)"]
+    D["ferrox-match / ferrox-engine<br/>(Pure Rust Order Book)"] --> E["Live Trading Desk<br/>(Wasm Reference App)"]
+    F["ferrox-front-ws<br/>(ReconnectingWs + Events)"] --> E
+    B --> E
+    C --> E
+    G["ferrox-front-router<br/>(SPA Routing & Guards)"] --> E
 ```
 
-### Runtime Compliance Matrix
+### 1. `crates/ferrox-front-core`
+- **Fine-Grained Signals**: Reactive primitives `Signal<T>`, `create_signal`, `create_effect`, and `create_memo`.
+- **Wasm DOM Builder**: Fluent builder API (`div()`, `span()`, `button()`) for direct DOM manipulation without a Virtual DOM.
+- **Dynamic Theming Engine**: Runtime switching between Enterprise Glassmorphism, Cyber Dark, Zinc Light, Cyberpunk, and Ocean Breeze themes.
 
-| Runtime / Service | Primary Language / Framework | WSTG Score | Cryptographic Standard | Memory Safety & Isolation Tier |
-| :--- | :--- | :---: | :--- | :--- |
-| **`ferrox`** | Rust 1.76+ (Axum / N-API) | **100%** | PASETO v4.local / Ed25519 | Native Rust Borrow Checker (Zero-Cost) |
-| **`ferrox-java`** | Java 21 LTS (Virtual Threads Loom) | **100%** | PASETO v4 (`jpaseto`) | Project Panama `MemorySegment` Zero-GC |
-| **`ferrox-php`** | PHP 8.3 (FrankenPHP Worker Mode) | **100%** | PASETO v4 (`paragonie/paseto`) | C-Level Caddy Thread Isolation |
-| **`ferrox-node`** | Node.js 20+ (Fastify 5) | **100%** | PASETO v4 (`paseto.js`) | V8 Isolate Sandboxing |
-| **`nestjs-yalc`** | TypeScript / Node.js 20+ | **100%** | PASETO v4 / JWT | Multi-Tenant Database Schema Isolation |
-| **`ferrox-py`** | Python 3.11+ (FastAPI / Polars) | **100%** | PASETO v4 (`pypaseto`) | Rust-backed Polars GIL-free Execution |
-| **`ferrox-front`** | Rust (WebAssembly / Trunk) | **100%** | AES-GCM-SIV Wasm Sealed | Wasm Linear Memory Boundary (No JS Leak) |
+### 2. `crates/ferrox-front-charts`
+- **Vector SVG Engine**: Chart generation without Canvas or external graphics engines.
+- **Financial Technical Charts**: Dynamic candlestick timeframes featuring SMA 20/50 overlays, Bollinger Bands (±2σ), RSI (14), and MACD (12, 26, 9) differential histograms.
+- **Order Book Depth Chart**: `depth_chart(...)` rendering cumulative curves for Bids/Asks, mid-market price markers, and real-time spread calculations.
+- **Streaming Aggregator**: `CandleAggregator` transforming incoming `TradeTick` streams into open and closed interval candles via `CandleRingBuffer`.
 
----
+### 3. `crates/ferrox-front-ws`
+- **`ReconnectingWs`**: Resilient browser WebSocket client featuring exponential backoff and randomized jitter (±20%).
+- **Offline Queue**: Message dispatch buffering preventing payload loss during transient disconnections.
+- **Typed Event Dispatcher**: Strongly-typed payload deserialization for `Trades`, `OrderBookDepth`, and `Ticker` events.
 
-## 🔍 Detailed Domain Findings & Test Results
-
-### 1. Sentinel Bypass Fuzzing (WSTG-INPV-01 / WSTG-INPV-05)
-- **Objective**: Ensure the Shannon Entropy filter and signature analyzer cannot be bypassed via obfuscation, double encoding, or polymorphic mutations.
-- **Test Results**:
-  - `WSTG-INPV-01.1` [PASS]: Clean business payloads ($H(X) = 4.14$) are allowed without false positives.
-  - `WSTG-INPV-01.2` [PASS]: High-entropy shellcodes ($H(X) = 5.27 > 4.8$) are intercepted in $O(N)$ linear time and blocked with `HTTP 403 Forbidden` (`application/problem+json`).
-  - `WSTG-INPV-05.1` [PASS]: Multi-layer URL and hex-encoded SQL injection vectors (`%2527%2520%2555%254e...`) are canonicalized and rejected prior to ORM/database execution.
-  - `WSTG-INPV-05.2` [PASS]: Directory traversal attacks using percent-encoded climbers (`..%2f..%2f`) are intercepted by `PATH_TRAVERSAL_PATTERN`.
-
-### 2. PASETO Cryptographic Validation (WSTG-CRYP-01 / WSTG-ATHN-04)
-- **Objective**: Validate resistance against key degradation, footer tampering, and token replay.
-- **Test Results**:
-  - `WSTG-CRYP-01.1` [PASS]: Symmetric keys initialized with all-zero or repeated patterns are rejected at startup by the key generation guard.
-  - `WSTG-CRYP-01.2` [PASS]: Tampering with unauthenticated footers in `v4.local` tokens invalidates the Poly1305 MAC tag, returning `HTTP 401 Unauthorized`.
-  - `WSTG-ATHN-04.1` [PASS]: Expired tokens and tokens exceeding a 10-second clock skew threshold are discarded immediately.
-
-### 3. Saga Concurrency & Distributed Locking (WSTG-BUSL-01 / WSTG-BUSL-02)
-- **Objective**: Prevent double-spending, inventory overselling, and race conditions during high-volume checkout.
-- **Test Results**:
-  - `WSTG-BUSL-01.1` [PASS]: 20 concurrent threads attempting to purchase 3 remaining inventory items resulted in exactly 3 successful orders and 17 locked rejections with zero negative inventory.
-  - `WSTG-BUSL-02.1` [PASS]: `SingleflightController` in `ferrox-java-data` collapsed 10 simultaneous high-load quoting flights for the same ticker into 1 execution, protecting downstream data feeds from cache stampede.
-
-### 4. Rate Limiting & DoS Mitigation (WSTG-INPV-08 / WSTG-CLNT-05)
-- **Objective**: Verify sliding window throttling and circuit breaker fault isolation under burst traffic.
-- **Test Results**:
-  - `WSTG-INPV-08.1` [PASS]: Burst of 25 rapid requests correctly allowed 10 requests and throttled 15 with `HTTP 429 Too Many Requests`.
-  - `WSTG-CLNT-05.1` [PASS]: 5 consecutive simulated service failures tripped the Virtual Thread Circuit Breaker from `CLOSED` to `OPEN`, immediately returning fallback responses without thread pool exhaustion.
+### 4. `ferrox-match/packages/ferrox-engine`
+- **Pure Matching Engine**: In-memory `OrderBook` utilizing fixed-point `BTreeMap` precision (`1e8`).
+- **Multi-Target Compilation**: Compiles both for Linux/Windows servers and directly as a pure Rust dependency on `wasm32-unknown-unknown` with zero overhead.
 
 ---
 
-## 🛠 Applied Hardening Remediations
-
-1. **Spring Security & MockMvc Filter Chain Wiring**:
-   - `SentinelThreatFilter` is explicitly mounted before `UsernamePasswordAuthenticationFilter` to ensure all REST routes, actuators, and query parameters are inspected before execution.
-2. **Double URL Encoding Canonicalization**:
-   - Query strings and request parameter maps are recursively decoded to detect hidden injection signatures.
-3. **Stateless Project Loom Thread Isolation**:
-   - Thread-local leakage in Virtual Threads is prevented by binding correlation IDs and PASETO security context directly to request scope.
-4. **Project Panama Arena Lifecycle**:
-   - Off-heap native memory segments allocated with `Arena.ofShared()` are deterministically freed upon JVM shutdown via registered clean-up hooks.
-
----
-
-## 🏃 Running the Automated Audit
-
-```powershell
-# From workspace root:
-cd ferrox-pentest-private
-./run_wstg_audit.ps1
-```
-
-
-===============================================================================
-DOCUMENT: SVG Vector Financial Charting Engine
-ROUTE: /front/charts
-===============================================================================
-
-# Financial Charting Engine (`ferrox-front-charts`)
-
-`ferrox-front-charts` is an ultra-high-precision SVG vector graphics library engineered specifically for financial dashboards, trading desks, and quantitative telemetry, featuring **zero JavaScript or Canvas dependencies**.
-
----
-
-## 📈 Pro Candlestick with Technical Indicators (`financial_technical_chart`)
-
-The primary technical chart provides functional parity with industry benchmarks such as TradingView Lightweight Charts, integrating native Rust mathematical algorithms for essential quantitative indicators:
+## 🛠️ Hello World with Signals and DOM Builder
 
 ```rust
-use ferrox_front_charts::{
-    CandleDatum, TechnicalChartOptions, financial_technical_chart,
-};
+use ferrox_front_core::dom::{mount, div, h1, button};
+use ferrox_front_core::reactivity::create_signal;
+use wasm_bindgen::prelude::*;
 
-let candle_history: Vec<CandleDatum> = vec![
-    CandleDatum { time: "18:00".into(), open: 96250.0, high: 96800.0, low: 96100.0, close: 96600.0, volume: 510.0 },
-    CandleDatum { time: "18:30".into(), open: 96600.0, high: 97200.0, low: 96400.0, close: 97100.0, volume: 640.0 },
-];
+#[wasm_bindgen(start)]
+pub fn run() -> Result<(), JsValue> {
+    // Fine-grained reactive state
+    let count = create_signal(0);
 
-let mut options = TechnicalChartOptions::default();
-options.show_sma20 = true;       // 20-period Simple Moving Average (amber overlay)
-options.show_sma50 = true;       // 50-period Simple Moving Average (cyan overlay)
-options.show_bollinger = true;    // Bollinger Bands (±2 standard deviations)
-options.show_rsi = true;          // 14-period RSI sub-panel with 70/30 threshold markers
-options.show_macd = true;         // MACD (12, 26, 9) sub-panel with dual-color differential histogram
+    // Fluent direct DOM construction without Virtual DOM
+    let root = div()
+        .class("flex flex-col items-center justify-center p-8 bg-slate-900 rounded-2xl border border-slate-800")
+        .child(
+            h1()
+                .class("text-2xl font-bold text-white mb-4")
+                .text(&format!("Count: {}", count.get()))
+        )
+        .child(
+            button()
+                .class("px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-semibold")
+                .text("Increment")
+                .on_click(move || {
+                    count.update(|n| *n += 1);
+                })
+        );
 
-let chart_svg = financial_technical_chart(
-    "btc-pro-chart",
-    &candle_history,
-    &options,
-    880, // Width in pixels
-    480, // Height in pixels
-);
-```
-
-### Integrated Mathematical Indicators
-1. **SMA (Simple Moving Average)**: Efficient O(1) rolling-window calculation for 20 and 50 period overlays.
-2. **Bollinger Bands**: Dynamic volatility channel computed via empirical standard deviation in native 64-bit floating-point Rust.
-3. **RSI (Relative Strength Index)**: 14-period momentum oscillator with Wilder smoothing and clear overbought (&gt;70) and oversold (&lt;30) zones.
-4. **MACD (Moving Average Convergence Divergence)**: Exponential Moving Averages (EMA 12 and EMA 26), signal line (EMA 9), and dynamic dual-color (green/red) differential histogram bars.
-
----
-
-## 🌊 Order Book Market Depth Chart (`depth_chart`)
-
-The market depth chart (`depth_chart`) visualizes live order book liquidity:
-
-```rust
-use ferrox_front_charts::depth_chart;
-
-// Cumulative liquidity levels (price, aggregated volume)
-let bids = vec![(97040.0, 1.25), (97020.0, 4.65), (97000.0, 11.45), (96950.0, 26.65)];
-let asks = vec![(97060.0, 0.95), (97080.0, 3.75), (97100.0, 9.65), (97150.0, 23.75)];
-
-let depth_svg = depth_chart(
-    "btc-depth-chart",
-    &bids,
-    &asks,
-    560, // Width
-    280, // Height
-);
-```
-
-### Depth Chart Components
-- **Emerald Green Area (Bids)**: Cumulative buyer demand plotted across descending price levels.
-- **Rose Red Area (Asks)**: Cumulative seller supply plotted across ascending price levels.
-- **Mid-Market Price Line**: Vertical dashed indicator demarcating the instantaneous fair market equilibrium.
-- **Spread Badge**: Centered badge detailing absolute bid-ask spread and relative basis points (e.g., `Spread: $10.00 (0.01%)`).
-
----
-
-## ⏱️ Trade Tick Streaming & Candle Aggregator (`CandleAggregator`)
-
-In real-time trading environments, WebSocket feeds push discrete, atomic trade executions. `CandleAggregator` dynamically compiles trade ticks into the current open candle interval, finalizing candles automatically when the interval elapses:
-
-```rust
-use ferrox_front_charts::{CandleAggregator, TradeTick, Timeframe};
-
-// Initialize aggregator for 5-minute interval with a 100-candle circular ring buffer
-let mut aggregator = CandleAggregator::new(Timeframe::Min5, 100);
-
-// Ingest incoming trade ticks from WebSocket or ferrox-engine
-aggregator.process_tick(TradeTick::new(97050.0, 0.45, 1760518800000));
-aggregator.process_tick(TradeTick::new(97055.0, 1.20, 1760518815000));
-
-// Retrieve finalized historical candles combined with the current active open candle
-let current_candles = aggregator.get_candles_with_active();
-```
-
-### Supported Timeframe Resolutions
-
-| Timeframe | Enum Constant | Duration (ms) | Target Use Case |
-| :--- | :--- | :--- | :--- |
-| **1 Second** | `Timeframe::Sec1` | 1,000 ms | Ultra-low-latency HFT / Scalping |
-| **5 Seconds** | `Timeframe::Sec5` | 5,000 ms | Order book microstructure monitoring |
-| **1 Minute** | `Timeframe::Min1` | 60,000 ms | Short-term intraday momentum |
-| **5 Minutes** | `Timeframe::Min5` | 300,000 ms | Standard Trading Desk baseline |
-| **15 Minutes** | `Timeframe::Min15` | 900,000 ms | Mid-term trend following |
-| **1 Hour** | `Timeframe::Hour1` | 3,600,000 ms | Multi-session cyclical analysis |
-| **1 Day** | `Timeframe::Day1` | 86,400,000 ms | Macro trend overview |
-
----
-
-## 🎯 Telemetry Indicators: Gauges & Sparklines
-
-Ferrox Front also delivers lightweight, embeddable vector telemetry widgets:
-
-```rust
-use ferrox_front_charts::{gauge_chart, sparkline_chart, SparklineType};
-
-// Semi-circular speedometer gauge for Fear & Greed index or CPU load
-let cpu_gauge = gauge_chart("cpu-usage", 78.5, 0.0, 100.0, "CPU Load", "%", 220, 140);
-
-// Minimalist vector sparkline for compact table trend visualization
-let price_sparkline = sparkline_chart(
-    vec![96100.0, 96400.0, 96250.0, 96900.0, 97050.0],
-    120,
-    32,
-    SparklineType::Line,
-    "#10b981",
-);
-```
-
-
-===============================================================================
-DOCUMENT: Enterprise DataGrid (1M Rows & CSV Export)
-ROUTE: /front/datagrid
-===============================================================================
-
-# Enterprise DataGrid (`ferrox-front-ui::ferrox_datagrid`)
-
-The `EnterpriseDataGrid` component in Ferrox Front is engineered to exceed the capabilities of heavy JavaScript table frameworks like AG-Grid Enterprise and TanStack Table, guaranteeing **zero garbage collection pauses** even across datasets exceeding 1,000,000 records.
-
----
-
-## ⚡ Key Highlights
-
-1. **Extreme Viewport Virtualization**: Renders exclusively visible viewport DOM rows, maintaining constant memory overhead regardless of total dataset volume.
-2. **Multi-Column Sorting**: Progressive sorting across compound keys (e.g., Status &rarr; Price &rarr; Timestamp).
-3. **Strongly-Typed Column Filtering**: Instant in-memory evaluations for text matching, numeric intervals, and discrete status subsets.
-4. **Pinned Columns**: Freeze columns on the Left (e.g., Order ID) or Right (e.g., Action buttons) that remain visible during horizontal scrolling.
-5. **Native RFC 4180 CSV Export**: Instant in-memory CSV generation in WebAssembly and seamless browser download trigger via `Blob` URL.
-
----
-
-## 💻 Column Definition & Configuration
-
-Each grid column is declared using `ColumnDef<T>`:
-
-```rust
-use ferrox_front_ui::ferrox_datagrid::{ColumnDef, PinnedPosition, TextAlign, EnterpriseDataGrid};
-use ferrox_front_core::dom::span;
-
-#[derive(Clone, Debug, PartialEq)]
-pub struct OrderRow {
-    pub id: String,
-    pub symbol: String,
-    pub side: String,
-    pub price: f64,
-    pub amount: f64,
-    pub status: String,
+    mount("#root", root);
+    Ok(())
 }
-
-let columns = vec![
-    // Left-pinned identifier column
-    ColumnDef::new("id", "Order ID", |r: &OrderRow| r.id.clone())
-        .with_width("140px")
-        .with_pinned(PinnedPosition::Left)
-        .with_renderer(|r: &OrderRow| {
-            span().class("font-mono font-bold text-indigo-400 text-xs").text(&r.id)
-        }),
-
-    // Symbol column with text search filter
-    ColumnDef::new("symbol", "Asset Symbol", |r: &OrderRow| r.symbol.clone())
-        .with_width("120px")
-        .with_filterable(true),
-
-    // Side column rendered as a colored badge
-    ColumnDef::new("side", "Side", |r: &OrderRow| r.side.clone())
-        .with_width("100px")
-        .with_renderer(|r: &OrderRow| {
-            if r.side == "BUY" {
-                span().class("px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30").text("BUY")
-            } else {
-                span().class("px-2 py-0.5 rounded text-[11px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30").text("SELL")
-            }
-        }),
-
-    // Right-aligned sortable price column
-    ColumnDef::new("price", "Price (USD)", |r: &OrderRow| format!("${:.2}", r.price))
-        .with_width("130px")
-        .with_align(TextAlign::Right)
-        .with_sortable(true),
-
-    // Right-aligned volume column
-    ColumnDef::new("amount", "Quantity", |r: &OrderRow| format!("{:.4}", r.amount))
-        .with_width("120px")
-        .with_align(TextAlign::Right),
-
-    // Status column with discrete filter
-    ColumnDef::new("status", "Status", |r: &OrderRow| r.status.clone())
-        .with_width("130px")
-        .with_filterable(true),
-];
 ```
 
----
-
-## 📥 WebAssembly RFC 4180 CSV Export
-
-Ferrox Front embeds zero-dependency native CSV generation algorithms:
-
-```rust
-use ferrox_front_ui::ferrox_datagrid::{generate_rfc4180_csv, trigger_csv_download};
-
-// 1. Generate RFC 4180-compliant CSV string handling quotes and delimiters
-let csv_data = generate_rfc4180_csv(&columns, &orders_dataset);
-
-// 2. Trigger instant browser download via Blob URL
-trigger_csv_download("ferrox_orders_report.csv", &csv_data);
-```
-
-### RFC 4180 Compliance Details
-- Fields containing delimiters, line breaks, or double quotes are safely quoted (`"value, with comma"`).
-- Internal quotes are escaped via standard doubling (`"Test ""Escaped"""`).
-- Canonical `\r\n` line endings strictly preserved.
-
----
-
-## 📊 Performance Benchmark (100,000 Rows)
-
-| Operation | React + AG-Grid Community | Ferrox Front (Wasm) | Performance Gain |
-| :--- | :--- | :--- | :--- |
-| **Data Ingestion Time** | 380 ms | **18 ms** | **21x faster** |
-| **Sort on 100k items** | 145 ms (frame drop) | **9 ms (solid 60 FPS)** | **16x faster** |
-| **100k CSV Export Generation** | 1,250 ms (UI thread freeze) | **68 ms (in-memory)** | **18x faster** |
-| **Heap Memory Overhead** | ~140 MB | **~12 MB** | **91% memory reduction** |
+The subsequent sections explore the **UI Components**, the **Enterprise DataGrid**, the **Vector Financial Charting Engine**, and the **Interactive Live Trading Desk** running directly in the browser.
 
 
 ===============================================================================
@@ -27964,203 +28122,248 @@ let icon_chart = Icon::render("chart-candlestick", 24, "#f59e0b");
 
 
 ===============================================================================
-DOCUMENT: Zero-JS Vision & Architecture
-ROUTE: /front
+DOCUMENT: Enterprise DataGrid (1M Rows & CSV Export)
+ROUTE: /front/datagrid
 ===============================================================================
 
-# Ferrox Front: Enterprise Zero-JS WebAssembly Framework
+# Enterprise DataGrid (`ferrox-front-ui::ferrox_datagrid`)
 
-**Ferrox Front** is a next-generation enterprise frontend framework and Design System written entirely in **Rust WebAssembly (`wasm32-unknown-unknown`)**, specifically engineered to eliminate JavaScript, React, and npm bundlers from mission-critical web applications and high-frequency financial platforms.
-
----
-
-## 🚀 Why Zero-JS and Rust WebAssembly?
-
-In modern high-performance software (trading desks, analytical dashboards, real-time data streaming), traditional JavaScript/TypeScript architectures encounter fundamental bottlenecks:
-
-1. **Virtual DOM Overhead**: Continuous reconciliation and diffing of virtual tree nodes on every re-render cycle.
-2. **Garbage Collection (GC) Stutters**: Unpredictable main-thread stalls for memory reclamation, intolerable when processing high-throughput L2/L3 market tick feeds.
-3. **Dependency Fragility**: Thousands of transitive `npm` packages introducing supply-chain security risks and bundling complexity.
-4. **Lack of Shared Domain Logic**: Duplicating data models, serialization, and business rules across backend (Rust/C++) and frontend (TypeScript).
-
-Ferrox Front transforms this paradigm: **the entire graphical user interface, fine-grained reactive state, order book matching engine, and charting pipeline execute inside a single optimized, compiled WebAssembly binary**.
+The `EnterpriseDataGrid` component in Ferrox Front is engineered to exceed the capabilities of heavy JavaScript table frameworks like AG-Grid Enterprise and TanStack Table, guaranteeing **zero garbage collection pauses** even across datasets exceeding 1,000,000 records.
 
 ---
 
-## ⚡ Performance Benchmark: Ferrox Front vs React 19
+## ⚡ Key Highlights
 
-| Metric | React 19 + Shadcn / TanStack | Ferrox Front (Rust Wasm) | Ferrox Advantage |
-| :--- | :--- | :--- | :--- |
-| **Runtime Engine** | JavaScript V8 / Hermes | Native Compiled Wasm32 | **No JIT compilation or interpretation** |
-| **Reactivity Model** | Virtual DOM Tree Diffing | **Fine-Grained Signals** (`Signal<T>`) | **O(1) Direct DOM Mutation** |
-| **Memory Management** | Continuous Tracing GC | **Deterministic Rust RAII** | **Zero GC Pauses** |
-| **DataGrid (100,000 Rows)** | Render lag / main thread freeze | Smooth 60 FPS Virtualization | **Zero memory leaks** |
-| **Order Matching Engine** | HTTP Proxy / Slow JS Worker | In-process compiled `ferrox-engine` | **Latency &lt; 1.8 μs** |
-| **Technical Charts** | Heavy Canvas / proprietary licensing | **Pure Zero-Copy Vector SVG** | **Zero external JS charting libraries** |
-| **NPM Dependencies** | 1,200+ `node_modules` packages | **0 JS packages / 0 npm dependencies** | **Maximum supply chain security** |
+1. **Extreme Viewport Virtualization**: Renders exclusively visible viewport DOM rows, maintaining constant memory overhead regardless of total dataset volume.
+2. **Multi-Column Sorting**: Progressive sorting across compound keys (e.g., Status &rarr; Price &rarr; Timestamp).
+3. **Strongly-Typed Column Filtering**: Instant in-memory evaluations for text matching, numeric intervals, and discrete status subsets.
+4. **Pinned Columns**: Freeze columns on the Left (e.g., Order ID) or Right (e.g., Action buttons) that remain visible during horizontal scrolling.
+5. **Native RFC 4180 CSV Export**: Instant in-memory CSV generation in WebAssembly and seamless browser download trigger via `Blob` URL.
 
 ---
 
-## 🧩 Modular Core Crates Ecosystem
+## 💻 Column Definition & Configuration
 
-Adhering strictly to the **DRY (Don't Repeat Yourself)** architectural principle, all computation engines, visual components, and network protocols are decoupled into standalone, reusable crates:
-
-```mermaid
-graph TD
-    A["ferrox-front-core<br/>(Signals & DOM Builder)"] --> B["ferrox-front-ui<br/>(Design System & DataGrid)"]
-    A --> C["ferrox-front-charts<br/>(SVG Technical & Depth Charts)"]
-    D["ferrox-match / ferrox-engine<br/>(Pure Rust Order Book)"] --> E["Live Trading Desk<br/>(Wasm Reference App)"]
-    F["ferrox-front-ws<br/>(ReconnectingWs + Events)"] --> E
-    B --> E
-    C --> E
-    G["ferrox-front-router<br/>(SPA Routing & Guards)"] --> E
-```
-
-### 1. `crates/ferrox-front-core`
-- **Fine-Grained Signals**: Reactive primitives `Signal<T>`, `create_signal`, `create_effect`, and `create_memo`.
-- **Wasm DOM Builder**: Fluent builder API (`div()`, `span()`, `button()`) for direct DOM manipulation without a Virtual DOM.
-- **Dynamic Theming Engine**: Runtime switching between Enterprise Glassmorphism, Cyber Dark, Zinc Light, Cyberpunk, and Ocean Breeze themes.
-
-### 2. `crates/ferrox-front-charts`
-- **Vector SVG Engine**: Chart generation without Canvas or external graphics engines.
-- **Financial Technical Charts**: Dynamic candlestick timeframes featuring SMA 20/50 overlays, Bollinger Bands (±2σ), RSI (14), and MACD (12, 26, 9) differential histograms.
-- **Order Book Depth Chart**: `depth_chart(...)` rendering cumulative curves for Bids/Asks, mid-market price markers, and real-time spread calculations.
-- **Streaming Aggregator**: `CandleAggregator` transforming incoming `TradeTick` streams into open and closed interval candles via `CandleRingBuffer`.
-
-### 3. `crates/ferrox-front-ws`
-- **`ReconnectingWs`**: Resilient browser WebSocket client featuring exponential backoff and randomized jitter (±20%).
-- **Offline Queue**: Message dispatch buffering preventing payload loss during transient disconnections.
-- **Typed Event Dispatcher**: Strongly-typed payload deserialization for `Trades`, `OrderBookDepth`, and `Ticker` events.
-
-### 4. `ferrox-match/packages/ferrox-engine`
-- **Pure Matching Engine**: In-memory `OrderBook` utilizing fixed-point `BTreeMap` precision (`1e8`).
-- **Multi-Target Compilation**: Compiles both for Linux/Windows servers and directly as a pure Rust dependency on `wasm32-unknown-unknown` with zero overhead.
-
----
-
-## 🛠️ Hello World with Signals and DOM Builder
+Each grid column is declared using `ColumnDef<T>`:
 
 ```rust
-use ferrox_front_core::dom::{mount, div, h1, button};
-use ferrox_front_core::reactivity::create_signal;
-use wasm_bindgen::prelude::*;
+use ferrox_front_ui::ferrox_datagrid::{ColumnDef, PinnedPosition, TextAlign, EnterpriseDataGrid};
+use ferrox_front_core::dom::span;
 
-#[wasm_bindgen(start)]
-pub fn run() -> Result<(), JsValue> {
-    // Fine-grained reactive state
-    let count = create_signal(0);
-
-    // Fluent direct DOM construction without Virtual DOM
-    let root = div()
-        .class("flex flex-col items-center justify-center p-8 bg-slate-900 rounded-2xl border border-slate-800")
-        .child(
-            h1()
-                .class("text-2xl font-bold text-white mb-4")
-                .text(&format!("Count: {}", count.get()))
-        )
-        .child(
-            button()
-                .class("px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-semibold")
-                .text("Increment")
-                .on_click(move || {
-                    count.update(|n| *n += 1);
-                })
-        );
-
-    mount("#root", root);
-    Ok(())
+#[derive(Clone, Debug, PartialEq)]
+pub struct OrderRow {
+    pub id: String,
+    pub symbol: String,
+    pub side: String,
+    pub price: f64,
+    pub amount: f64,
+    pub status: String,
 }
+
+let columns = vec![
+    // Left-pinned identifier column
+    ColumnDef::new("id", "Order ID", |r: &OrderRow| r.id.clone())
+        .with_width("140px")
+        .with_pinned(PinnedPosition::Left)
+        .with_renderer(|r: &OrderRow| {
+            span().class("font-mono font-bold text-indigo-400 text-xs").text(&r.id)
+        }),
+
+    // Symbol column with text search filter
+    ColumnDef::new("symbol", "Asset Symbol", |r: &OrderRow| r.symbol.clone())
+        .with_width("120px")
+        .with_filterable(true),
+
+    // Side column rendered as a colored badge
+    ColumnDef::new("side", "Side", |r: &OrderRow| r.side.clone())
+        .with_width("100px")
+        .with_renderer(|r: &OrderRow| {
+            if r.side == "BUY" {
+                span().class("px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30").text("BUY")
+            } else {
+                span().class("px-2 py-0.5 rounded text-[11px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30").text("SELL")
+            }
+        }),
+
+    // Right-aligned sortable price column
+    ColumnDef::new("price", "Price (USD)", |r: &OrderRow| format!("${:.2}", r.price))
+        .with_width("130px")
+        .with_align(TextAlign::Right)
+        .with_sortable(true),
+
+    // Right-aligned volume column
+    ColumnDef::new("amount", "Quantity", |r: &OrderRow| format!("{:.4}", r.amount))
+        .with_width("120px")
+        .with_align(TextAlign::Right),
+
+    // Status column with discrete filter
+    ColumnDef::new("status", "Status", |r: &OrderRow| r.status.clone())
+        .with_width("130px")
+        .with_filterable(true),
+];
 ```
 
-The subsequent sections explore the **UI Components**, the **Enterprise DataGrid**, the **Vector Financial Charting Engine**, and the **Interactive Live Trading Desk** running directly in the browser.
+---
+
+## 📥 WebAssembly RFC 4180 CSV Export
+
+Ferrox Front embeds zero-dependency native CSV generation algorithms:
+
+```rust
+use ferrox_front_ui::ferrox_datagrid::{generate_rfc4180_csv, trigger_csv_download};
+
+// 1. Generate RFC 4180-compliant CSV string handling quotes and delimiters
+let csv_data = generate_rfc4180_csv(&columns, &orders_dataset);
+
+// 2. Trigger instant browser download via Blob URL
+trigger_csv_download("ferrox_orders_report.csv", &csv_data);
+```
+
+### RFC 4180 Compliance Details
+- Fields containing delimiters, line breaks, or double quotes are safely quoted (`"value, with comma"`).
+- Internal quotes are escaped via standard doubling (`"Test ""Escaped"""`).
+- Canonical `\r\n` line endings strictly preserved.
+
+---
+
+## 📊 Performance Benchmark (100,000 Rows)
+
+| Operation | React + AG-Grid Community | Ferrox Front (Wasm) | Performance Gain |
+| :--- | :--- | :--- | :--- |
+| **Data Ingestion Time** | 380 ms | **18 ms** | **21x faster** |
+| **Sort on 100k items** | 145 ms (frame drop) | **9 ms (solid 60 FPS)** | **16x faster** |
+| **100k CSV Export Generation** | 1,250 ms (UI thread freeze) | **68 ms (in-memory)** | **18x faster** |
+| **Heap Memory Overhead** | ~140 MB | **~12 MB** | **91% memory reduction** |
 
 
 ===============================================================================
-DOCUMENT: Overview
-ROUTE: /node/nestjs-yalc
+DOCUMENT: SVG Vector Financial Charting Engine
+ROUTE: /front/charts
 ===============================================================================
 
-# 🚀 NestJS-YALC Overview
+# Financial Charting Engine (`ferrox-front-charts`)
 
-## 💡 1. What It Is & Architectural Purpose
-
-**NestJS-YALC** (Yet Another Library Collection) is an enterprise-grade library suite designed specifically for NestJS 11+ and TypeScript 6+. It extends the core NestJS framework with a collection of pre-built, production-ready modules that address the most common and complex challenges in enterprise backend development. 
-
-In the Ferrox Architecture, it serves as the primary "glue" layer, wrapping the pure Node.js utilities from `[@node-yalc](../node-yalc/overview.md)` into robust NestJS Dependency Injection providers.
+`ferrox-front-charts` is an ultra-high-precision SVG vector graphics library engineered specifically for financial dashboards, trading desks, and quantitative telemetry, featuring **zero JavaScript or Canvas dependencies**.
 
 ---
 
-## ⚙️ 2. Comprehensive Taxonomy & Key Features
+## 📈 Pro Candlestick with Technical Indicators (`financial_technical_chart`)
 
-NestJS-YALC provides an opinionated, modular infrastructure mapped across multiple layers:
+The primary technical chart provides functional parity with industry benchmarks such as TradingView Lightweight Charts, integrating native Rust mathematical algorithms for essential quantitative indicators:
 
-- **Automated CRUD (`@nest-yalc-2/crud-gen`)**: Generates TypeORM REST endpoints and GraphQL resolvers.
-- **GraphQL DataLoader (`@nest-yalc-2/data-loader`)**: Solves the N+1 query problem through automated field batching.
-- **Observability (`@nest-yalc-2/observability`)**: Seamless OpenTelemetry tracing and Prometheus metrics exporter.
-- **Database Enhancements (`@nest-yalc-2/database`)**: TypeORM database connection factories and transactional runners.
-- **Event Driven (`@nest-yalc-2/kafka`)**: KafkaJS client integration with Schema Registry.
-- **Security Sentinel (`@nest-yalc-2/sentinel`)**: Security middleware enforcing HTTP headers and CORS policies.
+```rust
+use ferrox_front_charts::{
+    CandleDatum, TechnicalChartOptions, financial_technical_chart,
+};
 
----
+let candle_history: Vec<CandleDatum> = vec![
+    CandleDatum { time: "18:00".into(), open: 96250.0, high: 96800.0, low: 96100.0, close: 96600.0, volume: 510.0 },
+    CandleDatum { time: "18:30".into(), open: 96600.0, high: 97200.0, low: 96400.0, close: 97100.0, volume: 640.0 },
+];
 
-## 🔬 3. How It Works Under the Hood
+let mut options = TechnicalChartOptions::default();
+options.show_sma20 = true;       // 20-period Simple Moving Average (amber overlay)
+options.show_sma50 = true;       // 50-period Simple Moving Average (cyan overlay)
+options.show_bollinger = true;    // Bollinger Bands (±2 standard deviations)
+options.show_rsi = true;          // 14-period RSI sub-panel with 70/30 threshold markers
+options.show_macd = true;         // MACD (12, 26, 9) sub-panel with dual-color differential histogram
 
-The architecture leverages Git Submodules to import `node-yalc` as a foundational base. NestJS-YALC then wraps these pure primitives in `@Injectable()` decorators, interceptors, and dynamic modules.
-
-```mermaid
-flowchart TD
-    App[NestJS Application]
-    App --> YalcAppModule[YalcAppModule]
-    YalcAppModule --> Logger[YalcLoggerModule]
-    YalcAppModule --> Filter[YalcExceptionFilter]
-    
-    Logger --> CoreLogger[Pure Node Pino Logger]
-    Filter --> CoreErrors[Pure Node HttpErrors]
+let chart_svg = financial_technical_chart(
+    "btc-pro-chart",
+    &candle_history,
+    &options,
+    880, // Width in pixels
+    480, // Height in pixels
+);
 ```
 
+### Integrated Mathematical Indicators
+1. **SMA (Simple Moving Average)**: Efficient O(1) rolling-window calculation for 20 and 50 period overlays.
+2. **Bollinger Bands**: Dynamic volatility channel computed via empirical standard deviation in native 64-bit floating-point Rust.
+3. **RSI (Relative Strength Index)**: 14-period momentum oscillator with Wilder smoothing and clear overbought (&gt;70) and oversold (&lt;30) zones.
+4. **MACD (Moving Average Convergence Divergence)**: Exponential Moving Averages (EMA 12 and EMA 26), signal line (EMA 9), and dynamic dual-color (green/red) differential histogram bars.
+
 ---
 
-## 🧠 4. Why It Was Designed This Way (Rationale)
+## 🌊 Order Book Market Depth Chart (`depth_chart`)
 
-While NestJS provides an excellent architectural foundation, enterprise applications often require significant boilerplate to integrate advanced logging, tracing, auto-generated APIs, and Kafka messaging. NestJS-YALC bridges this gap. By encapsulating every feature in a dedicated NestJS Module, you only import what you need, keeping your memory footprint minimal.
+The market depth chart (`depth_chart`) visualizes live order book liquidity:
 
----
+```rust
+use ferrox_front_charts::depth_chart;
 
-## 🚀 5. Practical Usage Guide & Extended Code Examples
+// Cumulative liquidity levels (price, aggregated volume)
+let bids = vec![(97040.0, 1.25), (97020.0, 4.65), (97000.0, 11.45), (96950.0, 26.65)];
+let asks = vec![(97060.0, 0.95), (97080.0, 3.75), (97100.0, 9.65), (97150.0, 23.75)];
 
-To begin using NestJS-YALC, import the core lifecycle and logger modules into your root `AppModule`:
-
-```typescript
-import { Module } from '@nestjs/common';
-import { YalcAppModule } from '@nest-yalc-2/app';
-import { YalcLoggerModule } from '@nest-yalc-2/logger';
-
-@Module({
-  imports: [
-    YalcAppModule.forRoot(),
-    YalcLoggerModule.forRoot({
-      pinoOptions: { level: 'info' }
-    }),
-  ],
-})
-export class AppModule {}
+let depth_svg = depth_chart(
+    "btc-depth-chart",
+    &bids,
+    &asks,
+    560, // Width
+    280, // Height
+);
 ```
 
----
-
-## ⚠️ 6. Anti-Patterns: How NOT to Use It
-
-> [!CAUTION]
-> **Anti-Pattern 1: Monolithic Imports**
-> Do not import all `@nest-yalc-2/*` packages into a single service if they are not needed. Rely on fine-grained imports (e.g., importing only the logger or only the database module) to prevent unused dependencies from bloating the application context.
+### Depth Chart Components
+- **Emerald Green Area (Bids)**: Cumulative buyer demand plotted across descending price levels.
+- **Rose Red Area (Asks)**: Cumulative seller supply plotted across ascending price levels.
+- **Mid-Market Price Line**: Vertical dashed indicator demarcating the instantaneous fair market equilibrium.
+- **Spread Badge**: Centered badge detailing absolute bid-ask spread and relative basis points (e.g., `Spread: $10.00 (0.01%)`).
 
 ---
 
-## 💡 7. Pro-Tips & Best Practices
+## ⏱️ Trade Tick Streaming & Candle Aggregator (`CandleAggregator`)
 
-> [!TIP]
-> **Pro-Tip 1: Cross-Referencing Documentation**
-> For details on how the underlying error handling works, refer to the `[Node-YALC Errors](../../node-yalc/fundamentals/errors.md)` documentation. For database-specific integrations, check the `[Database Documentation](../databases/database.md)`.
+In real-time trading environments, WebSocket feeds push discrete, atomic trade executions. `CandleAggregator` dynamically compiles trade ticks into the current open candle interval, finalizing candles automatically when the interval elapses:
+
+```rust
+use ferrox_front_charts::{CandleAggregator, TradeTick, Timeframe};
+
+// Initialize aggregator for 5-minute interval with a 100-candle circular ring buffer
+let mut aggregator = CandleAggregator::new(Timeframe::Min5, 100);
+
+// Ingest incoming trade ticks from WebSocket or ferrox-engine
+aggregator.process_tick(TradeTick::new(97050.0, 0.45, 1760518800000));
+aggregator.process_tick(TradeTick::new(97055.0, 1.20, 1760518815000));
+
+// Retrieve finalized historical candles combined with the current active open candle
+let current_candles = aggregator.get_candles_with_active();
+```
+
+### Supported Timeframe Resolutions
+
+| Timeframe | Enum Constant | Duration (ms) | Target Use Case |
+| :--- | :--- | :--- | :--- |
+| **1 Second** | `Timeframe::Sec1` | 1,000 ms | Ultra-low-latency HFT / Scalping |
+| **5 Seconds** | `Timeframe::Sec5` | 5,000 ms | Order book microstructure monitoring |
+| **1 Minute** | `Timeframe::Min1` | 60,000 ms | Short-term intraday momentum |
+| **5 Minutes** | `Timeframe::Min5` | 300,000 ms | Standard Trading Desk baseline |
+| **15 Minutes** | `Timeframe::Min15` | 900,000 ms | Mid-term trend following |
+| **1 Hour** | `Timeframe::Hour1` | 3,600,000 ms | Multi-session cyclical analysis |
+| **1 Day** | `Timeframe::Day1` | 86,400,000 ms | Macro trend overview |
+
+---
+
+## 🎯 Telemetry Indicators: Gauges & Sparklines
+
+Ferrox Front also delivers lightweight, embeddable vector telemetry widgets:
+
+```rust
+use ferrox_front_charts::{gauge_chart, sparkline_chart, SparklineType};
+
+// Semi-circular speedometer gauge for Fear & Greed index or CPU load
+let cpu_gauge = gauge_chart("cpu-usage", 78.5, 0.0, 100.0, "CPU Load", "%", 220, 140);
+
+// Minimalist vector sparkline for compact table trend visualization
+let price_sparkline = sparkline_chart(
+    vec![96100.0, 96400.0, 96250.0, 96900.0, 97050.0],
+    120,
+    32,
+    SparklineType::Line,
+    "#10b981",
+);
+```
 
 
 ===============================================================================
@@ -28447,6 +28650,94 @@ export function findRecord(id: string) {
 
 
 ===============================================================================
+DOCUMENT: Overview
+ROUTE: /node/nestjs-yalc
+===============================================================================
+
+# 🚀 NestJS-YALC Overview
+
+## 💡 1. What It Is & Architectural Purpose
+
+**NestJS-YALC** (Yet Another Library Collection) is an enterprise-grade library suite designed specifically for NestJS 11+ and TypeScript 6+. It extends the core NestJS framework with a collection of pre-built, production-ready modules that address the most common and complex challenges in enterprise backend development. 
+
+In the Ferrox Architecture, it serves as the primary "glue" layer, wrapping the pure Node.js utilities from `[@node-yalc](../node-yalc/overview.md)` into robust NestJS Dependency Injection providers.
+
+---
+
+## ⚙️ 2. Comprehensive Taxonomy & Key Features
+
+NestJS-YALC provides an opinionated, modular infrastructure mapped across multiple layers:
+
+- **Automated CRUD (`@nest-yalc-2/crud-gen`)**: Generates TypeORM REST endpoints and GraphQL resolvers.
+- **GraphQL DataLoader (`@nest-yalc-2/data-loader`)**: Solves the N+1 query problem through automated field batching.
+- **Observability (`@nest-yalc-2/observability`)**: Seamless OpenTelemetry tracing and Prometheus metrics exporter.
+- **Database Enhancements (`@nest-yalc-2/database`)**: TypeORM database connection factories and transactional runners.
+- **Event Driven (`@nest-yalc-2/kafka`)**: KafkaJS client integration with Schema Registry.
+- **Security Sentinel (`@nest-yalc-2/sentinel`)**: Security middleware enforcing HTTP headers and CORS policies.
+
+---
+
+## 🔬 3. How It Works Under the Hood
+
+The architecture leverages Git Submodules to import `node-yalc` as a foundational base. NestJS-YALC then wraps these pure primitives in `@Injectable()` decorators, interceptors, and dynamic modules.
+
+```mermaid
+flowchart TD
+    App[NestJS Application]
+    App --> YalcAppModule[YalcAppModule]
+    YalcAppModule --> Logger[YalcLoggerModule]
+    YalcAppModule --> Filter[YalcExceptionFilter]
+    
+    Logger --> CoreLogger[Pure Node Pino Logger]
+    Filter --> CoreErrors[Pure Node HttpErrors]
+```
+
+---
+
+## 🧠 4. Why It Was Designed This Way (Rationale)
+
+While NestJS provides an excellent architectural foundation, enterprise applications often require significant boilerplate to integrate advanced logging, tracing, auto-generated APIs, and Kafka messaging. NestJS-YALC bridges this gap. By encapsulating every feature in a dedicated NestJS Module, you only import what you need, keeping your memory footprint minimal.
+
+---
+
+## 🚀 5. Practical Usage Guide & Extended Code Examples
+
+To begin using NestJS-YALC, import the core lifecycle and logger modules into your root `AppModule`:
+
+```typescript
+import { Module } from '@nestjs/common';
+import { YalcAppModule } from '@nest-yalc-2/app';
+import { YalcLoggerModule } from '@nest-yalc-2/logger';
+
+@Module({
+  imports: [
+    YalcAppModule.forRoot(),
+    YalcLoggerModule.forRoot({
+      pinoOptions: { level: 'info' }
+    }),
+  ],
+})
+export class AppModule {}
+```
+
+---
+
+## ⚠️ 6. Anti-Patterns: How NOT to Use It
+
+> [!CAUTION]
+> **Anti-Pattern 1: Monolithic Imports**
+> Do not import all `@nest-yalc-2/*` packages into a single service if they are not needed. Rely on fine-grained imports (e.g., importing only the logger or only the database module) to prevent unused dependencies from bloating the application context.
+
+---
+
+## 💡 7. Pro-Tips & Best Practices
+
+> [!TIP]
+> **Pro-Tip 1: Cross-Referencing Documentation**
+> For details on how the underlying error handling works, refer to the `[Node-YALC Errors](../../node-yalc/fundamentals/errors.md)` documentation. For database-specific integrations, check the `[Database Documentation](../databases/database.md)`.
+
+
+===============================================================================
 DOCUMENT: Ferrox-Py Overview
 ROUTE: /py
 ===============================================================================
@@ -28499,42 +28790,97 @@ The concepts described in this architectural overview integrate closely with eve
 
 
 ===============================================================================
-DOCUMENT: RBAC (Role-Based Access Control)
-ROUTE: /auth/rbac
+DOCUMENT: Models (Pydantic / Mongo)
+ROUTE: /auth/models
 ===============================================================================
 
-# RBAC (Role-Based Access Control)
+# Models (Pydantic / Mongo)
 
 ## 1. Overview (What does this do?)
-The RBAC (Role-Based Access Control) module provides a granular mechanism for restricting access to specific API endpoints or Service methods based on the permissions assigned to the currently authenticated user. It exposes the `@require_roles` decorator for declarative access control.
+The Models module exports the base Data Transfer Objects (DTOs) and Database Schemas used to represent Users and their authentication states. These models are statically validated using Pydantic and are designed to be natively serialized/deserialized into MongoDB or adapted for SQLAlchemy ORMs.
 
 ## 2. Philosophy (Why does it exist?)
-Hardcoding `if user.role == "admin"` statements inside controller logic leads to scattered, unmaintainable, and highly insecure code. The philosophy of this component is to extract access control entirely out of the business logic and enforce it at the pipeline boundary. If a user does not have the required role, the request is terminated before the domain logic is ever invoked.
+A fragmented definition of what constitutes a "User" leads to bugs across different microservices. By providing strict, centrally defined Pydantic models for `User` and `UserIdentity`, `ferrox-py-auth` ensures that every part of the application agrees on the structure of the identity data, ensuring data integrity and fast validation at the API boundaries.
 
 ## 3. Target Audience (Who is it for?)
-This module is for developers building multi-tenant SaaS applications, administrative dashboards, or any system where different users (e.g., standard users, editors, superadmins) require different levels of access to the system resources.
+This module is for developers integrating the Auth module who need to understand the underlying data structure of the User object, or those who need to extend the base models with custom application-specific fields (like `company_name` or `avatar_url`).
 
 ## 4. Architecture (How does it work?)
-When an HTTP or gRPC endpoint is called, the authorization token (JWT or PASETO) is validated at Layer 3 of the Onion Pipeline. The token payload contains the user's "claims", which include their list of `roles`. The `@require_roles` decorator operates at Layer 4. It intercepts the call *before* executing the controller, checks the local context for the extracted roles, and compares them against the required roles defined in the decorator.
+- **UserIdentity**: A sub-document representing an external Identity Provider (IdP) link. It stores the `provider` (e.g., "google", "apple", "facebook", "local"), the `provider_id` (the alphanumeric unique identifier from the IdP), and auditing timestamps like `last_login`.
+- **User**: The primary aggregate root model. It contains the main `email` address, manages critical boolean flags (`is_email_verified`, `is_active`, `is_locked`), holds a list of `UserIdentity` objects, and contains an array of `roles` (strings) used by the RBAC engine.
 
 ## 5. Installation / Setup
-RBAC functionalities are automatically available when you install `ferrox-py-auth`. No additional database setup is required for basic RBAC, as the roles are inherently expected to be embedded directly within the cryptographic token payload.
+These models require `pydantic` (installed by default with the core framework). If you intend to use them directly with a NoSQL database, the `motor` driver from the core Data Component is recommended.
 
 ## 6. Quickstart (Usage)
 ```python
-from ferrox_py_auth.security.rbac import require_roles
+from ferrox_py_auth.models.user import User, UserIdentity
+from datetime import datetime
 
-class AdminController:
-    
-    # Restrict this endpoint to users who have at least one of these roles
-    @require_roles("superadmin", "editor")
-    async def delete_article(self, request, article_id: str):
-        # Execution only reaches this point if the token contains a matching role
-        return {"status": "Article deleted successfully"}
+# Creating an instance of a User manually (usually handled by AuthService)
+identity = UserIdentity(
+    provider="google",
+    provider_id="sub_123456789",
+    last_login=datetime.utcnow()
+)
+
+new_user = User(
+    email="test@example.com",
+    is_email_verified=True,
+    is_active=True,
+    roles=["user", "editor"],
+    identities=[identity]
+)
+
+# The model will automatically validate its schema upon instantiation
+print(new_user.model_dump_json())
 ```
 
 ## 7. Ecosystem Integration
-The RBAC decorator is tightly integrated with the core **Web & Transports Component**. By operating entirely on the Request context generated by the **Security Component**'s Auth Guards, it remains agnostic to the underlying web framework (e.g., FastAPI), allowing it to secure both HTTP REST endpoints and WebSocket connections uniformly.
+These models are utilized by the **Validation Pipes** (Layer 5) to validate incoming request bodies containing user data. They are also intrinsically linked to the **Data Component**, where they act as the primary interface between the `AuthService` and the database repository.
+
+
+===============================================================================
+DOCUMENT: GdprService
+ROUTE: /auth/gdpr_service
+===============================================================================
+
+# GdprService
+
+## 1. Overview (What does this do?)
+The `GdprService` is a specialized service that abstracts complex commands required to comply with modern privacy laws (like the GDPR in Europe and the CCPA in California). It provides automated mechanisms for data portability (exporting user data) and the Right to be Forgotten (deleting or anonymizing user data).
+
+## 2. Philosophy (Why does it exist?)
+Compliance with data privacy laws is a strict legal requirement, not a feature. Leaving developers to manually write cascade deletions for user data is highly dangerous; it often results in orphaned records, corrupted relational constraints, or, worse, incomplete deletions that violate privacy laws. This service exists to centralize and automate secure data anonymization and extraction.
+
+## 3. Target Audience (Who is it for?)
+This service is essential for Data Protection Officers (DPOs), compliance engineers, and backend developers who are legally required to provide users with the ability to download their data or permanently delete their accounts from the SaaS platform.
+
+## 4. Architecture (How does it work?)
+- **Right to be Forgotten (Deletion)**: The `delete_user_data` method securely masks, anonymizes, or hard-deletes Personally Identifiable Information (PII) across the database. It triggers an internal event that other modules can listen to, ensuring data is scrubbed across all bounded contexts.
+- **Data Portability**: The `export_user_data` method aggregates the entire user state and preferences into a readable JSON or CSV format, ready to be compressed into a `.zip` file and delivered to the user.
+
+## 5. Installation / Setup
+The `GdprService` is available out of the box when using `ferrox-py-auth`. No additional installation is required, but you must ensure your specific data repositories implement the required anonymization hooks if you have custom tables containing PII.
+
+## 6. Quickstart (Usage)
+```python
+from ferrox_py_auth.services.gdpr_service import GdprService
+
+async def handle_account_deletion(gdpr_service: GdprService, user_id: str):
+    # Perform a compliant soft delete or hard delete of PII
+    await gdpr_service.delete_user_data(user_id=user_id)
+    return {"message": "Account successfully anonymized."}
+
+async def handle_data_export(gdpr_service: GdprService, user_id: str):
+    # Generate a full export of the user's data footprint
+    dump = await gdpr_service.export_user_data(user_id=user_id)
+    # Returns a comprehensive dict: { "email": "...", "identities": [...], "created_at": "..." }
+    return dump
+```
+
+## 7. Ecosystem Integration
+The `GdprService` integrates with the **CQRS and Event Dispatcher** from the core framework. When `delete_user_data` is called, it emits a `UserDeletedEvent`. Other modules (like `ferrox-py-commerce`) subscribe to this event to safely cancel active subscriptions and anonymize billing records without creating tightly coupled dependencies.
 
 
 ===============================================================================
@@ -28626,152 +28972,131 @@ The Auth module is a fundamental prerequisite for many other ecosystem packages.
 
 
 ===============================================================================
-DOCUMENT: GdprService
-ROUTE: /auth/gdpr_service
+DOCUMENT: RBAC (Role-Based Access Control)
+ROUTE: /auth/rbac
 ===============================================================================
 
-# GdprService
+# RBAC (Role-Based Access Control)
 
 ## 1. Overview (What does this do?)
-The `GdprService` is a specialized service that abstracts complex commands required to comply with modern privacy laws (like the GDPR in Europe and the CCPA in California). It provides automated mechanisms for data portability (exporting user data) and the Right to be Forgotten (deleting or anonymizing user data).
+The RBAC (Role-Based Access Control) module provides a granular mechanism for restricting access to specific API endpoints or Service methods based on the permissions assigned to the currently authenticated user. It exposes the `@require_roles` decorator for declarative access control.
 
 ## 2. Philosophy (Why does it exist?)
-Compliance with data privacy laws is a strict legal requirement, not a feature. Leaving developers to manually write cascade deletions for user data is highly dangerous; it often results in orphaned records, corrupted relational constraints, or, worse, incomplete deletions that violate privacy laws. This service exists to centralize and automate secure data anonymization and extraction.
+Hardcoding `if user.role == "admin"` statements inside controller logic leads to scattered, unmaintainable, and highly insecure code. The philosophy of this component is to extract access control entirely out of the business logic and enforce it at the pipeline boundary. If a user does not have the required role, the request is terminated before the domain logic is ever invoked.
 
 ## 3. Target Audience (Who is it for?)
-This service is essential for Data Protection Officers (DPOs), compliance engineers, and backend developers who are legally required to provide users with the ability to download their data or permanently delete their accounts from the SaaS platform.
+This module is for developers building multi-tenant SaaS applications, administrative dashboards, or any system where different users (e.g., standard users, editors, superadmins) require different levels of access to the system resources.
 
 ## 4. Architecture (How does it work?)
-- **Right to be Forgotten (Deletion)**: The `delete_user_data` method securely masks, anonymizes, or hard-deletes Personally Identifiable Information (PII) across the database. It triggers an internal event that other modules can listen to, ensuring data is scrubbed across all bounded contexts.
-- **Data Portability**: The `export_user_data` method aggregates the entire user state and preferences into a readable JSON or CSV format, ready to be compressed into a `.zip` file and delivered to the user.
+When an HTTP or gRPC endpoint is called, the authorization token (JWT or PASETO) is validated at Layer 3 of the Onion Pipeline. The token payload contains the user's "claims", which include their list of `roles`. The `@require_roles` decorator operates at Layer 4. It intercepts the call *before* executing the controller, checks the local context for the extracted roles, and compares them against the required roles defined in the decorator.
 
 ## 5. Installation / Setup
-The `GdprService` is available out of the box when using `ferrox-py-auth`. No additional installation is required, but you must ensure your specific data repositories implement the required anonymization hooks if you have custom tables containing PII.
+RBAC functionalities are automatically available when you install `ferrox-py-auth`. No additional database setup is required for basic RBAC, as the roles are inherently expected to be embedded directly within the cryptographic token payload.
 
 ## 6. Quickstart (Usage)
 ```python
-from ferrox_py_auth.services.gdpr_service import GdprService
+from ferrox_py_auth.security.rbac import require_roles
 
-async def handle_account_deletion(gdpr_service: GdprService, user_id: str):
-    # Perform a compliant soft delete or hard delete of PII
-    await gdpr_service.delete_user_data(user_id=user_id)
-    return {"message": "Account successfully anonymized."}
-
-async def handle_data_export(gdpr_service: GdprService, user_id: str):
-    # Generate a full export of the user's data footprint
-    dump = await gdpr_service.export_user_data(user_id=user_id)
-    # Returns a comprehensive dict: { "email": "...", "identities": [...], "created_at": "..." }
-    return dump
+class AdminController:
+    
+    # Restrict this endpoint to users who have at least one of these roles
+    @require_roles("superadmin", "editor")
+    async def delete_article(self, request, article_id: str):
+        # Execution only reaches this point if the token contains a matching role
+        return {"status": "Article deleted successfully"}
 ```
 
 ## 7. Ecosystem Integration
-The `GdprService` integrates with the **CQRS and Event Dispatcher** from the core framework. When `delete_user_data` is called, it emits a `UserDeletedEvent`. Other modules (like `ferrox-py-commerce`) subscribe to this event to safely cancel active subscriptions and anonymize billing records without creating tightly coupled dependencies.
+The RBAC decorator is tightly integrated with the core **Web & Transports Component**. By operating entirely on the Request context generated by the **Security Component**'s Auth Guards, it remains agnostic to the underlying web framework (e.g., FastAPI), allowing it to secure both HTTP REST endpoints and WebSocket connections uniformly.
 
 
 ===============================================================================
-DOCUMENT: Models (Pydantic / Mongo)
-ROUTE: /auth/models
+DOCUMENT: Ferrox-Py-Commerce Overview
+ROUTE: /commerce
 ===============================================================================
 
-# Models (Pydantic / Mongo)
+# Ferrox-Py-Commerce Overview
 
 ## 1. Overview (What does this do?)
-The Models module exports the base Data Transfer Objects (DTOs) and Database Schemas used to represent Users and their authentication states. These models are statically validated using Pydantic and are designed to be natively serialized/deserialized into MongoDB or adapted for SQLAlchemy ORMs.
+The `ferrox-py-commerce` module is specifically engineered to safely and efficiently manage billing logic, payment processing, and accounting reconciliation within the Ferrox-Py ecosystem.
 
 ## 2. Philosophy (Why does it exist?)
-A fragmented definition of what constitutes a "User" leads to bugs across different microservices. By providing strict, centrally defined Pydantic models for `User` and `UserIdentity`, `ferrox-py-auth` ensures that every part of the application agrees on the structure of the identity data, ensuring data integrity and fast validation at the API boundaries.
+Modern e-commerce integrations suffer from three highly complex issues:
+1. **Out-of-Sequence Webhooks**: Due to network delays, a provider like Stripe might send an `invoice.paid` event *before* the `charge.succeeded` event.
+2. **Double Charges**: A user clicks the "Pay" button twice in rapid succession, launching two concurrent payment intents.
+3. **Vendor Lock-In**: Tying domain logic to Stripe's specific JSON syntax makes switching to PayPal financially prohibitive.
+This module exists to solve all three problems through a rigorous, highly decoupled architecture.
 
 ## 3. Target Audience (Who is it for?)
-This module is for developers integrating the Auth module who need to understand the underlying data structure of the User object, or those who need to extend the base models with custom application-specific fields (like `company_name` or `avatar_url`).
+This overview is for backend engineers and technical leads who need a resilient, fault-tolerant infrastructure to handle real money transactions. If you need a billing system that won't randomly credit users twice due to a network glitch, this framework provides the blueprint.
 
 ## 4. Architecture (How does it work?)
-- **UserIdentity**: A sub-document representing an external Identity Provider (IdP) link. It stores the `provider` (e.g., "google", "apple", "facebook", "local"), the `provider_id` (the alphanumeric unique identifier from the IdP), and auditing timestamps like `last_login`.
-- **User**: The primary aggregate root model. It contains the main `email` address, manages critical boolean flags (`is_email_verified`, `is_active`, `is_locked`), holds a list of `UserIdentity` objects, and contains an array of `roles` (strings) used by the RBAC engine.
+The solution relies on three foundational pillars:
+- **Redis Transaction State Machine**: Guarantees mathematical idempotency. A transaction ID is locked atomically and can only transition linearly (e.g., from `PENDING` to `COMPLETED`), completely neutralizing duplicate webhooks or concurrent clicks.
+- **Abstract Gateways**: A unified interface (`BaseGateway`) allows the system to trigger `create_payment` without caring if the underlying implementation is Stripe, PayPal, or a mock testing environment.
+- **Standardized Webhook Controllers**: A universal translator that converts proprietary provider payloads (Stripe JSON) into standardized internal Pydantic events (like `PaymentSuccessEvent`).
 
 ## 5. Installation / Setup
-These models require `pydantic` (installed by default with the core framework). If you intend to use them directly with a NoSQL database, the `motor` driver from the core Data Component is recommended.
+```bash
+pip install ferrox-py-commerce redis
+```
+A running Redis instance is strictly required to enable the distributed locking and transaction state management mechanisms.
 
 ## 6. Quickstart (Usage)
 ```python
-from ferrox_py_auth.models.user import User, UserIdentity
-from datetime import datetime
+from ferrox_py.core.container import Container
+from ferrox_py_commerce import CommerceModule
 
-# Creating an instance of a User manually (usually handled by AuthService)
-identity = UserIdentity(
-    provider="google",
-    provider_id="sub_123456789",
-    last_login=datetime.utcnow()
-)
-
-new_user = User(
-    email="test@example.com",
-    is_email_verified=True,
-    is_active=True,
-    roles=["user", "editor"],
-    identities=[identity]
-)
-
-# The model will automatically validate its schema upon instantiation
-print(new_user.model_dump_json())
+# Initializing the billing system requires registering the module.
+container = Container()
+container.register_module(CommerceModule)
+# All controllers, gateways, and state machines are now active.
 ```
 
 ## 7. Ecosystem Integration
-These models are utilized by the **Validation Pipes** (Layer 5) to validate incoming request bodies containing user data. They are also intrinsically linked to the **Data Component**, where they act as the primary interface between the `AuthService` and the database repository.
+The commerce logic integrates perfectly with the core **CQRS Bus**. When the Standardized Webhook Controller parses a successful payment, it dispatches an Event to the bus. Other microservices (like a Notification service sending a receipt email, or a provisioning service unlocking premium features) simply subscribe to the Bus, remaining completely uncoupled from the billing module itself.
 
 
 ===============================================================================
-DOCUMENT: Webhooks Controller
-ROUTE: /commerce/webhooks
+DOCUMENT: Controllers
+ROUTE: /commerce/controllers
 ===============================================================================
 
-# Webhooks Controller
+# Controllers
 
 ## 1. Overview (What does this do?)
-The Webhooks Controller is the asynchronous interface between external payment providers (e.g., Stripe, PayPal) and the internal Ferrox application. It acts as a universal translator, securely receiving HTTP POST requests, verifying their authenticity, and converting them into internal domain events.
+This module implements Layer 6 (Controller Layer) of the Onion Pipeline specifically for the Commerce domain. It exposes the HTTP endpoints required to interact with front-end clients (initiating checkouts) and third-party servers (receiving webhooks).
 
 ## 2. Philosophy (Why does it exist?)
-Payment providers send JSON payloads that differ vastly in structure. Stripe nests data under `data.object`, while PayPal uses a completely different schema. Writing business logic that depends directly on Stripe's specific JSON syntax tightly couples the core database to a third-party vendor. The philosophy here is absolute decoupling: the business logic must never know which provider sent the payment.
+The philosophy of the Controller Layer in `ferrox-py` is to remain as "thin" as possible. Controllers should not contain any domain logic or direct database interactions. This module exists strictly to handle HTTP routing, parse incoming network requests, and delegate the actual heavy lifting to the internal Services (Layer 7), thereby preventing "leaky abstractions".
 
 ## 3. Target Audience (Who is it for?)
-This component is for backend developers who need to expose secure, public-facing endpoints to ingest asynchronous events from third-party APIs without exposing the internal application logic to vendor-specific data structures.
+This module is for developers integrating the frontend application (React, Vue, etc.) with the backend billing system, providing them with predictable REST endpoints to generate checkout sessions and redirect users.
 
 ## 4. Architecture (How does it work?)
-`ferrox-py-commerce` solves the vendor lock-in problem through a strict 4-step ingestion pipeline:
-1. **HMAC Verification**: The controller extracts the cryptographic signature (e.g., `Stripe-Signature`) from the HTTP headers and validates it using the injected **Gateway** adapter.
-2. **Parsing**: The raw, vendor-specific JSON payload is inspected.
-3. **Mapping**: The proprietary event is "translated" into a pure, standardized Pydantic domain model (e.g., `PaymentSuccessEvent`, `InvoicePaidEvent`) defined in the `models/events.py` file.
-4. **Dispatch**: The standardized Pydantic model is forwarded to the core logic (Layer 7 of the Onion Pipeline). At this point, the business logic only sees a generic `PaymentSuccessEvent` and has no awareness of the original provider.
+- **CommerceApiController**: Exposes standard endpoints for the front-end. For example, creating a Checkout Session returns the redirect URL (Success URL / Cancel URL). It invokes the `Gateway` abstraction to generate this URL but *never* saves the actual completion of the order.
+- **WebhooksController**: An unauthenticated (but cryptographically verified) endpoint exposed to the public internet to receive server-to-server calls from providers like Stripe or PayPal.
 
 ## 5. Installation / Setup
-The Webhooks Controller is built-in. It simply requires configuring the provider-specific webhook signing secrets in your environment variables so the HMAC verification step can function correctly.
+These controllers are part of the `ferrox-py-commerce` package. No additional setup is required beyond ensuring your `FerroxApp` is configured to route traffic to the registered module controllers.
 
 ## 6. Quickstart (Usage)
 ```python
-# The Controller is pre-configured, but internally it operates like this:
-from ferrox_py_commerce.gateways.base import BaseGateway
-from ferrox_py_commerce.models.events import PaymentSuccessEvent
+# The Controller is automatically registered, but here is a conceptual overview of its usage:
+# POST /api/commerce/checkout
+# Body: { "price_id": "price_12345", "quantity": 1 }
 
-class WebhooksController:
-    async def stripe_webhook(self, request, gateway: BaseGateway, event_bus):
-        # 1. Verify Signature
-        is_valid = await gateway.verify_webhook_signature(
-            payload=request.body, 
-            signature=request.headers.get("Stripe-Signature"),
-            secret=STRIPE_WEBHOOK_SECRET
-        )
-        if not is_valid:
-            raise ForbiddenError("Invalid HMAC signature")
-            
-        # 2 & 3. Parse and Map (Abstracted in real implementation)
-        event = PaymentSuccessEvent(transaction_id="txn_123", amount=10.00)
-        
-        # 4. Dispatch generic event
-        await event_bus.dispatch(event)
-        return {"status": "success"}
+# The controller delegates to the internal gateway:
+class CommerceApiController:
+    async def create_checkout(self, payload: CheckoutPayload, gateway: BaseGateway):
+        # 1. Ask gateway for URL
+        session_url = await gateway.create_checkout_session(payload)
+        # 2. Return URL to frontend
+        return {"redirect_url": session_url}
 ```
 
 ## 7. Ecosystem Integration
-The Webhooks Controller relies heavily on the **CQRS and Event Dispatcher** core module. Instead of invoking database repositories directly, the controller broadcasts the translated `PaymentSuccessEvent` to the Event Bus. The **Transaction State** service, listening on that bus, then picks up the event to enforce idempotency.
+These controllers act as the bridge between the external network and the internal **Gateways** and **Transaction State Machines**. The `WebhooksController` specifically relies heavily on the **Event Dispatcher (CQRS)** from the core ecosystem to broadcast standardized payment events into the system once a payload is verified.
 
 
 ===============================================================================
@@ -28828,95 +29153,6 @@ Gateways are injected directly into the **Controllers** via the Core IoC Contain
 
 
 ===============================================================================
-DOCUMENT: Controllers
-ROUTE: /commerce/controllers
-===============================================================================
-
-# Controllers
-
-## 1. Overview (What does this do?)
-This module implements Layer 6 (Controller Layer) of the Onion Pipeline specifically for the Commerce domain. It exposes the HTTP endpoints required to interact with front-end clients (initiating checkouts) and third-party servers (receiving webhooks).
-
-## 2. Philosophy (Why does it exist?)
-The philosophy of the Controller Layer in `ferrox-py` is to remain as "thin" as possible. Controllers should not contain any domain logic or direct database interactions. This module exists strictly to handle HTTP routing, parse incoming network requests, and delegate the actual heavy lifting to the internal Services (Layer 7), thereby preventing "leaky abstractions".
-
-## 3. Target Audience (Who is it for?)
-This module is for developers integrating the frontend application (React, Vue, etc.) with the backend billing system, providing them with predictable REST endpoints to generate checkout sessions and redirect users.
-
-## 4. Architecture (How does it work?)
-- **CommerceApiController**: Exposes standard endpoints for the front-end. For example, creating a Checkout Session returns the redirect URL (Success URL / Cancel URL). It invokes the `Gateway` abstraction to generate this URL but *never* saves the actual completion of the order.
-- **WebhooksController**: An unauthenticated (but cryptographically verified) endpoint exposed to the public internet to receive server-to-server calls from providers like Stripe or PayPal.
-
-## 5. Installation / Setup
-These controllers are part of the `ferrox-py-commerce` package. No additional setup is required beyond ensuring your `FerroxApp` is configured to route traffic to the registered module controllers.
-
-## 6. Quickstart (Usage)
-```python
-# The Controller is automatically registered, but here is a conceptual overview of its usage:
-# POST /api/commerce/checkout
-# Body: { "price_id": "price_12345", "quantity": 1 }
-
-# The controller delegates to the internal gateway:
-class CommerceApiController:
-    async def create_checkout(self, payload: CheckoutPayload, gateway: BaseGateway):
-        # 1. Ask gateway for URL
-        session_url = await gateway.create_checkout_session(payload)
-        # 2. Return URL to frontend
-        return {"redirect_url": session_url}
-```
-
-## 7. Ecosystem Integration
-These controllers act as the bridge between the external network and the internal **Gateways** and **Transaction State Machines**. The `WebhooksController` specifically relies heavily on the **Event Dispatcher (CQRS)** from the core ecosystem to broadcast standardized payment events into the system once a payload is verified.
-
-
-===============================================================================
-DOCUMENT: Ferrox-Py-Commerce Overview
-ROUTE: /commerce
-===============================================================================
-
-# Ferrox-Py-Commerce Overview
-
-## 1. Overview (What does this do?)
-The `ferrox-py-commerce` module is specifically engineered to safely and efficiently manage billing logic, payment processing, and accounting reconciliation within the Ferrox-Py ecosystem.
-
-## 2. Philosophy (Why does it exist?)
-Modern e-commerce integrations suffer from three highly complex issues:
-1. **Out-of-Sequence Webhooks**: Due to network delays, a provider like Stripe might send an `invoice.paid` event *before* the `charge.succeeded` event.
-2. **Double Charges**: A user clicks the "Pay" button twice in rapid succession, launching two concurrent payment intents.
-3. **Vendor Lock-In**: Tying domain logic to Stripe's specific JSON syntax makes switching to PayPal financially prohibitive.
-This module exists to solve all three problems through a rigorous, highly decoupled architecture.
-
-## 3. Target Audience (Who is it for?)
-This overview is for backend engineers and technical leads who need a resilient, fault-tolerant infrastructure to handle real money transactions. If you need a billing system that won't randomly credit users twice due to a network glitch, this framework provides the blueprint.
-
-## 4. Architecture (How does it work?)
-The solution relies on three foundational pillars:
-- **Redis Transaction State Machine**: Guarantees mathematical idempotency. A transaction ID is locked atomically and can only transition linearly (e.g., from `PENDING` to `COMPLETED`), completely neutralizing duplicate webhooks or concurrent clicks.
-- **Abstract Gateways**: A unified interface (`BaseGateway`) allows the system to trigger `create_payment` without caring if the underlying implementation is Stripe, PayPal, or a mock testing environment.
-- **Standardized Webhook Controllers**: A universal translator that converts proprietary provider payloads (Stripe JSON) into standardized internal Pydantic events (like `PaymentSuccessEvent`).
-
-## 5. Installation / Setup
-```bash
-pip install ferrox-py-commerce redis
-```
-A running Redis instance is strictly required to enable the distributed locking and transaction state management mechanisms.
-
-## 6. Quickstart (Usage)
-```python
-from ferrox_py.core.container import Container
-from ferrox_py_commerce import CommerceModule
-
-# Initializing the billing system requires registering the module.
-container = Container()
-container.register_module(CommerceModule)
-# All controllers, gateways, and state machines are now active.
-```
-
-## 7. Ecosystem Integration
-The commerce logic integrates perfectly with the core **CQRS Bus**. When the Standardized Webhook Controller parses a successful payment, it dispatches an Event to the bus. Other microservices (like a Notification service sending a receipt email, or a provisioning service unlocking premium features) simply subscribe to the Bus, remaining completely uncoupled from the billing module itself.
-
-
-===============================================================================
 DOCUMENT: Transaction State (Idempotency and Redis)
 ROUTE: /commerce/transaction_state
 ===============================================================================
@@ -28967,109 +29203,58 @@ The Transaction State Machine relies fundamentally on the **Security Component**
 
 
 ===============================================================================
-DOCUMENT: Schema Registry
-ROUTE: /utils/schemas
+DOCUMENT: Webhooks Controller
+ROUTE: /commerce/webhooks
 ===============================================================================
 
-# Schema Registry
+# Webhooks Controller
 
 ## 1. Overview (What does this do?)
-The `SchemaRegistry` module guarantees data quality during ETL processes. It provides a centralized dictionary that maps string identifiers to Pydantic models (or Dataclasses), allowing the system to perform rigorous data casting and validation on raw, untyped datasets.
+The Webhooks Controller is the asynchronous interface between external payment providers (e.g., Stripe, PayPal) and the internal Ferrox application. It acts as a universal translator, securely receiving HTTP POST requests, verifying their authenticity, and converting them into internal domain events.
 
 ## 2. Philosophy (Why does it exist?)
-When ingesting data from external sources (like a third-party CSV or a public JSON API), the data is inherently untrusted and untyped. Directly inserting this raw data into the Database (the Bronze/Silver/Gold layers) leads to corrupted records and fatal crashes. This module enforces the philosophy that data must be formally validated at the application boundary. If a CSV row says an ID is `"123"`, the Schema Registry mathematically proves and casts it to an `int(123)` before it is allowed further into the pipeline.
+Payment providers send JSON payloads that differ vastly in structure. Stripe nests data under `data.object`, while PayPal uses a completely different schema. Writing business logic that depends directly on Stripe's specific JSON syntax tightly couples the core database to a third-party vendor. The philosophy here is absolute decoupling: the business logic must never know which provider sent the payment.
 
 ## 3. Target Audience (Who is it for?)
-This component is vital for Data Engineers who manage data lakes or data warehouses, and backend developers who need to ensure that bulk data imports adhere strictly to the internal domain models of the application.
+This component is for backend developers who need to expose secure, public-facing endpoints to ingest asynchronous events from third-party APIs without exposing the internal application logic to vendor-specific data structures.
 
 ## 4. Architecture (How does it work?)
-- **Registration**: At application boot, developers map string names (e.g., `"user_import"`) to corresponding Pydantic schemas.
-- **Validation**: During a pipeline execution, a transformation step can invoke `SchemaRegistry.validate("user_import", raw_dict)`. The registry locates the schema and processes the dictionary.
-- **Error Handling**: If the raw data violates the schema (e.g., a missing required field or wrong data type), Pydantic raises a detailed validation error, allowing the orchestrator to log the specific malformed row and continue or halt appropriately.
+`ferrox-py-commerce` solves the vendor lock-in problem through a strict 4-step ingestion pipeline:
+1. **HMAC Verification**: The controller extracts the cryptographic signature (e.g., `Stripe-Signature`) from the HTTP headers and validates it using the injected **Gateway** adapter.
+2. **Parsing**: The raw, vendor-specific JSON payload is inspected.
+3. **Mapping**: The proprietary event is "translated" into a pure, standardized Pydantic domain model (e.g., `PaymentSuccessEvent`, `InvoicePaidEvent`) defined in the `models/events.py` file.
+4. **Dispatch**: The standardized Pydantic model is forwarded to the core logic (Layer 7 of the Onion Pipeline). At this point, the business logic only sees a generic `PaymentSuccessEvent` and has no awareness of the original provider.
 
 ## 5. Installation / Setup
-The Schema Registry relies heavily on the `pydantic` library to perform its fast, strict type checking.
-
-```bash
-pip install pydantic
-```
+The Webhooks Controller is built-in. It simply requires configuring the provider-specific webhook signing secrets in your environment variables so the HMAC verification step can function correctly.
 
 ## 6. Quickstart (Usage)
 ```python
-from ferrox_py_utils.schemas.registry import SchemaRegistry
-from pydantic import BaseModel
+# The Controller is pre-configured, but internally it operates like this:
+from ferrox_py_commerce.gateways.base import BaseGateway
+from ferrox_py_commerce.models.events import PaymentSuccessEvent
 
-# 1. Define the strict data contract
-class UserImportSchema(BaseModel):
-    id: int
-    email: str
-
-# 2. Register the schema centrally
-registry = SchemaRegistry()
-registry.register("user_import", UserImportSchema)
-
-# 3. Automatic casting and validation inside a Pipeline step
-raw_data = {"id": "123", "email": "test@test.com"}
-valid_user = registry.validate("user_import", raw_data)
-
-# The string "123" has been safely cast to an integer
-print(type(valid_user.id))  # <class 'int'>
+class WebhooksController:
+    async def stripe_webhook(self, request, gateway: BaseGateway, event_bus):
+        # 1. Verify Signature
+        is_valid = await gateway.verify_webhook_signature(
+            payload=request.body, 
+            signature=request.headers.get("Stripe-Signature"),
+            secret=STRIPE_WEBHOOK_SECRET
+        )
+        if not is_valid:
+            raise ForbiddenError("Invalid HMAC signature")
+            
+        # 2 & 3. Parse and Map (Abstracted in real implementation)
+        event = PaymentSuccessEvent(transaction_id="txn_123", amount=10.00)
+        
+        # 4. Dispatch generic event
+        await event_bus.dispatch(event)
+        return {"status": "success"}
 ```
 
 ## 7. Ecosystem Integration
-The Schema Registry serves the exact same purpose in the Data Engineering layer as the **Validation Pipe** (Layer 5) serves in the Web/HTTP layer of the core `ferrox-py` framework. It ensures that the **CQRS Bus** and **Data Repositories** only ever interact with strongly-typed, predictable Domain Objects.
-
-
-===============================================================================
-DOCUMENT: Pipelines
-ROUTE: /utils/pipelines
-===============================================================================
-
-# Pipelines
-
-## 1. Overview (What does this do?)
-The `PipelineOrchestrator` is the execution engine at the heart of the `ferrox-py-utils` data engineering toolkit. It provides a linear, procedural runner that executes a chain of responsibility (a sequence of isolated tasks or "steps") to process data safely and predictably.
-
-## 2. Philosophy (Why does it exist?)
-When data transformations are written as one large function, handling specific errors (like a network timeout on step 4 of 10) is a nightmare. The Orchestrator exists to enforce the single-responsibility principle. By breaking an ETL job down into small, functional steps that only mutate a shared `context` dictionary, developers can easily unit test individual transformations, insert retry logic automatically, and halt the pipeline gracefully upon failure.
-
-## 3. Target Audience (Who is it for?)
-This module is for Data Engineers who are writing complex ETL or ELT jobs, data migration scripts, or nightly batch processes that require clear execution boundaries, error isolation, and detailed logging at each stage.
-
-## 4. Architecture (How does it work?)
-- **Shared Context**: The orchestrator initializes a `context` (usually a dictionary) that is passed sequentially from one step to the next.
-- **Adding Steps**: Tasks are registered in the orchestrator via `add_step(name, function)`. The function must accept the `context` as an argument and return it.
-- **Execution Engine**: The `execute()` method runs the steps in order. Because it manages the execution loop, it can natively implement advanced features like automated retry policies, step-timing metrics, or alert dispatching if a specific node crashes.
-
-## 5. Installation / Setup
-The `PipelineOrchestrator` is natively included in the `ferrox-py-utils` package. It uses standard Python synchronous or asynchronous mechanics and requires no external dependencies.
-
-## 6. Quickstart (Usage)
-```python
-from ferrox_py_utils.pipelines.orchestrator import PipelineOrchestrator
-
-# 1. Define isolated, pure functions (Steps)
-def extract_data(ctx):
-    ctx['raw_data'] = [1, 2, 3]
-    return ctx
-
-def transform_data(ctx):
-    # Mutates the shared context
-    ctx['transformed'] = [x * 10 for x in ctx['raw_data']]
-    return ctx
-
-# 2. Build the Pipeline
-pipeline = PipelineOrchestrator()
-pipeline.add_step("Extraction Step", extract_data)
-pipeline.add_step("Transformation Step", transform_data)
-
-# 3. Execute the chain
-final_context = pipeline.execute()
-assert final_context['transformed'] == [10, 20, 30]
-```
-
-## 7. Ecosystem Integration
-The `PipelineOrchestrator` relies heavily on the **Observability Component** from the core `ferrox-py` framework. Because the orchestrator controls the execution loop, it automatically injects logging trace IDs and emits structured logs (e.g., `Step 'Extraction Step' completed in 0.4s`) into the centralized logging system, ensuring complete visibility over background data jobs.
+The Webhooks Controller relies heavily on the **CQRS and Event Dispatcher** core module. Instead of invoking database repositories directly, the controller broadcasts the translated `PaymentSuccessEvent` to the Event Bus. The **Transaction State** service, listening on that bus, then picks up the event to enforce idempotency.
 
 
 ===============================================================================
@@ -29130,6 +29315,58 @@ Connectors are explicitly designed to be registered as **Providers** in the core
 
 
 ===============================================================================
+DOCUMENT: Pipelines
+ROUTE: /utils/pipelines
+===============================================================================
+
+# Pipelines
+
+## 1. Overview (What does this do?)
+The `PipelineOrchestrator` is the execution engine at the heart of the `ferrox-py-utils` data engineering toolkit. It provides a linear, procedural runner that executes a chain of responsibility (a sequence of isolated tasks or "steps") to process data safely and predictably.
+
+## 2. Philosophy (Why does it exist?)
+When data transformations are written as one large function, handling specific errors (like a network timeout on step 4 of 10) is a nightmare. The Orchestrator exists to enforce the single-responsibility principle. By breaking an ETL job down into small, functional steps that only mutate a shared `context` dictionary, developers can easily unit test individual transformations, insert retry logic automatically, and halt the pipeline gracefully upon failure.
+
+## 3. Target Audience (Who is it for?)
+This module is for Data Engineers who are writing complex ETL or ELT jobs, data migration scripts, or nightly batch processes that require clear execution boundaries, error isolation, and detailed logging at each stage.
+
+## 4. Architecture (How does it work?)
+- **Shared Context**: The orchestrator initializes a `context` (usually a dictionary) that is passed sequentially from one step to the next.
+- **Adding Steps**: Tasks are registered in the orchestrator via `add_step(name, function)`. The function must accept the `context` as an argument and return it.
+- **Execution Engine**: The `execute()` method runs the steps in order. Because it manages the execution loop, it can natively implement advanced features like automated retry policies, step-timing metrics, or alert dispatching if a specific node crashes.
+
+## 5. Installation / Setup
+The `PipelineOrchestrator` is natively included in the `ferrox-py-utils` package. It uses standard Python synchronous or asynchronous mechanics and requires no external dependencies.
+
+## 6. Quickstart (Usage)
+```python
+from ferrox_py_utils.pipelines.orchestrator import PipelineOrchestrator
+
+# 1. Define isolated, pure functions (Steps)
+def extract_data(ctx):
+    ctx['raw_data'] = [1, 2, 3]
+    return ctx
+
+def transform_data(ctx):
+    # Mutates the shared context
+    ctx['transformed'] = [x * 10 for x in ctx['raw_data']]
+    return ctx
+
+# 2. Build the Pipeline
+pipeline = PipelineOrchestrator()
+pipeline.add_step("Extraction Step", extract_data)
+pipeline.add_step("Transformation Step", transform_data)
+
+# 3. Execute the chain
+final_context = pipeline.execute()
+assert final_context['transformed'] == [10, 20, 30]
+```
+
+## 7. Ecosystem Integration
+The `PipelineOrchestrator` relies heavily on the **Observability Component** from the core `ferrox-py` framework. Because the orchestrator controls the execution loop, it automatically injects logging trace IDs and emits structured logs (e.g., `Step 'Extraction Step' completed in 0.4s`) into the centralized logging system, ensuring complete visibility over background data jobs.
+
+
+===============================================================================
 DOCUMENT: Ferrox-Py-Utils Overview
 ROUTE: /utils
 ===============================================================================
@@ -29180,183 +29417,57 @@ The entire philosophy of this package is built upon the **Inversion of Control (
 
 
 ===============================================================================
-DOCUMENT: Ferrox PHP Architecture
-ROUTE: /polyglot/php
+DOCUMENT: Schema Registry
+ROUTE: /utils/schemas
 ===============================================================================
 
-# 🐘 Ferrox PHP: The Enterprise Port
+# Schema Registry
 
-While PHP is traditionally viewed as a request-response scripting language, **Ferrox PHP** reimagines it for the memory-resident era (Swoole, RoadRunner) by porting the strict guarantees, zero-trust security, and functional paradigms of Ferrox Rust.
+## 1. Overview (What does this do?)
+The `SchemaRegistry` module guarantees data quality during ETL processes. It provides a centralized dictionary that maps string identifiers to Pydantic models (or Dataclasses), allowing the system to perform rigorous data casting and validation on raw, untyped datasets.
 
----
+## 2. Philosophy (Why does it exist?)
+When ingesting data from external sources (like a third-party CSV or a public JSON API), the data is inherently untrusted and untyped. Directly inserting this raw data into the Database (the Bronze/Silver/Gold layers) leads to corrupted records and fatal crashes. This module enforces the philosophy that data must be formally validated at the application boundary. If a CSV row says an ID is `"123"`, the Schema Registry mathematically proves and casts it to an `int(123)` before it is allowed further into the pipeline.
 
-## 1. Philosophy / Purpose
+## 3. Target Audience (Who is it for?)
+This component is vital for Data Engineers who manage data lakes or data warehouses, and backend developers who need to ensure that bulk data imports adhere strictly to the internal domain models of the application.
 
-The core philosophy of Ferrox PHP is **Fail-Safe Execution & Zero-Trust**.
-In massive enterprise SaaS environments (like E-Commerce or Fashion ERPs), unexpected exceptions or SQL deadlocks can cause catastrophic data loss. Ferrox PHP eradicates these risks by moving away from traditional PHP patterns (`try/catch`, Fat Controllers) in favor of **CQRS, Unit of Work, and Result Monads**.
+## 4. Architecture (How does it work?)
+- **Registration**: At application boot, developers map string names (e.g., `"user_import"`) to corresponding Pydantic schemas.
+- **Validation**: During a pipeline execution, a transformation step can invoke `SchemaRegistry.validate("user_import", raw_dict)`. The registry locates the schema and processes the dictionary.
+- **Error Handling**: If the raw data violates the schema (e.g., a missing required field or wrong data type), Pydantic raises a detailed validation error, allowing the orchestrator to log the specific malformed row and continue or halt appropriately.
 
----
+## 5. Installation / Setup
+The Schema Registry relies heavily on the `pydantic` library to perform its fast, strict type checking.
 
-## 2. Architectural Layering (Strict Onion)
-
-Ferrox PHP strictly adheres to the 7-Layer Onion Architecture.
-You cannot inject a Repository (Layer 6) directly into a Controller (Layer 4). All interactions must flow through the **CommandBus**.
-
-- **Layer 1-3 (Security & Entry)**: `FerroxApp` Pipeline, `PasetoAuthGuard`, and `SentinelThreatEngineMiddleware`.
-- **Layer 4-5 (Application & Domain)**: `CommandBus`, Handlers, and `DomainEventInterface`.
-- **Layer 6 (Infrastructure)**: `UnitOfWorkInterface` and `Singleflight` (Anti-Dogpiling).
-
----
-
-## 3. The `#[CrudResource]` Generator
-
-Building standard CRUD endpoints generates massive amounts of repetitive boilerplate. Ferrox PHP solves this with the `ferrox-php-crud-gen` module, simulating Rust macros via PHP 8 Attributes.
-
-### Usage Example
-
-```php
-use Ferrox\CrudGen\Attributes\CrudResource;
-
-#[CrudResource(
-    basePath: '/api/v1/orders',
-    allowedRoles: ['ADMIN'],
-    publishEvents: true // Automatically dispatches to the Outbox
-)]
-class OrderEntity {
-    public string $id;
-    public string $status;
-}
+```bash
+pip install pydantic
 ```
 
-Under the hood, at boot time, the `CrudGenerator` scans this attribute and automatically wires the HTTP Routes, the CQRS `CreateEntityCommand`, and the `UnitOfWork` wrappers. It even registers OpenTelemetry metrics (`ferrox_crud_order_requests_total`).
+## 6. Quickstart (Usage)
+```python
+from ferrox_py_utils.schemas.registry import SchemaRegistry
+from pydantic import BaseModel
 
----
+# 1. Define the strict data contract
+class UserImportSchema(BaseModel):
+    id: int
+    email: str
 
-## 4. Why it was designed this way
+# 2. Register the schema centrally
+registry = SchemaRegistry()
+registry.register("user_import", UserImportSchema)
 
-- **Result Monads (`Result<T, E>`)**: PHP Exceptions act like `goto` statements, destroying control flow predictability. By forcing Handlers to return a `Result::ok()` or `Result::err()`, the developer is forced to explicitly handle the `err()` case (e.g. routing it to a Dead Letter Queue) rather than letting the thread crash.
-- **Outbox Pattern**: Integrating with external ERPs (like Itsperfect) via webhooks requires zero data-loss. When an Order is saved, the Domain Event is saved in the same SQL transaction (via `OutboxStoreInterface`), ensuring eventual consistency even if the ERP goes offline.
+# 3. Automatic casting and validation inside a Pipeline step
+raw_data = {"id": "123", "email": "test@test.com"}
+valid_user = registry.validate("user_import", raw_data)
 
----
-
-## 5. ✅ Best Practices
-
-- **Use the Singleflight Module**: For heavy database queries or external API calls, wrap them in `$singleflight->work()`. If 1,000 requests hit the endpoint simultaneously, the query executes only once, preventing cache stampedes.
-- **Never use JWT**: Always use the `PasetoAuthGuard`.
-
----
-
-## 6. ❌ Anti-Patterns
-
-- **Fat Controllers**: Executing business logic or saving to the DB directly in an HTTP Middleware or Controller. *Always dispatch a Command to the CommandBus.*
-- **Throwing Exceptions for Control Flow**: Do not throw `Exception` to signal a failed validation or API timeout. Return `Result::err()` instead.
-- **Synchronous Webhooks**: Never block the HTTP thread waiting for an external API (Stripe/ERP). Emit an event and let the background worker handle it.
-
-
-===============================================================================
-DOCUMENT: API Reference
-ROUTE: /polyglot/php/api-reference
-===============================================================================
-
-# Ferrox PHP - API Reference
-
-*Auto-generated from PHPDoc.*
-
-## `Ferrox\Core\App\FerroxApp`
-The core Application Builder for the Ferrox PHP framework. Enforces strict security configurations, pipeline architectures, and adapter patterns (RoadRunner/Swoole). By design, an app cannot boot if it violates Zero-Trust boundaries.
-
-### `build(): self`
-Finalizes the application build process and verifies security invariants.
-- **Throws**: `RuntimeException` If mandatory security pipelines or engines are missing.
-
----
-
-## `Ferrox\Security\Sentinel\SentinelThreatEngineMiddleware`
-Ferrox Layer 2: Sentinel Threat Engine. Evaluates incoming payloads for anomalies, such as high Shannon Entropy indicative of obfuscated shellcode, SQLi, or AI RAG poisoning attempts.
-
-### `calculateEntropy(string $data): float`
-Calculates the Shannon Entropy of a given string. Higher values (> 4.8) generally indicate compressed, encrypted, or highly obfuscated data.
-- **Parameters**: 
-  - `data` (string) - The raw payload string to analyze.
-- **Returns**: `float` - The calculated entropy score.
-
----
-
-## `Ferrox\Cqrs\CommandBus`
-Core CQRS Command Bus. Responsible for routing Commands to their respective Handlers. In Ferrox, executing business logic directly in controllers is prohibited; all mutations must flow through this Bus to guarantee ACID transactions and Outbox publishing.
-
-### `dispatch(CommandInterface $command): mixed`
-Dispatches a Command to its registered Handler.
-- **Parameters**:
-  - `command` (`CommandInterface`) - The command to execute.
-- **Returns**: `mixed` - The result of the handler's execution.
-- **Throws**: `RuntimeException` - If no handler is registered or the handler is invalid.
-
-
-===============================================================================
-DOCUMENT: java
-ROUTE: /polyglot/java
-===============================================================================
-
-<p align="center">
-  <h1 align="center">Ferrox-Java</h1>
-  <p align="center">
-    <strong>Enterprise-grade Java 21 adaptation of the Rust `ferrox` ecosystem.</strong>
-    <br/>
-    Extreme concurrency, zero-trust security, off-heap memory, and metaprogramming paradigms traditionally reserved for low-level systems.
-  </p>
-</p>
-
-## 🚀 Features
-
-- **Project Loom (Virtual Threads) Native:** True synchronous, non-blocking I/O. Handles millions of concurrent connections without WebFlux callback hell.
-- **Cache Stampede Prevention (Singleflight):** Eliminates database dogpiling. 10,000 concurrent threads asking for the same key result in exactly **1** database query.
-- **Zero-Trust Security (Sentinel Threat Engine):** Real-time Shannon Entropy analysis drops heavily obfuscated payloads before they reach business logic. Cryptographic parity with Rust via PASETO v4 & Argon2id.
-- **Off-Heap Zero-GC Memory (Project Panama):** Stores ultra-hot data directly in OS RAM via `MemorySegment`. Zero Garbage Collection pauses. Perfect for High-Frequency Trading.
-- **Compile-Time Metaprogramming (APT):** Zero-overhead Reflection-less schema generation at compile time (mirroring Rust's `#[derive(FerroxEntity)]`).
-- **Asynchronous EventBus:** Highly scalable in-process Pub/Sub utilizing Virtual Threads.
-
-## 📦 Modules
-
-| Module | Description |
-|---|---|
-| `ferrox-java-core` | Fundamental abstractions & Error Taxonomy. |
-| `ferrox-java-security` | Sentinel Threat Engine & PASETO Auth. |
-| `ferrox-java-data` | Singleflight Concurrency Control. |
-| `ferrox-java-cqrs` | Strict Command & Query Bus segregation. |
-| `ferrox-java-crud-gen` | APT Code Generators. |
-| `ferrox-java-event-manager` | In-memory Pub/Sub Event Sourcing. |
-| `ferrox-java-observability` | Pino-style JSON logging & Correlation IDs. |
-| `ferrox-java-resilience` | Virtual-thread optimized Circuit Breaker. |
-| `ferrox-java-offheap` | Zero-GC Arena Allocators. |
-
-## 🛠️ Usage
-
-To import Ferrox-Java into your project via GitHub Packages, add the following to your `build.gradle.kts`:
-
-```kotlin
-repositories {
-    mavenCentral()
-    maven {
-        url = uri("https://maven.pkg.github.com/YOUR_ORG/ferrox-java")
-        credentials {
-            username = System.getenv("GITHUB_ACTOR")
-            password = System.getenv("GITHUB_TOKEN")
-        }
-    }
-}
-
-dependencies {
-    implementation("dev.ferrox:ferrox-java-core:1.0.0")
-    // Add other modules as needed...
-}
+# The string "123" has been safely cast to an integer
+print(type(valid_user.id))  # <class 'int'>
 ```
 
-## 📖 Documentation
-Comprehensive architectural documentation is available in the `ferrox-docs` Docusaurus repository.
-
-## 📄 License
-This project is licensed under the MIT License.
+## 7. Ecosystem Integration
+The Schema Registry serves the exact same purpose in the Data Engineering layer as the **Validation Pipe** (Layer 5) serves in the Web/HTTP layer of the core `ferrox-py` framework. It ensures that the **CQRS Bus** and **Data Repositories** only ever interact with strongly-typed, predictable Domain Objects.
 
 
 ===============================================================================
@@ -29438,5 +29549,185 @@ Node.js thrives in microservice and BFF (Backend-for-Frontend) layers. Developer
 When I engineered the Ferrox ecosystem, my core premise was: **Security and Architecture must be solved at the framework boundary, not by the application developer.** 
 
 By strictly adhering to PASETO tokens, providing native [Sentinel](/docs/ferrox/security/ferrox-sentinel) Threat Engine integrations (WAF), natively supporting Prometheus, and enforcing [CQRS](/docs/ferrox/architectures/cqrs)/Hexagonal boundaries across four entirely different languages, I ensured that deploying a Ferrox app—whether on Kubernetes, a bare-metal swarm, or serverless containers—is fundamentally secure by default. The example projects above aren't just tutorials; they are the architectural blueprints for enterprise survival.
+
+
+===============================================================================
+DOCUMENT: API Reference
+ROUTE: /polyglot/php/api-reference
+===============================================================================
+
+# Ferrox PHP - API Reference
+
+*Auto-generated from PHPDoc.*
+
+## `Ferrox\Core\App\FerroxApp`
+The core Application Builder for the Ferrox PHP framework. Enforces strict security configurations, pipeline architectures, and adapter patterns (RoadRunner/Swoole). By design, an app cannot boot if it violates Zero-Trust boundaries.
+
+### `build(): self`
+Finalizes the application build process and verifies security invariants.
+- **Throws**: `RuntimeException` If mandatory security pipelines or engines are missing.
+
+---
+
+## `Ferrox\Security\Sentinel\SentinelThreatEngineMiddleware`
+Ferrox Layer 2: Sentinel Threat Engine. Evaluates incoming payloads for anomalies, such as high Shannon Entropy indicative of obfuscated shellcode, SQLi, or AI RAG poisoning attempts.
+
+### `calculateEntropy(string $data): float`
+Calculates the Shannon Entropy of a given string. Higher values (> 4.8) generally indicate compressed, encrypted, or highly obfuscated data.
+- **Parameters**: 
+  - `data` (string) - The raw payload string to analyze.
+- **Returns**: `float` - The calculated entropy score.
+
+---
+
+## `Ferrox\Cqrs\CommandBus`
+Core CQRS Command Bus. Responsible for routing Commands to their respective Handlers. In Ferrox, executing business logic directly in controllers is prohibited; all mutations must flow through this Bus to guarantee ACID transactions and Outbox publishing.
+
+### `dispatch(CommandInterface $command): mixed`
+Dispatches a Command to its registered Handler.
+- **Parameters**:
+  - `command` (`CommandInterface`) - The command to execute.
+- **Returns**: `mixed` - The result of the handler's execution.
+- **Throws**: `RuntimeException` - If no handler is registered or the handler is invalid.
+
+
+===============================================================================
+DOCUMENT: Ferrox PHP Architecture
+ROUTE: /polyglot/php
+===============================================================================
+
+# 🐘 Ferrox PHP: The Enterprise Port
+
+While PHP is traditionally viewed as a request-response scripting language, **Ferrox PHP** reimagines it for the memory-resident era (Swoole, RoadRunner) by porting the strict guarantees, zero-trust security, and functional paradigms of Ferrox Rust.
+
+---
+
+## 1. Philosophy / Purpose
+
+The core philosophy of Ferrox PHP is **Fail-Safe Execution & Zero-Trust**.
+In massive enterprise SaaS environments (like E-Commerce or Fashion ERPs), unexpected exceptions or SQL deadlocks can cause catastrophic data loss. Ferrox PHP eradicates these risks by moving away from traditional PHP patterns (`try/catch`, Fat Controllers) in favor of **CQRS, Unit of Work, and Result Monads**.
+
+---
+
+## 2. Architectural Layering (Strict Onion)
+
+Ferrox PHP strictly adheres to the 7-Layer Onion Architecture.
+You cannot inject a Repository (Layer 6) directly into a Controller (Layer 4). All interactions must flow through the **CommandBus**.
+
+- **Layer 1-3 (Security & Entry)**: `FerroxApp` Pipeline, `PasetoAuthGuard`, and `SentinelThreatEngineMiddleware`.
+- **Layer 4-5 (Application & Domain)**: `CommandBus`, Handlers, and `DomainEventInterface`.
+- **Layer 6 (Infrastructure)**: `UnitOfWorkInterface` and `Singleflight` (Anti-Dogpiling).
+
+---
+
+## 3. The `#[CrudResource]` Generator
+
+Building standard CRUD endpoints generates massive amounts of repetitive boilerplate. Ferrox PHP solves this with the `ferrox-php-crud-gen` module, simulating Rust macros via PHP 8 Attributes.
+
+### Usage Example
+
+```php
+use Ferrox\CrudGen\Attributes\CrudResource;
+
+#[CrudResource(
+    basePath: '/api/v1/orders',
+    allowedRoles: ['ADMIN'],
+    publishEvents: true // Automatically dispatches to the Outbox
+)]
+class OrderEntity {
+    public string $id;
+    public string $status;
+}
+```
+
+Under the hood, at boot time, the `CrudGenerator` scans this attribute and automatically wires the HTTP Routes, the CQRS `CreateEntityCommand`, and the `UnitOfWork` wrappers. It even registers OpenTelemetry metrics (`ferrox_crud_order_requests_total`).
+
+---
+
+## 4. Why it was designed this way
+
+- **Result Monads (`Result<T, E>`)**: PHP Exceptions act like `goto` statements, destroying control flow predictability. By forcing Handlers to return a `Result::ok()` or `Result::err()`, the developer is forced to explicitly handle the `err()` case (e.g. routing it to a Dead Letter Queue) rather than letting the thread crash.
+- **Outbox Pattern**: Integrating with external ERPs (like Itsperfect) via webhooks requires zero data-loss. When an Order is saved, the Domain Event is saved in the same SQL transaction (via `OutboxStoreInterface`), ensuring eventual consistency even if the ERP goes offline.
+
+---
+
+## 5. ✅ Best Practices
+
+- **Use the Singleflight Module**: For heavy database queries or external API calls, wrap them in `$singleflight->work()`. If 1,000 requests hit the endpoint simultaneously, the query executes only once, preventing cache stampedes.
+- **Never use JWT**: Always use the `PasetoAuthGuard`.
+
+---
+
+## 6. ❌ Anti-Patterns
+
+- **Fat Controllers**: Executing business logic or saving to the DB directly in an HTTP Middleware or Controller. *Always dispatch a Command to the CommandBus.*
+- **Throwing Exceptions for Control Flow**: Do not throw `Exception` to signal a failed validation or API timeout. Return `Result::err()` instead.
+- **Synchronous Webhooks**: Never block the HTTP thread waiting for an external API (Stripe/ERP). Emit an event and let the background worker handle it.
+
+
+===============================================================================
+DOCUMENT: java
+ROUTE: /polyglot/java
+===============================================================================
+
+<p align="center">
+  <h1 align="center">Ferrox-Java</h1>
+  <p align="center">
+    <strong>Enterprise-grade Java 21 adaptation of the Rust `ferrox` ecosystem.</strong>
+    <br/>
+    Extreme concurrency, zero-trust security, off-heap memory, and metaprogramming paradigms traditionally reserved for low-level systems.
+  </p>
+</p>
+
+## 🚀 Features
+
+- **Project Loom (Virtual Threads) Native:** True synchronous, non-blocking I/O. Handles millions of concurrent connections without WebFlux callback hell.
+- **Cache Stampede Prevention (Singleflight):** Eliminates database dogpiling. 10,000 concurrent threads asking for the same key result in exactly **1** database query.
+- **Zero-Trust Security (Sentinel Threat Engine):** Real-time Shannon Entropy analysis drops heavily obfuscated payloads before they reach business logic. Cryptographic parity with Rust via PASETO v4 & Argon2id.
+- **Off-Heap Zero-GC Memory (Project Panama):** Stores ultra-hot data directly in OS RAM via `MemorySegment`. Zero Garbage Collection pauses. Perfect for High-Frequency Trading.
+- **Compile-Time Metaprogramming (APT):** Zero-overhead Reflection-less schema generation at compile time (mirroring Rust's `#[derive(FerroxEntity)]`).
+- **Asynchronous EventBus:** Highly scalable in-process Pub/Sub utilizing Virtual Threads.
+
+## 📦 Modules
+
+| Module | Description |
+|---|---|
+| `ferrox-java-core` | Fundamental abstractions & Error Taxonomy. |
+| `ferrox-java-security` | Sentinel Threat Engine & PASETO Auth. |
+| `ferrox-java-data` | Singleflight Concurrency Control. |
+| `ferrox-java-cqrs` | Strict Command & Query Bus segregation. |
+| `ferrox-java-crud-gen` | APT Code Generators. |
+| `ferrox-java-event-manager` | In-memory Pub/Sub Event Sourcing. |
+| `ferrox-java-observability` | Pino-style JSON logging & Correlation IDs. |
+| `ferrox-java-resilience` | Virtual-thread optimized Circuit Breaker. |
+| `ferrox-java-offheap` | Zero-GC Arena Allocators. |
+
+## 🛠️ Usage
+
+To import Ferrox-Java into your project via GitHub Packages, add the following to your `build.gradle.kts`:
+
+```kotlin
+repositories {
+    mavenCentral()
+    maven {
+        url = uri("https://maven.pkg.github.com/YOUR_ORG/ferrox-java")
+        credentials {
+            username = System.getenv("GITHUB_ACTOR")
+            password = System.getenv("GITHUB_TOKEN")
+        }
+    }
+}
+
+dependencies {
+    implementation("dev.ferrox:ferrox-java-core:1.0.0")
+    // Add other modules as needed...
+}
+```
+
+## 📖 Documentation
+Comprehensive architectural documentation is available in the `ferrox-docs` Docusaurus repository.
+
+## 📄 License
+This project is licensed under the MIT License.
 
 
